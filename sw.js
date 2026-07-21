@@ -4,7 +4,7 @@
      아래 VERSION 숫자를 +1 하고 커밋하세요. (v1 → v2 → v3 …)
      그래야 학생 앱이 다음에 열 때 최신본을 자동으로 받습니다.
    ============================================================ */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = 'readmical-' + VERSION;
 const ASSETS = ['./','./index.html','./data.js','./manifest.json','./icon-192.png','./icon-512.png'];
 
