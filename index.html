@@ -111,6 +111,18 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
 .checklist input{width:22px;height:22px;accent-color:var(--c-v);flex:0 0 auto}
 .checklist label.on{background:var(--c-v-soft)}
 .checklist .cnt{margin-left:auto;font-weight:600;font-size:12px;color:var(--ink-soft)}
+/* MY MASH UP 문장 수 설정 */
+.countbox{margin-top:14px;border:2px solid var(--line-strong);background:var(--card);box-shadow:var(--shadow);padding:14px 16px}
+.cb-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cb-label{font-family:var(--font-kr);font-weight:700;font-size:15px;color:var(--ink)}
+.cb-ctrl{margin-left:auto;display:flex;align-items:center;gap:6px}
+.cb-ctrl button{border:2px solid var(--line-strong);background:var(--paper);font-family:var(--font-kr);
+  font-weight:700;font-size:13px;padding:7px 9px;box-shadow:0 2px 0 var(--line);min-width:36px}
+.cb-ctrl button:active{transform:translateY(2px);box-shadow:0 0 0 var(--line)}
+.cb-ctrl input{width:62px;text-align:center;font-family:var(--font-title);font-weight:800;font-size:19px;
+  color:var(--ink);border:2px solid var(--line-strong);background:var(--paper);padding:6px 2px;outline:none}
+.cb-ctrl input:focus{border-color:var(--c-v)}
+.cb-note{font-family:var(--font-kr);font-size:11.5px;color:var(--ink-soft);margin-top:9px}
 /* 모드 선택 카드 : 제목+설명 / gif+연습·실전 버튼 */
 .modecard{border:2px solid var(--line-strong);background:var(--card);box-shadow:var(--shadow);padding:16px}
 .mc-head h3{font-family:var(--font-title);font-weight:800;font-size:22px;margin:0 0 6px;color:var(--ink)}
@@ -341,8 +353,21 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
     <div class="topbar"><button class="back" onclick="go('s_units')">‹</button><span class="crumb">MY MASH UP</span></div>
     <div class="field-label">복습할 진도 선택</div>
     <div class="checklist" id="mashup_list"></div>
+    <div class="countbox">
+      <div class="cb-row">
+        <span class="cb-label">복습할 문장 수</span>
+        <div class="cb-ctrl">
+          <button onclick="bumpCount(-5)">−5</button>
+          <button onclick="bumpCount(-1)">−1</button>
+          <input type="number" id="mashup_count" value="20" min="1" oninput="clampCount()">
+          <button onclick="bumpCount(1)">+1</button>
+          <button onclick="bumpCount(5)">+5</button>
+        </div>
+      </div>
+      <div class="cb-note" id="mashup_note">진도를 선택하면 범위가 표시돼요.</div>
+    </div>
     <button class="go" onclick="startMashup()">선택한 진도로 복습 시작</button>
-    <div class="hint">선택한 진도들의 모든 문장이 순서가 섞여서 나와요.</div>
+    <div class="hint">선택한 진도에서 문장이 균등하게 뽑히고, 순서가 섞여서 나와요.</div>
   </section>
 
   <!-- ============ 문장 : 전체 / 선택 ============ -->
@@ -351,6 +376,15 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
     <div class="stack">
       <button class="bigbtn" onclick="startSentence('all')">전체 문장 학습</button>
       <button class="bigbtn" onclick="go('s_pick')">선택 문장 학습</button>
+    </div>
+  </section>
+
+  <!-- ============ 문장 : 순서 선택 (셔플 / 원래 순서) ============ -->
+  <section id="s_order" class="screen">
+    <div class="topbar"><button class="back" onclick="go('s_scope')">‹</button><span class="crumb" id="s_order_crumb"></span></div>
+    <div class="stack">
+      <button class="bigbtn" onclick="applyOrder(false)">원래 순서대로<small>데이터에 등록된 번호 순으로 진행</small></button>
+      <button class="bigbtn" onclick="applyOrder(true)">순서 섞기 (셔플)<small>문장 순서를 무작위로 섞어서 진행</small></button>
     </div>
   </section>
 
@@ -598,33 +632,86 @@ function startSentence(scope){
     items=unit.items.filter(it=>nums.includes(it.n));
     if(!items.length){ alert('문장 번호를 입력해줘 (예: 1, 2, 5)'); return; }
   }
-  session={type:'sentence',unit:unit.id,items,idx:0,wrong:new Set()};
-  document.getElementById('s_mode_crumb').textContent=unit.id+' · '+(scope==='all'?'전체':'선택')+' '+items.length+'문장';
+  // 순서(셔플/원래) 선택 화면으로
+  pendingSession={unit:unit.id, items:items.slice(), label:(scope==='all'?'전체':'선택')};
+  document.getElementById('s_order_crumb').textContent=unit.id+' · '+pendingSession.label+' '+items.length+'문장';
+  go('s_order');
+}
+let pendingSession=null;
+function applyOrder(doShuffle){
+  if(!pendingSession) return;
+  let items=pendingSession.items.slice();
+  if(doShuffle) shuffle(items);
+  session={type:'sentence',unit:pendingSession.unit,items,idx:0,wrong:new Set()};
+  document.getElementById('s_mode_crumb').textContent=
+    pendingSession.unit+' · '+pendingSession.label+' '+items.length+'문장'+(doShuffle?' · 셔플':'');
   go('s_mode');
 }
-function backToScope(){ go('s_scope'); }
+function backToScope(){ go(session && session.unit==='MY MASH UP' ? 's_mashup' : 's_order'); }
 
-/* ============ MY MASH UP : 여러 진도 섞어 복습 ============ */
+/* ============ MY MASH UP : 여러 진도에서 균등 추출 + 셔플 ============ */
 function openMashup(){
   const box=document.getElementById('mashup_list'); box.innerHTML='';
   DATA.sentence.forEach((u,i)=>{
     const lab=document.createElement('label');
     lab.innerHTML='<input type="checkbox" value="'+i+'"><span>'+u.id+'</span><span class="cnt">'+u.items.length+'문장</span>';
     const cb=lab.querySelector('input');
-    cb.onchange=()=>lab.classList.toggle('on',cb.checked);
+    cb.onchange=()=>{ lab.classList.toggle('on',cb.checked); clampCount(); };
     box.appendChild(lab);
   });
+  clampCount();
   go('s_mashup');
 }
+function mashupSel(){ return [...document.querySelectorAll('#mashup_list input:checked')].map(c=>+c.value); }
+/* 최소=선택한 진도 수, 최대=선택 진도의 총 문장 수 */
+function mashupRange(){
+  const sel=mashupSel();
+  const min=sel.length||1;
+  const max=sel.reduce((s,i)=>s+DATA.sentence[i].items.length,0)||1;
+  return {min,max,sel};
+}
+function clampCount(){
+  const {min,max,sel}=mashupRange();
+  const inp=document.getElementById('mashup_count');
+  inp.min=min; inp.max=max;
+  let v=parseInt(inp.value,10); if(isNaN(v)) v=min;
+  v=Math.max(min,Math.min(max,v)); inp.value=v;
+  document.getElementById('mashup_note').textContent =
+    sel.length ? `진도 ${sel.length}개 선택 · ${min}~${max}문장 사이에서 설정 가능`
+               : '진도를 선택하면 범위가 표시돼요.';
+}
+function bumpCount(d){
+  const inp=document.getElementById('mashup_count');
+  inp.value=(parseInt(inp.value,10)||0)+d; clampCount();
+}
 function startMashup(){
-  const idxs=[...document.querySelectorAll('#mashup_list input:checked')].map(c=>+c.value);
-  if(!idxs.length){ alert('진도를 하나 이상 선택해줘'); return; }
-  let items=[];
-  idxs.forEach(i=>DATA.sentence[i].items.forEach(it=>items.push(it)));
-  shuffle(items);
-  items=items.map((it,i)=>({n:i+1, full:it.full, chunks:it.chunks}));  // 번호 재부여(충돌 방지)
+  const {min,max,sel}=mashupRange();
+  if(!sel.length){ alert('진도를 하나 이상 선택해줘'); return; }
+  clampCount();
+  const total=parseInt(document.getElementById('mashup_count').value,10);
+
+  // 진도별 균등 배분 (나머지는 앞 진도부터 1개씩)
+  const base=Math.floor(total/sel.length), rest=total%sel.length;
+  let picked=[];
+  sel.forEach((ui,k)=>{
+    let want=base+(k<rest?1:0);
+    const pool=DATA.sentence[ui].items.slice();
+    shuffle(pool);
+    if(want>pool.length) want=pool.length;      // 진도 문장이 모자라면 있는 만큼
+    picked=picked.concat(pool.slice(0,want));
+  });
+  // 모자란 만큼은 남은 문장에서 보충
+  if(picked.length<total){
+    const used=new Set(picked);
+    let leftover=[];
+    sel.forEach(ui=>DATA.sentence[ui].items.forEach(it=>{ if(!used.has(it)) leftover.push(it); }));
+    shuffle(leftover);
+    picked=picked.concat(leftover.slice(0,total-picked.length));
+  }
+  shuffle(picked);
+  const items=picked.map((it,i)=>({n:i+1, full:it.full, chunks:it.chunks}));  // 번호 재부여
   session={type:'sentence',unit:'MY MASH UP',items,idx:0,wrong:new Set()};
-  document.getElementById('s_mode_crumb').textContent='MY MASH UP · '+items.length+'문장';
+  document.getElementById('s_mode_crumb').textContent='MY MASH UP · '+items.length+'문장 · 셔플';
   go('s_mode');
 }
 
