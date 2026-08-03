@@ -269,6 +269,64 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
 .placeholder .ic{font-size:46px}
 .placeholder p{font-family:var(--font-kr);font-weight:600;font-size:14px;max-width:280px}
 
+/* 암기 미니게임 : 자·타동사 판별 */
+.m-brief{margin-top:14px;border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
+  box-shadow:var(--shadow);padding:16px 18px}
+.m-brief p{font-family:var(--font-kr);font-weight:600;font-size:13.5px;line-height:1.7;color:var(--ink-soft);margin:0 0 9px}
+.m-brief p:last-child{margin-bottom:0}
+.m-brief b{color:var(--ink);font-weight:800}
+.vt-choices{display:grid;gap:12px}
+.vt-btn{width:100%;display:block;text-align:left;border:2px solid var(--line-strong);border-radius:var(--radius);
+  background:var(--card);padding:15px 16px;box-shadow:0 2px 0 var(--line);font-family:var(--font-kr)}
+.vt-btn:active{transform:translateY(2px);box-shadow:0 0 0 var(--line)}
+.vt-btn .t{display:block;font-family:var(--font-title);font-weight:800;font-size:18px;color:var(--ink)}
+.vt-btn .d{display:block;font-size:12px;font-weight:600;color:var(--ink-soft);margin-top:4px}
+.vt-btn.on{border-color:var(--c-v);background:var(--c-v-soft)}
+.vt-btn.right{background:var(--c-s-soft);border-color:var(--c-s)}
+.vt-btn.right .t{color:#4c7a1f}
+.vt-btn.wrong{background:var(--c-c-soft);border-color:var(--c-c)}
+.vt-btn.wrong .t{color:#a83d7d}
+.vt-btn.dim{opacity:.5}
+.prep-row{display:flex;gap:8px;margin-top:12px}
+.prep-row input{flex:1;min-width:0;border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--paper);
+  font-family:var(--font-en);font-size:19px;text-align:center;padding:10px;outline:none;color:var(--ink)}
+.prep-row input:focus{border-color:var(--c-v)}
+.prep-row button{flex:0 0 auto;border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
+  font-family:var(--font-title);font-weight:800;font-size:15px;padding:10px 16px;box-shadow:0 2px 0 var(--line)}
+.prep-row button:active{transform:translateY(2px);box-shadow:0 0 0 var(--line)}
+.result-box.list{display:block;padding:14px}
+ul.vt-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+ul.vt-list li{border:2px solid var(--line);background:var(--paper);padding:11px 13px}
+ul.vt-list .a{font-family:var(--font-en);font-size:19px;color:var(--ink)}
+ul.vt-list .a em{font-style:normal;font-weight:600;color:var(--c-v)}
+ul.vt-list .m{font-family:var(--font-kr);font-weight:600;font-size:12px;color:var(--ink-soft);margin-top:3px}
+ul.vt-list .y{font-family:var(--font-kr);font-weight:600;font-size:11.5px;color:var(--c-c);margin-top:3px}
+
+/* 암기 미니게임 : 수여동사 전치사 그룹 */
+.grp-choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.grp-btn{border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
+  padding:18px 6px;box-shadow:0 2px 0 var(--line);text-align:center}
+.grp-btn:active{transform:translateY(2px);box-shadow:0 0 0 var(--line)}
+.grp-btn .g{display:block;font-family:var(--font-en);font-size:26px;color:var(--ink)}
+.grp-btn .h{display:block;font-family:var(--font-kr);font-weight:700;font-size:11px;color:var(--ink-soft);margin-top:5px}
+.grp-btn.right{background:var(--c-s-soft);border-color:var(--c-s)}
+.grp-btn.right .g,.grp-btn.right .h{color:#4c7a1f}
+.grp-btn.wrong{background:var(--c-c-soft);border-color:var(--c-c)}
+.grp-btn.wrong .g,.grp-btn.wrong .h{color:#a83d7d}
+.grp-btn.dim{opacity:.45}
+.reveal{margin-top:16px;border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
+  box-shadow:var(--shadow);padding:15px 16px;text-align:center;display:none}
+.reveal.show{display:block}
+.reveal .r-top{font-family:var(--font-en);font-size:24px;color:var(--ink)}
+.reveal .r-top em{font-style:normal;font-weight:600;color:var(--c-v)}
+.reveal .r-ko{font-family:var(--font-kr);font-weight:700;font-size:14px;color:var(--ink);margin-top:6px}
+.reveal .r-x{display:inline-block;margin-top:9px;font-family:var(--font-kr);font-weight:800;font-size:11.5px;
+  color:#a83d7d;background:var(--c-c-soft);border:2px solid var(--c-c);padding:4px 9px}
+.reveal .r-x small{display:block;font-family:var(--font-en);font-weight:400;font-size:12px;color:var(--ink-soft);margin-top:3px}
+.badge{display:inline-block;font-family:var(--font-en);font-size:15px;color:var(--c-v);font-weight:600}
+ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;font-size:10.5px;color:#a83d7d;
+  background:var(--c-c-soft);border:1.5px solid var(--c-c);padding:2px 6px;margin-top:4px}
+
 .footer-note{font-family:var(--font-kr);font-size:10.5px;color:var(--line-strong);text-align:center;padding:10px 0 2px}
 
 /* ============ 데스크톱/노트북 반응형 (넓은 화면) ============ */
@@ -308,6 +366,18 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
   .choices button{font-size:19px;padding:22px 12px}
   .answerbox{font-size:26px;padding:20px}
   .result-nums{font-size:32px}
+  /* 암기 게임 */
+  .vt-btn .t{font-size:21px}
+  .vt-btn .d{font-size:13.5px}
+  .prep-row input{font-size:23px;padding:13px}
+  .prep-row button{font-size:17px;padding:13px 20px}
+  .m-brief p{font-size:15px}
+  ul.vt-list .a{font-size:22px}
+  .grp-btn{padding:24px 6px}
+  .grp-btn .g{font-size:31px}
+  .grp-btn .h{font-size:12.5px}
+  .reveal .r-top{font-size:28px}
+  .reveal .r-ko{font-size:16px}
 }
 @media (min-width:760px) and (orientation:landscape){
   #app{min-height:auto}
@@ -563,12 +633,80 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
     <div class="bottom"><button class="primary" onclick="go('home')">홈으로</button></div>
   </section>
 
-  <!-- ============ 암기 (placeholder 허브) ============ -->
+  <!-- ============ 암기 : 진도 선택 ============ -->
   <section id="memory" class="screen">
     <div class="topbar"><button class="back" onclick="go('home')">‹</button><span class="crumb">MINIGAME · 암기</span></div>
-    <div class="placeholder">
+    <div class="stack" id="m_unit_list"></div>
+    <div class="placeholder" id="m_empty" style="display:none">
       <div class="ic">🧩</div>
-      <p>암기 미니게임은 단원별로 방식이 달라, 각 단원 페이지를 만들 때 이 허브에 링크됩니다. (골격만 잡아둔 자리)</p>
+      <p>아직 암기 게임이 붙은 진도가 없어요.</p>
+    </div>
+    <div class="hint">진도마다 암기 방식이 달라요.</div>
+  </section>
+
+  <!-- ============ 암기 : 안내 ============ -->
+  <section id="m_intro" class="screen">
+    <div class="topbar"><button class="back" onclick="go('memory')">‹</button><span class="crumb" id="m_intro_crumb"></span></div>
+    <div class="field-label" id="m_intro_title"></div>
+    <div class="m-brief" id="m_brief"></div>
+    <button class="go" id="m_start_btn" onclick="startMem()"></button>
+  </section>
+
+  <!-- ============ 암기 : 학습 ============ -->
+  <section id="m_study" class="screen">
+    <div class="topbar"><button class="back" onclick="go('memory')">‹</button><span class="crumb" id="m_study_crumb"></span></div>
+    <div class="study-top"><span class="qmeta" id="m_meta"></span><div class="progress"><i id="m_prog"></i></div></div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
+      <div class="word-prompt"><div class="big" id="m_prompt"></div><div class="sub" id="m_sub"></div></div>
+      <div class="vt-choices">
+        <button class="vt-btn" id="m_vt" type="button">
+          <span class="t">타동사</span>
+          <span class="d">전치사 없이 목적어가 바로 온다</span>
+        </button>
+        <div class="vt-btn" id="m_vi" role="button" tabindex="0">
+          <span class="t">자동사</span>
+          <span class="d">전치사가 있어야 목적어가 온다</span>
+          <div class="prep-row">
+            <input id="m_prep" type="text" placeholder="전치사" autocomplete="off"
+                   autocapitalize="off" spellcheck="false" aria-label="전치사 입력">
+            <button id="m_ok" type="button">확인</button>
+          </div>
+        </div>
+      </div>
+      <div class="feedback" id="m_feedback"></div>
+    </div>
+    <div class="bottom" id="m_bottom" style="display:none">
+      <button class="primary" id="m_next" onclick="nextVT()">다음</button>
+    </div>
+  </section>
+
+  <!-- ============ 암기 : 전치사 그룹 학습 ============ -->
+  <section id="g_study" class="screen">
+    <div class="topbar"><button class="back" onclick="go('memory')">‹</button><span class="crumb" id="g_study_crumb"></span></div>
+    <div class="study-top"><span class="qmeta" id="g_meta"></span><div class="progress"><i id="g_prog"></i></div></div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
+      <div class="word-prompt"><div class="big" id="g_prompt"></div><div class="sub">어느 전치사 그룹일까?</div></div>
+      <div class="grp-choices">
+        <button class="grp-btn" data-g="to"  type="button"><span class="g">to</span><span class="h">‘쪽으로’ 도착</span></button>
+        <button class="grp-btn" data-g="for" type="button"><span class="g">for</span><span class="h">‘위해’ 해‘줌’</span></button>
+        <button class="grp-btn" data-g="of"  type="button"><span class="g">of</span><span class="h">‘로부터’ 요구</span></button>
+      </div>
+      <div class="reveal" id="g_reveal"></div>
+    </div>
+    <div class="bottom" id="g_bottom" style="display:none">
+      <button class="primary" id="g_next" onclick="nextGRP()">다음</button>
+    </div>
+  </section>
+
+  <!-- ============ 암기 : 결과 ============ -->
+  <section id="m_result" class="screen">
+    <div class="topbar"><button class="back" onclick="go('memory')">‹</button><span class="crumb">암기 완료</span></div>
+    <div class="result-h" id="m_result_h">틀린 동사</div>
+    <div class="result-box" id="m_result_box"></div>
+    <div class="hint">틀린 동사는 표에서 다시 확인해 보세요.</div>
+    <div class="bottom">
+      <button class="ghost" id="m_retry_wrong" onclick="retryVT(true)">틀린 것만</button>
+      <button class="primary" onclick="retryVT(false)">전체 다시</button>
     </div>
   </section>
 
@@ -610,6 +748,14 @@ function renderUnits(){
     const b=document.createElement('button'); b.className='bigbtn unit'; b.textContent=u.id;
     b.onclick=()=>openScope('vocab',i); vl.appendChild(b);
   });
+  const ml=document.getElementById('m_unit_list'); ml.innerHTML='';
+  const mem=DATA.memory||[];
+  mem.forEach((u,i)=>{
+    const b=document.createElement('button'); b.className='bigbtn unit'; b.textContent=u.id;
+    if(u.title){ const s=document.createElement('small'); s.textContent=u.title; b.appendChild(s); }
+    b.onclick=()=>openMemUnit(i); ml.appendChild(b);
+  });
+  document.getElementById('m_empty').style.display = mem.length?'none':'flex';
 }
 
 /* ============ 문장 스코프/선택 ============ */
@@ -1065,6 +1211,167 @@ function copyWrongVocab(){
   const cb=document.getElementById('v_copybtn'); cb.classList.add('done'); cb.textContent='복사됨 ✓';
 }
 function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+/* ============ 암기 미니게임 : 자·타동사 판별 ============
+   DATA.memory[i].items = {v, ipa, prep(자동사면 전치사 / 타동사면 null), ko}
+   문제엔 전치사를 뗀 동사만 노출하고, 자동사면 전치사까지 맞혀야 정답.
+   ======================================================== */
+let msess=null;
+const M_BRIEF={
+  vt:'<p>동사가 <b>전치사 없이</b> 목적어를 바로 받는지 판별하는 연습이에요.</p>'+
+     '<p>전치사를 뗀 동사만 나오니, 뒤에 전치사가 필요한지 아닌지 고르면 됩니다.</p>'+
+     '<p><b>자동사</b>를 골랐다면 붙는 전치사까지 입력해야 정답이에요.</p>'+
+     '<p>동사 순서는 시작할 때마다 섞입니다.</p>',
+  group:'<p>수여동사를 4형식에서 3형식으로 바꿀 때 붙는 <b>전치사 그룹</b>을 맞히는 연습이에요.</p>'+
+     '<p><b>to</b> 상대 ‘쪽으로’ 도착 · <b>for</b> 상대를 ‘위해’ 해‘줌’ · <b>of</b> 상대‘로부터’ 요구</p>'+
+     '<p>of 그룹 중 <b>demand · request · require</b>는 4형식으로 쓰지 않아요. 정답에서 따로 알려줍니다.</p>'+
+     '<p>동사 순서는 시작할 때마다 섞입니다.</p>'
+};
+function memType(u){ return u.type==='group'?'group':'vt'; }
+function openMemUnit(i){
+  const u=DATA.memory[i];
+  msess={unit:i,type:memType(u)};
+  document.getElementById('m_intro_crumb').textContent='암기 · '+u.id;
+  document.getElementById('m_intro_title').textContent=u.title||u.id;
+  document.getElementById('m_brief').innerHTML=M_BRIEF[msess.type];
+  document.getElementById('m_start_btn').textContent=u.items.length+'문제 시작';
+  go('m_intro');
+}
+function startMem(pool){ (msess.type==='group'?startGRP:startVT)(pool); }
+function startVT(pool){
+  const u=DATA.memory[msess.unit];
+  const items=shuffle(((pool&&pool.length)?pool:u.items).slice());
+  msess={unit:msess.unit,type:'vt',items:items,idx:0,wrong:[],answered:false};
+  document.getElementById('m_study_crumb').textContent='자·타동사 · '+u.id;
+  go('m_study'); loadVT();
+}
+function loadVT(){
+  msess.answered=false;
+  const q=msess.items[msess.idx], n=msess.items.length;
+  document.getElementById('m_meta').textContent=(msess.idx+1)+' / '+n;
+  document.getElementById('m_prog').style.width=(msess.idx/n*100)+'%';
+  const fb=document.getElementById('m_feedback'); fb.textContent=''; fb.className='feedback';
+  document.getElementById('m_bottom').style.display='none';
+  const pr=document.getElementById('m_prompt'); pr.className='big'; pr.textContent=q.v;
+  document.getElementById('m_sub').textContent=q.ipa+'  ·  뒤에 전치사가 필요할까?';
+  const vt=document.getElementById('m_vt'), vi=document.getElementById('m_vi'), pp=document.getElementById('m_prep');
+  vt.className='vt-btn'; vi.className='vt-btn'; pp.value='';
+  vt.onclick=()=>judgeVT(true,'');
+  vi.onclick=(e)=>{
+    if(msess.answered||e.target===pp) return;
+    if(e.target.id==='m_ok'){ submitVT(); return; }
+    vi.classList.add('on'); pp.focus();
+  };
+  vi.onkeydown=(e)=>{
+    if(e.target===vi&&(e.key==='Enter'||e.key===' ')){ e.preventDefault(); vi.classList.add('on'); pp.focus(); }
+  };
+  pp.onkeydown=(e)=>{ if(e.key==='Enter'){ e.preventDefault(); submitVT(); } };
+}
+function submitVT(){
+  const pp=document.getElementById('m_prep'), val=pp.value.trim();
+  if(!val){
+    const fb=document.getElementById('m_feedback'); fb.className='feedback no'; fb.textContent='전치사를 입력해줘';
+    document.getElementById('m_vi').classList.add('on'); pp.focus(); return;
+  }
+  judgeVT(false,val);
+}
+function judgeVT(saidVt,typed){
+  if(msess.answered) return; msess.answered=true;
+  const q=msess.items[msess.idx], isVt=!q.prep;
+  const norm=typed.trim().toLowerCase().replace(/[.\s]+$/,'');
+  const ok = saidVt ? isVt : (!isVt && norm===q.prep);
+  const mine = saidVt ? '타동사' : ('자동사 · '+typed.trim());
+  const vt=document.getElementById('m_vt'), vi=document.getElementById('m_vi');
+  const picked = saidVt?vt:vi, other = saidVt?vi:vt, answer = isVt?vt:vi;
+  picked.classList.remove('on');
+  picked.classList.add(ok?'right':'wrong');
+  if(ok) other.classList.add('dim');
+  else if(answer!==picked) answer.classList.add('right');
+  const fb=document.getElementById('m_feedback');
+  if(ok){ fb.className='feedback ok'; fb.textContent='정답!'; }
+  else {
+    fb.className='feedback no';
+    fb.textContent='정답: '+(q.prep?(q.v+' '+q.prep):q.v)+' — '+q.ko;
+    msess.wrong.push({v:q.v,ipa:q.ipa,prep:q.prep,ko:q.ko,mine:mine,src:q});
+  }
+  document.getElementById('m_bottom').style.display='flex';
+  document.getElementById('m_next').textContent=(msess.idx<msess.items.length-1)?'다음':'결과 보기';
+}
+function nextVT(){
+  if(msess.idx<msess.items.length-1){ msess.idx++; loadVT(); } else showVTResult();
+}
+function showVTResult(){
+  const n=msess.items.length, w=msess.wrong;
+  document.getElementById('m_result_h').textContent='틀린 동사  '+w.length+' / '+n;
+  const box=document.getElementById('m_result_box');
+  if(w.length){
+    box.className='result-box list';
+    const grp=(msess.type==='group');
+    box.innerHTML='<ul class="vt-list">'+w.map(x=> grp
+      ? ('<li><div class="a">'+x.v+' <em>'+x.g+'</em></div>'+
+         '<div class="m">'+x.g+' 그룹 · '+x.ko+'</div>'+
+         (x.x?'<div class="x">4형식 X · '+x.x+'</div>':'')+
+         '<div class="y">내 답: '+x.mine+'</div></li>')
+      : ('<li><div class="a">'+x.v+(x.prep?' <em>'+x.prep+'</em>':'')+'</div>'+
+         '<div class="m">'+(x.prep?'자동사':'타동사')+' · '+x.ko+'</div>'+
+         '<div class="y">내 답: '+x.mine+'</div></li>')
+    ).join('')+'</ul>';
+  } else {
+    box.className='result-box';
+    box.innerHTML='<div class="result-nums none">다 맞았어요 🎉</div>';
+  }
+  document.getElementById('m_retry_wrong').style.display = w.length?'block':'none';
+  go('m_result');
+}
+function retryVT(onlyWrong){
+  const pool = onlyWrong ? msess.wrong.map(x=>x.src) : null;
+  startMem(pool);
+}
+
+/* ============ 암기 미니게임 : 수여동사 전치사 그룹 (to / for / of) ============
+   DATA.memory[i] 에 type:"group", items = {v, g:"to"|"for"|"of", ko, x(4형식 불가 표기)}
+   ========================================================================= */
+function startGRP(pool){
+  const u=DATA.memory[msess.unit];
+  const items=shuffle(((pool&&pool.length)?pool:u.items).slice());
+  msess={unit:msess.unit,type:'group',items:items,idx:0,wrong:[],answered:false};
+  document.getElementById('g_study_crumb').textContent='전치사 그룹 · '+u.id;
+  go('g_study'); loadGRP();
+}
+function loadGRP(){
+  msess.answered=false;
+  const q=msess.items[msess.idx], n=msess.items.length;
+  document.getElementById('g_meta').textContent=(msess.idx+1)+' / '+n;
+  document.getElementById('g_prog').style.width=(msess.idx/n*100)+'%';
+  document.getElementById('g_prompt').textContent=q.v;
+  const rv=document.getElementById('g_reveal'); rv.className='reveal'; rv.innerHTML='';
+  document.getElementById('g_bottom').style.display='none';
+  document.querySelectorAll('#g_study .grp-btn').forEach(b=>{
+    b.className='grp-btn';
+    b.onclick=()=>judgeGRP(b.dataset.g);
+  });
+}
+function judgeGRP(picked){
+  if(msess.answered) return; msess.answered=true;
+  const q=msess.items[msess.idx], ok=(picked===q.g);
+  document.querySelectorAll('#g_study .grp-btn').forEach(b=>{
+    const g=b.dataset.g;
+    if(g===q.g) b.classList.add('right');
+    else if(g===picked) b.classList.add('wrong');
+    else b.classList.add('dim');
+  });
+  const rv=document.getElementById('g_reveal');
+  rv.innerHTML='<div class="r-top">'+q.v+' <em>'+q.g+'</em></div>'+
+    '<div class="r-ko">'+q.ko+'</div>'+
+    (q.x?'<div class="r-x">4형식 X<small>'+q.x+'</small></div>':'');
+  rv.classList.add('show');
+  if(!ok) msess.wrong.push({v:q.v,g:q.g,ko:q.ko,x:q.x,mine:picked,src:q});
+  document.getElementById('g_bottom').style.display='flex';
+  document.getElementById('g_next').textContent=(msess.idx<msess.items.length-1)?'다음':'결과 보기';
+}
+function nextGRP(){
+  if(msess.idx<msess.items.length-1){ msess.idx++; loadGRP(); } else showVTResult();
+}
 
 /* 전체 풀 선택 힌트 */
 document.getElementById('v_pick_global_hint').textContent='전체 1~'+flatVocab().length+'번 중에서 고르기';

@@ -659,6 +659,205 @@ const DATA = {
         {en:"visits", ko:"찾아간다", t:"verb"},
         {en:"the friend", ko:"그 친구를", t:"obj"},
         {en:"in the house", ko:"집에서", t:"mod"}]}
+    ]},{ id:"3형식(2)", items:[
+      {n:1, full:"그 비평가는 밤에 그 소녀와 결혼한다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"marries", ko:"결혼한다", t:"verb"},
+        {en:"the girl", ko:"그 소녀와", t:"obj"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:2, full:"그 비평가는 그 강당에서 그 군중에게 연설한다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"addresses", ko:"연설한다", t:"verb"},
+        {en:"the crowd", ko:"그 군중에게", t:"obj"},
+        {en:"in the hall", ko:"그 강당에서", t:"mod"}]},
+      {n:3, full:"그 전문가는 시장에서 그 차분한 목격자에게 다가간다", chunks:[
+        {en:"The expert", ko:"그 전문가는", t:"subj"},
+        {en:"approaches", ko:"다가간다", t:"verb"},
+        {en:"the calm witness", ko:"그 차분한 목격자에게", t:"obj"},
+        {en:"at the market", ko:"시장에서", t:"mod"}]},
+      {n:4, full:"그 비평가는 시장에서 그 위험을 가중시킨다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"adds to", ko:"가중시킨다", t:"verb"},
+        {en:"the danger", ko:"그 위험을", t:"obj"},
+        {en:"at the market", ko:"시장에서", t:"mod"}]},
+      {n:5, full:"그 손님은 아침에 그 비평가를 기다린다", chunks:[
+        {en:"The guest", ko:"그 손님은", t:"subj"},
+        {en:"awaits", ko:"기다린다", t:"verb"},
+        {en:"the critic", ko:"그 비평가를", t:"obj"},
+        {en:"in the morning", ko:"아침에", t:"mod"}]},
+      {n:6, full:"그 시민은 일찍 그 집에 들어간다", chunks:[
+        {en:"The citizen", ko:"그 시민은", t:"subj"},
+        {en:"enters", ko:"들어간다", t:"verb"},
+        {en:"the house", ko:"그 집에", t:"obj"},
+        {en:"early", ko:"일찍", t:"mod"}]},
+      {n:7, full:"개척자들은 그 젖은 길 근처의 들판에 산다", chunks:[
+        {en:"Pioneers", ko:"개척자들은", t:"subj"},
+        {en:"inhabit", ko:"산다", t:"verb"},
+        {en:"the field", ko:"그 들판에", t:"obj"},
+        {en:"near the wet road", ko:"그 젖은 길 근처에", t:"mod"}]},
+      {n:8, full:"그 의사는 그 그림 속 키 큰 영웅을 닮았다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"resembles", ko:"닮았다", t:"verb"},
+        {en:"the tall hero", ko:"그 키 큰 영웅을", t:"obj"},
+        {en:"in the picture", ko:"그 그림 속에서", t:"mod"}]},
+      {n:9, full:"그 운동선수는 영원히 그 전설을 따른다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"obeys", ko:"따른다", t:"verb"},
+        {en:"the legend", ko:"그 전설을", t:"obj"},
+        {en:"forever", ko:"영원히", t:"mod"}]},
+      {n:10, full:"그 의사는 사무실에서 그 이상한 생각을 논의한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"discusses", ko:"논의한다", t:"verb"},
+        {en:"the strange idea", ko:"그 이상한 생각을", t:"obj"},
+        {en:"in the office", ko:"사무실에서", t:"mod"}]},
+      {n:11, full:"그 의사는 학교에서 그 진실을 다룬다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"addresses", ko:"다룬다", t:"verb"},
+        {en:"the truth", ko:"그 진실을", t:"obj"},
+        {en:"at school", ko:"학교에서", t:"mod"}]},
+      {n:12, full:"그 손님은 거리에서 그 환자에게 공감한다", chunks:[
+        {en:"The customer", ko:"그 손님은", t:"subj"},
+        {en:"sympathizes with", ko:"공감한다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"in the street", ko:"거리에서", t:"mod"}]},
+      {n:13, full:"그 손님은 그 도시에서 그 문제를 가중시킨다", chunks:[
+        {en:"The customer", ko:"그 손님은", t:"subj"},
+        {en:"adds to", ko:"가중시킨다", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"},
+        {en:"in the city", ko:"그 도시에서", t:"mod"}]},
+      {n:14, full:"그 운동선수는 길 위에서 그 전문가를 기다린다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"waits for", ko:"기다린다", t:"verb"},
+        {en:"the expert", ko:"그 전문가를", t:"obj"},
+        {en:"on the road", ko:"길 위에서", t:"mod"}]},
+      {n:15, full:"그 운동선수는 아침에 그 학교에 다닌다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"attends", ko:"다닌다", t:"verb"},
+        {en:"the school", ko:"그 학교에", t:"obj"},
+        {en:"in the morning", ko:"아침에", t:"mod"}]},
+      {n:16, full:"그 비평가는 그 진실을 바란다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"hopes for", ko:"바란다", t:"verb"},
+        {en:"the truth", ko:"그 진실을", t:"obj"}]},
+      {n:17, full:"그 군중은 시장에서 그 손님을 기다린다", chunks:[
+        {en:"The crowd", ko:"그 군중은", t:"subj"},
+        {en:"waits for", ko:"기다린다", t:"verb"},
+        {en:"the guest", ko:"그 손님을", t:"obj"},
+        {en:"at the market", ko:"시장에서", t:"mod"}]},
+      {n:18, full:"그 소녀는 창가에서 어머니를 닮았다", chunks:[
+        {en:"The girl", ko:"그 소녀는", t:"subj"},
+        {en:"resembles", ko:"닮았다", t:"verb"},
+        {en:"the mother", ko:"어머니를", t:"obj"},
+        {en:"at the window", ko:"창가에서", t:"mod"}]},
+      {n:19, full:"그 의사는 학교에서 그 계획을 방해한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"interferes with", ko:"방해한다", t:"verb"},
+        {en:"the plan", ko:"그 계획을", t:"obj"},
+        {en:"at school", ko:"학교에서", t:"mod"}]},
+      {n:20, full:"그 비평가는 길 위에서 그 열린 상자를 고려한다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"considers", ko:"고려한다", t:"verb"},
+        {en:"the open box", ko:"그 열린 상자를", t:"obj"},
+        {en:"on the road", ko:"길 위에서", t:"mod"}]},
+      {n:21, full:"그 의사는 그 도시에서 그 여자와 결혼한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"marries", ko:"결혼한다", t:"verb"},
+        {en:"the woman", ko:"그 여자와", t:"obj"},
+        {en:"in the city", ko:"그 도시에서", t:"mod"}]},
+      {n:22, full:"그 환자는 그 회사를 따른다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"obeys", ko:"따른다", t:"verb"},
+        {en:"the company", ko:"그 회사를", t:"obj"}]},
+      {n:23, full:"그 운동선수는 아침에 그 다리에 도달한다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"reaches", ko:"도달한다", t:"verb"},
+        {en:"the bridge", ko:"그 다리에", t:"obj"},
+        {en:"in the morning", ko:"아침에", t:"mod"}]},
+      {n:24, full:"그 전문가는 아침에 그 가격을 설명한다", chunks:[
+        {en:"The expert", ko:"그 전문가는", t:"subj"},
+        {en:"accounts for", ko:"설명한다", t:"verb"},
+        {en:"the price", ko:"그 가격을", t:"obj"},
+        {en:"in the morning", ko:"아침에", t:"mod"}]},
+      {n:25, full:"그 운동선수는 아침에 변화를 바란다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"hopes for", ko:"바란다", t:"verb"},
+        {en:"a change", ko:"변화를", t:"obj"},
+        {en:"in the morning", ko:"아침에", t:"mod"}]},
+      {n:26, full:"그 손님은 밤에 그 정원에 들어간다", chunks:[
+        {en:"The customer", ko:"그 손님은", t:"subj"},
+        {en:"enters", ko:"들어간다", t:"verb"},
+        {en:"the garden", ko:"그 정원에", t:"obj"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:27, full:"그 의사는 학교에서 그 문제를 설명한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"accounts for", ko:"설명한다", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"},
+        {en:"at school", ko:"학교에서", t:"mod"}]},
+      {n:28, full:"그 손님은 시장에서 그 결과를 기다린다", chunks:[
+        {en:"The customer", ko:"그 손님은", t:"subj"},
+        {en:"awaits", ko:"기다린다", t:"verb"},
+        {en:"the result", ko:"그 결과를", t:"obj"},
+        {en:"at the market", ko:"시장에서", t:"mod"}]},
+      {n:29, full:"그 시민은 밤에 그 학교에 다닌다", chunks:[
+        {en:"The citizen", ko:"그 시민은", t:"subj"},
+        {en:"attends", ko:"다닌다", t:"verb"},
+        {en:"the school", ko:"그 학교에", t:"obj"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:30, full:"그 의사는 학교에서 그 운동선수에게 공감한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"sympathizes with", ko:"공감한다", t:"verb"},
+        {en:"the athlete", ko:"그 운동선수에게", t:"obj"},
+        {en:"at school", ko:"학교에서", t:"mod"}]},
+      {n:31, full:"그 비평가는 방에서 그 역사를 논의한다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"discusses", ko:"논의한다", t:"verb"},
+        {en:"the history", ko:"그 역사를", t:"obj"},
+        {en:"in the room", ko:"방에서", t:"mod"}]},
+      {n:32, full:"그 전문가는 길 위에서 그 경기를 방해한다", chunks:[
+        {en:"The expert", ko:"그 전문가는", t:"subj"},
+        {en:"interferes with", ko:"방해한다", t:"verb"},
+        {en:"the game", ko:"그 경기를", t:"obj"},
+        {en:"on the road", ko:"길 위에서", t:"mod"}]},
+      {n:33, full:"시민들은 그 깊은 강 근처의 숲에 산다", chunks:[
+        {en:"Citizens", ko:"시민들은", t:"subj"},
+        {en:"inhabit", ko:"산다", t:"verb"},
+        {en:"the forest", ko:"그 숲에", t:"obj"},
+        {en:"near the deep river", ko:"그 깊은 강 근처에", t:"mod"}]},
+      {n:34, full:"그 손님은 시장에서 그 가격에 반대한다", chunks:[
+        {en:"The customer", ko:"그 손님은", t:"subj"},
+        {en:"objects to", ko:"반대한다", t:"verb"},
+        {en:"the price", ko:"그 가격에", t:"obj"},
+        {en:"at the market", ko:"시장에서", t:"mod"}]},
+      {n:35, full:"그 시민은 길 위에서 그 계획에 반대한다", chunks:[
+        {en:"The citizen", ko:"그 시민은", t:"subj"},
+        {en:"objects to", ko:"반대한다", t:"verb"},
+        {en:"the plan", ko:"그 계획에", t:"obj"},
+        {en:"on the road", ko:"길 위에서", t:"mod"}]},
+      {n:36, full:"그 손님은 밤에 그 시장에 도달한다", chunks:[
+        {en:"The guest", ko:"그 손님은", t:"subj"},
+        {en:"reaches", ko:"도달한다", t:"verb"},
+        {en:"the market", ko:"그 시장에", t:"obj"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:37, full:"그 의사는 거리에서 그 천재에게 대답한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"answers", ko:"대답한다", t:"verb"},
+        {en:"the genius", ko:"그 천재에게", t:"obj"},
+        {en:"in the street", ko:"거리에서", t:"mod"}]},
+      {n:38, full:"그 전문가는 학교에서 그 문제를 고려한다", chunks:[
+        {en:"The expert", ko:"그 전문가는", t:"subj"},
+        {en:"considers", ko:"고려한다", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"},
+        {en:"at school", ko:"학교에서", t:"mod"}]},
+      {n:39, full:"그 환자는 병원에서 그 편지에 답한다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"answers", ko:"답한다", t:"verb"},
+        {en:"the letter", ko:"그 편지에", t:"obj"},
+        {en:"at the hospital", ko:"병원에서", t:"mod"}]},
+      {n:40, full:"그 손님은 길 위에서 그 바쁜 남자에게 다가간다", chunks:[
+        {en:"The guest", ko:"그 손님은", t:"subj"},
+        {en:"approaches", ko:"다가간다", t:"verb"},
+        {en:"the busy man", ko:"그 바쁜 남자에게", t:"obj"},
+        {en:"on the road", ko:"길 위에서", t:"mod"}]}
     ]},
     { id:"4형식(1)", items:[
       {n:1, full:"그 시민은 그 아이에게 코트를 찾아준다", chunks:[
@@ -1383,206 +1582,7 @@ const DATA = {
         {en:"are moved", ko:"옮겨진다", t:"verb"},
         {en:"by the patient", ko:"그 환자에 의해", t:"mod"}]}
     ]},
-    { id:"3형식(2)", items:[
-      {n:1, full:"그 비평가는 밤에 그 소녀와 결혼한다", chunks:[
-        {en:"The critic", ko:"그 비평가는", t:"subj"},
-        {en:"marries", ko:"결혼한다", t:"verb"},
-        {en:"the girl", ko:"그 소녀와", t:"obj"},
-        {en:"at night", ko:"밤에", t:"mod"}]},
-      {n:2, full:"그 비평가는 그 강당에서 그 군중에게 연설한다", chunks:[
-        {en:"The critic", ko:"그 비평가는", t:"subj"},
-        {en:"addresses", ko:"연설한다", t:"verb"},
-        {en:"the crowd", ko:"그 군중에게", t:"obj"},
-        {en:"in the hall", ko:"그 강당에서", t:"mod"}]},
-      {n:3, full:"그 전문가는 시장에서 그 차분한 목격자에게 다가간다", chunks:[
-        {en:"The expert", ko:"그 전문가는", t:"subj"},
-        {en:"approaches", ko:"다가간다", t:"verb"},
-        {en:"the calm witness", ko:"그 차분한 목격자에게", t:"obj"},
-        {en:"at the market", ko:"시장에서", t:"mod"}]},
-      {n:4, full:"그 비평가는 시장에서 그 위험을 가중시킨다", chunks:[
-        {en:"The critic", ko:"그 비평가는", t:"subj"},
-        {en:"adds to", ko:"가중시킨다", t:"verb"},
-        {en:"the danger", ko:"그 위험을", t:"obj"},
-        {en:"at the market", ko:"시장에서", t:"mod"}]},
-      {n:5, full:"그 손님은 아침에 그 비평가를 기다린다", chunks:[
-        {en:"The guest", ko:"그 손님은", t:"subj"},
-        {en:"awaits", ko:"기다린다", t:"verb"},
-        {en:"the critic", ko:"그 비평가를", t:"obj"},
-        {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:6, full:"그 시민은 일찍 그 집에 들어간다", chunks:[
-        {en:"The citizen", ko:"그 시민은", t:"subj"},
-        {en:"enters", ko:"들어간다", t:"verb"},
-        {en:"the house", ko:"그 집에", t:"obj"},
-        {en:"early", ko:"일찍", t:"mod"}]},
-      {n:7, full:"개척자들은 그 젖은 길 근처의 들판에 산다", chunks:[
-        {en:"Pioneers", ko:"개척자들은", t:"subj"},
-        {en:"inhabit", ko:"산다", t:"verb"},
-        {en:"the field", ko:"그 들판에", t:"obj"},
-        {en:"near the wet road", ko:"그 젖은 길 근처에", t:"mod"}]},
-      {n:8, full:"그 의사는 그 그림 속 키 큰 영웅을 닮았다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"resembles", ko:"닮았다", t:"verb"},
-        {en:"the tall hero", ko:"그 키 큰 영웅을", t:"obj"},
-        {en:"in the picture", ko:"그 그림 속에서", t:"mod"}]},
-      {n:9, full:"그 운동선수는 영원히 그 전설을 따른다", chunks:[
-        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
-        {en:"obeys", ko:"따른다", t:"verb"},
-        {en:"the legend", ko:"그 전설을", t:"obj"},
-        {en:"forever", ko:"영원히", t:"mod"}]},
-      {n:10, full:"그 의사는 사무실에서 그 이상한 생각을 논의한다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"discusses", ko:"논의한다", t:"verb"},
-        {en:"the strange idea", ko:"그 이상한 생각을", t:"obj"},
-        {en:"in the office", ko:"사무실에서", t:"mod"}]},
-      {n:11, full:"그 의사는 학교에서 그 진실을 다룬다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"addresses", ko:"다룬다", t:"verb"},
-        {en:"the truth", ko:"그 진실을", t:"obj"},
-        {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:12, full:"그 손님은 거리에서 그 환자에게 공감한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"sympathizes with", ko:"공감한다", t:"verb"},
-        {en:"the patient", ko:"그 환자에게", t:"obj"},
-        {en:"in the street", ko:"거리에서", t:"mod"}]},
-      {n:13, full:"그 손님은 그 도시에서 그 문제를 가중시킨다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"adds to", ko:"가중시킨다", t:"verb"},
-        {en:"the problem", ko:"그 문제를", t:"obj"},
-        {en:"in the city", ko:"그 도시에서", t:"mod"}]},
-      {n:14, full:"그 운동선수는 길 위에서 그 전문가를 기다린다", chunks:[
-        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
-        {en:"waits for", ko:"기다린다", t:"verb"},
-        {en:"the expert", ko:"그 전문가를", t:"obj"},
-        {en:"on the road", ko:"길 위에서", t:"mod"}]},
-      {n:15, full:"그 운동선수는 아침에 그 학교에 다닌다", chunks:[
-        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
-        {en:"attends", ko:"다닌다", t:"verb"},
-        {en:"the school", ko:"그 학교에", t:"obj"},
-        {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:16, full:"그 비평가는 그 진실을 바란다", chunks:[
-        {en:"The critic", ko:"그 비평가는", t:"subj"},
-        {en:"hopes for", ko:"바란다", t:"verb"},
-        {en:"the truth", ko:"그 진실을", t:"obj"}]},
-      {n:17, full:"그 군중은 시장에서 그 손님을 기다린다", chunks:[
-        {en:"The crowd", ko:"그 군중은", t:"subj"},
-        {en:"waits for", ko:"기다린다", t:"verb"},
-        {en:"the guest", ko:"그 손님을", t:"obj"},
-        {en:"at the market", ko:"시장에서", t:"mod"}]},
-      {n:18, full:"그 소녀는 창가에서 어머니를 닮았다", chunks:[
-        {en:"The girl", ko:"그 소녀는", t:"subj"},
-        {en:"resembles", ko:"닮았다", t:"verb"},
-        {en:"the mother", ko:"어머니를", t:"obj"},
-        {en:"at the window", ko:"창가에서", t:"mod"}]},
-      {n:19, full:"그 의사는 학교에서 그 계획을 방해한다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"interferes with", ko:"방해한다", t:"verb"},
-        {en:"the plan", ko:"그 계획을", t:"obj"},
-        {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:20, full:"그 비평가는 길 위에서 그 열린 상자를 고려한다", chunks:[
-        {en:"The critic", ko:"그 비평가는", t:"subj"},
-        {en:"considers", ko:"고려한다", t:"verb"},
-        {en:"the open box", ko:"그 열린 상자를", t:"obj"},
-        {en:"on the road", ko:"길 위에서", t:"mod"}]},
-      {n:21, full:"그 의사는 그 도시에서 그 여자와 결혼한다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"marries", ko:"결혼한다", t:"verb"},
-        {en:"the woman", ko:"그 여자와", t:"obj"},
-        {en:"in the city", ko:"그 도시에서", t:"mod"}]},
-      {n:22, full:"그 환자는 그 회사를 따른다", chunks:[
-        {en:"The patient", ko:"그 환자는", t:"subj"},
-        {en:"obeys", ko:"따른다", t:"verb"},
-        {en:"the company", ko:"그 회사를", t:"obj"}]},
-      {n:23, full:"그 운동선수는 아침에 그 다리에 도달한다", chunks:[
-        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
-        {en:"reaches", ko:"도달한다", t:"verb"},
-        {en:"the bridge", ko:"그 다리에", t:"obj"},
-        {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:24, full:"그 전문가는 아침에 그 가격을 설명한다", chunks:[
-        {en:"The expert", ko:"그 전문가는", t:"subj"},
-        {en:"accounts for", ko:"설명한다", t:"verb"},
-        {en:"the price", ko:"그 가격을", t:"obj"},
-        {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:25, full:"그 운동선수는 아침에 변화를 바란다", chunks:[
-        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
-        {en:"hopes for", ko:"바란다", t:"verb"},
-        {en:"a change", ko:"변화를", t:"obj"},
-        {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:26, full:"그 손님은 밤에 그 정원에 들어간다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"enters", ko:"들어간다", t:"verb"},
-        {en:"the garden", ko:"그 정원에", t:"obj"},
-        {en:"at night", ko:"밤에", t:"mod"}]},
-      {n:27, full:"그 의사는 학교에서 그 문제를 설명한다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"accounts for", ko:"설명한다", t:"verb"},
-        {en:"the problem", ko:"그 문제를", t:"obj"},
-        {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:28, full:"그 손님은 시장에서 그 결과를 기다린다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"awaits", ko:"기다린다", t:"verb"},
-        {en:"the result", ko:"그 결과를", t:"obj"},
-        {en:"at the market", ko:"시장에서", t:"mod"}]},
-      {n:29, full:"그 시민은 밤에 그 학교에 다닌다", chunks:[
-        {en:"The citizen", ko:"그 시민은", t:"subj"},
-        {en:"attends", ko:"다닌다", t:"verb"},
-        {en:"the school", ko:"그 학교에", t:"obj"},
-        {en:"at night", ko:"밤에", t:"mod"}]},
-      {n:30, full:"그 의사는 학교에서 그 운동선수에게 공감한다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"sympathizes with", ko:"공감한다", t:"verb"},
-        {en:"the athlete", ko:"그 운동선수에게", t:"obj"},
-        {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:31, full:"그 비평가는 방에서 그 역사를 논의한다", chunks:[
-        {en:"The critic", ko:"그 비평가는", t:"subj"},
-        {en:"discusses", ko:"논의한다", t:"verb"},
-        {en:"the history", ko:"그 역사를", t:"obj"},
-        {en:"in the room", ko:"방에서", t:"mod"}]},
-      {n:32, full:"그 전문가는 길 위에서 그 경기를 방해한다", chunks:[
-        {en:"The expert", ko:"그 전문가는", t:"subj"},
-        {en:"interferes with", ko:"방해한다", t:"verb"},
-        {en:"the game", ko:"그 경기를", t:"obj"},
-        {en:"on the road", ko:"길 위에서", t:"mod"}]},
-      {n:33, full:"시민들은 그 깊은 강 근처의 숲에 산다", chunks:[
-        {en:"Citizens", ko:"시민들은", t:"subj"},
-        {en:"inhabit", ko:"산다", t:"verb"},
-        {en:"the forest", ko:"그 숲에", t:"obj"},
-        {en:"near the deep river", ko:"그 깊은 강 근처에", t:"mod"}]},
-      {n:34, full:"그 손님은 시장에서 그 가격에 반대한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"objects to", ko:"반대한다", t:"verb"},
-        {en:"the price", ko:"그 가격에", t:"obj"},
-        {en:"at the market", ko:"시장에서", t:"mod"}]},
-      {n:35, full:"그 시민은 길 위에서 그 계획에 반대한다", chunks:[
-        {en:"The citizen", ko:"그 시민은", t:"subj"},
-        {en:"objects to", ko:"반대한다", t:"verb"},
-        {en:"the plan", ko:"그 계획에", t:"obj"},
-        {en:"on the road", ko:"길 위에서", t:"mod"}]},
-      {n:36, full:"그 손님은 밤에 그 시장에 도달한다", chunks:[
-        {en:"The guest", ko:"그 손님은", t:"subj"},
-        {en:"reaches", ko:"도달한다", t:"verb"},
-        {en:"the market", ko:"그 시장에", t:"obj"},
-        {en:"at night", ko:"밤에", t:"mod"}]},
-      {n:37, full:"그 의사는 거리에서 그 천재에게 대답한다", chunks:[
-        {en:"The doctor", ko:"그 의사는", t:"subj"},
-        {en:"answers", ko:"대답한다", t:"verb"},
-        {en:"the genius", ko:"그 천재에게", t:"obj"},
-        {en:"in the street", ko:"거리에서", t:"mod"}]},
-      {n:38, full:"그 전문가는 학교에서 그 문제를 고려한다", chunks:[
-        {en:"The expert", ko:"그 전문가는", t:"subj"},
-        {en:"considers", ko:"고려한다", t:"verb"},
-        {en:"the problem", ko:"그 문제를", t:"obj"},
-        {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:39, full:"그 환자는 병원에서 그 편지에 답한다", chunks:[
-        {en:"The patient", ko:"그 환자는", t:"subj"},
-        {en:"answers", ko:"답한다", t:"verb"},
-        {en:"the letter", ko:"그 편지에", t:"obj"},
-        {en:"at the hospital", ko:"병원에서", t:"mod"}]},
-      {n:40, full:"그 손님은 길 위에서 그 바쁜 남자에게 다가간다", chunks:[
-        {en:"The guest", ko:"그 손님은", t:"subj"},
-        {en:"approaches", ko:"다가간다", t:"verb"},
-        {en:"the busy man", ko:"그 바쁜 남자에게", t:"obj"},
-        {en:"on the road", ko:"길 위에서", t:"mod"}]}
-    ]},
+    
     { id:"4형식수동태", items:[
       {n:1, full:"호의가 그 아이에 의해 그 의사에게 베풀어진다", chunks:[
         {en:"A favor", ko:"호의가", t:"subj"},
@@ -2566,6 +2566,29 @@ const DATA = {
       {en:"office", ko:["사무실"], pos:"n"},
       {en:"field", ko:["들판","분야"], pos:"n"},
       {en:"house", ko:["집"], pos:"n"}
+    ]},{ id:"3형식(2)", items:[
+      {en:"enter", ko:["들어가다"], pos:"v"},
+      {en:"address", ko:["다루다","주소"], pos:"v"},
+      {en:"add", ko:["더하다"], pos:"v"},
+      {en:"hope", ko:["바라다"], pos:"v"},
+      {en:"object", ko:["반대하다"], pos:"v"},
+      {en:"wait", ko:["기다리다"], pos:"v"},
+      {en:"change", ko:["바꾸다","변화"], pos:"n"},
+      {en:"account", ko:["계좌","설명"], pos:"v"},
+      {en:"answer", ko:["대답하다","답"], pos:"v"},
+      {en:"approach", ko:["다가가다"], pos:"v"},
+      {en:"attend", ko:["참석하다"], pos:"v"},
+      {en:"await", ko:["기다리다"], pos:"v"},
+      {en:"consider", ko:["~라고 여기다"], pos:"v"},
+      {en:"discuss", ko:["논의하다"], pos:"v"},
+      {en:"inhabit", ko:["거주하다"], pos:"v"},
+      {en:"interfere", ko:["간섭하다"], pos:"v"},
+      {en:"marry", ko:["결혼하다"], pos:"v"},
+      {en:"obey", ko:["복종하다"], pos:"v"},
+      {en:"reach", ko:["도달하다"], pos:"v"},
+      {en:"resemble", ko:["닮다"], pos:"v"},
+      {en:"sympathize", ko:["공감하다"], pos:"v"},
+      {en:"result", ko:["결과"], pos:"n"}
     ]},
     { id:"4형식(1)", items:[
       {en:"buy", ko:["사다"], pos:"v"},
@@ -2636,30 +2659,7 @@ const DATA = {
       {en:"wear-wore-worn", ko:["입다"], pos:"v"},
       {en:"catch-caught-caught", ko:["잡다"], pos:"v"}
     ]},
-    { id:"3형식(2)", items:[
-      {en:"enter", ko:["들어가다"], pos:"v"},
-      {en:"address", ko:["다루다","주소"], pos:"v"},
-      {en:"add", ko:["더하다"], pos:"v"},
-      {en:"hope", ko:["바라다"], pos:"v"},
-      {en:"object", ko:["반대하다"], pos:"v"},
-      {en:"wait", ko:["기다리다"], pos:"v"},
-      {en:"change", ko:["바꾸다","변화"], pos:"n"},
-      {en:"account", ko:["계좌","설명"], pos:"v"},
-      {en:"answer", ko:["대답하다","답"], pos:"v"},
-      {en:"approach", ko:["다가가다"], pos:"v"},
-      {en:"attend", ko:["참석하다"], pos:"v"},
-      {en:"await", ko:["기다리다"], pos:"v"},
-      {en:"consider", ko:["~라고 여기다"], pos:"v"},
-      {en:"discuss", ko:["논의하다"], pos:"v"},
-      {en:"inhabit", ko:["거주하다"], pos:"v"},
-      {en:"interfere", ko:["간섭하다"], pos:"v"},
-      {en:"marry", ko:["결혼하다"], pos:"v"},
-      {en:"obey", ko:["복종하다"], pos:"v"},
-      {en:"reach", ko:["도달하다"], pos:"v"},
-      {en:"resemble", ko:["닮다"], pos:"v"},
-      {en:"sympathize", ko:["공감하다"], pos:"v"},
-      {en:"result", ko:["결과"], pos:"n"}
-    ]},
+    
     { id:"4형식수동태", items:[
       {en:"pass", ko:["건네다","지나가다"], pos:"v"},
       {en:"sing-sang-sung", ko:["노래하다"], pos:"v"},
@@ -2787,5 +2787,57 @@ const DATA = {
       {en:"next", ko:["다음의"], pos:"adj"},
       {en:"short", ko:["짧은"], pos:"adj"}
     ]},
+  ],
+  memory:[
+    { id:"3형식(2)", title:"헷갈리는 자·타동사", items:[
+      {v:"discuss",    ipa:"/dɪˈskʌs/",     prep:null,   ko:"~에 대해 논의하다"},
+      {v:"reach",      ipa:"/riːtʃ/",       prep:null,   ko:"~에 도착하다, ~에 이르다"},
+      {v:"enter",      ipa:"/ˈentər/",      prep:null,   ko:"~에 들어가다"},
+      {v:"resemble",   ipa:"/rɪˈzembl/",    prep:null,   ko:"~와 닮다"},
+      {v:"approach",   ipa:"/əˈproʊtʃ/",    prep:null,   ko:"~에 다가가다"},
+      {v:"address",    ipa:"/əˈdres/",      prep:null,   ko:"~에게 연설하다 (~을 다루다)"},
+      {v:"answer",     ipa:"/ˈænsər/",      prep:null,   ko:"~에 대답하다"},
+      {v:"attend",     ipa:"/əˈtend/",      prep:null,   ko:"~에 참석하다"},
+      {v:"await",      ipa:"/əˈweɪt/",      prep:null,   ko:"~을 기다리다 (wait for와 비교)"},
+      {v:"consider",   ipa:"/kənˈsɪdər/",   prep:null,   ko:"~에 대해 고려하다"},
+      {v:"inhabit",    ipa:"/ɪnˈhæbɪt/",    prep:null,   ko:"~에 살다, ~에 서식하다"},
+      {v:"marry",      ipa:"/ˈmæri/",       prep:null,   ko:"~와 결혼하다"},
+      {v:"obey",       ipa:"/oʊˈbeɪ/",      prep:null,   ko:"~에 복종하다, ~에 따르다"},
+      {v:"account",    ipa:"/əˈkaʊnt/",     prep:"for",  ko:"~을 설명하다, ~의 원인이 되다"},
+      {v:"add",        ipa:"/æd/",          prep:"to",   ko:"~을 증가시키다"},
+      {v:"hope",       ipa:"/hoʊp/",        prep:"for",  ko:"~을 바라다, ~을 희망하다"},
+      {v:"interfere",  ipa:"/ˌɪntərˈfɪr/",  prep:"with", ko:"~을 방해하다"},
+      {v:"object",     ipa:"/əbˈdʒekt/",    prep:"to",   ko:"~를 반대하다"},
+      {v:"sympathize", ipa:"/ˈsɪmpəθaɪz/",  prep:"with", ko:"~을 동정하다 (~에 공감하다)"},
+      {v:"wait",       ipa:"/weɪt/",        prep:"for",  ko:"~을 기다리다 (await와 비교)"}
+    ]},
+    { id:"4형식(1)", title:"수여동사 전치사 그룹", type:"group", items:[
+      {v:"give",     g:"to",  ko:"주다"},
+      {v:"hand",     g:"to",  ko:"건네주다"},
+      {v:"lend",     g:"to",  ko:"빌려주다"},
+      {v:"promise",  g:"to",  ko:"약속하다"},
+      {v:"sell",     g:"to",  ko:"팔다"},
+      {v:"send",     g:"to",  ko:"보내다"},
+      {v:"show",     g:"to",  ko:"보여주다"},
+      {v:"teach",    g:"to",  ko:"가르쳐주다"},
+      {v:"tell",     g:"to",  ko:"말해주다"},
+      {v:"throw",    g:"to",  ko:"던져주다"},
+      {v:"write",    g:"to",  ko:"써주다, 편지를 쓰다"},
+      {v:"buy",      g:"for", ko:"사주다"},
+      {v:"make",     g:"for", ko:"만들어주다"},
+      {v:"get",      g:"for", ko:"구해주다"},
+      {v:"find",     g:"for", ko:"찾아주다"},
+      {v:"cook",     g:"for", ko:"요리해주다"},
+      {v:"call",     g:"for", ko:"불러주다"},
+      {v:"choose",   g:"for", ko:"골라주다"},
+      {v:"do",       g:"for", ko:"해주다"},
+      {v:"order",    g:"for", ko:"주문해주다"},
+      {v:"prepare",  g:"for", ko:"준비해주다"},
+      {v:"spare",    g:"for", ko:"시간을 내주다"},
+      {v:"ask",      g:"of",  ko:"묻다, 요청하다"},
+      {v:"demand",   g:"of",  ko:"요구하다",           x:"demand A from B"},
+      {v:"request",  g:"of",  ko:"요청하다",           x:"request A from B"},
+      {v:"require",  g:"of",  ko:"요구하다, 필요로 하다", x:"require A"}
+    ]}
   ]
 };
