@@ -2408,6 +2408,1325 @@ const DATA = {
         {en:"the child", ko:"그 아이에게", t:"obj"},
         {en:"to return the book before the class", ko:"그 수업 전에 그 책을 반납하라고", t:"comp"}]}
     ]},
+    { id:"5형식수동태", items:[
+      {n:1, full:"그 회원은 운전하라고 요청받는다", chunks:[
+        {en:"The member", ko:"그 회원은", t:"subj"},
+        {en:"is asked", ko:"요청받는다", t:"verb"},
+        {en:"to drive", ko:"운전하라고", t:"comp"}]},
+      {n:2, full:"그 연구는 어렵다고 여겨진다", chunks:[
+        {en:"The research", ko:"그 연구는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"hard", ko:"어렵다고", t:"comp"}]},
+      {n:3, full:"그 방식은 이상하다고 여겨진다", chunks:[
+        {en:"The style", ko:"그 방식은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"strange", ko:"이상하다고", t:"comp"}]},
+      {n:4, full:"그 물은 따뜻하게 유지된다", chunks:[
+        {en:"The water", ko:"그 물은", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:5, full:"그 식사는 맛있다고 여겨진다", chunks:[
+        {en:"The meal", ko:"그 식사는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"delicious", ko:"맛있다고", t:"comp"}]},
+      {n:6, full:"그 화학물질은 위험이라고 불린다", chunks:[
+        {en:"The chemical", ko:"그 화학물질은", t:"subj"},
+        {en:"is called", ko:"불린다", t:"verb"},
+        {en:"a danger", ko:"위험이라고", t:"comp"}]},
+      {n:7, full:"그 여왕은 지도자로 뽑힌다", chunks:[
+        {en:"The queen", ko:"그 여왕은", t:"subj"},
+        {en:"is elected", ko:"뽑힌다", t:"verb"},
+        {en:"leader", ko:"지도자로", t:"comp"}]},
+      {n:8, full:"그 방식은 새롭다고 여겨진다", chunks:[
+        {en:"The style", ko:"그 방식은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"new", ko:"새롭다고", t:"comp"}]},
+      {n:9, full:"그 화학물질은 나쁘다고 여겨진다", chunks:[
+        {en:"The chemical", ko:"그 화학물질은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"bad", ko:"나쁘다고", t:"comp"}]},
+      {n:10, full:"그 환자는 은퇴하라고 요청받는다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"is asked", ko:"요청받는다", t:"verb"},
+        {en:"to retire", ko:"은퇴하라고", t:"comp"}]},
+      {n:11, full:"그 수프는 맛있다고 여겨진다", chunks:[
+        {en:"The soup", ko:"그 수프는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"delicious", ko:"맛있다고", t:"comp"}]},
+      {n:12, full:"그 관객은 웃도록 들린다", chunks:[
+        {en:"The audience", ko:"그 관객은", t:"subj"},
+        {en:"is heard", ko:"들린다", t:"verb"},
+        {en:"to laugh", ko:"웃도록", t:"comp"}]},
+      {n:13, full:"그 형태는 새롭다고 여겨진다", chunks:[
+        {en:"The form", ko:"그 형태는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"new", ko:"새롭다고", t:"comp"}]},
+      {n:14, full:"소금은 나쁘다고 여겨진다", chunks:[
+        {en:"Salt", ko:"소금은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"bad", ko:"나쁘다고", t:"comp"}]},
+      {n:15, full:"그 아이는 서도록 도움받는다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"is helped", ko:"도움받는다", t:"verb"},
+        {en:"to stand", ko:"서도록", t:"comp"}]},
+      {n:16, full:"그 얼음은 위험이라고 불린다", chunks:[
+        {en:"The ice", ko:"그 얼음은", t:"subj"},
+        {en:"is called", ko:"불린다", t:"verb"},
+        {en:"a danger", ko:"위험이라고", t:"comp"}]},
+      {n:17, full:"그 무리는 동의하라고 하게 된다", chunks:[
+        {en:"The group", ko:"그 무리는", t:"subj"},
+        {en:"is made", ko:"하게 된다", t:"verb"},
+        {en:"to agree", ko:"동의하라고", t:"comp"}]},
+      {n:18, full:"그 군중은 반응하는 것이 보인다", chunks:[
+        {en:"The crowd", ko:"그 군중은", t:"subj"},
+        {en:"is seen", ko:"보인다", t:"verb"},
+        {en:"to react", ko:"반응하는 것이", t:"comp"}]},
+      {n:19, full:"그 여왕은 대답하라고 권유받는다", chunks:[
+        {en:"The queen", ko:"그 여왕은", t:"subj"},
+        {en:"is advised", ko:"권유받는다", t:"verb"},
+        {en:"to respond", ko:"대답하라고", t:"comp"}]},
+      {n:20, full:"그 환자는 그 자리에 앉으라고 요청받는다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"is asked", ko:"요청받는다", t:"verb"},
+        {en:"to take the seat", ko:"그 자리에 앉으라고", t:"comp"}]},
+      {n:21, full:"그 아이는 그 책을 가져가라고 듣는다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"is told", ko:"듣는다", t:"verb"},
+        {en:"to take the book", ko:"그 책을 가져가라고", t:"comp"}]},
+      {n:22, full:"그 경찰은 떠나라고 듣는다", chunks:[
+        {en:"The police", ko:"그 경찰은", t:"subj"},
+        {en:"are told", ko:"듣는다", t:"verb"},
+        {en:"to leave", ko:"떠나라고", t:"comp"}]},
+      {n:23, full:"그 영화는 성공이라고 불린다", chunks:[
+        {en:"The movie", ko:"그 영화는", t:"subj"},
+        {en:"is called", ko:"불린다", t:"verb"},
+        {en:"a success", ko:"성공이라고", t:"comp"}]},
+      {n:24, full:"그 꿈은 달콤하다고 여겨진다", chunks:[
+        {en:"The dream", ko:"그 꿈은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"sweet", ko:"달콤하다고", t:"comp"}]},
+      {n:25, full:"그 계획은 어렵다고 여겨진다", chunks:[
+        {en:"The project", ko:"그 계획은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"hard", ko:"어렵다고", t:"comp"}]},
+      {n:26, full:"그 군중은 당황하도록 보인다", chunks:[
+        {en:"The crowd", ko:"그 군중은", t:"subj"},
+        {en:"is seen", ko:"보인다", t:"verb"},
+        {en:"to panic", ko:"당황하도록", t:"comp"}]},
+      {n:27, full:"그 별은 반응하는 것이 보인다", chunks:[
+        {en:"The star", ko:"그 별은", t:"subj"},
+        {en:"is seen", ko:"보인다", t:"verb"},
+        {en:"to react", ko:"반응하는 것이", t:"comp"}]},
+      {n:28, full:"자연은 깨끗하게 유지된다", chunks:[
+        {en:"Nature", ko:"자연은", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"clean", ko:"깨끗하게", t:"comp"}]},
+      {n:29, full:"그 비는 가볍다고 여겨진다", chunks:[
+        {en:"The rain", ko:"그 비는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"light", ko:"가볍다고", t:"comp"}]},
+      {n:30, full:"그 수는 높다고 여겨진다", chunks:[
+        {en:"The number", ko:"그 수는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"high", ko:"높다고", t:"comp"}]},
+      {n:31, full:"그 바다는 잔잔하다고 여겨진다", chunks:[
+        {en:"The sea", ko:"그 바다는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"calm", ko:"잔잔하다고", t:"comp"}]},
+      {n:32, full:"그 동물은 달리는 것을 관찰된다", chunks:[
+        {en:"The animal", ko:"그 동물은", t:"subj"},
+        {en:"is watched", ko:"관찰된다", t:"verb"},
+        {en:"running", ko:"달리는 것을", t:"comp"}]},
+      {n:33, full:"그 군중은 당황하도록 하게 된다", chunks:[
+        {en:"The crowd", ko:"그 군중은", t:"subj"},
+        {en:"is made", ko:"하게 된다", t:"verb"},
+        {en:"to panic", ko:"당황하도록", t:"comp"}]},
+      {n:34, full:"그 얼음은 차갑게 유지된다", chunks:[
+        {en:"The ice", ko:"그 얼음은", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"cold", ko:"차갑게", t:"comp"}]},
+      {n:35, full:"그 날씨는 나쁘다고 여겨진다", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"bad", ko:"나쁘다고", t:"comp"}]},
+      {n:36, full:"그 아기는 웃도록 하게 된다", chunks:[
+        {en:"The baby", ko:"그 아기는", t:"subj"},
+        {en:"is made", ko:"하게 된다", t:"verb"},
+        {en:"to laugh", ko:"웃도록", t:"comp"}]},
+      {n:37, full:"그 풀은 부드럽다고 여겨진다", chunks:[
+        {en:"The grass", ko:"그 풀은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"soft", ko:"부드럽다고", t:"comp"}]},
+      {n:38, full:"자연은 잔잔하다고 여겨진다", chunks:[
+        {en:"Nature", ko:"자연은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"calm", ko:"잔잔하다고", t:"comp"}]},
+      {n:39, full:"그 나무는 어렵다고 여겨진다", chunks:[
+        {en:"The wood", ko:"그 나무는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"hard", ko:"어렵다고", t:"comp"}]},
+      {n:40, full:"그 바다는 위험이라고 불린다", chunks:[
+        {en:"The sea", ko:"그 바다는", t:"subj"},
+        {en:"is called", ko:"불린다", t:"verb"},
+        {en:"a danger", ko:"위험이라고", t:"comp"}]},
+      {n:41, full:"그 날씨는 따뜻하게 여겨진다", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:42, full:"그 환자는 돌아오라고 명령받는다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"is ordered", ko:"명령받는다", t:"verb"},
+        {en:"to return", ko:"돌아오라고", t:"comp"}]},
+      {n:43, full:"그 모델은 스타라고 여겨진다", chunks:[
+        {en:"The model", ko:"그 모델은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"a star", ko:"스타라고", t:"comp"}]},
+      {n:44, full:"그 장미는 마른 상태로 유지된다", chunks:[
+        {en:"The rose", ko:"그 장미는", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"dry", ko:"마른 상태로", t:"comp"}]},
+      {n:45, full:"그 장미는 짙다고 여겨진다", chunks:[
+        {en:"The rose", ko:"그 장미는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"dark", ko:"짙다고", t:"comp"}]},
+      {n:46, full:"그 팀은 시작하라고 듣는다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"is told", ko:"듣는다", t:"verb"},
+        {en:"to start", ko:"시작하라고", t:"comp"}]},
+      {n:47, full:"그 모델은 돌아오라고 초대받는다", chunks:[
+        {en:"The model", ko:"그 모델은", t:"subj"},
+        {en:"is invited", ko:"초대받는다", t:"verb"},
+        {en:"to return", ko:"돌아오라고", t:"comp"}]},
+      {n:48, full:"그 식사는 가볍다고 여겨진다", chunks:[
+        {en:"The meal", ko:"그 식사는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"light", ko:"가볍다고", t:"comp"}]},
+      {n:49, full:"그 손님은 운전하라고 듣는다", chunks:[
+        {en:"The guest", ko:"그 손님은", t:"subj"},
+        {en:"is told", ko:"듣는다", t:"verb"},
+        {en:"to drive", ko:"운전하라고", t:"comp"}]},
+      {n:50, full:"그 형태는 분명하다고 여겨진다", chunks:[
+        {en:"The form", ko:"그 형태는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"clear", ko:"분명하다고", t:"comp"}]},
+      {n:51, full:"그 연구는 익숙하다고 여겨진다", chunks:[
+        {en:"The research", ko:"그 연구는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"familiar", ko:"익숙하다고", t:"comp"}]},
+      {n:52, full:"그 아이는 잊으라고 도움받는다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"is helped", ko:"도움받는다", t:"verb"},
+        {en:"to forget", ko:"잊으라고", t:"comp"}]},
+      {n:53, full:"그 회원은 지도자로 임명된다", chunks:[
+        {en:"The member", ko:"그 회원은", t:"subj"},
+        {en:"is named", ko:"임명된다", t:"verb"},
+        {en:"leader", ko:"지도자로", t:"comp"}]},
+      {n:54, full:"그 나무는 마른 상태로 유지된다", chunks:[
+        {en:"The wood", ko:"그 나무는", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"dry", ko:"마른 상태로", t:"comp"}]},
+      {n:55, full:"그 미소는 따뜻하게 여겨진다", chunks:[
+        {en:"The smile", ko:"그 미소는", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:56, full:"그 가격은 높다고 여겨진다", chunks:[
+        {en:"The price", ko:"그 가격은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"high", ko:"높다고", t:"comp"}]},
+      {n:57, full:"그 환자는 잊으라고 하게 된다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"is made", ko:"하게 된다", t:"verb"},
+        {en:"to forget", ko:"잊으라고", t:"comp"}]},
+      {n:58, full:"그녀의 미소는 밝다고 여겨진다", chunks:[
+        {en:"Her smile", ko:"그녀의 미소는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"bright", ko:"밝다고", t:"comp"}]},
+      {n:59, full:"그 풀은 낮게 유지된다", chunks:[
+        {en:"The grass", ko:"그 풀은", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"low", ko:"낮게", t:"comp"}]},
+      {n:60, full:"그 경찰은 멈추라고 경고받는다", chunks:[
+        {en:"The police", ko:"그 경찰은", t:"subj"},
+        {en:"are warned", ko:"경고받는다", t:"verb"},
+        {en:"to pause", ko:"멈추라고", t:"comp"}]},
+      {n:61, full:"소금은 마른 상태로 유지된다", chunks:[
+        {en:"Salt", ko:"소금은", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"dry", ko:"마른 상태로", t:"comp"}]},
+      {n:62, full:"그 꿈은 이상하다고 여겨진다", chunks:[
+        {en:"The dream", ko:"그 꿈은", t:"subj"},
+        {en:"is considered", ko:"여겨진다", t:"verb"},
+        {en:"strange", ko:"이상하다고", t:"comp"}]},
+    ]},
+    { id:"MASH UP(문장 구조)", items:[
+      {n:1, full:"그 책은 읽힌다 (한 의사에 의해)", chunks:[
+        {en:"The book", ko:"그 책은", t:"subj"},
+        {en:"is read", ko:"읽힌다", t:"verb"},
+        {en:"by a doctor", ko:"한 의사에 의해", t:"mod"}]},
+      {n:2, full:"그 화학물질은 연구된다 (전문가들에 의해)", chunks:[
+        {en:"The chemical", ko:"그 화학물질은", t:"subj"},
+        {en:"is studied", ko:"연구된다", t:"verb"},
+        {en:"by experts", ko:"전문가들에 의해", t:"mod"}]},
+      {n:3, full:"한 비평가가 좋아한다 그 영화를", chunks:[
+        {en:"A critic", ko:"한 비평가가", t:"subj"},
+        {en:"likes", ko:"좋아한다", t:"verb"},
+        {en:"the movie", ko:"그 영화를", t:"obj"}]},
+      {n:4, full:"그 수프는 여겨진다 맛있다고 (비평가들에게)", chunks:[
+        {en:"The soup", ko:"그 수프는", t:"subj"},
+        {en:"is found", ko:"여겨진다", t:"verb"},
+        {en:"delicious", ko:"맛있다고", t:"comp"},
+        {en:"by critics", ko:"비평가들에게", t:"mod"}]},
+      {n:5, full:"그 팀이 이긴다 그 경기를", chunks:[
+        {en:"The team", ko:"그 팀이", t:"subj"},
+        {en:"wins", ko:"이긴다", t:"verb"},
+        {en:"the game", ko:"그 경기를", t:"obj"}]},
+      {n:6, full:"그 엔진이 멈춘다 (고속도로 위에서)", chunks:[
+        {en:"The engine", ko:"그 엔진이", t:"subj"},
+        {en:"stops", ko:"멈춘다", t:"verb"},
+        {en:"on the highway", ko:"고속도로 위에서", t:"mod"}]},
+      {n:7, full:"한 끼 식사가 만들어진다 (그 아이를 위해) (한 부모에 의해)", chunks:[
+        {en:"A meal", ko:"한 끼 식사가", t:"subj"},
+        {en:"is made", ko:"만들어진다", t:"verb"},
+        {en:"for the child", ko:"그 아이를 위해", t:"mod"},
+        {en:"by a parent", ko:"한 부모에 의해", t:"mod"}]},
+      {n:8, full:"그 환자가 돌아온다", chunks:[
+        {en:"The patient", ko:"그 환자가", t:"subj"},
+        {en:"returns", ko:"돌아온다", t:"verb"}]},
+      {n:9, full:"사람들은 일한다 (열심히)", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"work", ko:"일한다", t:"verb"},
+        {en:"hard", ko:"열심히", t:"mod"}]},
+      {n:10, full:"비평가들은 여긴다 그 꿈을 이상하다고", chunks:[
+        {en:"Critics", ko:"비평가들은", t:"subj"},
+        {en:"consider", ko:"여긴다", t:"verb"},
+        {en:"the dream", ko:"그 꿈을", t:"obj"},
+        {en:"strange", ko:"이상하다고", t:"comp"}]},
+      {n:11, full:"그 음악은 연주된다 (한 비평가에 의해)", chunks:[
+        {en:"The music", ko:"그 음악은", t:"subj"},
+        {en:"is played", ko:"연주된다", t:"verb"},
+        {en:"by a critic", ko:"한 비평가에 의해", t:"mod"}]},
+      {n:12, full:"우리는 부른다 그 영화를 성공작이라고", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"call", ko:"부른다", t:"verb"},
+        {en:"the movie", ko:"그 영화를", t:"obj"},
+        {en:"a success", ko:"성공작이라고", t:"comp"}]},
+      {n:13, full:"비평가들은 좋아한다 그 음악을", chunks:[
+        {en:"Critics", ko:"비평가들은", t:"subj"},
+        {en:"like", ko:"좋아한다", t:"verb"},
+        {en:"the music", ko:"그 음악을", t:"obj"}]},
+      {n:14, full:"그 세계는 보인다 이상하게", chunks:[
+        {en:"The world", ko:"그 세계는", t:"subj"},
+        {en:"seems", ko:"보인다", t:"verb"},
+        {en:"strange", ko:"이상하게", t:"comp"}]},
+      {n:15, full:"그 수프는 이다 맛있다", chunks:[
+        {en:"The soup", ko:"그 수프는", t:"subj"},
+        {en:"is", ko:"이다", t:"verb"},
+        {en:"delicious", ko:"맛있다", t:"comp"}]},
+      {n:16, full:"한 부모가 요리한다 그 식사를 (부엌에서)", chunks:[
+        {en:"A parent", ko:"한 부모가", t:"subj"},
+        {en:"cooks", ko:"요리한다", t:"verb"},
+        {en:"the meal", ko:"그 식사를", t:"obj"},
+        {en:"in the kitchen", ko:"부엌에서", t:"mod"}]},
+      {n:17, full:"문제들이 일어난다", chunks:[
+        {en:"Problems", ko:"문제들이", t:"subj"},
+        {en:"happen", ko:"일어난다", t:"verb"}]},
+      {n:18, full:"한 부모가 만든다 그 아기를 웃게", chunks:[
+        {en:"A parent", ko:"한 부모가", t:"subj"},
+        {en:"makes", ko:"만든다", t:"verb"},
+        {en:"the baby", ko:"그 아기를", t:"obj"},
+        {en:"laugh", ko:"웃게", t:"comp"}]},
+      {n:19, full:"시민들이 뽑는다 그 회원을 지도자로", chunks:[
+        {en:"Citizens", ko:"시민들이", t:"subj"},
+        {en:"elect", ko:"뽑는다", t:"verb"},
+        {en:"the member", ko:"그 회원을", t:"obj"},
+        {en:"leader", ko:"지도자로", t:"comp"}]},
+      {n:20, full:"그 바다는 보인다 잔잔하게", chunks:[
+        {en:"The sea", ko:"그 바다는", t:"subj"},
+        {en:"looks", ko:"보인다", t:"verb"},
+        {en:"calm", ko:"잔잔하게", t:"comp"}]},
+      {n:21, full:"전문가들이 말해준다 그 무리에게 그 진실을", chunks:[
+        {en:"Experts", ko:"전문가들이", t:"subj"},
+        {en:"tell", ko:"말해준다", t:"verb"},
+        {en:"the group", ko:"그 무리에게", t:"obj"},
+        {en:"the truth", ko:"그 진실을", t:"obj"}]},
+      {n:22, full:"한 부모가 요리해준다 그 아이에게 한 끼 식사를", chunks:[
+        {en:"A parent", ko:"한 부모가", t:"subj"},
+        {en:"cooks", ko:"요리해준다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a meal", ko:"한 끼 식사를", t:"obj"}]},
+      {n:23, full:"한 지도자가 말한다 그 무리에게 시작하라고", chunks:[
+        {en:"A leader", ko:"한 지도자가", t:"subj"},
+        {en:"tells", ko:"말한다", t:"verb"},
+        {en:"the group", ko:"그 무리에게", t:"obj"},
+        {en:"to start", ko:"시작하라고", t:"comp"}]},
+      {n:24, full:"가격은 다양하다", chunks:[
+        {en:"Prices", ko:"가격은", t:"subj"},
+        {en:"vary", ko:"다양하다", t:"verb"}]},
+      {n:25, full:"아이들은 사랑한다 음악을", chunks:[
+        {en:"Children", ko:"아이들은", t:"subj"},
+        {en:"love", ko:"사랑한다", t:"verb"},
+        {en:"music", ko:"음악을", t:"obj"}]},
+      {n:26, full:"한 지도자가 보여준다 그 팀에게 한 계획을", chunks:[
+        {en:"A leader", ko:"한 지도자가", t:"subj"},
+        {en:"shows", ko:"보여준다", t:"verb"},
+        {en:"the team", ko:"그 팀에게", t:"obj"},
+        {en:"a plan", ko:"한 계획을", t:"obj"}]},
+      {n:27, full:"그 군중이 반응한다", chunks:[
+        {en:"The crowd", ko:"그 군중이", t:"subj"},
+        {en:"reacts", ko:"반응한다", t:"verb"}]},
+      {n:28, full:"한 의사가 여긴다 그 연구를 익숙하다고", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"finds", ko:"여긴다", t:"verb"},
+        {en:"the research", ko:"그 연구를", t:"obj"},
+        {en:"familiar", ko:"익숙하다고", t:"comp"}]},
+      {n:29, full:"한 의사가 돕는다 그 환자를", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"helps", ko:"돕는다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"}]},
+      {n:30, full:"전문가들이 본다 그 군중이 반응하는 것을", chunks:[
+        {en:"Experts", ko:"전문가들이", t:"subj"},
+        {en:"see", ko:"본다", t:"verb"},
+        {en:"the crowd", ko:"그 군중이", t:"obj"},
+        {en:"react", ko:"반응하는 것을", t:"comp"}]},
+      {n:31, full:"그 변화가 일어난다", chunks:[
+        {en:"The change", ko:"그 변화가", t:"subj"},
+        {en:"happens", ko:"일어난다", t:"verb"}]},
+      {n:32, full:"전문가들이 연구한다 그 화학물질을", chunks:[
+        {en:"Experts", ko:"전문가들이", t:"subj"},
+        {en:"study", ko:"연구한다", t:"verb"},
+        {en:"the chemical", ko:"그 화학물질을", t:"obj"}]},
+      {n:33, full:"한 의사가 읽는다 그 책을 (부엌에서)", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"reads", ko:"읽는다", t:"verb"},
+        {en:"the book", ko:"그 책을", t:"obj"},
+        {en:"in the kitchen", ko:"부엌에서", t:"mod"}]},
+      {n:34, full:"그 계획은 준비된다 (그 팀에 의해)", chunks:[
+        {en:"The plan", ko:"그 계획은", t:"subj"},
+        {en:"is prepared", ko:"준비된다", t:"verb"},
+        {en:"by the team", ko:"그 팀에 의해", t:"mod"}]},
+      {n:35, full:"한 부모가 만들어준다 그 아이에게 한 끼 식사를", chunks:[
+        {en:"A parent", ko:"한 부모가", t:"subj"},
+        {en:"makes", ko:"만들어준다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a meal", ko:"한 끼 식사를", t:"obj"}]},
+      {n:36, full:"시민들은 싫어한다 그 전쟁을", chunks:[
+        {en:"Citizens", ko:"시민들은", t:"subj"},
+        {en:"hate", ko:"싫어한다", t:"verb"},
+        {en:"the war", ko:"그 전쟁을", t:"obj"}]},
+      {n:37, full:"편지 한 통이 보내진다 (그 아이에게) (한 부모에 의해)", chunks:[
+        {en:"A letter", ko:"편지 한 통이", t:"subj"},
+        {en:"is sent", ko:"보내진다", t:"verb"},
+        {en:"to the child", ko:"그 아이에게", t:"mod"},
+        {en:"by a parent", ko:"한 부모에 의해", t:"mod"}]},
+      {n:38, full:"그 회원은 된다 지도자가", chunks:[
+        {en:"The member", ko:"그 회원은", t:"subj"},
+        {en:"becomes", ko:"된다", t:"verb"},
+        {en:"a leader", ko:"지도자가", t:"comp"}]},
+      {n:39, full:"그 답들은 다르다", chunks:[
+        {en:"The answers", ko:"그 답들은", t:"subj"},
+        {en:"differ", ko:"다르다", t:"verb"}]},
+      {n:40, full:"의견은 다르다", chunks:[
+        {en:"Opinions", ko:"의견은", t:"subj"},
+        {en:"differ", ko:"다르다", t:"verb"}]},
+      {n:41, full:"그 관객이 웃는다", chunks:[
+        {en:"The audience", ko:"그 관객이", t:"subj"},
+        {en:"laughs", ko:"웃는다", t:"verb"}]},
+      {n:42, full:"사람들은 사랑한다 그 세계를", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"love", ko:"사랑한다", t:"verb"},
+        {en:"the world", ko:"그 세계를", t:"obj"}]},
+      {n:43, full:"그 부엌들은 유지된다 따뜻하게 (사람들에 의해)", chunks:[
+        {en:"The kitchens", ko:"그 부엌들은", t:"subj"},
+        {en:"are kept", ko:"유지된다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"},
+        {en:"by people", ko:"사람들에 의해", t:"mod"}]},
+      {n:44, full:"그 아이는 보인다 자랑스럽게", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"looks", ko:"보인다", t:"verb"},
+        {en:"proud", ko:"자랑스럽게", t:"comp"}]},
+      {n:45, full:"우리는 돕는다 그 아이가 서도록", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"help", ko:"돕는다", t:"verb"},
+        {en:"the child", ko:"그 아이가", t:"obj"},
+        {en:"stand", ko:"서도록", t:"comp"}]},
+      {n:46, full:"아이들은 배운다 역사를 (한 전문가에게)", chunks:[
+        {en:"Children", ko:"아이들은", t:"subj"},
+        {en:"are taught", ko:"배운다", t:"verb"},
+        {en:"history", ko:"역사를", t:"obj"},
+        {en:"by an expert", ko:"한 전문가에게", t:"mod"}]},
+      {n:47, full:"그 환자는 받는다 물을 (한 의사에게)", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"is given", ko:"받는다", t:"verb"},
+        {en:"water", ko:"물을", t:"obj"},
+        {en:"by a doctor", ko:"한 의사에게", t:"mod"}]},
+      {n:48, full:"한 의사가 요청한다 그 환자에게 은퇴하라고", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"asks", ko:"요청한다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"to retire", ko:"은퇴하라고", t:"comp"}]},
+      {n:49, full:"그 비가 내린다 (해변에)", chunks:[
+        {en:"The rain", ko:"그 비가", t:"subj"},
+        {en:"falls", ko:"내린다", t:"verb"},
+        {en:"at the beach", ko:"해변에", t:"mod"}]},
+      {n:50, full:"한 의사가 찾아준다 그 아이에게 책 한 권을", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"finds", ko:"찾아준다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a book", ko:"책 한 권을", t:"obj"}]},
+      {n:51, full:"그 아이는 받는다 편지 한 통을 (한 부모에게)", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"is sent", ko:"받는다", t:"verb"},
+        {en:"a letter", ko:"편지 한 통을", t:"obj"},
+        {en:"by a parent", ko:"한 부모에게", t:"mod"}]},
+      {n:52, full:"그 군중들은 보인다 반응하는 것이 (전문가들에게)", chunks:[
+        {en:"The crowds", ko:"그 군중들은", t:"subj"},
+        {en:"are seen", ko:"보인다", t:"verb"},
+        {en:"to react", ko:"반응하는 것이", t:"comp"},
+        {en:"by experts", ko:"전문가들에게", t:"mod"}]},
+      {n:53, full:"그 무리들은 하게 된다 동의하도록 (한 지도자에 의해)", chunks:[
+        {en:"The groups", ko:"그 무리들은", t:"subj"},
+        {en:"are made", ko:"하게 된다", t:"verb"},
+        {en:"to agree", ko:"동의하도록", t:"comp"},
+        {en:"by a leader", ko:"한 지도자에 의해", t:"mod"}]},
+      {n:54, full:"한 전문가가 가르친다 아이들에게 역사를", chunks:[
+        {en:"An expert", ko:"한 전문가가", t:"subj"},
+        {en:"teaches", ko:"가르친다", t:"verb"},
+        {en:"children", ko:"아이들에게", t:"obj"},
+        {en:"history", ko:"역사를", t:"obj"}]},
+      {n:55, full:"한 지도자가 차지한다 그 자리를", chunks:[
+        {en:"A leader", ko:"한 지도자가", t:"subj"},
+        {en:"takes", ko:"차지한다", t:"verb"},
+        {en:"the seat", ko:"그 자리를", t:"obj"}]},
+      {n:56, full:"그 환자는 요청받는다 은퇴하라고 (한 의사에게)", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"is asked", ko:"요청받는다", t:"verb"},
+        {en:"to retire", ko:"은퇴하라고", t:"comp"},
+        {en:"by a doctor", ko:"한 의사에게", t:"mod"}]},
+      {n:57, full:"그 회원들은 받아 본다 한 계획을 (한 지도자에게)", chunks:[
+        {en:"The members", ko:"그 회원들은", t:"subj"},
+        {en:"are shown", ko:"받아 본다", t:"verb"},
+        {en:"a plan", ko:"한 계획을", t:"obj"},
+        {en:"by a leader", ko:"한 지도자에게", t:"mod"}]},
+      {n:58, full:"그 회원은 임명된다 지도자로 (그 팀에 의해)", chunks:[
+        {en:"The member", ko:"그 회원은", t:"subj"},
+        {en:"is named", ko:"임명된다", t:"verb"},
+        {en:"leader", ko:"지도자로", t:"comp"},
+        {en:"by the team", ko:"그 팀에 의해", t:"mod"}]},
+      {n:59, full:"그 경찰은 듣는다 떠나라고 (한 지도자에게)", chunks:[
+        {en:"The police", ko:"그 경찰은", t:"subj"},
+        {en:"are told", ko:"듣는다", t:"verb"},
+        {en:"to leave", ko:"떠나라고", t:"comp"},
+        {en:"by a leader", ko:"한 지도자에게", t:"mod"}]},
+      {n:60, full:"책들이 찾아진다 (그 아이들을 위해) (한 의사에 의해)", chunks:[
+        {en:"Books", ko:"책들이", t:"subj"},
+        {en:"are found", ko:"찾아진다", t:"verb"},
+        {en:"for the children", ko:"그 아이들을 위해", t:"mod"},
+        {en:"by a doctor", ko:"한 의사에 의해", t:"mod"}]},
+      {n:61, full:"한 의사가 준다 그 환자에게 물을", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"gives", ko:"준다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"water", ko:"물을", t:"obj"}]},
+      {n:62, full:"사람들은 부른다 그 스타를 영웅이라고", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"name", ko:"부른다", t:"verb"},
+        {en:"the star", ko:"그 스타를", t:"obj"},
+        {en:"a hero", ko:"영웅이라고", t:"comp"}]},
+      {n:63, full:"그 스타는 이다 영웅", chunks:[
+        {en:"The star", ko:"그 스타는", t:"subj"},
+        {en:"is", ko:"이다", t:"verb"},
+        {en:"a hero", ko:"영웅", t:"comp"}]},
+      {n:64, full:"한 비평가가 보여준다 사람들에게 그 영화를", chunks:[
+        {en:"A critic", ko:"한 비평가가", t:"subj"},
+        {en:"shows", ko:"보여준다", t:"verb"},
+        {en:"people", ko:"사람들에게", t:"obj"},
+        {en:"the movie", ko:"그 영화를", t:"obj"}]},
+      {n:65, full:"그 자리들은 차지된다 (그 손님에 의해)", chunks:[
+        {en:"The seats", ko:"그 자리들은", t:"subj"},
+        {en:"are taken", ko:"차지된다", t:"verb"},
+        {en:"by the guest", ko:"그 손님에 의해", t:"mod"}]},
+      {n:66, full:"그 물은 이다 따뜻하다", chunks:[
+        {en:"The water", ko:"그 물은", t:"subj"},
+        {en:"is", ko:"이다", t:"verb"},
+        {en:"warm", ko:"따뜻하다", t:"comp"}]},
+      {n:67, full:"그 그림들은 그려진다 (한 아이에 의해)", chunks:[
+        {en:"The pictures", ko:"그 그림들은", t:"subj"},
+        {en:"are drawn", ko:"그려진다", t:"verb"},
+        {en:"by a child", ko:"한 아이에 의해", t:"mod"}]},
+      {n:68, full:"한 친구가 빌려준다 그 손님에게 돈을", chunks:[
+        {en:"A friend", ko:"한 친구가", t:"subj"},
+        {en:"lends", ko:"빌려준다", t:"verb"},
+        {en:"the guest", ko:"그 손님에게", t:"obj"},
+        {en:"money", ko:"돈을", t:"obj"}]},
+      {n:69, full:"그 영화는 불린다 성공작이라고 (한 비평가에게)", chunks:[
+        {en:"The movie", ko:"그 영화는", t:"subj"},
+        {en:"is called", ko:"불린다", t:"verb"},
+        {en:"a success", ko:"성공작이라고", t:"comp"},
+        {en:"by a critic", ko:"한 비평가에게", t:"mod"}]},
+      {n:70, full:"그 영화들은 관람된다 (사람들에 의해)", chunks:[
+        {en:"The movies", ko:"그 영화들은", t:"subj"},
+        {en:"are watched", ko:"관람된다", t:"verb"},
+        {en:"by people", ko:"사람들에 의해", t:"mod"}]},
+      {n:71, full:"사람들은 유지한다 그 물을 따뜻하게", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"keep", ko:"유지한다", t:"verb"},
+        {en:"the water", ko:"그 물을", t:"obj"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:72, full:"한 부모가 보내준다 그 아이에게 편지 한 통을", chunks:[
+        {en:"A parent", ko:"한 부모가", t:"subj"},
+        {en:"sends", ko:"보내준다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a letter", ko:"편지 한 통을", t:"obj"}]},
+      {n:73, full:"그 아기는 하게 된다 웃도록 (한 부모에 의해)", chunks:[
+        {en:"The baby", ko:"그 아기는", t:"subj"},
+        {en:"is made", ko:"하게 된다", t:"verb"},
+        {en:"to laugh", ko:"웃도록", t:"comp"},
+        {en:"by a parent", ko:"한 부모에 의해", t:"mod"}]},
+      {n:74, full:"식사가 요리된다 (그 손님들을 위해) (한 부모에 의해)", chunks:[
+        {en:"Meals", ko:"식사가", t:"subj"},
+        {en:"are cooked", ko:"요리된다", t:"verb"},
+        {en:"for the guests", ko:"그 손님들을 위해", t:"mod"},
+        {en:"by a parent", ko:"한 부모에 의해", t:"mod"}]},
+      {n:75, full:"그 여왕은 된다 지도자가", chunks:[
+        {en:"The queen", ko:"그 여왕은", t:"subj"},
+        {en:"becomes", ko:"된다", t:"verb"},
+        {en:"a leader", ko:"지도자가", t:"comp"}]},
+      {n:76, full:"노래 한 곡이 불린다 (사람들에게) (한 비평가에 의해)", chunks:[
+        {en:"A song", ko:"노래 한 곡이", t:"subj"},
+        {en:"is sung", ko:"불린다", t:"verb"},
+        {en:"to the people", ko:"사람들에게", t:"mod"},
+        {en:"by a critic", ko:"한 비평가에 의해", t:"mod"}]},
+      {n:77, full:"그 영화는 들린다 꿈처럼", chunks:[
+        {en:"The movie", ko:"그 영화는", t:"subj"},
+        {en:"sounds", ko:"들린다", t:"verb"},
+        {en:"like a dream", ko:"꿈처럼", t:"comp"}]},
+      {n:78, full:"한 계획이 보여진다 (그 회원들에게) (한 지도자에 의해)", chunks:[
+        {en:"A plan", ko:"한 계획이", t:"subj"},
+        {en:"is shown", ko:"보여진다", t:"verb"},
+        {en:"to the members", ko:"그 회원들에게", t:"mod"},
+        {en:"by a leader", ko:"한 지도자에 의해", t:"mod"}]},
+      {n:79, full:"그 회원들은 초대받는다 합류하라고 (한 비평가에게)", chunks:[
+        {en:"The members", ko:"그 회원들은", t:"subj"},
+        {en:"are invited", ko:"초대받는다", t:"verb"},
+        {en:"to join", ko:"합류하라고", t:"comp"},
+        {en:"by a critic", ko:"한 비평가에게", t:"mod"}]},
+      {n:80, full:"방식은 다양하다", chunks:[
+        {en:"Styles", ko:"방식은", t:"subj"},
+        {en:"vary", ko:"다양하다", t:"verb"}]},
+      {n:81, full:"그 편지들은 쓰여진다 (한 회원에 의해)", chunks:[
+        {en:"The letters", ko:"그 편지들은", t:"subj"},
+        {en:"are written", ko:"쓰여진다", t:"verb"},
+        {en:"by a member", ko:"한 회원에 의해", t:"mod"}]},
+      {n:82, full:"그 회원들은 뽑힌다 지도자로 (시민들에 의해)", chunks:[
+        {en:"The members", ko:"그 회원들은", t:"subj"},
+        {en:"are elected", ko:"뽑힌다", t:"verb"},
+        {en:"leaders", ko:"지도자로", t:"comp"},
+        {en:"by citizens", ko:"시민들에 의해", t:"mod"}]},
+      {n:83, full:"그 날씨는 변한다 차갑게", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"turns", ko:"변한다", t:"verb"},
+        {en:"cold", ko:"차갑게", t:"comp"}]},
+      {n:84, full:"사람들은 싫어한다 그 전쟁을", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"hate", ko:"싫어한다", t:"verb"},
+        {en:"the war", ko:"그 전쟁을", t:"obj"}]},
+      {n:85, full:"그 식사들은 요리된다 (한 부모에 의해)", chunks:[
+        {en:"The meals", ko:"그 식사들은", t:"subj"},
+        {en:"are cooked", ko:"요리된다", t:"verb"},
+        {en:"by a parent", ko:"한 부모에 의해", t:"mod"}]},
+      {n:86, full:"그 지도자는 보인다 의사처럼", chunks:[
+        {en:"The leader", ko:"그 지도자는", t:"subj"},
+        {en:"looks", ko:"보인다", t:"verb"},
+        {en:"like a doctor", ko:"의사처럼", t:"comp"}]},
+      {n:87, full:"그 아기가 잔다 (부엌에서)", chunks:[
+        {en:"The baby", ko:"그 아기가", t:"subj"},
+        {en:"sleeps", ko:"잔다", t:"verb"},
+        {en:"in the kitchen", ko:"부엌에서", t:"mod"}]},
+      {n:88, full:"한 전문가가 부탁한다 그 아이에게 부탁 하나를", chunks:[
+        {en:"An expert", ko:"한 전문가가", t:"subj"},
+        {en:"asks", ko:"부탁한다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a favor", ko:"부탁 하나를", t:"obj"}]},
+      {n:89, full:"그 화학물질은 냄새가 난다 소금처럼", chunks:[
+        {en:"The chemical", ko:"그 화학물질은", t:"subj"},
+        {en:"smells", ko:"냄새가 난다", t:"verb"},
+        {en:"like salt", ko:"소금처럼", t:"comp"}]},
+      {n:90, full:"한 아이가 그린다 그림 한 장을 (해변에서)", chunks:[
+        {en:"A child", ko:"한 아이가", t:"subj"},
+        {en:"draws", ko:"그린다", t:"verb"},
+        {en:"a picture", ko:"그림 한 장을", t:"obj"},
+        {en:"at the beach", ko:"해변에서", t:"mod"}]},
+      {n:91, full:"전문가들이 만든다 그 군중을 멈추게", chunks:[
+        {en:"Experts", ko:"전문가들이", t:"subj"},
+        {en:"force", ko:"만든다", t:"verb"},
+        {en:"the crowd", ko:"그 군중을", t:"obj"},
+        {en:"to pause", ko:"멈추게", t:"comp"}]},
+      {n:92, full:"그 문은 열린다 (한 의사에 의해)", chunks:[
+        {en:"The door", ko:"그 문은", t:"subj"},
+        {en:"is opened", ko:"열린다", t:"verb"},
+        {en:"by a doctor", ko:"한 의사에 의해", t:"mod"}]},
+      {n:93, full:"한 비평가가 권한다 그 회원에게 대답하라고", chunks:[
+        {en:"A critic", ko:"한 비평가가", t:"subj"},
+        {en:"advises", ko:"권한다", t:"verb"},
+        {en:"the member", ko:"그 회원에게", t:"obj"},
+        {en:"to respond", ko:"대답하라고", t:"comp"}]},
+      {n:94, full:"물이 주어진다 (그 환자에게) (한 의사에 의해)", chunks:[
+        {en:"Water", ko:"물이", t:"subj"},
+        {en:"is given", ko:"주어진다", t:"verb"},
+        {en:"to the patient", ko:"그 환자에게", t:"mod"},
+        {en:"by a doctor", ko:"한 의사에 의해", t:"mod"}]},
+      {n:95, full:"역사가 가르쳐진다 (아이들에게) (한 전문가에 의해)", chunks:[
+        {en:"History", ko:"역사가", t:"subj"},
+        {en:"is taught", ko:"가르쳐진다", t:"verb"},
+        {en:"to children", ko:"아이들에게", t:"mod"},
+        {en:"by an expert", ko:"한 전문가에 의해", t:"mod"}]},
+      {n:96, full:"그 미소는 이다 밝다", chunks:[
+        {en:"The smile", ko:"그 미소는", t:"subj"},
+        {en:"is", ko:"이다", t:"verb"},
+        {en:"bright", ko:"밝다", t:"comp"}]},
+      {n:97, full:"그 계획들은 여겨진다 새롭다고 (전문가들에게)", chunks:[
+        {en:"The projects", ko:"그 계획들은", t:"subj"},
+        {en:"are considered", ko:"여겨진다", t:"verb"},
+        {en:"new", ko:"새롭다고", t:"comp"},
+        {en:"by experts", ko:"전문가들에게", t:"mod"}]},
+      {n:98, full:"한 의사가 묻는다 그 환자에게 질문 하나를", chunks:[
+        {en:"A doctor", ko:"한 의사가", t:"subj"},
+        {en:"asks", ko:"묻는다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"a question", ko:"질문 하나를", t:"obj"}]},
+      {n:99, full:"그 경기들은 승리한다 (그 팀에 의해)", chunks:[
+        {en:"The games", ko:"그 경기들은", t:"subj"},
+        {en:"are won", ko:"승리한다", t:"verb"},
+        {en:"by the team", ko:"그 팀에 의해", t:"mod"}]},
+      {n:100, full:"그 질문은 답해진다 (한 지도자에 의해)", chunks:[
+        {en:"The question", ko:"그 질문은", t:"subj"},
+        {en:"is answered", ko:"답해진다", t:"verb"},
+        {en:"by a leader", ko:"한 지도자에 의해", t:"mod"}]},
+    ]},
+    { id:"기본 시제", items:[
+      {n:1, full:"나의 아버지는 타곤 했다 자전거를 (사무실로) (오래전에)", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"would ride", ko:"타곤 했다", t:"verb"},
+        {en:"a bike", ko:"자전거를", t:"obj"},
+        {en:"to the office", ko:"사무실로", t:"mod"},
+        {en:"long ago", ko:"오래전에", t:"mod"}]},
+      {n:2, full:"시인들은 거닐곤 했다 (강가를) (휴일마다)", chunks:[
+        {en:"Poets", ko:"시인들은", t:"subj"},
+        {en:"would wander", ko:"거닐곤 했다", t:"verb"},
+        {en:"by the river", ko:"강가를", t:"mod"},
+        {en:"every holiday", ko:"휴일마다", t:"mod"}]},
+      {n:3, full:"그 팀은 경기하곤 했다 (주말마다)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"would compete", ko:"경기하곤 했다", t:"verb"},
+        {en:"every weekend", ko:"주말마다", t:"mod"}]},
+      {n:4, full:"나의 형은 자주 어기곤 했다 그의 약속을", chunks:[
+        {en:"My brother", ko:"나의 형은", t:"subj"},
+        {en:"would often break", ko:"자주 어기곤 했다", t:"verb"},
+        {en:"his promise", ko:"그의 약속을", t:"obj"}]},
+      {n:5, full:"나의 어머니는 가져다주곤 했다 그 손님들에게 한 끼 식사를", chunks:[
+        {en:"My mother", ko:"나의 어머니는", t:"subj"},
+        {en:"would bring", ko:"가져다주곤 했다", t:"verb"},
+        {en:"the guests", ko:"그 손님들에게", t:"obj"},
+        {en:"a meal", ko:"한 끼 식사를", t:"obj"}]},
+      {n:6, full:"나는 가지고 있었다 독서하는 습관을 (밤에)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"used to have", ko:"가지고 있었다", t:"verb"},
+        {en:"a habit of reading", ko:"독서하는 습관을", t:"obj"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:7, full:"이 거리는 였다 조용한 곳", chunks:[
+        {en:"This street", ko:"이 거리는", t:"subj"},
+        {en:"used to be", ko:"였다", t:"verb"},
+        {en:"quiet", ko:"조용한 곳", t:"comp"}]},
+      {n:8, full:"그 의사는 일했었다 (공항에서)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"used to work", ko:"일했었다", t:"verb"},
+        {en:"at the airport", ko:"공항에서", t:"mod"}]},
+      {n:9, full:"나의 아버지는 계획하곤 했다 가족 휴가를", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"used to plan", ko:"계획하곤 했다", t:"verb"},
+        {en:"the family vacation", ko:"가족 휴가를", t:"obj"}]},
+      {n:10, full:"나의 가족은 여행하곤 했다 (바다로) (휴가마다)", chunks:[
+        {en:"My family", ko:"나의 가족은", t:"subj"},
+        {en:"used to travel", ko:"여행하곤 했다", t:"verb"},
+        {en:"to the sea", ko:"바다로", t:"mod"},
+        {en:"every vacation", ko:"휴가마다", t:"mod"}]},
+      {n:11, full:"그 시장들은 열렸었다 (한 달에 한 번)", chunks:[
+        {en:"The markets", ko:"그 시장들은", t:"subj"},
+        {en:"used to open", ko:"열렸었다", t:"verb"},
+        {en:"once a month", ko:"한 달에 한 번", t:"mod"}]},
+      {n:12, full:"그 기차는 섰었다 (이 역에)", chunks:[
+        {en:"The train", ko:"그 기차는", t:"subj"},
+        {en:"used to stop", ko:"섰었다", t:"verb"},
+        {en:"at this station", ko:"이 역에", t:"mod"}]},
+      {n:13, full:"그 항공편들이 도착했다 (늦게) (어제)", chunks:[
+        {en:"The flights", ko:"그 항공편들이", t:"subj"},
+        {en:"arrived", ko:"도착했다", t:"verb"},
+        {en:"late", ko:"늦게", t:"mod"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:14, full:"그 관객이 떠났다 그 방을 (한 시간 전에)", chunks:[
+        {en:"The audience", ko:"그 관객이", t:"subj"},
+        {en:"left", ko:"떠났다", t:"verb"},
+        {en:"the room", ko:"그 방을", t:"obj"},
+        {en:"an hour ago", ko:"한 시간 전에", t:"mod"}]},
+      {n:15, full:"나는 샀다 그 표를 (한 달 전에)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"bought", ko:"샀다", t:"verb"},
+        {en:"the ticket", ko:"그 표를", t:"obj"},
+        {en:"a month ago", ko:"한 달 전에", t:"mod"}]},
+      {n:16, full:"그 비평가는 한때 일했다 (공항에서)", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"once worked", ko:"한때 일했다", t:"verb"},
+        {en:"at the airport", ko:"공항에서", t:"mod"}]},
+      {n:17, full:"그 날씨는 되었다 추워 (휴일 동안)", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"became", ko:"되었다", t:"verb"},
+        {en:"cold", ko:"추워", t:"comp"},
+        {en:"during the holiday", ko:"휴일 동안", t:"mod"}]},
+      {n:18, full:"그 시장은 되었다 조용해 (그 행사 후에)", chunks:[
+        {en:"The market", ko:"그 시장은", t:"subj"},
+        {en:"grew", ko:"되었다", t:"verb"},
+        {en:"quiet", ko:"조용해", t:"comp"},
+        {en:"after the event", ko:"그 행사 후에", t:"mod"}]},
+      {n:19, full:"나의 아버지는 주었다 그 아이에게 표 한 장을 (어제)", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"gave", ko:"주었다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a ticket", ko:"표 한 장을", t:"obj"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:20, full:"그 아이의 탄생은 만들었다 그 가족을 자랑스럽게", chunks:[
+        {en:"The birth of the child", ko:"그 아이의 탄생은", t:"subj"},
+        {en:"made", ko:"만들었다", t:"verb"},
+        {en:"the family", ko:"그 가족을", t:"obj"},
+        {en:"proud", ko:"자랑스럽게", t:"comp"}]},
+      {n:21, full:"그 표들은 샀다 (한 달 전에)", chunks:[
+        {en:"The tickets", ko:"그 표들은", t:"subj"},
+        {en:"were bought", ko:"샀다", t:"verb"},
+        {en:"a month ago", ko:"한 달 전에", t:"mod"}]},
+      {n:22, full:"그 행사는 열렸다 (학교에서) (그 휴일에)", chunks:[
+        {en:"The event", ko:"그 행사는", t:"subj"},
+        {en:"was held", ko:"열렸다", t:"verb"},
+        {en:"at the school", ko:"학교에서", t:"mod"},
+        {en:"on the holiday", ko:"그 휴일에", t:"mod"}]},
+      {n:23, full:"그 손님들은 받았다 일정표를 (어제)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"were sent", ko:"받았다", t:"verb"},
+        {en:"a schedule", ko:"일정표를", t:"obj"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:24, full:"표 한 장이 주어졌다 (모든 회원에게)", chunks:[
+        {en:"A ticket", ko:"표 한 장이", t:"subj"},
+        {en:"was given", ko:"주어졌다", t:"verb"},
+        {en:"to every member", ko:"모든 회원에게", t:"mod"}]},
+      {n:25, full:"그 시인은 불렸다 천재라고 (오래전에)", chunks:[
+        {en:"The poet", ko:"그 시인은", t:"subj"},
+        {en:"was called", ko:"불렸다", t:"verb"},
+        {en:"a genius", ko:"천재라고", t:"comp"},
+        {en:"long ago", ko:"오래전에", t:"mod"}]},
+      {n:26, full:"그 도로는 유지되었다 깨끗하게 (그 행사 동안)", chunks:[
+        {en:"The road", ko:"그 도로는", t:"subj"},
+        {en:"was kept", ko:"유지되었다", t:"verb"},
+        {en:"clean", ko:"깨끗하게", t:"comp"},
+        {en:"during the event", ko:"그 행사 동안", t:"mod"}]},
+      {n:27, full:"강물은 흘러간다 (바다로)", chunks:[
+        {en:"The river", ko:"강물은", t:"subj"},
+        {en:"runs", ko:"흘러간다", t:"verb"},
+        {en:"to the sea", ko:"바다로", t:"mod"}]},
+      {n:28, full:"별들은 나타난다 (밤하늘에)", chunks:[
+        {en:"Stars", ko:"별들은", t:"subj"},
+        {en:"appear", ko:"나타난다", t:"verb"},
+        {en:"in the night sky", ko:"밤하늘에", t:"mod"}]},
+      {n:29, full:"물은 된다 얼음이 (추운 날씨에는)", chunks:[
+        {en:"Water", ko:"물은", t:"subj"},
+        {en:"becomes", ko:"된다", t:"verb"},
+        {en:"ice", ko:"얼음이", t:"comp"},
+        {en:"in cold weather", ko:"추운 날씨에는", t:"mod"}]},
+      {n:30, full:"날씨는 바뀐다 (계절에 따라)", chunks:[
+        {en:"The weather", ko:"날씨는", t:"subj"},
+        {en:"changes", ko:"바뀐다", t:"verb"},
+        {en:"with the season", ko:"계절에 따라", t:"mod"}]},
+      {n:31, full:"가격은 항상 오른다 (시장에서)", chunks:[
+        {en:"Prices", ko:"가격은", t:"subj"},
+        {en:"always increase", ko:"항상 오른다", t:"verb"},
+        {en:"in the market", ko:"시장에서", t:"mod"}]},
+      {n:32, full:"기억력은 자주 쇠퇴한다 (나이가 들면서)", chunks:[
+        {en:"Memory", ko:"기억력은", t:"subj"},
+        {en:"often fails", ko:"자주 쇠퇴한다", t:"verb"},
+        {en:"with age", ko:"나이가 들면서", t:"mod"}]},
+      {n:33, full:"그 공항은 된다 붐비게 (휴일마다)", chunks:[
+        {en:"The airport", ko:"그 공항은", t:"subj"},
+        {en:"becomes", ko:"된다", t:"verb"},
+        {en:"busy", ko:"붐비게", t:"comp"},
+        {en:"every holiday", ko:"휴일마다", t:"mod"}]},
+      {n:34, full:"회사들은 바꾼다 기차 시간표를 (계절마다)", chunks:[
+        {en:"Companies", ko:"회사들은", t:"subj"},
+        {en:"change", ko:"바꾼다", t:"verb"},
+        {en:"the train schedule", ko:"기차 시간표를", t:"obj"},
+        {en:"every season", ko:"계절마다", t:"mod"}]},
+      {n:35, full:"사람들은 자주 유지한다 오래된 습관을", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"often keep", ko:"자주 유지한다", t:"verb"},
+        {en:"old habits", ko:"오래된 습관을", t:"obj"}]},
+      {n:36, full:"그 회사는 준다 모든 회원에게 일정표를", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"gives", ko:"준다", t:"verb"},
+        {en:"every member", ko:"모든 회원에게", t:"obj"},
+        {en:"a schedule", ko:"일정표를", t:"obj"}]},
+      {n:37, full:"나이는 자주 만든다 사람들을 조용하게", chunks:[
+        {en:"Age", ko:"나이는", t:"subj"},
+        {en:"often makes", ko:"자주 만든다", t:"verb"},
+        {en:"people", ko:"사람들을", t:"obj"},
+        {en:"quiet", ko:"조용하게", t:"comp"}]},
+      {n:38, full:"사람들은 자주 잊는다 과거를", chunks:[
+        {en:"People", ko:"사람들은", t:"subj"},
+        {en:"often forget", ko:"자주 잊는다", t:"verb"},
+        {en:"the past", ko:"과거를", t:"obj"}]},
+      {n:39, full:"시인들은 글을 쓴다 (과거에 대해)", chunks:[
+        {en:"Poets", ko:"시인들은", t:"subj"},
+        {en:"write", ko:"글을 쓴다", t:"verb"},
+        {en:"about the past", ko:"과거에 대해", t:"mod"}]},
+      {n:40, full:"나의 어머니는 기억한다 그녀의 아이의 탄생을", chunks:[
+        {en:"My mother", ko:"나의 어머니는", t:"subj"},
+        {en:"remembers", ko:"기억한다", t:"verb"},
+        {en:"the birth of her child", ko:"그녀의 아이의 탄생을", t:"obj"}]},
+      {n:41, full:"그 일정표들은 바뀐다 (계절마다)", chunks:[
+        {en:"The schedules", ko:"그 일정표들은", t:"subj"},
+        {en:"are changed", ko:"바뀐다", t:"verb"},
+        {en:"every season", ko:"계절마다", t:"mod"}]},
+      {n:42, full:"표는 팔린다 (역에서)", chunks:[
+        {en:"Tickets", ko:"표는", t:"subj"},
+        {en:"are sold", ko:"팔린다", t:"verb"},
+        {en:"at the station", ko:"역에서", t:"mod"}]},
+      {n:43, full:"모든 손님은 받는다 표 한 장을 (공항에서)", chunks:[
+        {en:"Every guest", ko:"모든 손님은", t:"subj"},
+        {en:"is given", ko:"받는다", t:"verb"},
+        {en:"a ticket", ko:"표 한 장을", t:"obj"},
+        {en:"at the airport", ko:"공항에서", t:"mod"}]},
+      {n:44, full:"그 의사는 불린다 영웅이라고", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"is called", ko:"불린다", t:"verb"},
+        {en:"a hero", ko:"영웅이라고", t:"comp"}]},
+      {n:45, full:"그 환자들은 항상 유지된다 차분하게 (의사들에 의해)", chunks:[
+        {en:"The patients", ko:"그 환자들은", t:"subj"},
+        {en:"are always kept", ko:"항상 유지된다", t:"verb"},
+        {en:"calm", ko:"차분하게", t:"comp"},
+        {en:"by the doctors", ko:"의사들에 의해", t:"mod"}]},
+      {n:46, full:"그 기차는 도착한다 (역에) (오늘 밤)", chunks:[
+        {en:"The train", ko:"그 기차는", t:"subj"},
+        {en:"arrives", ko:"도착한다", t:"verb"},
+        {en:"at the station", ko:"역에", t:"mod"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:47, full:"나의 항공편은 떠난다 (내일)", chunks:[
+        {en:"My flight", ko:"나의 항공편은", t:"subj"},
+        {en:"leaves", ko:"떠난다", t:"verb"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:48, full:"그 손님들은 도착한다 (공항에) (곧)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"arrive", ko:"도착한다", t:"verb"},
+        {en:"at the airport", ko:"공항에", t:"mod"},
+        {en:"soon", ko:"곧", t:"mod"}]},
+      {n:49, full:"그 비평가는 돌아온다 (그 도시에서) (곧)", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"returns", ko:"돌아온다", t:"verb"},
+        {en:"from the city", ko:"그 도시에서", t:"mod"},
+        {en:"soon", ko:"곧", t:"mod"}]},
+      {n:50, full:"나의 가족은 비행기로 간다 (그 도시로) (다음 주말에)", chunks:[
+        {en:"My family", ko:"나의 가족은", t:"subj"},
+        {en:"flies", ko:"비행기로 간다", t:"verb"},
+        {en:"to the city", ko:"그 도시로", t:"mod"},
+        {en:"next weekend", ko:"다음 주말에", t:"mod"}]},
+      {n:51, full:"그 의사들은 출발한다 (병원으로) (오늘 밤)", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"depart", ko:"출발한다", t:"verb"},
+        {en:"for the hospital", ko:"병원으로", t:"mod"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:52, full:"우리는 탑승한다 그 비행기에 (한 시간 뒤에)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"board", ko:"탑승한다", t:"verb"},
+        {en:"the plane", ko:"그 비행기에", t:"obj"},
+        {en:"in an hour", ko:"한 시간 뒤에", t:"mod"}]},
+      {n:53, full:"가격은 떨어질 것이다 (그 계절 후반에)", chunks:[
+        {en:"Prices", ko:"가격은", t:"subj"},
+        {en:"will fall", ko:"떨어질 것이다", t:"verb"},
+        {en:"late in the season", ko:"그 계절 후반에", t:"mod"}]},
+      {n:54, full:"그 날씨는 변할 것이다 춥게 (오늘 밤)", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"will turn", ko:"변할 것이다", t:"verb"},
+        {en:"cold", ko:"춥게", t:"comp"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:55, full:"그 비평가는 볼 것이다 그 영화를 (내일)", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"will watch", ko:"볼 것이다", t:"verb"},
+        {en:"the movie", ko:"그 영화를", t:"obj"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:56, full:"나는 탈 것이다 그 자전거를 (역까지) (내일)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"will ride", ko:"탈 것이다", t:"verb"},
+        {en:"the bike", ko:"그 자전거를", t:"obj"},
+        {en:"to the station", ko:"역까지", t:"mod"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:57, full:"그 지도자는 줄 것이다 그 팀에게 답을 (내일)", chunks:[
+        {en:"The leader", ko:"그 지도자는", t:"subj"},
+        {en:"will give", ko:"줄 것이다", t:"verb"},
+        {en:"the team", ko:"그 팀에게", t:"obj"},
+        {en:"an answer", ko:"답을", t:"obj"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:58, full:"그 행사는 만들 것이다 그 도시를 붐비게 (다음 주말에)", chunks:[
+        {en:"The event", ko:"그 행사는", t:"subj"},
+        {en:"will make", ko:"만들 것이다", t:"verb"},
+        {en:"the city", ko:"그 도시를", t:"obj"},
+        {en:"busy", ko:"붐비게", t:"comp"},
+        {en:"next weekend", ko:"다음 주말에", t:"mod"}]},
+      {n:59, full:"그 일정표는 바뀔 것이다 (내일)", chunks:[
+        {en:"The schedule", ko:"그 일정표는", t:"subj"},
+        {en:"will be changed", ko:"바뀔 것이다", t:"verb"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:60, full:"그 행사는 열릴 것이다 (다음 주말에)", chunks:[
+        {en:"The event", ko:"그 행사는", t:"subj"},
+        {en:"will be held", ko:"열릴 것이다", t:"verb"},
+        {en:"next weekend", ko:"다음 주말에", t:"mod"}]},
+      {n:61, full:"그 손님들은 받을 것이다 표 한 장을 (오늘 밤)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"will be given", ko:"받을 것이다", t:"verb"},
+        {en:"a ticket", ko:"표 한 장을", t:"obj"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:62, full:"그 도로는 유지될 것이다 깨끗하게 (그 휴일 동안)", chunks:[
+        {en:"The road", ko:"그 도로는", t:"subj"},
+        {en:"will be kept", ko:"유지될 것이다", t:"verb"},
+        {en:"clean", ko:"깨끗하게", t:"comp"},
+        {en:"during the holiday", ko:"그 휴일 동안", t:"mod"}]},
+      {n:63, full:"그 팀은 경기할 것이다 (다음 주말에)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"is going to compete", ko:"경기할 것이다", t:"verb"},
+        {en:"next weekend", ko:"다음 주말에", t:"mod"}]},
+      {n:64, full:"나는 살 것이다 표 한 장을 (오늘 밤)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"am going to buy", ko:"살 것이다", t:"verb"},
+        {en:"a ticket", ko:"표 한 장을", t:"obj"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:65, full:"나의 가족은 비행기로 갈 것이다 (그 도시로) (다음 달에)", chunks:[
+        {en:"My family", ko:"나의 가족은", t:"subj"},
+        {en:"is going to fly", ko:"비행기로 갈 것이다", t:"verb"},
+        {en:"to the city", ko:"그 도시로", t:"mod"},
+        {en:"next month", ko:"다음 달에", t:"mod"}]},
+      {n:66, full:"그 서류는 보내질 것이다 (내일)", chunks:[
+        {en:"The paper", ko:"그 서류는", t:"subj"},
+        {en:"is going to be sent", ko:"보내질 것이다", t:"verb"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:67, full:"그 기차는 막 도착하려 한다", chunks:[
+        {en:"The train", ko:"그 기차는", t:"subj"},
+        {en:"is about to arrive", ko:"막 도착하려 한다", t:"verb"}]},
+      {n:68, full:"그 시장들은 막 닫으려 한다", chunks:[
+        {en:"The markets", ko:"그 시장들은", t:"subj"},
+        {en:"are about to close", ko:"막 닫으려 한다", t:"verb"}]},
+      {n:69, full:"그 손님들은 막 탑승하려 한다 그 항공편에", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"are about to board", ko:"막 탑승하려 한다", t:"verb"},
+        {en:"the flight", ko:"그 항공편에", t:"obj"}]},
+      {n:70, full:"그 행사는 막 열리려 한다", chunks:[
+        {en:"The event", ko:"그 행사는", t:"subj"},
+        {en:"is about to be held", ko:"막 열리려 한다", t:"verb"}]},
+    ]},
+    { id:"진행 시제", items:[
+      {n:1, full:"눈이 내리고 있다 (지붕 위에)", chunks:[
+        {en:"Snow", ko:"눈이", t:"subj"},
+        {en:"is falling", ko:"내리고 있다", t:"verb"},
+        {en:"on the roof", ko:"지붕 위에", t:"mod"}]},
+      {n:2, full:"누군가가 두드리고 있다 (대문을)", chunks:[
+        {en:"Someone", ko:"누군가가", t:"subj"},
+        {en:"is knocking", ko:"두드리고 있다", t:"verb"},
+        {en:"at the gate", ko:"대문을", t:"mod"}]},
+      {n:3, full:"그 아이들은 헤엄치고 있다 (수영장에서)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"are swimming", ko:"헤엄치고 있다", t:"verb"},
+        {en:"in the pool", ko:"수영장에서", t:"mod"}]},
+      {n:4, full:"그 개들이 뛰어들고 있다 (수영장 안으로)", chunks:[
+        {en:"The dogs", ko:"그 개들이", t:"subj"},
+        {en:"are jumping", ko:"뛰어들고 있다", t:"verb"},
+        {en:"into the pool", ko:"수영장 안으로", t:"mod"}]},
+      {n:5, full:"그 얼음이 녹고 있다 (따뜻한 물속에서)", chunks:[
+        {en:"The ice", ko:"그 얼음이", t:"subj"},
+        {en:"is melting", ko:"녹고 있다", t:"verb"},
+        {en:"in the warm water", ko:"따뜻한 물속에서", t:"mod"}]},
+      {n:6, full:"무대 위의 소음이 커지고 있다 크게", chunks:[
+        {en:"The noise on the stage", ko:"무대 위의 소음이", t:"subj"},
+        {en:"is growing", ko:"커지고 있다", t:"verb"},
+        {en:"loud", ko:"크게", t:"comp"}]},
+      {n:7, full:"하늘이 되어가고 있다 어둡게 (구름으로)", chunks:[
+        {en:"The sky", ko:"하늘이", t:"subj"},
+        {en:"is becoming", ko:"되어가고 있다", t:"verb"},
+        {en:"dark", ko:"어둡게", t:"comp"},
+        {en:"with clouds", ko:"구름으로", t:"mod"}]},
+      {n:8, full:"그 물이 변하고 있다 차갑게 (지금)", chunks:[
+        {en:"The water", ko:"그 물이", t:"subj"},
+        {en:"is turning", ko:"변하고 있다", t:"verb"},
+        {en:"cold", ko:"차갑게", t:"comp"},
+        {en:"now", ko:"지금", t:"mod"}]},
+      {n:9, full:"그 소년들이 오르고 있다 (지붕 위로)", chunks:[
+        {en:"The boys", ko:"그 소년들이", t:"subj"},
+        {en:"are climbing", ko:"오르고 있다", t:"verb"},
+        {en:"onto the roof", ko:"지붕 위로", t:"mod"}]},
+      {n:10, full:"그 요리사들이 굽고 있다 음식을 (부엌에서)", chunks:[
+        {en:"The cooks", ko:"그 요리사들이", t:"subj"},
+        {en:"are baking", ko:"굽고 있다", t:"verb"},
+        {en:"food", ko:"음식을", t:"obj"},
+        {en:"in the kitchen", ko:"부엌에서", t:"mod"}]},
+      {n:11, full:"군중 속 사람들이 흔들고 있다 그들의 손을 (무대를 향해)", chunks:[
+        {en:"People in the crowd", ko:"군중 속 사람들이", t:"subj"},
+        {en:"are waving", ko:"흔들고 있다", t:"verb"},
+        {en:"their hands", ko:"그들의 손을", t:"obj"},
+        {en:"at the stage", ko:"무대를 향해", t:"mod"}]},
+      {n:12, full:"바람이 흔들고 있다 그 창문을", chunks:[
+        {en:"The wind", ko:"바람이", t:"subj"},
+        {en:"is shaking", ko:"흔들고 있다", t:"verb"},
+        {en:"the window", ko:"그 창문을", t:"obj"}]},
+      {n:13, full:"나의 어머니는 주고 있다 그 아이에게 우유를 (지금 이 순간)", chunks:[
+        {en:"My mother", ko:"나의 어머니는", t:"subj"},
+        {en:"is giving", ko:"주고 있다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"milk", ko:"우유를", t:"obj"},
+        {en:"at this moment", ko:"지금 이 순간", t:"mod"}]},
+      {n:14, full:"그 폭풍이 만들고 있다 그 도로를 젖게", chunks:[
+        {en:"The storm", ko:"그 폭풍이", t:"subj"},
+        {en:"is making", ko:"만들고 있다", t:"verb"},
+        {en:"the road", ko:"그 도로를", t:"obj"},
+        {en:"wet", ko:"젖게", t:"comp"}]},
+      {n:15, full:"그 군중이 춤추고 있다 (거리에서)", chunks:[
+        {en:"The crowd", ko:"그 군중이", t:"subj"},
+        {en:"is dancing", ko:"춤추고 있다", t:"verb"},
+        {en:"in the street", ko:"거리에서", t:"mod"}]},
+      {n:16, full:"그 개가 쫓고 있다 그 공을 (정원에서)", chunks:[
+        {en:"The dog", ko:"그 개가", t:"subj"},
+        {en:"is chasing", ko:"쫓고 있다", t:"verb"},
+        {en:"the ball", ko:"그 공을", t:"obj"},
+        {en:"in the garden", ko:"정원에서", t:"mod"}]},
+      {n:17, full:"그 문들이 닫히고 있다 (지금 이 순간)", chunks:[
+        {en:"The gates", ko:"그 문들이", t:"subj"},
+        {en:"are being closed", ko:"닫히고 있다", t:"verb"},
+        {en:"at this moment", ko:"지금 이 순간", t:"mod"}]},
+      {n:18, full:"그 수프가 끓여지고 있다 (부엌에서)", chunks:[
+        {en:"The soup", ko:"그 수프가", t:"subj"},
+        {en:"is being boiled", ko:"끓여지고 있다", t:"verb"},
+        {en:"in the kitchen", ko:"부엌에서", t:"mod"}]},
+      {n:19, full:"그 지붕들이 덮이고 있다 (눈으로)", chunks:[
+        {en:"The roofs", ko:"그 지붕들이", t:"subj"},
+        {en:"are being covered", ko:"덮이고 있다", t:"verb"},
+        {en:"with snow", ko:"눈으로", t:"mod"}]},
+      {n:20, full:"그 무대가 청소되고 있다 (지금 이 순간)", chunks:[
+        {en:"The stage", ko:"그 무대가", t:"subj"},
+        {en:"is being cleaned", ko:"청소되고 있다", t:"verb"},
+        {en:"at the present moment", ko:"지금 이 순간", t:"mod"}]},
+      {n:21, full:"그 음식이 구워지고 있다 (손님들을 위해)", chunks:[
+        {en:"The food", ko:"그 음식이", t:"subj"},
+        {en:"is being baked", ko:"구워지고 있다", t:"verb"},
+        {en:"for the guests", ko:"손님들을 위해", t:"mod"}]},
+      {n:22, full:"그 아이들이 유지되고 있다 따뜻하게 (불 옆에서)", chunks:[
+        {en:"The children", ko:"그 아이들이", t:"subj"},
+        {en:"are being kept", ko:"유지되고 있다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"},
+        {en:"by the fire", ko:"불 옆에서", t:"mod"}]},
+      {n:23, full:"그 수영장이 청소되고 있다 (지금 이 순간)", chunks:[
+        {en:"The pool", ko:"그 수영장이", t:"subj"},
+        {en:"is being cleaned", ko:"청소되고 있다", t:"verb"},
+        {en:"at this moment", ko:"지금 이 순간", t:"mod"}]},
+      {n:24, full:"그 손님들이 받고 있다 따뜻한 식사를", chunks:[
+        {en:"The guests", ko:"그 손님들이", t:"subj"},
+        {en:"are being given", ko:"받고 있다", t:"verb"},
+        {en:"a warm meal", ko:"따뜻한 식사를", t:"obj"}]},
+      {n:25, full:"그 아이들이 춤추고 있었다 (무대 위에서)", chunks:[
+        {en:"The children", ko:"그 아이들이", t:"subj"},
+        {en:"were dancing", ko:"춤추고 있었다", t:"verb"},
+        {en:"on the stage", ko:"무대 위에서", t:"mod"}]},
+      {n:26, full:"그 개들이 뛰어넘고 있었다 (문 위를)", chunks:[
+        {en:"The dogs", ko:"그 개들이", t:"subj"},
+        {en:"were jumping", ko:"뛰어넘고 있었다", t:"verb"},
+        {en:"over the gate", ko:"문 위를", t:"mod"}]},
+      {n:27, full:"그 얼음이 녹고 있었다 (도로 위에서)", chunks:[
+        {en:"The ice", ko:"그 얼음이", t:"subj"},
+        {en:"was melting", ko:"녹고 있었다", t:"verb"},
+        {en:"on the road", ko:"도로 위에서", t:"mod"}]},
+      {n:28, full:"그 물이 끓고 있었다 (불 위에서)", chunks:[
+        {en:"The water", ko:"그 물이", t:"subj"},
+        {en:"was boiling", ko:"끓고 있었다", t:"verb"},
+        {en:"on the fire", ko:"불 위에서", t:"mod"}]},
+      {n:29, full:"그 수영장이 얼고 있었다 (밤에)", chunks:[
+        {en:"The pool", ko:"그 수영장이", t:"subj"},
+        {en:"was freezing", ko:"얼고 있었다", t:"verb"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:30, full:"그 소음이 커지고 있었다 크게 (문 앞에서)", chunks:[
+        {en:"The noise", ko:"그 소음이", t:"subj"},
+        {en:"was growing", ko:"커지고 있었다", t:"verb"},
+        {en:"loud", ko:"크게", t:"comp"},
+        {en:"at the gate", ko:"문 앞에서", t:"mod"}]},
+      {n:31, full:"그 바다가 변하고 있었다 어둡게 (폭풍 동안)", chunks:[
+        {en:"The sea", ko:"그 바다가", t:"subj"},
+        {en:"was turning", ko:"변하고 있었다", t:"verb"},
+        {en:"dark", ko:"어둡게", t:"comp"},
+        {en:"during the storm", ko:"폭풍 동안", t:"mod"}]},
+      {n:32, full:"구름이 덮고 있었다 하늘을 (어제)", chunks:[
+        {en:"Clouds", ko:"구름이", t:"subj"},
+        {en:"were covering", ko:"덮고 있었다", t:"verb"},
+        {en:"the sky", ko:"하늘을", t:"obj"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:33, full:"그 소년들이 쫓고 있었다 그 개를 (정원에서)", chunks:[
+        {en:"The boys", ko:"그 소년들이", t:"subj"},
+        {en:"were chasing", ko:"쫓고 있었다", t:"verb"},
+        {en:"the dog", ko:"그 개를", t:"obj"},
+        {en:"in the garden", ko:"정원에서", t:"mod"}]},
+      {n:34, full:"바람이 흔들고 있었다 그 창문을 (밤새)", chunks:[
+        {en:"The wind", ko:"바람이", t:"subj"},
+        {en:"was shaking", ko:"흔들고 있었다", t:"verb"},
+        {en:"the window", ko:"그 창문을", t:"obj"},
+        {en:"all night", ko:"밤새", t:"mod"}]},
+      {n:35, full:"나의 어머니는 사주고 있었다 그 손님들에게 과일을", chunks:[
+        {en:"My mother", ko:"나의 어머니는", t:"subj"},
+        {en:"was buying", ko:"사주고 있었다", t:"verb"},
+        {en:"the guests", ko:"그 손님들에게", t:"obj"},
+        {en:"fruit", ko:"과일을", t:"obj"}]},
+      {n:36, full:"그 비가 만들고 있었다 그 풀을 젖게", chunks:[
+        {en:"The rain", ko:"그 비가", t:"subj"},
+        {en:"was making", ko:"만들고 있었다", t:"verb"},
+        {en:"the grass", ko:"그 풀을", t:"obj"},
+        {en:"wet", ko:"젖게", t:"comp"}]},
+      {n:37, full:"그 손님들이 두드리고 있었다 (대문을)", chunks:[
+        {en:"The guests", ko:"그 손님들이", t:"subj"},
+        {en:"were knocking", ko:"두드리고 있었다", t:"verb"},
+        {en:"at the gate", ko:"대문을", t:"mod"}]},
+      {n:38, full:"그 군중이 손을 흔들고 춤추고 있었다 (거리에서)", chunks:[
+        {en:"The crowd", ko:"그 군중이", t:"subj"},
+        {en:"was waving", ko:"손을 흔들고", t:"verb"},
+        {en:"and", ko:"", t:"conj"},
+        {en:"dancing", ko:"춤추고 있었다", t:"verb"},
+        {en:"in the street", ko:"거리에서", t:"mod"}]},
+      {n:39, full:"그 물이 얼고 있었다 (차가운 바람 속에서)", chunks:[
+        {en:"The water", ko:"그 물이", t:"subj"},
+        {en:"was freezing", ko:"얼고 있었다", t:"verb"},
+        {en:"in the cold wind", ko:"차가운 바람 속에서", t:"mod"}]},
+      {n:40, full:"그 개가 쫓고 있었다 그 소년을 (도로 위에서)", chunks:[
+        {en:"The dog", ko:"그 개가", t:"subj"},
+        {en:"was chasing", ko:"쫓고 있었다", t:"verb"},
+        {en:"the boy", ko:"그 소년을", t:"obj"},
+        {en:"on the road", ko:"도로 위에서", t:"mod"}]},
+      {n:41, full:"그 지붕이 청소되고 있었다 (어제)", chunks:[
+        {en:"The roof", ko:"그 지붕이", t:"subj"},
+        {en:"was being cleaned", ko:"청소되고 있었다", t:"verb"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:42, full:"그 창문들이 청소되고 있었다 (어제)", chunks:[
+        {en:"The windows", ko:"그 창문들이", t:"subj"},
+        {en:"were being cleaned", ko:"청소되고 있었다", t:"verb"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:43, full:"그 문이 흔들리고 있었다 (바람에 의해)", chunks:[
+        {en:"The gate", ko:"그 문이", t:"subj"},
+        {en:"was being shaken", ko:"흔들리고 있었다", t:"verb"},
+        {en:"by the wind", ko:"바람에 의해", t:"mod"}]},
+      {n:44, full:"그 도로가 덮이고 있었다 (눈으로)", chunks:[
+        {en:"The road", ko:"그 도로가", t:"subj"},
+        {en:"was being covered", ko:"덮이고 있었다", t:"verb"},
+        {en:"with snow", ko:"눈으로", t:"mod"}]},
+      {n:45, full:"그 손님들이 유지되고 있었다 따뜻하게 (폭풍 동안)", chunks:[
+        {en:"The guests", ko:"그 손님들이", t:"subj"},
+        {en:"were being kept", ko:"유지되고 있었다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"},
+        {en:"during the storm", ko:"폭풍 동안", t:"mod"}]},
+      {n:46, full:"그 아이들이 받고 있었다 따뜻한 수프를", chunks:[
+        {en:"The children", ko:"그 아이들이", t:"subj"},
+        {en:"were being given", ko:"받고 있었다", t:"verb"},
+        {en:"warm soup", ko:"따뜻한 수프를", t:"obj"}]},
+      {n:47, full:"나는 헤엄치고 있을 것이다 (수영장에서) (오늘 밤)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"will be swimming", ko:"헤엄치고 있을 것이다", t:"verb"},
+        {en:"in the pool", ko:"수영장에서", t:"mod"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:48, full:"눈이 내리고 있을 것이다 (지붕 위에) (내일)", chunks:[
+        {en:"Snow", ko:"눈이", t:"subj"},
+        {en:"will be falling", ko:"내리고 있을 것이다", t:"verb"},
+        {en:"on the roof", ko:"지붕 위에", t:"mod"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:49, full:"그 날씨는 변해가고 있을 것이다 차갑게 (오늘 밤)", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"will be turning", ko:"변해가고 있을 것이다", t:"verb"},
+        {en:"cold", ko:"차갑게", t:"comp"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:50, full:"그 팀은 오르고 있을 것이다 (지붕 위로) (내일)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"will be climbing", ko:"오르고 있을 것이다", t:"verb"},
+        {en:"onto the roof", ko:"지붕 위로", t:"mod"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:51, full:"그 폭풍은 만들고 있을 것이다 그 바다를 어둡게", chunks:[
+        {en:"The storm", ko:"그 폭풍은", t:"subj"},
+        {en:"will be making", ko:"만들고 있을 것이다", t:"verb"},
+        {en:"the sea", ko:"그 바다를", t:"obj"},
+        {en:"dark", ko:"어둡게", t:"comp"}]},
+      {n:52, full:"이 자전거는 속한다 나의 형에게", chunks:[
+        {en:"This bike", ko:"이 자전거는", t:"subj"},
+        {en:"belongs to", ko:"속한다", t:"verb"},
+        {en:"my brother", ko:"나의 형에게", t:"obj"}]},
+      {n:53, full:"이 책들은 속한다 그 학교에", chunks:[
+        {en:"These books", ko:"이 책들은", t:"subj"},
+        {en:"belong to", ko:"속한다", t:"verb"},
+        {en:"the school", ko:"그 학교에", t:"obj"}]},
+      {n:54, full:"성공은 달려 있다 노력에", chunks:[
+        {en:"Success", ko:"성공은", t:"subj"},
+        {en:"depends on", ko:"달려 있다", t:"verb"},
+        {en:"effort", ko:"노력에", t:"obj"}]},
+      {n:55, full:"그 결과들은 달려 있다 날씨에", chunks:[
+        {en:"The results", ko:"그 결과들은", t:"subj"},
+        {en:"depend on", ko:"달려 있다", t:"verb"},
+        {en:"the weather", ko:"날씨에", t:"obj"}]},
+      {n:56, full:"현재 날씨는 보인다 따뜻하게", chunks:[
+        {en:"The present weather", ko:"현재 날씨는", t:"subj"},
+        {en:"seems", ko:"보인다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:57, full:"현재 일정표는 보인다 이상하게", chunks:[
+        {en:"The present schedule", ko:"현재 일정표는", t:"subj"},
+        {en:"looks", ko:"보인다", t:"verb"},
+        {en:"strange", ko:"이상하게", t:"comp"}]},
+      {n:58, full:"그 상자들은 담고 있다 과일을", chunks:[
+        {en:"The boxes", ko:"그 상자들은", t:"subj"},
+        {en:"contain", ko:"담고 있다", t:"verb"},
+        {en:"fruit", ko:"과일을", t:"obj"}]},
+      {n:59, full:"그 가방은 담고 있다 달걀을", chunks:[
+        {en:"The bag", ko:"그 가방은", t:"subj"},
+        {en:"contains", ko:"담고 있다", t:"verb"},
+        {en:"eggs", ko:"달걀을", t:"obj"}]},
+      {n:60, full:"나의 누나는 소유하고 있다 자동차 한 대를", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"owns", ko:"소유하고 있다", t:"verb"},
+        {en:"a car", ko:"자동차 한 대를", t:"obj"}]},
+      {n:61, full:"그 팀은 소유하고 있다 그 경기장을", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"owns", ko:"소유하고 있다", t:"verb"},
+        {en:"the field", ko:"그 경기장을", t:"obj"}]},
+      {n:62, full:"그 팀은 받을 만하다 성공을", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"deserves", ko:"받을 만하다", t:"verb"},
+        {en:"success", ko:"성공을", t:"obj"}]},
+      {n:63, full:"나의 누나는 받을 만하다 그 돈을", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"deserves", ko:"받을 만하다", t:"verb"},
+        {en:"the money", ko:"그 돈을", t:"obj"}]},
+      {n:64, full:"그 변화들은 의미한다 위험을", chunks:[
+        {en:"The changes", ko:"그 변화들은", t:"subj"},
+        {en:"mean", ko:"의미한다", t:"verb"},
+        {en:"danger", ko:"위험을", t:"obj"}]},
+      {n:65, full:"높은 가격은 의미한다 낮은 판매를", chunks:[
+        {en:"A high price", ko:"높은 가격은", t:"subj"},
+        {en:"means", ko:"의미한다", t:"verb"},
+        {en:"low sales", ko:"낮은 판매를", t:"obj"}]},
+      {n:66, full:"그 군중은 여긴다 그 시인을 천재라고", chunks:[
+        {en:"The crowd", ko:"그 군중은", t:"subj"},
+        {en:"considers", ko:"여긴다", t:"verb"},
+        {en:"the poet", ko:"그 시인을", t:"obj"},
+        {en:"a genius", ko:"천재라고", t:"comp"}]},
+      {n:67, full:"너는 굴고 있다 이상하게 (지금)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"are being", ko:"굴고 있다", t:"verb"},
+        {en:"strange", ko:"이상하게", t:"comp"},
+        {en:"now", ko:"지금", t:"mod"}]},
+      {n:68, full:"나의 형은 굴고 있다 솔직하게 (손님들에게)", chunks:[
+        {en:"My brother", ko:"나의 형은", t:"subj"},
+        {en:"is being", ko:"굴고 있다", t:"verb"},
+        {en:"honest", ko:"솔직하게", t:"comp"},
+        {en:"with the guests", ko:"손님들에게", t:"mod"}]},
+    ]},
   ],
   vocab:[
     { id:"1형식(1)", items:[
@@ -2786,6 +4105,102 @@ const DATA = {
       {en:"new", ko:["새로운"], pos:"adj"},
       {en:"next", ko:["다음의"], pos:"adj"},
       {en:"short", ko:["짧은"], pos:"adj"}
+    ]},
+    { id:"5형식수동태", items:[
+      {en:"queen", ko:["여왕"], pos:"n"},
+      {en:"police", ko:["경찰"], pos:"n"},
+      {en:"model", ko:["모형", "모델"], pos:"n"},
+      {en:"sea", ko:["바다"], pos:"n"},
+      {en:"weather", ko:["날씨"], pos:"n"},
+      {en:"chemical", ko:["화학물질"], pos:"n"},
+      {en:"dream", ko:["꿈"], pos:"n"},
+      {en:"form", ko:["형태", "양식"], pos:"n"},
+      {en:"grass", ko:["풀"], pos:"n"},
+      {en:"ice", ko:["얼음"], pos:"n"},
+      {en:"nature", ko:["자연"], pos:"n"},
+      {en:"rose", ko:["장미"], pos:"n"},
+      {en:"salt", ko:["소금"], pos:"n"},
+      {en:"smile", ko:["미소"], pos:"n"},
+      {en:"style", ko:["방식", "스타일"], pos:"n"},
+      {en:"wood", ko:["나무", "목재"], pos:"n"},
+      {en:"delicious", ko:["맛있는"], pos:"a"},
+      {en:"hard", ko:["어려운", "열심히"], pos:"a"},
+      {en:"high", ko:["높은"], pos:"a"},
+      {en:"light", ko:["가벼운", "빛"], pos:"a"},
+      {en:"panic", ko:["당황하다", "공황"], pos:"v"},
+      {en:"take", ko:["가져가다", "취하다"], pos:"v"},
+      {en:"drive", ko:["운전하다"], pos:"v"},
+      {en:"forget", ko:["잊다"], pos:"v"},
+    ]},
+    { id:"MASH UP(문장 구조)", items:[
+      {en:"vary", ko:["다양하다"], pos:"v"},
+      {en:"differ", ko:["다르다"], pos:"v"},
+      {en:"happen", ko:["일어나다"], pos:"v"},
+      {en:"love", ko:["사랑하다"], pos:"v"},
+      {en:"hate", ko:["싫어하다"], pos:"v"},
+      {en:"like", ko:["좋아하다", "~처럼"], pos:"v"},
+      {en:"world", ko:["세계"], pos:"n"},
+    ]},
+    { id:"기본 시제", items:[
+      {en:"yesterday", ko:["어제"], pos:"ad"},
+      {en:"tomorrow", ko:["내일"], pos:"ad"},
+      {en:"tonight", ko:["오늘 밤"], pos:"ad"},
+      {en:"soon", ko:["곧"], pos:"ad"},
+      {en:"late", ko:["늦은", "늦게"], pos:"a"},
+      {en:"ago", ko:["~ 전에"], pos:"ad"},
+      {en:"once", ko:["한 번", "한때"], pos:"ad"},
+      {en:"always", ko:["항상"], pos:"ad"},
+      {en:"age", ko:["나이", "시대"], pos:"n"},
+      {en:"often", ko:["자주"], pos:"ad"},
+      {en:"past", ko:["과거", "지난"], pos:"n"},
+      {en:"habit", ko:["습관"], pos:"n"},
+      {en:"birth", ko:["탄생", "출생"], pos:"n"},
+      {en:"holiday", ko:["휴일"], pos:"n"},
+      {en:"vacation", ko:["휴가"], pos:"n"},
+      {en:"weekend", ko:["주말"], pos:"n"},
+      {en:"schedule", ko:["일정", "일정을 잡다"], pos:"n"},
+      {en:"event", ko:["행사", "사건"], pos:"n"},
+      {en:"airport", ko:["공항"], pos:"n"},
+      {en:"station", ko:["역", "정거장"], pos:"n"},
+      {en:"train", ko:["기차", "훈련하다"], pos:"n"},
+      {en:"flight", ko:["항공편", "비행"], pos:"n"},
+      {en:"ticket", ko:["표", "승차권"], pos:"n"},
+      {en:"arrive", ko:["도착하다"], pos:"v"},
+      {en:"fly", ko:["날다", "비행기로 가다"], pos:"v"},
+      {en:"ride", ko:["타다"], pos:"v"},
+      {en:"board", ko:["탑승하다", "판자"], pos:"v"},
+    ]},
+    { id:"진행 시제", items:[
+      {en:"belong", ko:["속하다"], pos:"v"},
+      {en:"contain", ko:["담고 있다", "포함하다"], pos:"v"},
+      {en:"own", ko:["소유하다", "자기 자신의"], pos:"v"},
+      {en:"deserve", ko:["~을 받을 만하다"], pos:"v"},
+      {en:"depend", ko:["~에 달려 있다", "~에 의존하다"], pos:"v"},
+      {en:"mean", ko:["의미하다"], pos:"v"},
+      {en:"knock", ko:["두드리다"], pos:"v"},
+      {en:"shake", ko:["흔들다", "흔들리다"], pos:"v"},
+      {en:"melt", ko:["녹다", "녹이다"], pos:"v"},
+      {en:"boil", ko:["끓다", "끓이다"], pos:"v"},
+      {en:"freeze", ko:["얼다", "얼리다"], pos:"v"},
+      {en:"bake", ko:["굽다"], pos:"v"},
+      {en:"climb", ko:["오르다"], pos:"v"},
+      {en:"swim", ko:["헤엄치다"], pos:"v"},
+      {en:"jump", ko:["뛰어오르다"], pos:"v"},
+      {en:"dance", ko:["춤추다"], pos:"v"},
+      {en:"wave", ko:["흔들다", "파도"], pos:"v"},
+      {en:"chase", ko:["뒤쫓다"], pos:"v"},
+      {en:"noise", ko:["소음"], pos:"n"},
+      {en:"wind", ko:["바람"], pos:"n"},
+      {en:"snow", ko:["눈", "눈이 오다"], pos:"n"},
+      {en:"storm", ko:["폭풍"], pos:"n"},
+      {en:"cloud", ko:["구름"], pos:"n"},
+      {en:"moment", ko:["순간"], pos:"n"},
+      {en:"pool", ko:["수영장", "웅덩이"], pos:"n"},
+      {en:"stage", ko:["무대", "단계"], pos:"n"},
+      {en:"gate", ko:["문", "대문"], pos:"n"},
+      {en:"roof", ko:["지붕"], pos:"n"},
+      {en:"present", ko:["현재의", "현재", "선물"], pos:"a"},
+      {en:"now", ko:["지금"], pos:"ad"},
     ]},
   ],
   memory:[

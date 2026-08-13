@@ -382,6 +382,31 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
 @media (min-width:760px) and (orientation:landscape){
   #app{min-height:auto}
 }
+.pk-card{background:#fff;border:2px solid var(--line,#d5d8dd);padding:14px 13px;margin-bottom:12px;opacity:.4;transition:opacity .18s,border-color .18s}
+.pk-card.pk-on{opacity:1;border-color:#3f3f45}
+.pk-t{font-size:13px;font-weight:800;color:#3f3f45;margin-bottom:3px}
+.pk-s{font-size:11px;color:#8a8d93;margin-bottom:10px}
+.pk-or{display:flex;align-items:center;gap:10px;margin:0 2px 12px}
+.pk-or::before,.pk-or::after{content:"";flex:1;height:1px;background:var(--line,#d5d8dd)}
+.pk-or span{font-size:11px;color:#a7abb0;font-weight:700}
+.pk-row{display:flex;align-items:center;gap:9px}
+.pk-row input[type=range]{flex:1;min-width:0}
+#pk_num{width:48px;height:42px;border:2px solid #c9cdd4;background:#fff;text-align:center;font-size:15px;font-weight:800;color:#3f3f45;border-radius:0;padding:0;flex:none;box-sizing:border-box}
+.pk-minmax{display:flex;justify-content:space-between;font-size:10px;color:#a7abb0;margin-top:5px;padding-right:57px}
+.pk-ord{display:flex;gap:8px;margin-bottom:10px}
+.pk-ob{flex:1;height:38px;border:2px solid #c9cdd4;background:#fff;color:#8a8d93;border-radius:0;font-size:13px;font-weight:800}
+.pk-ob-on{border-color:#3f3f45;background:#3f3f45;color:#fff}
+
+.slowv-row{display:flex;align-items:center;gap:12px;border:2px solid var(--line);background:var(--card);padding:12px 13px;margin-bottom:16px;cursor:pointer}
+.slowv-txt{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.slowv-txt b{font-size:13px;font-weight:800;color:#3f3f45}
+.slowv-txt small{font-size:11px;color:#8a8d93}
+.slowv-chk{position:absolute;opacity:0;width:0;height:0}
+.slowv-sw{flex:none;width:44px;height:26px;border:2px solid #c9cdd4;background:#fff;position:relative;transition:border-color .15s,background .15s}
+.slowv-sw::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;background:#c9cdd4;transition:transform .15s,background .15s}
+.slowv-chk:checked + .slowv-sw{border-color:#f4a259;background:#fdf1e6}
+.slowv-chk:checked + .slowv-sw::after{background:#f4a259;transform:translateX(18px)}
+
 </style>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#f4a259">
@@ -445,7 +470,7 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
     <div class="topbar"><button class="back" onclick="go('s_units')">‹</button><span class="crumb" id="s_scope_crumb"></span></div>
     <div class="stack">
       <button class="bigbtn" onclick="startSentence('all')">전체 문장 학습</button>
-      <button class="bigbtn" onclick="go('s_pick')">선택 문장 학습</button>
+      <button class="bigbtn" onclick="go('s_pick');pkInit()">선택 문장 학습</button>
     </div>
   </section>
 
@@ -461,15 +486,41 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
   <!-- ============ 문장 : 선택 입력 ============ -->
   <section id="s_pick" class="screen">
     <div class="topbar"><button class="back" onclick="go('s_scope')">‹</button><span class="crumb">선택 문장 학습</span></div>
-    <div class="field-label">선택할 문장</div>
-    <div class="field-box"><textarea class="picker" id="s_pick_input" placeholder="예: 1, 2, 5-8, 12"></textarea></div>
-    <div class="hint">지난 학습에서 복사한 “틀린 문장”을 그대로 붙여넣어도 돼요.</div>
-    <button class="go" onclick="startSentence('pick')">이 문장으로 학습</button>
+    <div class="hint" id="s_pick_total" style="margin-bottom:10px"></div>
+
+    <div id="pk_numbox" class="pk-card pk-on" onclick="pkMode('num')">
+      <div class="pk-t">번호로 고르기</div>
+      <div class="pk-s">쉼표로 구분 · 결과 화면에서 복사한 걸 붙여넣어도 돼</div>
+      <div class="field-box"><textarea class="picker" id="s_pick_input" placeholder="예: 1, 2, 5-8, 12" oninput="pkMode('num')" onfocus="pkMode('num')"></textarea></div>
+    </div>
+
+    <div class="pk-or"><span>또는</span></div>
+
+    <div id="pk_cntbox" class="pk-card" onclick="pkMode('cnt')">
+      <div class="pk-t">개수로 고르기</div>
+      <div class="pk-s">앞에서부터 그만큼 · 셔플이면 무작위로</div>
+      <div class="pk-row">
+        <input type="range" id="pk_range" min="1" max="10" value="10" oninput="pkSync('r')" onfocus="pkMode('cnt')">
+        <input id="pk_num" value="10" inputmode="numeric" oninput="pkSync('n')" onfocus="pkMode('cnt')">
+      </div>
+      <div class="pk-minmax"><span>1</span><span id="pk_max">10</span></div>
+    </div>
+
+    <div class="pk-ord">
+      <button id="pk_seq" class="pk-ob pk-ob-on" onclick="pkOrd(false)">순서대로</button>
+      <button id="pk_shf" class="pk-ob" onclick="pkOrd(true)">셔플</button>
+    </div>
+    <button class="go" onclick="startPick()">시작하기</button>
   </section>
 
   <!-- ============ 문장 : 모드 선택 ============ -->
   <section id="s_mode" class="screen">
     <div class="topbar"><button class="back" onclick="backToScope()">‹</button><span class="crumb" id="s_mode_crumb"></span></div>
+    <label class="slowv-row">
+      <span class="slowv-txt"><b>동사에서 느리게</b><small>판정 바 · 커서 모드에서 동사 구간 속도를 늦춰요</small></span>
+      <input type="checkbox" class="slowv-chk" onchange="toggleSlowVerb(this.checked)">
+      <span class="slowv-sw"></span>
+    </label>
     <div class="modewrap">
 
       <div class="modecard">
@@ -734,6 +785,7 @@ function go(id){
   document.getElementById(id).classList.add('active');
   document.getElementById('app').scrollTop=0;
   window.scrollTo(0,0);
+  if(id==='s_mode') document.querySelectorAll('.slowv-chk').forEach(el=>{ el.checked=SLOWV; });
 }
 
 /* ============ 진도 리스트 렌더 ============ */
@@ -801,6 +853,50 @@ function startSentence(scope){
   pendingSession={unit:unit.id, items:items.slice(), label:(scope==='all'?'전체':'선택')};
   document.getElementById('s_order_crumb').textContent=unit.id+' · '+pendingSession.label+' '+items.length+'문장';
   go('s_order');
+}
+
+/* ---- 선택 문장 학습 화면 ---- */
+let PK={mode:'num', shuffle:false};
+function pkInit(){
+  const u=DATA.sentence[curUnit], n=u.items.length;
+  $('s_pick_total').textContent=u.id+' · 전체 '+n+'문장';
+  const r=$('pk_range'); r.max=n; r.value=Math.min(20,n);
+  $('pk_num').value=r.value; $('pk_max').textContent=n;
+  $('s_pick_input').value='';
+  PK.mode='num'; PK.shuffle=false; pkMode('num'); pkOrd(false);
+}
+function pkMode(m){
+  PK.mode=m;
+  $('pk_numbox').classList.toggle('pk-on', m==='num');
+  $('pk_cntbox').classList.toggle('pk-on', m==='cnt');
+}
+function pkSync(src){
+  const n=DATA.sentence[curUnit].items.length;
+  if(src==='r') $('pk_num').value=$('pk_range').value;
+  else{ let v=Math.max(1,Math.min(n,parseInt($('pk_num').value)||1)); $('pk_range').value=v; }
+  pkMode('cnt');
+}
+function pkOrd(sh){
+  PK.shuffle=sh;
+  $('pk_seq').classList.toggle('pk-ob-on', !sh);
+  $('pk_shf').classList.toggle('pk-ob-on', sh);
+}
+function startPick(){
+  const unit=DATA.sentence[curUnit]; let items, label;
+  if(PK.mode==='num'){
+    const nums=parseNums($('s_pick_input').value);
+    items=unit.items.filter(it=>nums.includes(it.n));
+    if(!items.length){ alert('문장 번호를 입력해줘 (예: 1, 2, 5)'); return; }
+    label='선택';
+  } else {
+    const c=Math.max(1,Math.min(unit.items.length,parseInt($('pk_num').value)||1));
+    items = PK.shuffle ? shuffle(unit.items.slice()).slice(0,c) : unit.items.slice(0,c);
+    label=c+'개';
+  }
+  if(PK.shuffle) shuffle(items);
+  session={type:'sentence',unit:unit.id,items,idx:0,wrong:new Set()};
+  $('s_mode_crumb').textContent=unit.id+' · '+label+' '+items.length+'문장'+(PK.shuffle?' · 셔플':'');
+  go('s_mode');
 }
 let pendingSession=null;
 function applyOrder(doShuffle){
@@ -897,6 +993,7 @@ function shape(el,t){
   else if(t==='verb') s.appendChild(mk('polygon',{points:`2,2 ${w-2},${h/2} 2,${h-2}`,fill:CC.verb,'fill-opacity':.5,stroke:CC.verb,'stroke-width':2}));
   else if(t==='comp') s.appendChild(mk('ellipse',{cx:w/2,cy:h/2,rx:w/2-2,ry:h/2-2,fill:CC.comp,'fill-opacity':.4,stroke:CC.comp,'stroke-width':2}));
   else if(t==='obj') s.appendChild(mk('rect',{x:2,y:2,width:w-4,height:h-4,fill:'none',stroke:CC.obj,'stroke-width':2.5}));
+  else if(t==='conj') s.appendChild(mk('polygon',{points:`2,2 ${w-2},${h/2} 2,${h-2}`,fill:'none',stroke:CC.mod,'stroke-width':2}));
   else if(t==='mod'){ s.appendChild(mk('path',{d:`M10 4 Q3 ${h/2} 10 ${h-4}`,fill:'none',stroke:CC.mod,'stroke-width':2}));
                       s.appendChild(mk('path',{d:`M${w-10} 4 Q${w-3} ${h/2} ${w-10} ${h-4}`,fill:'none',stroke:CC.mod,'stroke-width':2})); }
   el.insertBefore(s,el.firstChild);
@@ -983,8 +1080,15 @@ function scrollCursor(animate){
   stem.style.width = (cw-4)+'px';             // 가리키는 성분 길이에 맞춤
   stem.style.top   = (chH + 20)+'px';         // 청크 아래 밑줄
 }
+const SLOW_BAR=2.0, SLOW_CUR=1.8;
+let SLOWV = localStorage_get('slowVerb')==='1';
+function localStorage_get(k){ try{ return window.__rmPrefs&&window.__rmPrefs[k]; }catch(e){ return null; } }
+function toggleSlowVerb(on){ SLOWV=on; window.__rmPrefs=window.__rmPrefs||{}; window.__rmPrefs.slowVerb=on?'1':'0';
+  document.querySelectorAll('.slowv-chk').forEach(el=>{ el.checked=on; }); }
 function setDwell(){ const c=study.ch[study.idx]; if(!c)return;
-  study.dwellMax=(1600+c.d.en.length*95)/study.lvl; study.dwell=0; $('gfill').style.transform='scaleX(1)'; }
+  let d=(1600+c.d.en.length*95)/study.lvl;
+  if(SLOWV && c.d.t==='verb') d*=SLOW_CUR;
+  study.dwellMax=d; study.dwell=0; $('gfill').style.transform='scaleX(1)'; }
 
 /* ---- 지면 : 힌트 없는 평문 ---- */
 function setupPage(){ /* 아무 힌트도 주지 않음 */ }
@@ -1002,17 +1106,35 @@ function tick(t){
   if(!study||!study.run) return;
   if(!study.lastT) study.lastT=t; const dt=t-study.lastT; study.lastT=t;
   if(study.mode==='bar'){
-    study.x -= ($('stage').clientWidth*0.20*study.lvl)*dt/1000; $('track').style.left=study.x+'px';
+    const W=$('stage').clientWidth, LX=CURX(), PRE=W*0.35, OUT=W*0.15, sb=$('stage').getBoundingClientRect();
+    let f=1;
+    if(SLOWV){                                         // 동사에서 느리게: 판정선 앞 35%부터 경사 감속
+      for(const c of study.ch){
+        if(c.done || c.d.t!=='verb') continue;
+        const r=c.el.getBoundingClientRect(), l=r.left-sb.left, rg=r.right-sb.left;
+        let k=0;
+        if(l<=LX && rg>=LX) k=1;
+        else if(l>LX && l<LX+PRE) k=1-(l-LX)/PRE;
+        else if(rg<LX && rg>LX-OUT) k=(rg-(LX-OUT))/OUT;
+        if(k>0){ k=k*k*(3-2*k); f=Math.min(f, 1/(1+(SLOW_BAR-1)*k)); }
+      }
+    }
+    study.x -= (W*0.20*study.lvl*f)*dt/1000; $('track').style.left=study.x+'px';
     const c=study.ch[study.idx];
     if(c && !c.done){
       const r=c.el.getBoundingClientRect(), s=$('stage').getBoundingClientRect();
       const center=r.left - s.left + r.width/2, rightEdge=r.right - s.left;
-      if(study.sub==='real'){ if(center<=CURX()) resolve(true); }   // 실전: 판정선 도달 시 자동 확정
-      else if(rightEdge < CURX()) resolve(false);                   // 연습: 못 누르고 지나침 → 오답
+      if(c.d.t==='conj'){ if(center<=CURX()) resolve(true); }        // 접속사: 판정 없이 자동 통과
+      else if(study.sub==='real'){ if(center<=CURX()) resolve(true); }
+      else if(rightEdge < CURX()) resolve(false);
     }
   } else if(study.mode==='cursor' && study.sub==='practice'){
-    study.dwell+=dt; $('gfill').style.transform='scaleX('+Math.max(0,1-study.dwell/study.dwellMax).toFixed(3)+')';
-    if(study.dwell>=study.dwellMax) resolve(false);                 // 시간초과 → 오답
+    const cc=study.ch[study.idx];
+    if(cc && !cc.done && cc.d.t==='conj'){ resolve(true); }          // 접속사: 체류 없이 통과
+    else {
+      study.dwell+=dt; $('gfill').style.transform='scaleX('+Math.max(0,1-study.dwell/study.dwellMax).toFixed(3)+')';
+      if(study.dwell>=study.dwellMax) resolve(false);
+    }
   }
   if(!study.run) return;
   requestAnimationFrame(tick);
@@ -1021,13 +1143,16 @@ function tick(t){
 /* ---- 확정 ---- */
 function resolve(ok){
   const c=study.ch[study.idx]; if(!c||c.done) return;
+  const isConj = c.d.t==='conj';
   c.done=true; c.el.classList.add('lit','done',c.d.t); shape(c.el,c.d.t);
-  c.el.classList.add('pop'); setTimeout(()=>c.el.classList.remove('pop'),320);
+  if(!isConj){ c.el.classList.add('pop'); setTimeout(()=>c.el.classList.remove('pop'),320); }
   const it=session.items[session.idx];
-  if(!ok) session.wrong.add(it.n);
-  const accum=$('accum'); if(accum.querySelector('.ph')) accum.innerHTML='';
-  const p=document.createElement('span'); p.className='pill '+c.d.t+(ok?'':' bad');
-  p.textContent = c.d.t==='mod' ? '('+c.d.ko+')' : c.d.ko; accum.appendChild(p);
+  if(!ok && !isConj) session.wrong.add(it.n);
+  if(!isConj && c.d.ko){
+    const accum=$('accum'); if(accum.querySelector('.ph')) accum.innerHTML='';
+    const p=document.createElement('span'); p.className='pill '+c.d.t+(ok?'':' bad');
+    p.textContent = c.d.t==='mod' ? '('+c.d.ko+')' : c.d.ko; accum.appendChild(p);
+  }
   study.idx++;
   if(study.idx>=study.ch.length){ study.run=false; sentenceDone(); return; }
   if(study.mode==='cursor'){ scrollCursor(true); if(study.sub==='practice'&&study.run) setDwell(); }
@@ -1059,6 +1184,7 @@ function answer(t){
   if(!study||study.sub!=='practice') return;
   if(study.mode!=='page' && !study.run){ startPlay(); return; }   // 판정바/커서 연습: 첫 입력이 곧 시작
   const c=study.ch[study.idx]; if(!c||c.done) return;
+  if(c.d.t==='conj') return;                 // 접속사는 판정 대상이 아님
   if(study.mode==='bar'){
     const r=c.el.getBoundingClientRect(), s=$('stage').getBoundingClientRect();
     if(r.left - s.left > CURX()+60) return;   // 아직 판정선 한참 전이면 무시
