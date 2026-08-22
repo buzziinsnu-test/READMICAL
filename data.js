@@ -315,11 +315,7 @@ const DATA = {
         {en:"proves", ko:"~로 드러난다", t:"verb"},
         {en:"true", ko:"사실인", t:"comp"},
         {en:"over time", ko:"시간이 지나면서", t:"mod"}]},
-      {n:2, full:"그 우유는 아침에 달콤해 보인다", chunks:[
-        {en:"The milk", ko:"그 우유는", t:"subj"},
-        {en:"appears", ko:"~해 보인다", t:"verb"},
-        {en:"sweet", ko:"달콤한", t:"comp"},
-        {en:"in the morning", ko:"아침에", t:"mod"}]},
+      {n:2, full:"그 과일은 점점 달아진다", chunks:[{en:"The fruit",ko:"그 과일은",t:"subj"},{en:"grows",ko:"점점 ~해진다",t:"verb"},{en:"sweet",ko:"단",t:"comp"}]},
       {n:3, full:"그 환자는 길 위에서 준비된 상태로 있다", chunks:[
         {en:"The patient", ko:"그 환자는", t:"subj"},
         {en:"stands", ko:"~한 상태로 있다", t:"verb"},
@@ -330,11 +326,7 @@ const DATA = {
         {en:"seems", ko:"~인 것 같다", t:"verb"},
         {en:"soft", ko:"부드러운", t:"comp"},
         {en:"at night", ko:"밤에", t:"mod"}]},
-      {n:5, full:"그 손님은 정원에서 꼿꼿이 서 있다", chunks:[
-        {en:"The guest", ko:"그 손님은", t:"subj"},
-        {en:"stands", ko:"~한 상태로 있다", t:"verb"},
-        {en:"tall", ko:"꼿꼿한", t:"comp"},
-        {en:"in the garden", ko:"정원에서", t:"mod"}]},
+      {n:5, full:"그 아이는 정원에서 훤칠하게 서 있다", chunks:[{en:"The child",ko:"그 아이는",t:"subj"},{en:"stands",ko:"~한 상태로 있다",t:"verb"},{en:"tall",ko:"키가 큰",t:"comp"},{en:"in the garden",ko:"정원에서",t:"mod"}]},
       {n:6, full:"그 생각은 그 갈등 속에서 사실인 채로 유지된다", chunks:[
         {en:"The idea", ko:"그 생각은", t:"subj"},
         {en:"holds", ko:"~한 채로 유지된다", t:"verb"},
@@ -365,11 +357,7 @@ const DATA = {
         {en:"appears", ko:"~해 보인다", t:"verb"},
         {en:"strange", ko:"이상한", t:"comp"},
         {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:12, full:"그 진실은 방 안에서 깊은 채로 남는다", chunks:[
-        {en:"The truth", ko:"그 진실은", t:"subj"},
-        {en:"remains", ko:"~한 채로 남는다", t:"verb"},
-        {en:"deep", ko:"깊은", t:"comp"},
-        {en:"in the room", ko:"방 안에서", t:"mod"}]},
+      {n:12, full:"그 진실은 전쟁이 끝난 뒤에도 깊은 채로 남는다", chunks:[{en:"The truth",ko:"그 진실은",t:"subj"},{en:"remains",ko:"~한 채로 남는다",t:"verb"},{en:"deep",ko:"깊은",t:"comp"},{en:"after the war",ko:"전쟁 뒤에도",t:"mod"}]},
       {n:13, full:"그 비행기는 그 도시에서 어두워 보인다", chunks:[
         {en:"The plane", ko:"그 비행기는", t:"subj"},
         {en:"seems", ko:"~인 것 같다", t:"verb"},
@@ -433,10 +421,7 @@ const DATA = {
         {en:"The leaves", ko:"그 잎들이", t:"subj"},
         {en:"turn", ko:"~하게 변한다", t:"verb"},
         {en:"red", ko:"빨간", t:"comp"}]},
-      {n:27, full:"그 가격이 낮아진다", chunks:[
-        {en:"The price", ko:"그 가격이", t:"subj"},
-        {en:"falls", ko:"~해진다", t:"verb"},
-        {en:"low", ko:"낮은", t:"comp"}]},
+      {n:27, full:"그 가격은 그 도시에서 낮게 유지된다", chunks:[{en:"The price",ko:"그 가격은",t:"subj"},{en:"stays",ko:"~한 채로 유지된다",t:"verb"},{en:"low",ko:"낮은",t:"comp"},{en:"in the city",ko:"그 도시에서",t:"mod"}]},
       {n:28, full:"그 과일이 상한다", chunks:[
         {en:"The fruit", ko:"그 과일이", t:"subj"},
         {en:"goes", ko:"~해진다", t:"verb"},
@@ -457,10 +442,7 @@ const DATA = {
         {en:"The truth", ko:"그 진실이", t:"subj"},
         {en:"comes", ko:"~하게 된다", t:"verb"},
         {en:"clear", ko:"분명한", t:"comp"}]},
-      {n:33, full:"그 수가 낮아진다", chunks:[
-        {en:"The number", ko:"그 수가", t:"subj"},
-        {en:"falls", ko:"~해진다", t:"verb"},
-        {en:"low", ko:"낮은", t:"comp"}]},
+      {n:33, full:"그 우유가 얼마 안 남는다", chunks:[{en:"The milk",ko:"그 우유가",t:"subj"},{en:"runs",ko:"~한 상태가 된다",t:"verb"},{en:"low",ko:"얼마 안 남은",t:"comp"}]},
       {n:34, full:"그 잎들이 마르게 변한다", chunks:[
         {en:"The leaves", ko:"그 잎들이", t:"subj"},
         {en:"turn", ko:"~하게 변한다", t:"verb"},
@@ -476,7 +458,8 @@ const DATA = {
       {n:37, full:"그 강이 마른다", chunks:[
         {en:"The river", ko:"그 강이", t:"subj"},
         {en:"runs", ko:"~한 상태가 된다", t:"verb"},
-        {en:"dry", ko:"마른", t:"comp"}]}
+        {en:"dry", ko:"마른", t:"comp"}]},
+      {n:38, full:"그 시장이 조용해진다", chunks:[{en:"The market",ko:"그 시장이",t:"subj"},{en:"falls",ko:"~해진다",t:"verb"},{en:"quiet",ko:"조용한",t:"comp"}]}
     ]},
     { id:"3형식(1)", items:[
       {n:1, full:"그 전문가는 그 열린 상자를 사용한다", chunks:[
@@ -885,11 +868,7 @@ const DATA = {
         {en:"orders", ko:"주문해준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"fruit", ko:"과일을", t:"obj"}]},
-      {n:6, full:"그 손님은 그 회사에 가격을 요청한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"requests", ko:"요청한다", t:"verb"},
-        {en:"a price", ko:"가격을", t:"obj"},
-        {en:"of the company", ko:"그 회사에", t:"mod"}]},
+      {n:6, full:"그 손님은 그 회사에 답변을 요청한다", chunks:[{en:"The customer",ko:"그 손님은",t:"subj"},{en:"requests",ko:"요청한다",t:"verb"},{en:"an answer",ko:"답변을",t:"obj"},{en:"of the company",ko:"그 회사에",t:"mod"}]},
       {n:7, full:"그 아이는 그 전문가에게 부탁을 한다", chunks:[
         {en:"The child", ko:"그 아이는", t:"subj"},
         {en:"asks", ko:"부탁한다", t:"verb"},
@@ -944,11 +923,7 @@ const DATA = {
         {en:"tell", ko:"말해준다", t:"verb"},
         {en:"the child", ko:"그 아이에게", t:"obj"},
         {en:"a story", ko:"이야기를", t:"obj"}]},
-      {n:18, full:"그 손님들은 그 비평가에게 가격을 묻는다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
-        {en:"ask", ko:"묻는다", t:"verb"},
-        {en:"the critic", ko:"그 비평가에게", t:"obj"},
-        {en:"a price", ko:"가격을", t:"obj"}]},
+      {n:18, full:"그 손님들은 그 비평가에게 부탁을 한다", chunks:[{en:"The customers",ko:"그 손님들은",t:"subj"},{en:"ask",ko:"청한다",t:"verb"},{en:"the critic",ko:"그 비평가에게",t:"obj"},{en:"a favor",ko:"부탁을",t:"obj"}]},
       {n:19, full:"그 소년은 그 친구에게 상자를 던져준다", chunks:[
         {en:"The boy", ko:"그 소년은", t:"subj"},
         {en:"throws", ko:"던져준다", t:"verb"},
@@ -964,11 +939,7 @@ const DATA = {
         {en:"teaches", ko:"가르쳐준다", t:"verb"},
         {en:"the child", ko:"그 아이에게", t:"obj"},
         {en:"history", ko:"역사를", t:"obj"}]},
-      {n:22, full:"그 환자는 그 의사에게 숫자를 묻는다", chunks:[
-        {en:"The patient", ko:"그 환자는", t:"subj"},
-        {en:"asks", ko:"묻는다", t:"verb"},
-        {en:"the doctor", ko:"그 의사에게", t:"obj"},
-        {en:"a number", ko:"숫자를", t:"obj"}]},
+      {n:22, full:"그 환자는 그 의사에게 질문을 한다", chunks:[{en:"The patient",ko:"그 환자는",t:"subj"},{en:"asks",ko:"묻는다",t:"verb"},{en:"the doctor",ko:"그 의사에게",t:"obj"},{en:"a question",ko:"질문을",t:"obj"}]},
       {n:23, full:"그 친구는 그 남자에게 상자를 구해준다", chunks:[
         {en:"The friend", ko:"그 친구는", t:"subj"},
         {en:"gets", ko:"구해준다", t:"verb"},
@@ -1019,11 +990,7 @@ const DATA = {
         {en:"prepares", ko:"준비해준다", t:"verb"},
         {en:"the patient", ko:"그 환자에게", t:"obj"},
         {en:"soup", ko:"수프를", t:"obj"}]},
-      {n:33, full:"그 손님은 그 회사에 가격을 요구한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
-        {en:"demands", ko:"요구한다", t:"verb"},
-        {en:"a price", ko:"가격을", t:"obj"},
-        {en:"of the company", ko:"그 회사에", t:"mod"}]},
+      {n:33, full:"그 손님은 그 회사에 진실을 요구한다", chunks:[{en:"The customer",ko:"그 손님은",t:"subj"},{en:"demands",ko:"요구한다",t:"verb"},{en:"the truth",ko:"진실을",t:"obj"},{en:"of the company",ko:"그 회사에",t:"mod"}]},
       {n:34, full:"그 회사들은 그 손님에게 음식을 준비해준다", chunks:[
         {en:"The companies", ko:"그 회사들은", t:"subj"},
         {en:"prepare", ko:"준비해준다", t:"verb"},
@@ -1214,11 +1181,7 @@ const DATA = {
         {en:"throw", ko:"던져준다", t:"verb"},
         {en:"the man", ko:"그 남자에게", t:"obj"},
         {en:"a coat", ko:"코트를", t:"obj"}]},
-      {n:72, full:"그 팀은 그 전문가에게 책을 요청한다", chunks:[
-        {en:"The team", ko:"그 팀은", t:"subj"},
-        {en:"requests", ko:"요청한다", t:"verb"},
-        {en:"a book", ko:"책을", t:"obj"},
-        {en:"of the expert", ko:"그 전문가에게", t:"mod"}]},
+      {n:72, full:"그 팀은 그 전문가에게 부탁을 요청한다", chunks:[{en:"The team",ko:"그 팀은",t:"subj"},{en:"requests",ko:"요청한다",t:"verb"},{en:"a favor",ko:"부탁을",t:"obj"},{en:"of the expert",ko:"그 전문가에게",t:"mod"}]},
       {n:73, full:"그 시인은 그 소녀에게 상자를 만들어준다", chunks:[
         {en:"The poet", ko:"그 시인은", t:"subj"},
         {en:"makes", ko:"만들어준다", t:"verb"},
@@ -1229,11 +1192,7 @@ const DATA = {
         {en:"send", ko:"보내준다", t:"verb"},
         {en:"the patient", ko:"그 환자에게", t:"obj"},
         {en:"a map", ko:"지도를", t:"obj"}]},
-      {n:75, full:"그 회사는 그 팀에게 책을 요구한다", chunks:[
-        {en:"The company", ko:"그 회사는", t:"subj"},
-        {en:"requires", ko:"요구한다", t:"verb"},
-        {en:"a book", ko:"책을", t:"obj"},
-        {en:"of the team", ko:"그 팀에게", t:"mod"}]},
+      {n:75, full:"그 회사는 그 팀에게 증거를 요구한다", chunks:[{en:"The company",ko:"그 회사는",t:"subj"},{en:"requires",ko:"요구한다",t:"verb"},{en:"evidence",ko:"증거를",t:"obj"},{en:"of the team",ko:"그 팀에게",t:"mod"}]},
       {n:76, full:"그 여자는 그 소녀에게 진실을 말해준다", chunks:[
         {en:"The woman", ko:"그 여자는", t:"subj"},
         {en:"tells", ko:"말해준다", t:"verb"},
@@ -1277,17 +1236,8 @@ const DATA = {
         {en:"buys", ko:"사준다", t:"verb"},
         {en:"the architect", ko:"그 건축가에게", t:"obj"},
         {en:"a flower", ko:"꽃을", t:"obj"}]},
-      {n:6, full:"그 전문가들은 일찍 그 시민에게 문을 준다", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"give", ko:"준다", t:"verb"},
-        {en:"the citizen", ko:"그 시민에게", t:"obj"},
-        {en:"a door", ko:"문을", t:"obj"},
-        {en:"early", ko:"일찍", t:"mod"}]},
-      {n:7, full:"그 여자는 그 비평가에게 문을 보여준다", chunks:[
-        {en:"The woman", ko:"그 여자는", t:"subj"},
-        {en:"shows", ko:"보여준다", t:"verb"},
-        {en:"the critic", ko:"그 비평가에게", t:"obj"},
-        {en:"a door", ko:"문을", t:"obj"}]},
+      {n:6, full:"그 회사는 그 시민에게 문을 일찍 판다", chunks:[{en:"The company",ko:"그 회사는",t:"subj"},{en:"sells",ko:"판다",t:"verb"},{en:"the citizen",ko:"그 시민에게",t:"obj"},{en:"a door",ko:"문을",t:"obj"},{en:"early",ko:"일찍",t:"mod"}]},
+      {n:7, full:"그 건축가는 그 손님에게 문을 보여준다", chunks:[{en:"The architect",ko:"그 건축가는",t:"subj"},{en:"shows",ko:"보여준다",t:"verb"},{en:"the customer",ko:"그 손님에게",t:"obj"},{en:"a door",ko:"문을",t:"obj"}]},
       {n:8, full:"그 비평가들은 학교에서 그 전문가에게 의자를 준다", chunks:[
         {en:"The critics", ko:"그 비평가들은", t:"subj"},
         {en:"give", ko:"준다", t:"verb"},
@@ -1487,10 +1437,7 @@ const DATA = {
         {en:"is fixed", ko:"고쳐진다", t:"verb"},
         {en:"by the friend", ko:"그 친구에 의해", t:"mod"},
         {en:"in the city", ko:"그 도시에서", t:"mod"}]},
-      {n:4, full:"그 서류들은 그 시민에 의해 착용된다", chunks:[
-        {en:"The papers", ko:"그 서류들은", t:"subj"},
-        {en:"are worn", ko:"착용된다", t:"verb"},
-        {en:"by the citizen", ko:"그 시민에 의해", t:"mod"}]},
+      {n:4, full:"그 코트들은 그 시민에 의해 입혀진다", chunks:[{en:"The coats",ko:"그 코트들은",t:"subj"},{en:"are worn",ko:"입혀진다",t:"verb"},{en:"by the citizen",ko:"그 시민에 의해",t:"mod"}]},
       {n:5, full:"그 공은 병원에서 그 의사에 의해 떨어뜨려진다", chunks:[
         {en:"The ball", ko:"그 공은", t:"subj"},
         {en:"is dropped", ko:"떨어뜨려진다", t:"verb"},
@@ -1523,11 +1470,7 @@ const DATA = {
         {en:"The coats", ko:"그 코트들은", t:"subj"},
         {en:"are touched", ko:"만져진다", t:"verb"},
         {en:"by the critic", ko:"그 비평가에 의해", t:"mod"}]},
-      {n:12, full:"그 아버지는 조심스럽게 그 시인에 의해 붙잡힌다", chunks:[
-        {en:"The father", ko:"그 아버지는", t:"subj"},
-        {en:"is caught", ko:"붙잡힌다", t:"verb"},
-        {en:"by the poet", ko:"그 시인에 의해", t:"mod"},
-        {en:"with care", ko:"조심스럽게", t:"mod"}]},
+      {n:12, full:"그 병은 그 시인에 의해 조심스럽게 잡힌다", chunks:[{en:"The bottle",ko:"그 병은",t:"subj"},{en:"is caught",ko:"잡힌다",t:"verb"},{en:"by the poet",ko:"그 시인에 의해",t:"mod"},{en:"with care",ko:"조심스럽게",t:"mod"}]},
       {n:13, full:"그 가방은 길 위에서 그 전문가에 의해 덮인다", chunks:[
         {en:"The bag", ko:"그 가방은", t:"subj"},
         {en:"is covered", ko:"덮인다", t:"verb"},
@@ -1849,11 +1792,7 @@ const DATA = {
         {en:"a letter", ko:"편지를", t:"obj"},
         {en:"by the company", ko:"그 회사에 의해", t:"mod"},
         {en:"in the city", ko:"그 도시에서", t:"mod"}]},
-      {n:49, full:"가격이 그 손님에 의해 그 회사에 요구된다", chunks:[
-        {en:"A price", ko:"가격이", t:"subj"},
-        {en:"is demanded", ko:"요구된다", t:"verb"},
-        {en:"of the company", ko:"그 회사에", t:"mod"},
-        {en:"by the customer", ko:"그 손님에 의해", t:"mod"}]},
+      {n:49, full:"진실이 그 손님에 의해 그 회사에 요구된다", chunks:[{en:"The truth",ko:"진실이",t:"subj"},{en:"is demanded",ko:"요구된다",t:"verb"},{en:"of the company",ko:"그 회사에",t:"mod"},{en:"by the customer",ko:"그 손님에 의해",t:"mod"}]},
       {n:50, full:"노력이 아침에 그 회사에 의해 그 팀에 요구된다", chunks:[
         {en:"Effort", ko:"노력이", t:"subj"},
         {en:"is required", ko:"요구된다", t:"verb"},
@@ -1870,11 +1809,7 @@ const DATA = {
         {en:"is passed", ko:"건네진다", t:"verb"},
         {en:"to the man", ko:"그 남자에게", t:"mod"},
         {en:"by the athlete", ko:"그 운동선수에 의해", t:"mod"}]},
-      {n:53, full:"지도가 그 회사에 의해 그 팀에 요구된다", chunks:[
-        {en:"A map", ko:"지도가", t:"subj"},
-        {en:"is required", ko:"요구된다", t:"verb"},
-        {en:"of the team", ko:"그 팀에", t:"mod"},
-        {en:"by the company", ko:"그 회사에 의해", t:"mod"}]},
+      {n:53, full:"답변이 그 회사에 의해 그 팀에게 요구된다", chunks:[{en:"An answer",ko:"답변이",t:"subj"},{en:"is required",ko:"요구된다",t:"verb"},{en:"of the team",ko:"그 팀에게",t:"mod"},{en:"by the company",ko:"그 회사에 의해",t:"mod"}]},
       {n:54, full:"그 친구는 학교에서 그 소년에게 공을 던져 받는다", chunks:[
         {en:"The friend", ko:"그 친구는", t:"subj"},
         {en:"is thrown", ko:"던져 받는다", t:"verb"},
@@ -2128,7 +2063,7 @@ const DATA = {
       {n:66, full:"", chunks:[{en:"Experts",ko:"전문가들은",t:"subj"},{en:"see",ko:"본다",t:"verb"},{en:"the issue",ko:"그 문제가",t:"obj"},{en:"understood",ko:"이해되는 것을",t:"comp"}]},
       {n:67, full:"", chunks:[{en:"A child",ko:"한 아이가",t:"subj"},{en:"watches",ko:"지켜본다",t:"verb"},{en:"the animal",ko:"그 동물이",t:"obj"},{en:"run",ko:"달리는 것을",t:"comp"},{en:"in the park",ko:"공원에서",t:"mod"}]},
       {n:68, full:"", chunks:[{en:"People",ko:"사람들은",t:"subj"},{en:"hear",ko:"듣는다",t:"verb"},{en:"the baby",ko:"그 아기가",t:"obj"},{en:"cough",ko:"기침하는 것을",t:"comp"}]},
-      {n:69, full:"", chunks:[{en:"Citizens",ko:"시민들은",t:"subj"},{en:"watch",ko:"지켜본다",t:"verb"},{en:"the bridge",ko:"그 다리가",t:"obj"},{en:"built",ko:"지어지는 것을",t:"comp"}]},
+      {n:69, full:"시민들은 그 다리가 폐쇄되는 것을 지켜본다", chunks:[{en:"Citizens",ko:"시민들은",t:"subj"},{en:"watch",ko:"지켜본다",t:"verb"},{en:"the bridge",ko:"그 다리가",t:"obj"},{en:"closed",ko:"폐쇄되는 것을",t:"comp"}]},
       {n:70, full:"", chunks:[{en:"Parents",ko:"부모들은",t:"subj"},{en:"look at",ko:"본다",t:"verb"},{en:"the baby",ko:"그 아기가",t:"obj"},{en:"sleeping",ko:"자고 있는 것을",t:"comp"}]},
       {n:71, full:"", chunks:[{en:"Doctors",ko:"의사들은",t:"subj"},{en:"listen to",ko:"듣는다",t:"verb"},{en:"the audience",ko:"그 관객이",t:"obj"},{en:"laughing",ko:"웃고 있는 것을",t:"comp"}]},
       {n:72, full:"", chunks:[{en:"An expert",ko:"한 전문가가",t:"subj"},{en:"looks at",ko:"본다",t:"verb"},{en:"the team",ko:"그 팀이",t:"obj"},{en:"playing",ko:"경기하는 것을",t:"comp"}]},
