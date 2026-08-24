@@ -3662,7 +3662,223 @@ const DATA = {
         {en:"honest", ko:"솔직하게", t:"comp"},
         {en:"with the guests", ko:"손님들에게", t:"mod"}]},
     ]},
-    { id:"조동사(2): 해야 함·그럴 거임", items:[
+    { id:"조동사(1)", items:[
+      {n:1, ctx:{en:"The pool is deep.", ko:"그 수영장은 깊다."}, full:"그 아이들은 헤엄칠 수 없다 (도움 없이)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"cannot swim", ko:"헤엄칠 수 없다", t:"verb"},
+        {en:"without help", ko:"도움 없이", t:"mod"}]},
+      {n:2, ctx:{en:"Citizens demand a new law.", ko:"시민들이 새 법을 요구한다."}, full:"그 법은 바뀔 수 있다 (그 행사 전에)", chunks:[
+        {en:"The law", ko:"그 법은", t:"subj"},
+        {en:"could change", ko:"바뀔 수 있다", t:"verb"},
+        {en:"before the event", ko:"그 행사 전에", t:"mod"}]},
+      {n:3, ctx:{en:"The office does not require the tax every month.", ko:"그 사무소는 매달 그 세금을 요구하지 않는다."}, full:"너는 그 세금을 내도 된다 (매 계절)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"can pay", ko:"내도 된다", t:"verb"},
+        {en:"the tax", ko:"그 세금을", t:"obj"},
+        {en:"every season", ko:"매 계절", t:"mod"}]},
+      {n:4, ctx:{en:"The class forgot the rule.", ko:"그 반은 그 규칙을 잊었다."}, full:"그 선생님은 그 규칙을 반복할 수 있다", chunks:[
+        {en:"The teacher", ko:"그 선생님은", t:"subj"},
+        {en:"can repeat", ko:"반복할 수 있다", t:"verb"},
+        {en:"the rule", ko:"그 규칙을", t:"obj"}]},
+      {n:5, ctx:{en:"The old law had no office for the tax.", ko:"그 옛 법에는 그 세금을 위한 사무소가 없었다."}, full:"그 세금은 납부될 수 없었다 (과거에)", chunks:[
+        {en:"The tax", ko:"그 세금은", t:"subj"},
+        {en:"could not be paid", ko:"납부될 수 없었다", t:"verb"},
+        {en:"in the past", ko:"과거에", t:"mod"}]},
+      {n:6, ctx:{en:"The room holds old pictures.", ko:"그 방은 오래된 그림들을 보관한다."}, full:"사진은 찍히면 안 된다 (이 방에서)", chunks:[
+        {en:"Pictures", ko:"사진은", t:"subj"},
+        {en:"may not be taken", ko:"찍히면 안 된다", t:"verb"},
+        {en:"in this room", ko:"이 방에서", t:"mod"}]},
+      {n:7, ctx:{en:"The doctor has time tomorrow.", ko:"그 의사는 내일 시간이 있다."}, full:"그 의사는 그 환자를 진찰할 수 있을 것이다 (내일)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"will be able to examine", ko:"진찰할 수 있을 것이다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:8, ctx:{en:"The road is wet.", ko:"그 도로가 젖어 있다."}, full:"그 손님들은 늦게 도착할 수도 있다 (오늘 밤)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"could arrive", ko:"도착할 수도 있다", t:"verb"},
+        {en:"late tonight", ko:"오늘 밤 늦게", t:"mod"}]},
+      {n:9, ctx:{en:"The rain stopped yesterday.", ko:"그 비는 어제 그쳤다."}, full:"그 물은 안전할 수도 있다 (지금)", chunks:[
+        {en:"The water", ko:"그 물은", t:"subj"},
+        {en:"could be", ko:"~일 수도 있다", t:"verb"},
+        {en:"safe", ko:"안전한", t:"comp"},
+        {en:"now", ko:"지금", t:"mod"}]},
+      {n:10, ctx:{en:"The box held many books.", ko:"그 상자는 많은 책을 담고 있었다."}, full:"그 상자는 들어 올려질 수 없었다 (아이에 의해)", chunks:[
+        {en:"The box", ko:"그 상자는", t:"subj"},
+        {en:"could not be lifted", ko:"들어 올려질 수 없었다", t:"verb"},
+        {en:"by a child", ko:"아이에 의해", t:"mod"}]},
+      {n:11, ctx:{en:"The roof was low in the old house.", ko:"그 옛집은 지붕이 낮았다."}, full:"그 소년들은 올라갈 수 있었다 (그 지붕 위로)", chunks:[
+        {en:"The boys", ko:"그 소년들은", t:"subj"},
+        {en:"could climb", ko:"올라갈 수 있었다", t:"verb"},
+        {en:"onto the roof", ko:"그 지붕 위로", t:"mod"}]},
+      {n:12, ctx:{en:"The customer asked for an answer.", ko:"그 고객이 답변을 요청했다."}, full:"그 회사는 그 고객에게 편지를 보낼 수 있었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"was able to send", ko:"보낼 수 있었다", t:"verb"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
+        {en:"a letter", ko:"편지를", t:"obj"}]},
+      {n:13, ctx:{en:"The rule allows an early start.", ko:"그 규정은 이른 시작을 허용한다."}, full:"회원들은 등록해도 된다 (그 행사 전에)", chunks:[
+        {en:"Members", ko:"회원들은", t:"subj"},
+        {en:"can register", ko:"등록해도 된다", t:"verb"},
+        {en:"before the event", ko:"그 행사 전에", t:"mod"}]},
+      {n:14, ctx:{en:"Tickets were required at the gate.", ko:"그 문에서 표가 요구되었다."}, full:"그 손님들은 들어갈 수 없었다 (표 없이)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"could not enter", ko:"들어갈 수 없었다", t:"verb"},
+        {en:"without a ticket", ko:"표 없이", t:"mod"}]},
+      {n:15, ctx:{en:"A child falls from a bike.", ko:"아이가 자전거에서 넘어진다."}, full:"헬멧은 아이를 안전하게 지킬 수 있다", chunks:[
+        {en:"A helmet", ko:"헬멧은", t:"subj"},
+        {en:"can keep", ko:"지킬 수 있다", t:"verb"},
+        {en:"a child", ko:"아이를", t:"obj"},
+        {en:"safe", ko:"안전하게", t:"comp"}]},
+      {n:16, ctx:{en:"No one reads the letter.", ko:"아무도 그 편지를 읽지 못한다."}, full:"나는 그 편지를 번역할 수 있다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"can translate", ko:"번역할 수 있다", t:"verb"},
+        {en:"the letter", ko:"그 편지를", t:"obj"}]},
+      {n:17, ctx:{en:"Children run into the street.", ko:"아이들이 도로로 뛰어든다."}, full:"엄격한 규칙은 아이들을 보호할 수 있다", chunks:[
+        {en:"A strict rule", ko:"엄격한 규칙은", t:"subj"},
+        {en:"can protect", ko:"보호할 수 있다", t:"verb"},
+        {en:"children", ko:"아이들을", t:"obj"}]},
+      {n:18, ctx:{en:"No one lifts the box.", ko:"아무도 그 상자를 들지 못한다."}, full:"그 운동선수들은 그 상자를 들 수 있다", chunks:[
+        {en:"The athletes", ko:"그 운동선수들은", t:"subj"},
+        {en:"can lift", ko:"들 수 있다", t:"verb"},
+        {en:"the box", ko:"그 상자를", t:"obj"}]},
+      {n:19, ctx:{en:"The patient needs a doctor now.", ko:"그 환자는 지금 의사가 필요하다."}, full:"그 의사는 도착할 수 있다 (그 병원에, 한 시간 안에)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"can arrive", ko:"도착할 수 있다", t:"verb"},
+        {en:"at the hospital", ko:"그 병원에", t:"mod"},
+        {en:"in an hour", ko:"한 시간 안에", t:"mod"}]},
+      {n:20, ctx:{en:"The law does not allow noise at night.", ko:"그 법은 밤에 소음을 허용하지 않는다."}, full:"그 법은 엄격해 보일 수 있다", chunks:[
+        {en:"The law", ko:"그 법은", t:"subj"},
+        {en:"can seem", ko:"보일 수 있다", t:"verb"},
+        {en:"strict", ko:"엄격하게", t:"comp"}]},
+      {n:21, ctx:{en:"The office has a new rule for guests.", ko:"그 사무소는 손님을 위한 새 규정이 있다."}, full:"너는 네 이름을 등록해도 된다 (그 문에서)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"can register", ko:"등록해도 된다", t:"verb"},
+        {en:"your name", ko:"네 이름을", t:"obj"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:22, ctx:{en:"The company had a bad season.", ko:"그 회사는 안 좋은 시즌을 보냈다."}, full:"그 회사는 그 요금을 낼 수 없었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"was not able to pay", ko:"낼 수 없었다", t:"verb"},
+        {en:"the fee", ko:"그 요금을", t:"obj"}]},
+      {n:23, ctx:{en:"The rule belongs to the company.", ko:"그 규정은 그 회사에 속한다."}, full:"그 규정은 바뀔 수 없다 (그 팀에 의해)", chunks:[
+        {en:"The rule", ko:"그 규정은", t:"subj"},
+        {en:"cannot be changed", ko:"바뀔 수 없다", t:"verb"},
+        {en:"by the team", ko:"그 팀에 의해", t:"mod"}]},
+      {n:24, ctx:{en:"The city office is open to citizens.", ko:"그 시청은 시민들에게 열려 있다."}, full:"시민들은 신청해도 된다 (여권을)", chunks:[
+        {en:"Citizens", ko:"시민들은", t:"subj"},
+        {en:"may apply", ko:"신청해도 된다", t:"verb"},
+        {en:"for a passport", ko:"여권을", t:"mod"}]},
+      {n:25, ctx:{en:"The company opened the office to members.", ko:"그 회사는 회원들에게 그 사무실을 개방했다."}, full:"회원들은 그 사무실에 들어가도 된다", chunks:[
+        {en:"Members", ko:"회원들은", t:"subj"},
+        {en:"can enter", ko:"들어가도 된다", t:"verb"},
+        {en:"the office", ko:"그 사무실에", t:"obj"}]},
+      {n:26, ctx:{en:"The gate has no office.", ko:"그 문에는 사무소가 없다."}, full:"그 요금은 납부될 수 없다 (그 문에서)", chunks:[
+        {en:"The fee", ko:"그 요금은", t:"subj"},
+        {en:"cannot be paid", ko:"납부될 수 없다", t:"verb"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:27, ctx:{en:"The companies saved money for a season.", ko:"그 회사들은 한 시즌 동안 돈을 모았다."}, full:"그 회사들은 그 요금을 낼 수 있다", chunks:[
+        {en:"The companies", ko:"그 회사들은", t:"subj"},
+        {en:"are able to pay", ko:"낼 수 있다", t:"verb"},
+        {en:"the fee", ko:"그 요금을", t:"obj"}]},
+      {n:28, ctx:{en:"A child goes to school in the dark.", ko:"아이가 어두울 때 학교에 간다."}, full:"교복은 아이를 보호할 수 있다", chunks:[
+        {en:"A uniform", ko:"교복은", t:"subj"},
+        {en:"can protect", ko:"보호할 수 있다", t:"verb"},
+        {en:"a child", ko:"아이를", t:"obj"}]},
+      {n:29, ctx:{en:"The letter is in an old style.", ko:"그 편지는 옛 문체로 되어 있다."}, full:"나는 그 편지를 번역할 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"am not able to translate", ko:"번역할 수 없다", t:"verb"},
+        {en:"the letter", ko:"그 편지를", t:"obj"}]},
+      {n:30, ctx:{en:"The teacher knows the old style.", ko:"그 선생님은 그 옛 문체를 안다."}, full:"그 편지는 번역될 수 있었다 (그 선생님에 의해)", chunks:[
+        {en:"The letter", ko:"그 편지는", t:"subj"},
+        {en:"could be translated", ko:"번역될 수 있었다", t:"verb"},
+        {en:"by the teacher", ko:"그 선생님에 의해", t:"mod"}]},
+      {n:31, ctx:{en:"The airport examines every bag.", ko:"그 공항은 모든 가방을 검사한다."}, full:"그 여권은 검사될 수 있다 (그 공항에서)", chunks:[
+        {en:"The passport", ko:"그 여권은", t:"subj"},
+        {en:"may be examined", ko:"검사될 수 있다", t:"verb"},
+        {en:"at the airport", ko:"그 공항에서", t:"mod"}]},
+      {n:32, ctx:{en:"The old rule required a uniform.", ko:"그 옛 규정은 유니폼을 요구했다."}, full:"그 팀은 출전할 수 없었다 (유니폼 없이)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"could not compete", ko:"출전할 수 없었다", t:"verb"},
+        {en:"without a uniform", ko:"유니폼 없이", t:"mod"}]},
+      {n:33, ctx:{en:"The class does not understand the story.", ko:"그 반은 그 이야기를 이해하지 못한다."}, full:"그 선생님은 그 반에게 그림을 보여줄 수 있다", chunks:[
+        {en:"The teacher", ko:"그 선생님은", t:"subj"},
+        {en:"can show", ko:"보여줄 수 있다", t:"verb"},
+        {en:"the class", ko:"그 반에게", t:"obj"},
+        {en:"a picture", ko:"그림을", t:"obj"}]},
+      {n:34, ctx:{en:"My father heard the old story every night in the past.", ko:"내 아버지는 과거에 그 옛이야기를 매일 밤 들었다."}, full:"내 아버지는 그 옛이야기를 반복할 수 있었다", chunks:[
+        {en:"My father", ko:"내 아버지는", t:"subj"},
+        {en:"could repeat", ko:"반복할 수 있었다", t:"verb"},
+        {en:"the old story", ko:"그 옛이야기를", t:"obj"}]},
+      {n:35, ctx:{en:"The game begins without helmets.", ko:"그 경기는 헬멧 없이 시작된다."}, full:"그 운동선수들은 출전할 수 있다 (헬멧 없이)", chunks:[
+        {en:"The athletes", ko:"그 운동선수들은", t:"subj"},
+        {en:"are able to compete", ko:"출전할 수 있다", t:"verb"},
+        {en:"without a helmet", ko:"헬멧 없이", t:"mod"}]},
+      {n:36, ctx:{en:"The child prepared the bag at night.", ko:"그 아이는 밤에 가방을 준비했다."}, full:"그 아이는 준비를 마칠 수 있었다 (한 시간 만에)", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"could get", ko:"~해질 수 있었다", t:"verb"},
+        {en:"ready", ko:"준비된 상태로", t:"comp"},
+        {en:"in an hour", ko:"한 시간 만에", t:"mod"}]},
+      {n:37, ctx:{en:"People steal passports at the airport.", ko:"사람들이 그 공항에서 여권을 훔친다."}, full:"그 여권은 안전하게 보관될 수 있다 (가방 안에)", chunks:[
+        {en:"The passport", ko:"그 여권은", t:"subj"},
+        {en:"can be kept", ko:"보관될 수 있다", t:"verb"},
+        {en:"safe", ko:"안전하게", t:"comp"},
+        {en:"in a bag", ko:"가방 안에", t:"mod"}]},
+      {n:38, ctx:{en:"The company gives free tickets to members.", ko:"그 회사는 회원들에게 무료 표를 준다."}, full:"너는 신청해도 된다 (무료 표를)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"may apply", ko:"신청해도 된다", t:"verb"},
+        {en:"for a free ticket", ko:"무료 표를", t:"mod"}]},
+      {n:39, ctx:{en:"The guests learned to swim in the past.", ko:"그 손님들은 과거에 수영을 배웠다."}, full:"그 손님들은 헤엄칠 수 있다 (그 수영장에서)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"are able to swim", ko:"헤엄칠 수 있다", t:"verb"},
+        {en:"in the pool", ko:"그 수영장에서", t:"mod"}]},
+      {n:40, ctx:{en:"The gate was closed.", ko:"그 문은 닫혀 있었다."}, full:"그 손님들은 들어갈 수 없었다 (그 사무실에)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"were not able to enter", ko:"들어갈 수 없었다", t:"verb"},
+        {en:"the office", ko:"그 사무실에", t:"obj"}]},
+      {n:41, ctx:{en:"The box holds many books.", ko:"그 상자는 많은 책을 담고 있다."}, full:"나는 그 상자를 들 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"cannot lift", ko:"들 수 없다", t:"verb"},
+        {en:"the box", ko:"그 상자를", t:"obj"}]},
+      {n:42, ctx:{en:"The patient coughs at the hospital.", ko:"그 환자가 그 병원에서 기침을 한다."}, full:"마스크는 그 의사를 안전하게 지킬 수 있다", chunks:[
+        {en:"A mask", ko:"마스크는", t:"subj"},
+        {en:"can keep", ko:"지킬 수 있다", t:"verb"},
+        {en:"the doctor", ko:"그 의사를", t:"obj"},
+        {en:"safe", ko:"안전하게", t:"comp"}]},
+      {n:43, ctx:{en:"The rule closes the garden during the event.", ko:"그 규정은 행사 동안 그 정원을 닫는다."}, full:"손님들은 들어가도 된다 (그 행사 후에)", chunks:[
+        {en:"Guests", ko:"손님들은", t:"subj"},
+        {en:"may enter", ko:"들어가도 된다", t:"verb"},
+        {en:"after the event", ko:"그 행사 후에", t:"mod"}]},
+      {n:44, ctx:{en:"The office keeps the paper for the teacher.", ko:"그 사무실이 그 선생님을 위해 그 서류를 보관한다."}, full:"너는 그 서류를 제출해도 된다 (그 사무실에서)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"can submit", ko:"제출해도 된다", t:"verb"},
+        {en:"the paper", ko:"그 서류를", t:"obj"},
+        {en:"at the office", ko:"그 사무실에서", t:"mod"}]},
+      {n:45, ctx:{en:"The problem was hard for the class.", ko:"그 문제는 그 반에게 어려웠다."}, full:"우리는 그 문제를 풀 수 있었다 (어제)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"were able to solve", ko:"풀 수 있었다", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:46, ctx:{en:"The team discusses the rule now.", ko:"그 팀은 지금 그 규정을 논의한다."}, full:"그 규정은 바뀔 수 있다 (그 시즌 전에)", chunks:[
+        {en:"The rule", ko:"그 규정은", t:"subj"},
+        {en:"could change", ko:"바뀔 수 있다", t:"verb"},
+        {en:"before the season", ko:"그 시즌 전에", t:"mod"}]},
+      {n:47, ctx:{en:"The office is only for members.", ko:"그 사무실은 회원 전용이다."}, full:"너는 그 사무실에 들어갈 수 없다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"cannot enter", ko:"들어갈 수 없다", t:"verb"},
+        {en:"the office", ko:"그 사무실에", t:"obj"}]},
+      {n:48, ctx:{en:"The rule allows time for the paper.", ko:"그 규정은 그 서류를 위한 시간을 허용한다."}, full:"그 서류는 제출되어도 된다 (그 주말 전에)", chunks:[
+        {en:"The paper", ko:"그 서류는", t:"subj"},
+        {en:"can be submitted", ko:"제출되어도 된다", t:"verb"},
+        {en:"before the weekend", ko:"그 주말 전에", t:"mod"}]},
+      {n:49, ctx:{en:"The problem was for adults.", ko:"그 문제는 어른들을 위한 것이었다."}, full:"그 아이는 그 문제를 풀 수 없었다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"could not solve", ko:"풀 수 없었다", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"}]},
+      {n:50, ctx:{en:"The patient needs a mask.", ko:"그 환자는 마스크가 필요하다."}, full:"그 의사는 그 환자에게 마스크를 가져다줄 수 있다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"can bring", ko:"가져다줄 수 있다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"a mask", ko:"마스크를", t:"obj"}]},
+    ]},
+    { id:"조동사(2)", items:[
       {n:1, ctx:{en:"The ache stopped this morning.", ko:"그 통증은 오늘 아침에 멎었다."}, full:"그 통증은 돌아올지도 모른다 (밤에)", chunks:[
         {en:"The ache", ko:"그 통증은", t:"subj"},
         {en:"may return", ko:"돌아올지도 모른다", t:"verb"},
@@ -3904,7 +4120,7 @@ const DATA = {
       {n:58, ctx:{en:"The patient has an ache now.", ko:"그 환자는 지금 통증이 있다."}, full:"그 환자는 그 약을 받아야 한다", chunks:[
         {en:"The patient", ko:"그 환자는", t:"subj"},
         {en:"should be given", ko:"받아야 한다", t:"verb"},
-        {en:"the medicine", ko:"그 약을", t:"mod"}]},
+        {en:"the medicine", ko:"그 약을", t:"obj"}]},
       {n:59, ctx:{en:"The child plays in the garden.", ko:"그 아이가 그 정원에서 논다."}, full:"그 아이는 열이 있을 리 없다", chunks:[
         {en:"The child", ko:"그 아이는", t:"subj"},
         {en:"cannot have", ko:"있을 리 없다", t:"verb"},
@@ -3946,7 +4162,7 @@ const DATA = {
       {n:68, ctx:{en:"The nurse visits every morning.", ko:"그 간호사는 매일 아침 방문한다."}, full:"그 환자는 조언을 받을지도 모른다 (내일)", chunks:[
         {en:"The patient", ko:"그 환자는", t:"subj"},
         {en:"might be given", ko:"받을지도 모른다", t:"verb"},
-        {en:"advice", ko:"조언을", t:"mod"},
+        {en:"advice", ko:"조언을", t:"obj"},
         {en:"tomorrow", ko:"내일", t:"mod"}]},
       {n:69, ctx:{en:"Children run into the street.", ko:"아이들이 도로로 뛰어든다."}, full:"그 규칙은 그 아이들을 안전하게 지켜야 한다", chunks:[
         {en:"The rule", ko:"그 규칙은", t:"subj"},
@@ -4067,9 +4283,9 @@ const DATA = {
       {n:97, ctx:{en:"Patients arrive at the hospital.", ko:"환자들이 그 병원에 도착한다."}, full:"모든 손님은 마스크를 받아야 한다", chunks:[
         {en:"Every guest", ko:"모든 손님은", t:"subj"},
         {en:"must be given", ko:"받아야 한다", t:"verb"},
-        {en:"a mask", ko:"마스크를", t:"mod"}]},
+        {en:"a mask", ko:"마스크를", t:"obj"}]},
     ]},
-    { id:"현재완료 4용법", items:[
+    { id:"현재완료(1)", items:[
       {n:1, full:"그 바다는 계속 잔잔한 상태였다 (그 폭풍 이후로)", chunks:[
         {en:"The ocean", ko:"그 바다는", t:"subj"},
         {en:"has remained", ko:"계속 ~인 상태였다", t:"verb"},
@@ -4138,7 +4354,7 @@ const DATA = {
       {n:16, full:"그 손님들은 무료 티켓을 받았다", chunks:[
         {en:"The guests", ko:"그 손님들은", t:"subj"},
         {en:"have been given", ko:"받았다", t:"verb"},
-        {en:"a free ticket", ko:"무료 티켓을", t:"mod"}]},
+        {en:"a free ticket", ko:"무료 티켓을", t:"obj"}]},
       {n:17, full:"그 운동선수들은 성공을 이루지 못했다", chunks:[
         {en:"The athletes", ko:"그 운동선수들은", t:"subj"},
         {en:"haven't achieved", ko:"이루지 못했다", t:"verb"},
@@ -4254,7 +4470,7 @@ const DATA = {
       {n:43, full:"그 고객은 무료 티켓을 막 받았다", chunks:[
         {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"has just been sent", ko:"막 받았다", t:"verb"},
-        {en:"a free ticket", ko:"무료 티켓을", t:"mod"}]},
+        {en:"a free ticket", ko:"무료 티켓을", t:"obj"}]},
       {n:44, full:"그 손님들은 막 도착했다 (그 호텔에)", chunks:[
         {en:"The guests", ko:"그 손님들은", t:"subj"},
         {en:"have just arrived", ko:"막 도착했다", t:"verb"},
@@ -4307,7 +4523,7 @@ const DATA = {
       {n:55, full:"그 아이들은 외국어 책을 받았다", chunks:[
         {en:"The children", ko:"그 아이들은", t:"subj"},
         {en:"have been given", ko:"받았다", t:"verb"},
-        {en:"a foreign language book", ko:"외국어 책을", t:"mod"}]},
+        {en:"a foreign language book", ko:"외국어 책을", t:"obj"}]},
       {n:56, full:"그 언어는 가르쳐진 적 없다 (이 학교에서)", chunks:[
         {en:"The language", ko:"그 언어는", t:"subj"},
         {en:"has never been taught", ko:"가르쳐진 적 없다", t:"verb"},
@@ -4411,7 +4627,7 @@ const DATA = {
         {en:"the road", ko:"그 도로를", t:"obj"},
         {en:"wet", ko:"젖게", t:"comp"}]},
     ]},
-    { id:"현재완료 복습", items:[
+    { id:"현재완료(2)", items:[
       {n:1, full:"나는 외국 잡지를 모은 적 없다", chunks:[
         {en:"I", ko:"나는", t:"subj"},
         {en:"haven't collected", ko:"모은 적 없다", t:"verb"},
@@ -4563,7 +4779,7 @@ const DATA = {
       {n:35, full:"그 작가는 답을 받지 못했다", chunks:[
         {en:"The author", ko:"그 작가는", t:"subj"},
         {en:"hasn't been given", ko:"받지 못했다", t:"verb"},
-        {en:"an answer", ko:"답을", t:"mod"}]},
+        {en:"an answer", ko:"답을", t:"obj"}]},
       {n:36, full:"그 잡지는 나타난 적 없다 (이 섬에)", chunks:[
         {en:"The magazine", ko:"그 잡지는", t:"subj"},
         {en:"has never appeared", ko:"나타난 적 없다", t:"verb"},
@@ -4677,7 +4893,7 @@ const DATA = {
       {n:21, full:"모든 손님은 티켓을 받아 놓았을 것이다 (저녁까지는)", chunks:[
         {en:"Every guest", ko:"모든 손님은", t:"subj"},
         {en:"will have been given", ko:"받아 놓았을 것이다", t:"verb"},
-        {en:"a ticket", ko:"티켓을", t:"mod"},
+        {en:"a ticket", ko:"티켓을", t:"obj"},
         {en:"by the evening", ko:"저녁까지는", t:"mod"}]},
       {n:22, full:"그 축제는 끝나 있을 것이다 (새벽 전에)", chunks:[
         {en:"The festival", ko:"그 축제는", t:"subj"},
@@ -4770,7 +4986,7 @@ const DATA = {
       {n:41, ctx:{en:"A new cup stood on her desk.", ko:"새 우승컵이 그녀의 책상 위에 놓여 있었다."}, full:"그 운동선수는 상을 막 받았었다", chunks:[
         {en:"The athlete", ko:"그 운동선수는", t:"subj"},
         {en:"had just been given", ko:"막 받았었다", t:"verb"},
-        {en:"an award", ko:"상을", t:"mod"}]},
+        {en:"an award", ko:"상을", t:"obj"}]},
       {n:42, ctx:{en:"The station was quiet at dawn.", ko:"그 역은 새벽에 조용했다."}, full:"그 시계들은 멈춰 있었다", chunks:[
         {en:"The clocks", ko:"그 시계들은", t:"subj"},
         {en:"had stopped", ko:"멈춰 있었다", t:"verb"}]},
@@ -4786,7 +5002,7 @@ const DATA = {
       {n:45, full:"그 여배우는 상을 받은 적이 없었다 (전에는)", chunks:[
         {en:"The actress", ko:"그 여배우는", t:"subj"},
         {en:"had never been given", ko:"받은 적이 없었다", t:"verb"},
-        {en:"an award", ko:"상을", t:"mod"},
+        {en:"an award", ko:"상을", t:"obj"},
         {en:"before", ko:"전에는", t:"mod"}]},
       {n:46, full:"그 시계는 멈춰 있지 않을 것이다 (새벽까지는)", chunks:[
         {en:"The clock", ko:"그 시계는", t:"subj"},
@@ -4918,7 +5134,7 @@ const DATA = {
         {en:"The speech", ko:"그 연설은", t:"subj"},
         {en:"had already ended", ko:"이미 끝나 있었다", t:"verb"}]},
     ]},
-    { id:"조동사(3): 관용 조동사구·조동사+have p.p.", items:[
+    { id:"조동사(3)", items:[
       {n:1, ctx:{en:"No one can remove the trouble.", ko:"아무도 그 문제를 없앨 수 없다."}, full:"나는 그 문제를 견디는 편이 낫다", chunks:[
         {en:"I", ko:"나는", t:"subj"},
         {en:"may as well endure", ko:"견디는 편이 낫다", t:"verb"},
@@ -5214,7 +5430,7 @@ const DATA = {
       {n:75, ctx:{en:"The team finished the whole project.", ko:"그 팀은 그 프로젝트 전체를 끝냈다."}, full:"그 팀은 보상을 받았어야 했다", chunks:[
         {en:"The team", ko:"그 팀은", t:"subj"},
         {en:"should have been given", ko:"받았어야 했다", t:"verb"},
-        {en:"a reward", ko:"보상을", t:"mod"}]},
+        {en:"a reward", ko:"보상을", t:"obj"}]},
       {n:76, full:"그 회사는 그 불가피한 지연을 받아들일 수밖에 없다", chunks:[
         {en:"The company", ko:"그 회사는", t:"subj"},
         {en:"has no choice but to accept", ko:"받아들일 수밖에 없다", t:"verb"},
@@ -5255,7 +5471,7 @@ const DATA = {
       {n:86, full:"그 운동선수는 그 기회를 받는 것도 당연하다", chunks:[
         {en:"The athlete", ko:"그 운동선수는", t:"subj"},
         {en:"may well be given", ko:"받는 것도 당연하다", t:"verb"},
-        {en:"the chance", ko:"그 기회를", t:"mod"}]},
+        {en:"the chance", ko:"그 기회를", t:"obj"}]},
       {n:87, ctx:{en:"The child caused no trouble.", ko:"그 아이는 아무 문제도 일으키지 않았다."}, full:"우리는 그 결백한 아이를 용서했어야 했다", chunks:[
         {en:"We", ko:"우리는", t:"subj"},
         {en:"ought to have forgiven", ko:"용서했어야 했다", t:"verb"},
@@ -5387,9 +5603,9 @@ const DATA = {
       {n:118, ctx:{en:"Every member kept a paper.", ko:"모든 구성원이 종이 한 장을 가지고 있었다."}, full:"모든 구성원은 영수증을 받았음에 틀림없다", chunks:[
         {en:"Every member", ko:"모든 구성원은", t:"subj"},
         {en:"must have been given", ko:"받았음에 틀림없다", t:"verb"},
-        {en:"a receipt", ko:"영수증을", t:"mod"}]},
+        {en:"a receipt", ko:"영수증을", t:"obj"}]},
     ]},
-    { id:"명령문·청유문·감탄문·의문문", items:[
+    { id:"명령문·의문문", items:[
       {n:1, full:"무엇이 그 손님들을 조용하게 만들었니?", chunks:[
         {en:"What", ko:"무엇이", t:"subj"},
         {en:"made", ko:"만들었니", t:"verb"},
@@ -5745,7 +5961,7 @@ const DATA = {
         {en:"Were", ko:"~였니?", t:"skip", c:"verb"},
         {en:"the children", ko:"그 아이들은", t:"subj"},
         {en:"given", ko:"받은", t:"verb"},
-        {en:"a reason", ko:"이유를", t:"mod"}]},
+        {en:"a reason", ko:"이유를", t:"obj"}]},
       {n:80, full:"그 축제는 무엇에 의해 망가졌니?", chunks:[
         {en:"By what", ko:"무엇에 의해", t:"mod"},
         {en:"was", ko:"~였니?", t:"skip", c:"verb"},
@@ -6012,7 +6228,7 @@ const DATA = {
         {en:"Let's compare", ko:"비교하자", t:"verb"},
         {en:"the two methods", ko:"그 두 방법을", t:"obj"}]},
     ]},
-    { id:"명사절 that·간접의문문", items:[
+    { id:"명사절", items:[
       {n:1, full:"그 저자는 그 박물관이 그 기록 전체를 보관한다는 것을 인정한다", chunks:[
         {en:"The author", ko:"그 저자는", t:"subj"},
         {en:"admits", ko:"인정한다", t:"verb"},
@@ -6023,7 +6239,7 @@ const DATA = {
       {n:2, full:"그 손님들은 그 길이 어디에서 시작되었는지를 보았다", chunks:[
         {en:"The guests", ko:"그 손님들은", t:"subj"},
         {en:"were shown", ko:"보게 되었다", t:"verb"},
-        {en:"where", ko:"어디에서 ~인지를", t:"mod", link:true, marker:true, span:3},
+        {en:"where", ko:"어디에서 ~인지를", t:"obj", link:true, marker:true, span:3},
         {en:"the path", ko:"그 길이", t:"subj"},
         {en:"started", ko:"시작되었는지", t:"verb"}]},
       {n:3, full:"그 보고서는 그 사고가 어떻게 일어났는지를 분명하게 밝혔다", chunks:[
@@ -6252,7 +6468,7 @@ const DATA = {
       {n:35, full:"우리는 그 소식이 진짜라는 말을 들었다", chunks:[
         {en:"We", ko:"우리는", t:"subj"},
         {en:"were told", ko:"들었다", t:"verb"},
-        {en:"that", ko:"~라는 것을", t:"mod", link:true, marker:true, span:4},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
         {en:"the news", ko:"그 소식이", t:"subj"},
         {en:"was", ko:"~였다", t:"verb"},
         {en:"real", ko:"진짜라고", t:"comp"}]},
