@@ -3528,7 +3528,7 @@ const DATA = {
       {n:38, full:"그 군중이 손을 흔들고 춤추고 있었다 (거리에서)", chunks:[
         {en:"The crowd", ko:"그 군중이", t:"subj"},
         {en:"was waving", ko:"손을 흔들고", t:"verb"},
-        {en:"and", ko:"", t:"conj"},
+        {en:"and", ko:"", t:"skip"},
         {en:"dancing", ko:"춤추고 있었다", t:"verb"},
         {en:"in the street", ko:"거리에서", t:"mod"}]},
       {n:39, full:"그 물이 얼고 있었다 (차가운 바람 속에서)", chunks:[
@@ -3661,6 +3661,2920 @@ const DATA = {
         {en:"is being", ko:"굴고 있다", t:"verb"},
         {en:"honest", ko:"솔직하게", t:"comp"},
         {en:"with the guests", ko:"손님들에게", t:"mod"}]},
+    ]},
+    { id:"조동사(2): 해야 함·그럴 거임", items:[
+      {n:1, ctx:{en:"The ache stopped this morning.", ko:"그 통증은 오늘 아침에 멎었다."}, full:"그 통증은 돌아올지도 모른다 (밤에)", chunks:[
+        {en:"The ache", ko:"그 통증은", t:"subj"},
+        {en:"may return", ko:"돌아올지도 모른다", t:"verb"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:2, ctx:{en:"The trains left the city an hour ago.", ko:"그 기차들은 한 시간 전에 그 도시를 떠났다."}, full:"그 기차들은 도착할 것임에 틀림없다 (곧)", chunks:[
+        {en:"The trains", ko:"그 기차들은", t:"subj"},
+        {en:"must arrive", ko:"도착할 것임에 틀림없다", t:"verb"},
+        {en:"soon", ko:"곧", t:"mod"}]},
+      {n:3, ctx:{en:"The hospital gives every patient a meal.", ko:"그 병원은 모든 환자에게 식사를 제공한다."}, full:"음식은 반입되면 안 된다 (그 병원 안으로)", chunks:[
+        {en:"Food", ko:"음식은", t:"subj"},
+        {en:"must not be brought", ko:"반입되면 안 된다", t:"verb"},
+        {en:"into the hospital", ko:"그 병원 안으로", t:"mod"}]},
+      {n:4, ctx:{en:"The symptom is familiar.", ko:"그 증상은 낯익다."}, full:"그 의사는 그 원인을 알지도 모른다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"could know", ko:"알지도 모른다", t:"verb"},
+        {en:"the cause", ko:"그 원인을", t:"obj"}]},
+      {n:5, ctx:{en:"The symptom is new.", ko:"그 증상은 새롭다."}, full:"그 증상은 진찰되어야 한다 (의사에 의해)", chunks:[
+        {en:"The symptom", ko:"그 증상은", t:"subj"},
+        {en:"should be examined", ko:"진찰되어야 한다", t:"verb"},
+        {en:"by a doctor", ko:"의사에 의해", t:"mod"}]},
+      {n:6, ctx:{en:"The company sent a letter about the fee.", ko:"그 회사가 그 요금에 관한 편지를 보냈다."}, full:"우리는 그 요금을 내야 했다 (어제)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"had to pay", ko:"내야 했다", t:"verb"},
+        {en:"the fee", ko:"그 요금을", t:"obj"},
+        {en:"yesterday", ko:"어제", t:"mod"}]},
+      {n:7, ctx:{en:"The law exists for citizens.", ko:"그 법은 시민을 위해 존재한다."}, full:"시민들은 보호받아야 한다 (그 법에 의해)", chunks:[
+        {en:"Citizens", ko:"시민들은", t:"subj"},
+        {en:"must be protected", ko:"보호받아야 한다", t:"verb"},
+        {en:"by the law", ko:"그 법에 의해", t:"mod"}]},
+      {n:8, ctx:{en:"The old habit causes the ache.", ko:"그 오랜 습관이 그 통증을 일으킨다."}, full:"우리는 그 오랜 습관을 그만둬야 한다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"ought to quit", ko:"그만둬야 한다", t:"verb"},
+        {en:"the old habit", ko:"그 오랜 습관을", t:"obj"}]},
+      {n:9, ctx:{en:"Children swim in the river.", ko:"아이들이 그 강에서 헤엄친다."}, full:"그 물은 깨끗한 상태여야 한다", chunks:[
+        {en:"The water", ko:"그 물은", t:"subj"},
+        {en:"must stay", ko:"~인 상태여야 한다", t:"verb"},
+        {en:"clean", ko:"깨끗한", t:"comp"}]},
+      {n:10, ctx:{en:"The story appeared before the event.", ko:"그 이야기는 그 사건 전에 나왔다."}, full:"그 이야기는 단서일 리 없다", chunks:[
+        {en:"The story", ko:"그 이야기는", t:"subj"},
+        {en:"cannot be", ko:"~일 리 없다", t:"verb"},
+        {en:"a clue", ko:"단서", t:"comp"}]},
+      {n:11, ctx:{en:"The pool is deep.", ko:"그 수영장은 깊다."}, full:"그 아이들은 헤엄치면 안 된다 (그 깊은 수영장에서)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"must not swim", ko:"헤엄치면 안 된다", t:"verb"},
+        {en:"in the deep pool", ko:"그 깊은 수영장에서", t:"mod"}]},
+      {n:12, ctx:{en:"The medicine does not work.", ko:"그 약이 듣지 않는다."}, full:"너는 그 의사에게 말하는 게 좋다 (그 통증에 대해)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should tell", ko:"말하는 게 좋다", t:"verb"},
+        {en:"the doctor", ko:"그 의사에게", t:"obj"},
+        {en:"about the ache", ko:"그 통증에 대해", t:"mod"}]},
+      {n:13, ctx:{en:"Patients sleep in the room.", ko:"환자들이 그 방에서 잔다."}, full:"그 환자는 조용해야 한다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"ought to be", ko:"~해야 한다", t:"verb"},
+        {en:"quiet", ko:"조용한", t:"comp"}]},
+      {n:14, ctx:{en:"The child feels warm.", ko:"그 아이는 몸이 따뜻하다."}, full:"그 증상은 열의 징후일지도 모른다", chunks:[
+        {en:"The symptom", ko:"그 증상은", t:"subj"},
+        {en:"could be", ko:"~일지도 모른다", t:"verb"},
+        {en:"a sign of a fever", ko:"열의 징후", t:"comp"}]},
+      {n:15, ctx:{en:"The patient asks for the medicine.", ko:"그 환자가 그 약을 요청한다."}, full:"그 간호사는 그 환자에게 그 약을 가져다줄지도 모른다 (오늘 밤)", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"may bring", ko:"가져다줄지도 모른다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"the medicine", ko:"그 약을", t:"obj"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:16, ctx:{en:"Patients sleep in the room.", ko:"환자들이 그 방에서 잔다."}, full:"너는 뛰면 안 된다 (그 병원에서)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"must not run", ko:"뛰면 안 된다", t:"verb"},
+        {en:"in the hospital", ko:"그 병원에서", t:"mod"}]},
+      {n:17, ctx:{en:"The rule keeps athletes safe.", ko:"그 규칙은 운동선수들을 안전하게 지킨다."}, full:"모든 운동선수는 헬멧을 써야 한다", chunks:[
+        {en:"Every athlete", ko:"모든 운동선수는", t:"subj"},
+        {en:"must wear", ko:"써야 한다", t:"verb"},
+        {en:"a helmet", ko:"헬멧을", t:"obj"}]},
+      {n:18, ctx:{en:"The doctor gave good advice.", ko:"그 의사가 좋은 조언을 해주었다."}, full:"그 조언은 잊혀서는 안 된다", chunks:[
+        {en:"The advice", ko:"그 조언은", t:"subj"},
+        {en:"should not be forgotten", ko:"잊혀서는 안 된다", t:"verb"}]},
+      {n:19, ctx:{en:"The ache returns every night.", ko:"그 통증은 매일 밤 돌아온다."}, full:"너는 그 약을 먹는 게 좋다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should take", ko:"먹는 게 좋다", t:"verb"},
+        {en:"the medicine", ko:"그 약을", t:"obj"}]},
+      {n:20, ctx:{en:"The doctor watches the symptom.", ko:"그 의사는 그 증상을 지켜본다."}, full:"그 증상은 그 의사에게 단서를 줄 것임에 틀림없다", chunks:[
+        {en:"The symptom", ko:"그 증상은", t:"subj"},
+        {en:"must give", ko:"줄 것임에 틀림없다", t:"verb"},
+        {en:"the doctor", ko:"그 의사에게", t:"obj"},
+        {en:"a clue", ko:"단서를", t:"obj"}]},
+      {n:21, ctx:{en:"The road is wet.", ko:"그 도로가 젖어 있다."}, full:"그 손님들은 도착할 것 같다 (늦게)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"are likely to arrive", ko:"도착할 것 같다", t:"verb"},
+        {en:"late", ko:"늦게", t:"mod"}]},
+      {n:22, ctx:{en:"The office keeps the papers of members.", ko:"그 사무실은 회원들의 서류를 보관한다."}, full:"손님들은 그 사무실에 들어가면 안 된다", chunks:[
+        {en:"Guests", ko:"손님들은", t:"subj"},
+        {en:"must not enter", ko:"들어가면 안 된다", t:"verb"},
+        {en:"the office", ko:"그 사무실에", t:"obj"}]},
+      {n:23, ctx:{en:"The room smells bad.", ko:"그 방에서 안 좋은 냄새가 난다."}, full:"너는 그 창문을 열어 두는 게 좋다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should keep", ko:"두는 게 좋다", t:"verb"},
+        {en:"the window", ko:"그 창문을", t:"obj"},
+        {en:"open", ko:"열린 상태로", t:"comp"}]},
+      {n:24, ctx:{en:"The fever fell every night.", ko:"그 열은 매일 밤 내렸다."}, full:"그 열은 내릴 것 같다 (오늘 밤)", chunks:[
+        {en:"The fever", ko:"그 열은", t:"subj"},
+        {en:"is likely to fall", ko:"내릴 것 같다", t:"verb"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:25, ctx:{en:"The class has no paper from you.", ko:"그 반은 너에게서 받은 서류가 없다."}, full:"너는 그 서류를 제출해야 한다 (내일)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"need to submit", ko:"제출해야 한다", t:"verb"},
+        {en:"the paper", ko:"그 서류를", t:"obj"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:26, ctx:{en:"The patient has a fever.", ko:"그 환자는 열이 있다."}, full:"그 의사는 그 환자에게 마스크를 줘야 할 것이다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"will have to give", ko:"줘야 할 것이다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"a mask", ko:"마스크를", t:"obj"}]},
+      {n:27, ctx:{en:"The event is in our city.", ko:"그 행사는 우리 도시에서 열린다."}, full:"너는 여권을 가져올 필요 없다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"do not have to bring", ko:"가져올 필요 없다", t:"verb"},
+        {en:"a passport", ko:"여권을", t:"obj"}]},
+      {n:28, ctx:{en:"The rule requires a uniform.", ko:"그 규정은 유니폼을 요구한다."}, full:"그 회사는 모든 회원에게 유니폼을 줘야 한다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"must give", ko:"줘야 한다", t:"verb"},
+        {en:"every member", ko:"모든 회원에게", t:"obj"},
+        {en:"a uniform", ko:"유니폼을", t:"obj"}]},
+      {n:29, ctx:{en:"The company gives old uniforms.", ko:"그 회사는 낡은 유니폼을 준다."}, full:"그 유니폼은 새것일 필요 없다", chunks:[
+        {en:"The uniform", ko:"그 유니폼은", t:"subj"},
+        {en:"does not have to be", ko:"~일 필요 없다", t:"verb"},
+        {en:"new", ko:"새것", t:"comp"}]},
+      {n:30, ctx:{en:"The letter is on the desk.", ko:"그 편지가 책상 위에 있다."}, full:"그 편지는 보내질지도 모른다 (내일)", chunks:[
+        {en:"The letter", ko:"그 편지는", t:"subj"},
+        {en:"might be sent", ko:"보내질지도 모른다", t:"verb"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:31, ctx:{en:"The exercise finishes at night.", ko:"그 운동은 밤에 끝난다."}, full:"그 약은 복용될지도 모른다 (그 운동 후에)", chunks:[
+        {en:"The medicine", ko:"그 약은", t:"subj"},
+        {en:"might be taken", ko:"복용될지도 모른다", t:"verb"},
+        {en:"after the exercise", ko:"그 운동 후에", t:"mod"}]},
+      {n:32, ctx:{en:"The team began the paper late.", ko:"그 팀은 그 서류를 늦게 시작했다."}, full:"그 서류는 제출될 것 같다 (늦게)", chunks:[
+        {en:"The paper", ko:"그 서류는", t:"subj"},
+        {en:"is likely to be submitted", ko:"제출될 것 같다", t:"verb"},
+        {en:"late", ko:"늦게", t:"mod"}]},
+      {n:33, ctx:{en:"The class seems hard.", ko:"그 수업은 어려워 보인다."}, full:"너는 그 수업을 그만두지 않는 게 좋다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should not quit", ko:"그만두지 않는 게 좋다", t:"verb"},
+        {en:"the class", ko:"그 수업을", t:"obj"}]},
+      {n:34, ctx:{en:"Guests wait at every station.", ko:"손님들이 모든 역에서 기다린다."}, full:"기차는 멈춰야 한다 (모든 역에서)", chunks:[
+        {en:"Trains", ko:"기차는", t:"subj"},
+        {en:"must stop", ko:"멈춰야 한다", t:"verb"},
+        {en:"at every station", ko:"모든 역에서", t:"mod"}]},
+      {n:35, ctx:{en:"The baby sleeps in the room.", ko:"그 아기는 그 방에서 잔다."}, full:"그 방은 따뜻한 게 좋다 (그 아기를 위해)", chunks:[
+        {en:"The room", ko:"그 방은", t:"subj"},
+        {en:"should be", ko:"~인 게 좋다", t:"verb"},
+        {en:"warm", ko:"따뜻한", t:"comp"},
+        {en:"for the baby", ko:"그 아기를 위해", t:"mod"}]},
+      {n:36, ctx:{en:"The doctor studied the clue.", ko:"그 의사는 그 단서를 연구했다."}, full:"그 단서는 알려져 있음에 틀림없다 (그 의사에 의해)", chunks:[
+        {en:"The clue", ko:"그 단서는", t:"subj"},
+        {en:"must be known", ko:"알려져 있음에 틀림없다", t:"verb"},
+        {en:"by the doctor", ko:"그 의사에 의해", t:"mod"}]},
+      {n:37, ctx:{en:"The ache returns after sleep.", ko:"그 통증은 자고 나면 돌아온다."}, full:"환자들은 스트레칭하는 편이 낫다 (매일 아침)", chunks:[
+        {en:"Patients", ko:"환자들은", t:"subj"},
+        {en:"had better stretch", ko:"스트레칭하는 편이 낫다", t:"verb"},
+        {en:"every morning", ko:"매일 아침", t:"mod"}]},
+      {n:38, ctx:{en:"The schedule is clear.", ko:"그 일정은 여유가 있다."}, full:"그 팀은 서두르지 않는 게 좋다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"should not hurry", ko:"서두르지 않는 게 좋다", t:"verb"}]},
+      {n:39, ctx:{en:"The medicine worked before.", ko:"그 약은 전에 효과가 있었다."}, full:"그 약은 그 환자를 차분하게 만들 것 같다", chunks:[
+        {en:"The medicine", ko:"그 약은", t:"subj"},
+        {en:"is likely to make", ko:"만들 것 같다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:40, ctx:{en:"The office is not open now.", ko:"그 사무실은 지금 열려 있지 않다."}, full:"그 손님들은 기다려야 한다 (그 문에서)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"have to wait", ko:"기다려야 한다", t:"verb"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:41, ctx:{en:"The gate does not examine bags.", ko:"그 문에서는 가방을 검사하지 않는다."}, full:"너는 여권을 가져올 필요 없다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"do not need to bring", ko:"가져올 필요 없다", t:"verb"},
+        {en:"a passport", ko:"여권을", t:"obj"}]},
+      {n:42, ctx:{en:"The law is strict.", ko:"그 법은 엄격하다."}, full:"시민들은 그 법을 따라야 한다", chunks:[
+        {en:"Citizens", ko:"시민들은", t:"subj"},
+        {en:"must follow", ko:"따라야 한다", t:"verb"},
+        {en:"the law", ko:"그 법을", t:"obj"}]},
+      {n:43, ctx:{en:"The train departs soon.", ko:"그 기차는 곧 출발한다."}, full:"그 아이들은 서두르는 편이 낫다", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"had better hurry", ko:"서두르는 편이 낫다", t:"verb"}]},
+      {n:44, ctx:{en:"Many patients arrived.", ko:"많은 환자가 도착했다."}, full:"그 의사는 모든 환자를 진찰해야 할 것이다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"will have to examine", ko:"진찰해야 할 것이다", t:"verb"},
+        {en:"every patient", ko:"모든 환자를", t:"obj"}]},
+      {n:45, ctx:{en:"Animals come to the gate.", ko:"동물들이 그 문으로 온다."}, full:"그 문은 열린 채로 두어지면 안 된다", chunks:[
+        {en:"The gate", ko:"그 문은", t:"subj"},
+        {en:"must not be left", ko:"두어지면 안 된다", t:"verb"},
+        {en:"open", ko:"열린 채로", t:"comp"}]},
+      {n:46, ctx:{en:"The customer cannot read the letter.", ko:"그 고객은 그 편지를 읽지 못한다."}, full:"그 편지는 번역되어야 한다", chunks:[
+        {en:"The letter", ko:"그 편지는", t:"subj"},
+        {en:"needs to be translated", ko:"번역되어야 한다", t:"verb"}]},
+      {n:47, ctx:{en:"The nurse worked every morning.", ko:"그 간호사는 매일 아침 일했다."}, full:"그 간호사는 쉬어야 한다 (밤에)", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"ought to rest", ko:"쉬어야 한다", t:"verb"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:48, ctx:{en:"The ache returns at night.", ko:"그 통증은 밤에 돌아온다."}, full:"너는 그 약을 먹어야 한다 (오늘 밤)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"need to take", ko:"먹어야 한다", t:"verb"},
+        {en:"the medicine", ko:"그 약을", t:"obj"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:49, ctx:{en:"The city requires a tax every season.", ko:"그 시는 매 계절 세금을 요구한다."}, full:"너는 그 세금을 내야 한다 (매 계절)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"must pay", ko:"내야 한다", t:"verb"},
+        {en:"the tax", ko:"그 세금을", t:"obj"},
+        {en:"every season", ko:"매 계절", t:"mod"}]},
+      {n:50, ctx:{en:"The symptom is bad.", ko:"그 증상이 심하다."}, full:"그 환자는 힘든 운동을 피하는 게 좋다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"should avoid", ko:"피하는 게 좋다", t:"verb"},
+        {en:"hard exercise", ko:"힘든 운동을", t:"obj"}]},
+      {n:51, ctx:{en:"The medicine is new.", ko:"그 약은 새것이다."}, full:"그 약은 그 환자를 차분하게 만들지도 모른다", chunks:[
+        {en:"The medicine", ko:"그 약은", t:"subj"},
+        {en:"may make", ko:"만들지도 모른다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:52, ctx:{en:"The engine burns.", ko:"그 엔진은 뜨겁게 타오른다."}, full:"너는 그 엔진을 만지면 안 된다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"must not touch", ko:"만지면 안 된다", t:"verb"},
+        {en:"the engine", ko:"그 엔진을", t:"obj"}]},
+      {n:53, ctx:{en:"The room is warm.", ko:"그 방은 따뜻하다."}, full:"그 창문은 열린 채로 유지되어야 한다", chunks:[
+        {en:"The window", ko:"그 창문은", t:"subj"},
+        {en:"ought to be kept", ko:"유지되어야 한다", t:"verb"},
+        {en:"open", ko:"열린 채로", t:"comp"}]},
+      {n:54, ctx:{en:"The fever is not high now.", ko:"그 열은 지금 높지 않다."}, full:"그 열은 내릴지도 모른다 (오늘 밤)", chunks:[
+        {en:"The fever", ko:"그 열은", t:"subj"},
+        {en:"may fall", ko:"내릴지도 모른다", t:"verb"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:55, ctx:{en:"The night is cold.", ko:"밤이 춥다."}, full:"그 아이는 따뜻하게 유지되어야 한다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"should be kept", ko:"유지되어야 한다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:56, ctx:{en:"The fever grows at night.", ko:"그 열은 밤에 심해진다."}, full:"너는 그 약을 먹는 편이 낫다 (오늘 밤)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"had better take", ko:"먹는 편이 낫다", t:"verb"},
+        {en:"the medicine", ko:"그 약을", t:"obj"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:57, ctx:{en:"The exercise seems hard.", ko:"그 운동은 어려워 보인다."}, full:"그 운동은 회피되어서는 안 된다", chunks:[
+        {en:"The exercise", ko:"그 운동은", t:"subj"},
+        {en:"should not be avoided", ko:"회피되어서는 안 된다", t:"verb"}]},
+      {n:58, ctx:{en:"The patient has an ache now.", ko:"그 환자는 지금 통증이 있다."}, full:"그 환자는 그 약을 받아야 한다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"should be given", ko:"받아야 한다", t:"verb"},
+        {en:"the medicine", ko:"그 약을", t:"mod"}]},
+      {n:59, ctx:{en:"The child plays in the garden.", ko:"그 아이가 그 정원에서 논다."}, full:"그 아이는 열이 있을 리 없다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"cannot have", ko:"있을 리 없다", t:"verb"},
+        {en:"a fever", ko:"열이", t:"obj"}]},
+      {n:60, ctx:{en:"The story differs from the truth.", ko:"그 이야기는 진실과 다르다."}, full:"그 이야기는 사실일 리 없다", chunks:[
+        {en:"The story", ko:"그 이야기는", t:"subj"},
+        {en:"cannot be", ko:"~일 리 없다", t:"verb"},
+        {en:"true", ko:"사실", t:"comp"}]},
+      {n:61, ctx:{en:"The company was strict about the rule.", ko:"그 회사는 그 규정에 엄격했다."}, full:"그 규정은 지켜져야 했다 (모든 회원에 의해)", chunks:[
+        {en:"The rule", ko:"그 규정은", t:"subj"},
+        {en:"had to be followed", ko:"지켜져야 했다", t:"verb"},
+        {en:"by every member", ko:"모든 회원에 의해", t:"mod"}]},
+      {n:62, ctx:{en:"The child's face is red.", ko:"그 아이의 얼굴이 빨갛다."}, full:"그 증상은 열의 징후임에 틀림없다", chunks:[
+        {en:"The symptom", ko:"그 증상은", t:"subj"},
+        {en:"must be", ko:"~임에 틀림없다", t:"verb"},
+        {en:"a sign of a fever", ko:"열의 징후", t:"comp"}]},
+      {n:63, ctx:{en:"The teacher waits for the paper.", ko:"그 선생님이 그 서류를 기다린다."}, full:"그 서류는 제출되어야 한다 (그 주말 전에)", chunks:[
+        {en:"The paper", ko:"그 서류는", t:"subj"},
+        {en:"must be submitted", ko:"제출되어야 한다", t:"verb"},
+        {en:"before the weekend", ko:"그 주말 전에", t:"mod"}]},
+      {n:64, ctx:{en:"Animals enter the garden at night.", ko:"동물들이 밤에 그 정원에 들어온다."}, full:"그 문은 닫힌 채로 유지되어야 한다 (밤에)", chunks:[
+        {en:"The gate", ko:"그 문은", t:"subj"},
+        {en:"must be kept", ko:"유지되어야 한다", t:"verb"},
+        {en:"closed", ko:"닫힌 채로", t:"comp"},
+        {en:"at night", ko:"밤에", t:"mod"}]},
+      {n:65, ctx:{en:"The patient sleeps now.", ko:"그 환자는 지금 자고 있다."}, full:"그 약이 그 환자를 차분하게 유지하고 있음에 틀림없다", chunks:[
+        {en:"The medicine", ko:"그 약이", t:"subj"},
+        {en:"must keep", ko:"유지하고 있음에 틀림없다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:66, ctx:{en:"The guests left early.", ko:"그 손님들은 일찍 출발했다."}, full:"그 손님들은 도착할 것이다 (그 행사 전에)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"should arrive", ko:"도착할 것이다", t:"verb"},
+        {en:"before the event", ko:"그 행사 전에", t:"mod"}]},
+      {n:67, ctx:{en:"The children forgot the rule.", ko:"그 아이들이 그 규칙을 잊었다."}, full:"그 선생님은 그 규칙을 반복해야 한다", chunks:[
+        {en:"The teacher", ko:"그 선생님은", t:"subj"},
+        {en:"must repeat", ko:"반복해야 한다", t:"verb"},
+        {en:"the rule", ko:"그 규칙을", t:"obj"}]},
+      {n:68, ctx:{en:"The nurse visits every morning.", ko:"그 간호사는 매일 아침 방문한다."}, full:"그 환자는 조언을 받을지도 모른다 (내일)", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"might be given", ko:"받을지도 모른다", t:"verb"},
+        {en:"advice", ko:"조언을", t:"mod"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:69, ctx:{en:"Children run into the street.", ko:"아이들이 도로로 뛰어든다."}, full:"그 규칙은 그 아이들을 안전하게 지켜야 한다", chunks:[
+        {en:"The rule", ko:"그 규칙은", t:"subj"},
+        {en:"must keep", ko:"지켜야 한다", t:"verb"},
+        {en:"the children", ko:"그 아이들을", t:"obj"},
+        {en:"safe", ko:"안전하게", t:"comp"}]},
+      {n:70, ctx:{en:"The flight departs tomorrow.", ko:"그 항공편은 내일 출발한다."}, full:"그 요금은 납부되어야 한다 (그 항공편 전에)", chunks:[
+        {en:"The fee", ko:"그 요금은", t:"subj"},
+        {en:"must be paid", ko:"납부되어야 한다", t:"verb"},
+        {en:"before the flight", ko:"그 항공편 전에", t:"mod"}]},
+      {n:71, ctx:{en:"The symptom is strange.", ko:"그 증상은 이상하다."}, full:"의사들은 그 원인을 알지도 모른다", chunks:[
+        {en:"Doctors", ko:"의사들은", t:"subj"},
+        {en:"may know", ko:"알지도 모른다", t:"verb"},
+        {en:"the cause", ko:"그 원인을", t:"obj"}]},
+      {n:72, ctx:{en:"The doctor knows the symptom.", ko:"그 의사는 그 증상을 안다."}, full:"시민들은 그 의사의 조언을 따라야 한다", chunks:[
+        {en:"Citizens", ko:"시민들은", t:"subj"},
+        {en:"ought to follow", ko:"따라야 한다", t:"verb"},
+        {en:"the advice of the doctor", ko:"그 의사의 조언을", t:"obj"}]},
+      {n:73, ctx:{en:"The nurse gave the medicine an hour ago.", ko:"그 간호사가 한 시간 전에 그 약을 주었다."}, full:"그 약은 그 환자를 차분하게 유지할 것이다", chunks:[
+        {en:"The medicine", ko:"그 약은", t:"subj"},
+        {en:"should keep", ko:"유지할 것이다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:74, ctx:{en:"The doctor examined the patient.", ko:"그 의사가 그 환자를 진찰했다."}, full:"그 의사는 그 답을 알고 있음에 틀림없다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"must know", ko:"알고 있음에 틀림없다", t:"verb"},
+        {en:"the answer", ko:"그 답을", t:"obj"}]},
+      {n:75, ctx:{en:"The doctor warned us.", ko:"그 의사가 우리에게 경고했다."}, full:"우리는 그 운동을 그만두지 않는 편이 낫다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"had better not quit", ko:"그만두지 않는 편이 낫다", t:"verb"},
+        {en:"the exercise", ko:"그 운동을", t:"obj"}]},
+      {n:76, ctx:{en:"The letter came from a strange city.", ko:"그 편지는 낯선 도시에서 왔다."}, full:"그 편지는 번역되어야 한다", chunks:[
+        {en:"The letter", ko:"그 편지는", t:"subj"},
+        {en:"has to be translated", ko:"번역되어야 한다", t:"verb"}]},
+      {n:77, ctx:{en:"The train left the station on time.", ko:"그 기차는 정시에 그 역을 떠났다."}, full:"그 기차는 도착할 것이다 (정시에)", chunks:[
+        {en:"The train", ko:"그 기차는", t:"subj"},
+        {en:"should arrive", ko:"도착할 것이다", t:"verb"},
+        {en:"on time", ko:"정시에", t:"mod"}]},
+      {n:78, ctx:{en:"The exercise finished.", ko:"그 운동이 끝났다."}, full:"너는 스트레칭하는 게 좋다 (그 운동 후에)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should stretch", ko:"스트레칭하는 게 좋다", t:"verb"},
+        {en:"after the exercise", ko:"그 운동 후에", t:"mod"}]},
+      {n:79, ctx:{en:"The doctor wrote a schedule for the medicine.", ko:"그 의사가 그 약의 복용 일정을 적어주었다."}, full:"그 약은 복용되어야 한다 (식후에)", chunks:[
+        {en:"The medicine", ko:"그 약은", t:"subj"},
+        {en:"should be taken", ko:"복용되어야 한다", t:"verb"},
+        {en:"after a meal", ko:"식후에", t:"mod"}]},
+      {n:80, ctx:{en:"The event is on the weekend.", ko:"그 행사는 주말에 있다."}, full:"그 팀은 등록해야 한다 (그 주말 전에)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"has to register", ko:"등록해야 한다", t:"verb"},
+        {en:"before the weekend", ko:"그 주말 전에", t:"mod"}]},
+      {n:81, ctx:{en:"The noise causes an ache.", ko:"그 소음이 통증을 일으킨다."}, full:"너는 그 소음을 피하는 편이 낫다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"had better avoid", ko:"피하는 편이 낫다", t:"verb"},
+        {en:"the noise", ko:"그 소음을", t:"obj"}]},
+      {n:82, ctx:{en:"The patient asks about the medicine.", ko:"그 환자가 그 약에 대해 묻는다."}, full:"간호사들은 그 환자에게 조언을 해주는 게 좋다", chunks:[
+        {en:"Nurses", ko:"간호사들은", t:"subj"},
+        {en:"should give", ko:"해주는 게 좋다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"advice", ko:"조언을", t:"obj"}]},
+      {n:83, ctx:{en:"The room is cold.", ko:"그 방은 춥다."}, full:"그 환자는 따뜻하게 유지되어야 한다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"ought to be kept", ko:"유지되어야 한다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:84, ctx:{en:"The teacher moved the schedule.", ko:"그 선생님이 그 일정을 옮겼다."}, full:"나는 그 서류를 제출해야 한다 (내일)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have to submit", ko:"제출해야 한다", t:"verb"},
+        {en:"the paper", ko:"그 서류를", t:"obj"},
+        {en:"tomorrow", ko:"내일", t:"mod"}]},
+      {n:85, ctx:{en:"The team is not on the schedule.", ko:"그 팀은 그 일정표에 없다."}, full:"그 팀은 등록해야 한다 (그 주말 전에)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"needs to register", ko:"등록해야 한다", t:"verb"},
+        {en:"before the weekend", ko:"그 주말 전에", t:"mod"}]},
+      {n:86, ctx:{en:"The patient ran for an hour.", ko:"그 환자는 한 시간 동안 뛰었다."}, full:"너는 쉬는 게 좋다 (그 운동 후에)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should rest", ko:"쉬는 게 좋다", t:"verb"},
+        {en:"after the exercise", ko:"그 운동 후에", t:"mod"}]},
+      {n:87, ctx:{en:"The legs ache after sleep.", ko:"자고 나면 다리가 아프다."}, full:"너는 네 다리를 스트레칭해야 한다 (매일 아침)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"ought to stretch", ko:"스트레칭해야 한다", t:"verb"},
+        {en:"your legs", ko:"네 다리를", t:"obj"},
+        {en:"every morning", ko:"매일 아침", t:"mod"}]},
+      {n:88, ctx:{en:"The company paid the tax for us.", ko:"그 회사가 우리 대신 그 세금을 냈다."}, full:"우리는 그 세금을 낼 필요 없었다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"did not have to pay", ko:"낼 필요 없었다", t:"verb"},
+        {en:"the tax", ko:"그 세금을", t:"obj"}]},
+      {n:89, ctx:{en:"The exercise was hard.", ko:"그 운동은 힘들었다."}, full:"그 환자는 쉬어야 한다 (그 운동 후에)", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"needs to rest", ko:"쉬어야 한다", t:"verb"},
+        {en:"after the exercise", ko:"그 운동 후에", t:"mod"}]},
+      {n:90, ctx:{en:"The train is late.", ko:"그 기차가 늦는다."}, full:"그 손님들은 도착할지도 모른다 (늦게)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"might arrive", ko:"도착할지도 모른다", t:"verb"},
+        {en:"late", ko:"늦게", t:"mod"}]},
+      {n:91, ctx:{en:"The class has no rule about the uniform.", ko:"그 반에는 유니폼에 관한 규칙이 없다."}, full:"그 아이는 유니폼을 입을 필요 없다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"does not have to wear", ko:"입을 필요 없다", t:"verb"},
+        {en:"a uniform", ko:"유니폼을", t:"obj"}]},
+      {n:92, ctx:{en:"The school has no uniform.", ko:"그 학교에는 유니폼이 없다."}, full:"그 아이는 유니폼을 입을 필요 없다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"does not need to wear", ko:"입을 필요 없다", t:"verb"},
+        {en:"a uniform", ko:"유니폼을", t:"obj"}]},
+      {n:93, ctx:{en:"The clue appeared after the symptom.", ko:"그 단서는 그 증상 뒤에 나타났다."}, full:"그 단서는 징후임에 틀림없다", chunks:[
+        {en:"The clue", ko:"그 단서는", t:"subj"},
+        {en:"must be", ko:"~임에 틀림없다", t:"verb"},
+        {en:"a sign", ko:"징후", t:"comp"}]},
+      {n:94, ctx:{en:"The fever began after the ache.", ko:"그 열은 그 통증 뒤에 시작되었다."}, full:"그 원인은 그 열일 리 없다", chunks:[
+        {en:"The cause", ko:"그 원인은", t:"subj"},
+        {en:"cannot be", ko:"~일 리 없다", t:"verb"},
+        {en:"the fever", ko:"그 열", t:"comp"}]},
+      {n:95, ctx:{en:"The office opens the gate early.", ko:"그 사무실은 그 문을 일찍 연다."}, full:"너는 기다릴 필요 없다 (그 문에서)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"do not have to wait", ko:"기다릴 필요 없다", t:"verb"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:96, ctx:{en:"The team needs every member.", ko:"그 팀은 모든 팀원이 필요하다."}, full:"너는 그 팀을 그만두지 않는 편이 낫다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"had better not quit", ko:"그만두지 않는 편이 낫다", t:"verb"},
+        {en:"the team", ko:"그 팀을", t:"obj"}]},
+      {n:97, ctx:{en:"Patients arrive at the hospital.", ko:"환자들이 그 병원에 도착한다."}, full:"모든 손님은 마스크를 받아야 한다", chunks:[
+        {en:"Every guest", ko:"모든 손님은", t:"subj"},
+        {en:"must be given", ko:"받아야 한다", t:"verb"},
+        {en:"a mask", ko:"마스크를", t:"mod"}]},
+    ]},
+    { id:"현재완료 4용법", items:[
+      {n:1, full:"그 바다는 계속 잔잔한 상태였다 (그 폭풍 이후로)", chunks:[
+        {en:"The ocean", ko:"그 바다는", t:"subj"},
+        {en:"has remained", ko:"계속 ~인 상태였다", t:"verb"},
+        {en:"calm", ko:"잔잔한", t:"comp"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:2, full:"그 비평가는 그의 기억을 회복했다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"has recovered", ko:"회복했다", t:"verb"},
+        {en:"his memory", ko:"그의 기억을", t:"obj"}]},
+      {n:3, full:"우리는 그 전체 계획을 이미 완료했다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"have already completed", ko:"이미 완료했다", t:"verb"},
+        {en:"the whole plan", ko:"그 전체 계획을", t:"obj"}]},
+      {n:4, ctx:{en:"The child never smiles now.", ko:"그 아이는 이제 전혀 웃지 않는다."}, full:"그 경험은 그 아이를 조용하게 만들었다", chunks:[
+        {en:"The experience", ko:"그 경험은", t:"subj"},
+        {en:"has made", ko:"만들었다", t:"verb"},
+        {en:"the child", ko:"그 아이를", t:"obj"},
+        {en:"quiet", ko:"조용하게", t:"comp"}]},
+      {n:5, full:"그 아이들은 긴 휴일을 계속 보내 왔다 (그 행사 이후로)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"have had", ko:"계속 보내 왔다", t:"verb"},
+        {en:"a long holiday", ko:"긴 휴일을", t:"obj"},
+        {en:"since the event", ko:"그 행사 이후로", t:"mod"}]},
+      {n:6, ctx:{en:"The other islands lost their old songs.", ko:"다른 섬들은 그들의 옛 노래를 잃었다."}, full:"그 박물관은 그 섬의 문화를 지켜 왔다", chunks:[
+        {en:"The museum", ko:"그 박물관은", t:"subj"},
+        {en:"has kept", ko:"지켜 왔다", t:"verb"},
+        {en:"the culture of the island", ko:"그 섬의 문화를", t:"obj"}]},
+      {n:7, full:"그 열은 사라져 버렸다", chunks:[
+        {en:"The fever", ko:"그 열은", t:"subj"},
+        {en:"has gone", ko:"사라져 버렸다", t:"verb"}]},
+      {n:8, full:"그 간호사는 그 환자에게 약을 계속 주어 왔다 (어제부터)", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"has given", ko:"계속 주어 왔다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"medicine", ko:"약을", t:"obj"},
+        {en:"since yesterday", ko:"어제부터", t:"mod"}]},
+      {n:9, full:"나의 아버지는 외국어를 배운 적 없다", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"has never learned", ko:"배운 적 없다", t:"verb"},
+        {en:"a foreign language", ko:"외국어를", t:"obj"}]},
+      {n:10, full:"그 지붕은 수리되지 않았다", chunks:[
+        {en:"The roof", ko:"그 지붕은", t:"subj"},
+        {en:"hasn't been repaired", ko:"수리되지 않았다", t:"verb"}]},
+      {n:11, full:"그 간호사는 그 약을 막 가져왔다", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"has just brought", ko:"막 가져왔다", t:"verb"},
+        {en:"the medicine", ko:"그 약을", t:"obj"}]},
+      {n:12, full:"그 아이들은 계속 자지 못하고 있다 (잘) (그 폭풍 이후로)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"haven't been sleeping", ko:"계속 자지 못하고 있다", t:"verb"},
+        {en:"well", ko:"잘", t:"mod"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:13, full:"우리는 그 섬까지의 거리를 안 적이 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"have never known", ko:"안 적이 없다", t:"verb"},
+        {en:"the distance to the island", ko:"그 섬까지의 거리를", t:"obj"}]},
+      {n:14, full:"그 팀은 그 계획을 개선하지 않았다 (아직)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"has not improved", ko:"개선하지 않았다", t:"verb"},
+        {en:"the plan", ko:"그 계획을", t:"obj"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:15, full:"나는 헤엄쳐 본 적 없다 (그 바다에서)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have never swum", ko:"헤엄쳐 본 적 없다", t:"verb"},
+        {en:"in the ocean", ko:"그 바다에서", t:"mod"}]},
+      {n:16, full:"그 손님들은 무료 티켓을 받았다", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"have been given", ko:"받았다", t:"verb"},
+        {en:"a free ticket", ko:"무료 티켓을", t:"mod"}]},
+      {n:17, full:"그 운동선수들은 성공을 이루지 못했다", chunks:[
+        {en:"The athletes", ko:"그 운동선수들은", t:"subj"},
+        {en:"haven't achieved", ko:"이루지 못했다", t:"verb"},
+        {en:"success", ko:"성공을", t:"obj"}]},
+      {n:18, full:"나는 가 본 적 있다 (그 사원에) (전에)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have been to", ko:"가 본 적 있다", t:"verb"},
+        {en:"the temple", ko:"그 사원에", t:"mod"},
+        {en:"before", ko:"전에", t:"mod"}]},
+      {n:19, full:"그 서류는 막 제출되었다", chunks:[
+        {en:"The paper", ko:"그 서류는", t:"subj"},
+        {en:"has just been submitted", ko:"막 제출되었다", t:"verb"}]},
+      {n:20, full:"나는 그 서류를 막 끝냈다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have just finished", ko:"막 끝냈다", t:"verb"},
+        {en:"the paper", ko:"그 서류를", t:"obj"}]},
+      {n:21, full:"그 모험은 안전하지 않았다", chunks:[
+        {en:"The adventure", ko:"그 모험은", t:"subj"},
+        {en:"hasn't been", ko:"~이지 않았다", t:"verb"},
+        {en:"safe", ko:"안전한", t:"comp"}]},
+      {n:22, full:"나의 아버지는 나에게 티켓을 막 주었다", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"has just given", ko:"막 주었다", t:"verb"},
+        {en:"me", ko:"나에게", t:"obj"},
+        {en:"a ticket", ko:"티켓을", t:"obj"}]},
+      {n:23, full:"그 지붕은 막 덮였다 (눈으로)", chunks:[
+        {en:"The roof", ko:"그 지붕은", t:"subj"},
+        {en:"has just been covered", ko:"막 덮였다", t:"verb"},
+        {en:"with snow", ko:"눈으로", t:"mod"}]},
+      {n:24, full:"그 비평가는 쓴 적 없다 (그 섬의 문화에 대해)", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"hasn't written", ko:"쓴 적 없다", t:"verb"},
+        {en:"about the culture of the island", ko:"그 섬의 문화에 대해", t:"mod"}]},
+      {n:25, full:"그 폭풍들은 계속되고 있다 (그 주말 이후로)", chunks:[
+        {en:"The storms", ko:"그 폭풍들은", t:"subj"},
+        {en:"have been continuing", ko:"계속되고 있다", t:"verb"},
+        {en:"since the weekend", ko:"그 주말 이후로", t:"mod"}]},
+      {n:26, full:"나는 그 편지 전체를 이미 읽었다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have already read", ko:"이미 읽었다", t:"verb"},
+        {en:"the whole letter", ko:"그 편지 전체를", t:"obj"}]},
+      {n:27, full:"나는 열이 계속 있어 왔다 (어제부터)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have had", ko:"계속 있어 왔다", t:"verb"},
+        {en:"a fever", ko:"열이", t:"obj"},
+        {en:"since yesterday", ko:"어제부터", t:"mod"}]},
+      {n:28, full:"그 회사는 그 계획을 개선해 왔다 (그 최근 사건 이후로)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"has improved", ko:"개선해 왔다", t:"verb"},
+        {en:"the plan", ko:"그 계획을", t:"obj"},
+        {en:"since the recent event", ko:"그 최근 사건 이후로", t:"mod"}]},
+      {n:29, full:"그 폭풍은 그 지붕 전체를 망가뜨려 버렸다", chunks:[
+        {en:"The storm", ko:"그 폭풍은", t:"subj"},
+        {en:"has ruined", ko:"망가뜨려 버렸다", t:"verb"},
+        {en:"the whole roof", ko:"그 지붕 전체를", t:"obj"}]},
+      {n:30, full:"그 폭풍들은 계속되어 왔다 (그 주말 이후로)", chunks:[
+        {en:"The storms", ko:"그 폭풍들은", t:"subj"},
+        {en:"have continued", ko:"계속되어 왔다", t:"verb"},
+        {en:"since the weekend", ko:"그 주말 이후로", t:"mod"}]},
+      {n:31, full:"그 날씨는 막 따뜻해졌다", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"has just turned", ko:"막 ~해졌다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:32, full:"그 팀은 겨뤄 본 적 없다 (해외에서)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"hasn't competed", ko:"겨뤄 본 적 없다", t:"verb"},
+        {en:"abroad", ko:"해외에서", t:"mod"}]},
+      {n:33, full:"그 시인은 천재라고 불려 왔다 (그 최근 모험 이후로)", chunks:[
+        {en:"The poet", ko:"그 시인은", t:"subj"},
+        {en:"has been called", ko:"불려 왔다", t:"verb"},
+        {en:"a genius", ko:"천재라고", t:"comp"},
+        {en:"since the recent adventure", ko:"그 최근 모험 이후로", t:"mod"}]},
+      {n:34, full:"그 섬은 따뜻한 계절을 이어 왔다 (그 최근 폭풍 이후로)", chunks:[
+        {en:"The island", ko:"그 섬은", t:"subj"},
+        {en:"has had", ko:"이어 왔다", t:"verb"},
+        {en:"a warm season", ko:"따뜻한 계절을", t:"obj"},
+        {en:"since the recent storm", ko:"그 최근 폭풍 이후로", t:"mod"}]},
+      {n:35, full:"나의 가족은 그 호텔을 운영해 오고 있다 (10년 동안)", chunks:[
+        {en:"My family", ko:"나의 가족은", t:"subj"},
+        {en:"has been running", ko:"운영해 오고 있다", t:"verb"},
+        {en:"the hotel", ko:"그 호텔을", t:"obj"},
+        {en:"for ten years", ko:"10년 동안", t:"mod"}]},
+      {n:36, full:"그 편지는 번역되지 않았다 (아직)", chunks:[
+        {en:"The letter", ko:"그 편지는", t:"subj"},
+        {en:"has not been translated", ko:"번역되지 않았다", t:"verb"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:37, full:"그 환자는 회복했다 (그 열에서)", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"has recovered", ko:"회복했다", t:"verb"},
+        {en:"from the fever", ko:"그 열에서", t:"mod"}]},
+      {n:38, full:"그 기차는 이미 떠났다", chunks:[
+        {en:"The train", ko:"그 기차는", t:"subj"},
+        {en:"has already left", ko:"이미 떠났다", t:"verb"}]},
+      {n:39, full:"우리는 그 지붕을 수리하지 않았다 (아직)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"haven't repaired", ko:"수리하지 않았다", t:"verb"},
+        {en:"the roof", ko:"그 지붕을", t:"obj"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:40, full:"우리는 외국인 선생님을 두어 왔다 (한 달 동안)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"'ve had", ko:"두어 왔다", t:"verb"},
+        {en:"a foreign teacher", ko:"외국인 선생님을", t:"obj"},
+        {en:"for a month", ko:"한 달 동안", t:"mod"}]},
+      {n:41, full:"그 사원은 깨끗하게 유지되어 왔다 (그 휴일 이후로)", chunks:[
+        {en:"The temple", ko:"그 사원은", t:"subj"},
+        {en:"has been kept", ko:"유지되어 왔다", t:"verb"},
+        {en:"clean", ko:"깨끗하게", t:"comp"},
+        {en:"since the holiday", ko:"그 휴일 이후로", t:"mod"}]},
+      {n:42, full:"그 팀들은 그 프로젝트를 이미 완료했다", chunks:[
+        {en:"The teams", ko:"그 팀들은", t:"subj"},
+        {en:"have already completed", ko:"이미 완료했다", t:"verb"},
+        {en:"the project", ko:"그 프로젝트를", t:"obj"}]},
+      {n:43, full:"그 고객은 무료 티켓을 막 받았다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
+        {en:"has just been sent", ko:"막 받았다", t:"verb"},
+        {en:"a free ticket", ko:"무료 티켓을", t:"mod"}]},
+      {n:44, full:"그 손님들은 막 도착했다 (그 호텔에)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"have just arrived", ko:"막 도착했다", t:"verb"},
+        {en:"at the hotel", ko:"그 호텔에", t:"mod"}]},
+      {n:45, full:"그 폭풍은 이미 지나갔다", chunks:[
+        {en:"The storm", ko:"그 폭풍은", t:"subj"},
+        {en:"has already passed", ko:"이미 지나갔다", t:"verb"}]},
+      {n:46, full:"그 손님들은 가 버렸다 (해외로)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"have gone", ko:"가 버렸다", t:"verb"},
+        {en:"abroad", ko:"해외로", t:"mod"}]},
+      {n:47, full:"그 의사는 그 환자를 차분하게 유지해 왔다 (그 아침부터)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"has kept", ko:"유지해 왔다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"},
+        {en:"since the morning", ko:"그 아침부터", t:"mod"}]},
+      {n:48, full:"그 의사는 그 환자를 진찰하지 않았다 (아직)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"has not examined", ko:"진찰하지 않았다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:49, full:"우리는 경기를 져 본 적 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"'ve never lost", ko:"져 본 적 없다", t:"verb"},
+        {en:"a game", ko:"경기를", t:"obj"}]},
+      {n:50, full:"그 아이들은 안전하게 지켜져 왔다 (그 폭풍 이후로)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"have been kept", ko:"지켜져 왔다", t:"verb"},
+        {en:"safe", ko:"안전하게", t:"comp"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:51, full:"그 사원은 서 있어 왔다 (그 산 위에) (내가 태어난 이후로)", chunks:[
+        {en:"The temple", ko:"그 사원은", t:"subj"},
+        {en:"has stood", ko:"서 있어 왔다", t:"verb"},
+        {en:"on the mountain", ko:"그 산 위에", t:"mod"},
+        {en:"since my birth", ko:"내가 태어난 이후로", t:"mod"}]},
+      {n:52, full:"그 의사는 그 환자를 진찰해 오고 있다 (그 아침부터)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"has been examining", ko:"진찰해 오고 있다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"since the morning", ko:"그 아침부터", t:"mod"}]},
+      {n:53, ctx:{en:"Foreign guests arrive every morning.", ko:"외국인 손님들이 매일 아침 도착한다."}, full:"그 섬은 외국 시장이 되었다", chunks:[
+        {en:"The island", ko:"그 섬은", t:"subj"},
+        {en:"has become", ko:"~이 되었다", t:"verb"},
+        {en:"a foreign market", ko:"외국 시장", t:"comp"}]},
+      {n:54, full:"그 박물관은 문 닫은 적 없다 (휴일에)", chunks:[
+        {en:"The museum", ko:"그 박물관은", t:"subj"},
+        {en:"has never closed", ko:"문 닫은 적 없다", t:"verb"},
+        {en:"on a holiday", ko:"휴일에", t:"mod"}]},
+      {n:55, full:"그 아이들은 외국어 책을 받았다", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"have been given", ko:"받았다", t:"verb"},
+        {en:"a foreign language book", ko:"외국어 책을", t:"mod"}]},
+      {n:56, full:"그 언어는 가르쳐진 적 없다 (이 학교에서)", chunks:[
+        {en:"The language", ko:"그 언어는", t:"subj"},
+        {en:"has never been taught", ko:"가르쳐진 적 없다", t:"verb"},
+        {en:"in this school", ko:"이 학교에서", t:"mod"}]},
+      {n:57, full:"나는 그 바다를 본 적 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have never seen", ko:"본 적 없다", t:"verb"},
+        {en:"the ocean", ko:"그 바다를", t:"obj"}]},
+      {n:58, full:"그 사원은 서 있어 왔다 (그 도시에서 먼 거리에)", chunks:[
+        {en:"The temple", ko:"그 사원은", t:"subj"},
+        {en:"has stood", ko:"서 있어 왔다", t:"verb"},
+        {en:"at a long distance from the city", ko:"그 도시에서 먼 거리에", t:"mod"}]},
+      {n:59, ctx:{en:"Patients come from every city now.", ko:"이제 모든 도시에서 환자들이 온다."}, full:"의사들은 성공을 이루었다 (그 병원 전체에서)", chunks:[
+        {en:"Doctors", ko:"의사들은", t:"subj"},
+        {en:"have achieved", ko:"이루었다", t:"verb"},
+        {en:"success", ko:"성공을", t:"obj"},
+        {en:"in the whole hospital", ko:"그 병원 전체에서", t:"mod"}]},
+      {n:60, full:"그 팀들은 그 프로젝트를 이어 오지 않았다 (그 행사 이후로)", chunks:[
+        {en:"The teams", ko:"그 팀들은", t:"subj"},
+        {en:"haven't continued", ko:"이어 오지 않았다", t:"verb"},
+        {en:"the project", ko:"그 프로젝트를", t:"obj"},
+        {en:"since the event", ko:"그 행사 이후로", t:"mod"}]},
+      {n:61, full:"그 회사는 그 고객에게 무료 티켓을 준 적 없다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"hasn't given", ko:"준 적 없다", t:"verb"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
+        {en:"a free ticket", ko:"무료 티켓을", t:"obj"}]},
+      {n:62, full:"그 날씨는 이미 따뜻해졌다", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"has already become", ko:"이미 ~해졌다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"}]},
+      {n:63, full:"나는 그 산을 올라 본 적 있다 (전에)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ve climbed", ko:"올라 본 적 있다", t:"verb"},
+        {en:"the mountain", ko:"그 산을", t:"obj"},
+        {en:"before", ko:"전에", t:"mod"}]},
+      {n:64, full:"나의 가족은 그 호텔을 소유해 왔다 (지난 계절부터)", chunks:[
+        {en:"My family", ko:"나의 가족은", t:"subj"},
+        {en:"has owned", ko:"소유해 왔다", t:"verb"},
+        {en:"the hotel", ko:"그 호텔을", t:"obj"},
+        {en:"since the past season", ko:"지난 계절부터", t:"mod"}]},
+      {n:65, full:"나는 내 여권을 잃어버렸다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ve lost", ko:"잃어버렸다", t:"verb"},
+        {en:"my passport", ko:"내 여권을", t:"obj"}]},
+      {n:66, full:"그 시장은 열지 않았다 (아직)", chunks:[
+        {en:"The market", ko:"그 시장은", t:"subj"},
+        {en:"has not opened", ko:"열지 않았다", t:"verb"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:67, full:"나는 그런 사원을 본 적 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ve never seen", ko:"본 적 없다", t:"verb"},
+        {en:"such a temple", ko:"그런 사원을", t:"obj"}]},
+      {n:68, full:"그 날씨는 따뜻하지 않았다 (그 주말 이후로)", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"hasn't been", ko:"~이지 않았다", t:"verb"},
+        {en:"warm", ko:"따뜻한", t:"comp"},
+        {en:"since the weekend", ko:"그 주말 이후로", t:"mod"}]},
+      {n:69, full:"그 박물관은 닫혀 있어 왔다 (그 폭풍 이후로)", chunks:[
+        {en:"The museum", ko:"그 박물관은", t:"subj"},
+        {en:"has been closed", ko:"닫혀 있어 왔다", t:"verb"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:70, full:"그 손님들은 그런 바다를 본 적 없다", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"have never seen", ko:"본 적 없다", t:"verb"},
+        {en:"such an ocean", ko:"그런 바다를", t:"obj"}]},
+      {n:71, full:"나의 누나는 가 본 적 없다 (외국 섬에)", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"hasn't been to", ko:"가 본 적 없다", t:"verb"},
+        {en:"a foreign island", ko:"외국 섬에", t:"mod"}]},
+      {n:72, full:"그 비평가는 외국 문화를 연구한 적 없다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"hasn't studied", ko:"연구한 적 없다", t:"verb"},
+        {en:"a foreign culture", ko:"외국 문화를", t:"obj"}]},
+      {n:73, full:"나는 머물러 왔다 (이 도시에) (내가 태어난 이후로)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have stayed", ko:"머물러 왔다", t:"verb"},
+        {en:"in this city", ko:"이 도시에", t:"mod"},
+        {en:"since my birth", ko:"내가 태어난 이후로", t:"mod"}]},
+      {n:74, full:"그 모험은 그 소년에게 새로운 경험을 주었다", chunks:[
+        {en:"The adventure", ko:"그 모험은", t:"subj"},
+        {en:"has given", ko:"주었다", t:"verb"},
+        {en:"the boy", ko:"그 소년에게", t:"obj"},
+        {en:"a new experience", ko:"새로운 경험을", t:"obj"}]},
+      {n:75, full:"그 도시 전체는 망가져 버렸다 (그 폭풍에 의해)", chunks:[
+        {en:"The whole city", ko:"그 도시 전체는", t:"subj"},
+        {en:"has been ruined", ko:"망가져 버렸다", t:"verb"},
+        {en:"by the storm", ko:"그 폭풍에 의해", t:"mod"}]},
+      {n:76, full:"그 소년은 그런 모험을 해 본 적 없다", chunks:[
+        {en:"The boy", ko:"그 소년은", t:"subj"},
+        {en:"has never had", ko:"해 본 적 없다", t:"verb"},
+        {en:"such an adventure", ko:"그런 모험을", t:"obj"}]},
+      {n:77, full:"나는 기다려 오고 있다 (그 문에서) (두 시간 동안)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have been waiting", ko:"기다려 오고 있다", t:"verb"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"},
+        {en:"for two hours", ko:"두 시간 동안", t:"mod"}]},
+      {n:78, full:"그 비는 그 도로를 이미 젖게 만들었다", chunks:[
+        {en:"The rain", ko:"그 비는", t:"subj"},
+        {en:"has already made", ko:"이미 만들었다", t:"verb"},
+        {en:"the road", ko:"그 도로를", t:"obj"},
+        {en:"wet", ko:"젖게", t:"comp"}]},
+    ]},
+    { id:"현재완료 복습", items:[
+      {n:1, full:"나는 외국 잡지를 모은 적 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"haven't collected", ko:"모은 적 없다", t:"verb"},
+        {en:"a foreign magazine", ko:"외국 잡지를", t:"obj"}]},
+      {n:2, full:"그 작가는 가 버렸다 (해외로)", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"has gone", ko:"가 버렸다", t:"verb"},
+        {en:"abroad", ko:"해외로", t:"mod"}]},
+      {n:3, full:"그 작가는 그 소설을 써 왔다 (지난 계절부터)", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"has written", ko:"써 왔다", t:"verb"},
+        {en:"the novel", ko:"그 소설을", t:"obj"},
+        {en:"since the past season", ko:"지난 계절부터", t:"mod"}]},
+      {n:4, full:"그 일기는 안전하게 보관되어 왔다 (그 폭풍 이후로)", chunks:[
+        {en:"The diary", ko:"그 일기는", t:"subj"},
+        {en:"has been kept", ko:"보관되어 왔다", t:"verb"},
+        {en:"safe", ko:"안전하게", t:"comp"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:5, full:"그 작가는 막 떠났다 (그 박물관을)", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"has just left", ko:"막 떠났다", t:"verb"},
+        {en:"the museum", ko:"그 박물관을", t:"mod"}]},
+      {n:6, full:"그 회사는 그 고객에게 잡지를 보내 왔다 (지난 계절부터)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"has sent", ko:"보내 왔다", t:"verb"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
+        {en:"a magazine", ko:"잡지를", t:"obj"},
+        {en:"since the past season", ko:"지난 계절부터", t:"mod"}]},
+      {n:7, full:"그 잡지들은 도착하지 않았다 (아직)", chunks:[
+        {en:"The magazines", ko:"그 잡지들은", t:"subj"},
+        {en:"haven't arrived", ko:"도착하지 않았다", t:"verb"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:8, full:"그 작가는 그 소설을 완성했다", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"has completed", ko:"완성했다", t:"verb"},
+        {en:"the novel", ko:"그 소설을", t:"obj"}]},
+      {n:9, ctx:{en:"The critic asks the same question again.", ko:"그 비평가는 같은 질문을 또 한다."}, full:"그 비평가는 그 이야기 전체를 잊어버렸다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"has forgotten", ko:"잊어버렸다", t:"verb"},
+        {en:"the whole story", ko:"그 이야기 전체를", t:"obj"}]},
+      {n:10, full:"그 작가는 새 소설을 막 출간했다", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"has just published", ko:"막 출간했다", t:"verb"},
+        {en:"a new novel", ko:"새 소설을", t:"obj"}]},
+      {n:11, full:"그 잡지는 발행되어 왔다 (내가 태어난 이후로)", chunks:[
+        {en:"The magazine", ko:"그 잡지는", t:"subj"},
+        {en:"has been published", ko:"발행되어 왔다", t:"verb"},
+        {en:"since my birth", ko:"내가 태어난 이후로", t:"mod"}]},
+      {n:12, full:"나는 일기를 써 본 적 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ve never kept", ko:"써 본 적 없다", t:"verb"},
+        {en:"a diary", ko:"일기를", t:"obj"}]},
+      {n:13, full:"나는 내 카메라를 잃어버렸다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ve lost", ko:"잃어버렸다", t:"verb"},
+        {en:"my camera", ko:"내 카메라를", t:"obj"}]},
+      {n:14, full:"나는 그 시 전체를 이미 읽었다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have already read", ko:"이미 읽었다", t:"verb"},
+        {en:"the whole poem", ko:"그 시 전체를", t:"obj"}]},
+      {n:15, full:"그 비평가는 그 기사를 쓰지 않았다 (아직)", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"hasn't written", ko:"쓰지 않았다", t:"verb"},
+        {en:"the article", ko:"그 기사를", t:"obj"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:16, ctx:{en:"The children sleep well now.", ko:"그 아이들은 이제 잘 잔다."}, full:"그 시들은 그 아이들을 차분하게 만들어 왔다", chunks:[
+        {en:"The poems", ko:"그 시들은", t:"subj"},
+        {en:"have kept", ko:"유지해 왔다", t:"verb"},
+        {en:"the children", ko:"그 아이들을", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:17, full:"나의 아버지는 여행해 본 적 없다 (해외로)", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"hasn't traveled", ko:"여행해 본 적 없다", t:"verb"},
+        {en:"abroad", ko:"해외로", t:"mod"}]},
+      {n:18, ctx:{en:"Every critic knows the story now.", ko:"이제 모든 비평가가 그 이야기를 안다."}, full:"그 소설은 전설이라고 불려 왔다", chunks:[
+        {en:"The novel", ko:"그 소설은", t:"subj"},
+        {en:"has been called", ko:"불려 왔다", t:"verb"},
+        {en:"a legend", ko:"전설이라고", t:"comp"}]},
+      {n:19, full:"그 기사들은 놓여 있어 왔다 (그 책상 위에) (어제부터)", chunks:[
+        {en:"The articles", ko:"그 기사들은", t:"subj"},
+        {en:"have stayed", ko:"놓여 있어 왔다", t:"verb"},
+        {en:"on the desk", ko:"그 책상 위에", t:"mod"},
+        {en:"since yesterday", ko:"어제부터", t:"mod"}]},
+      {n:20, full:"그 카메라들은 분실된 상태였다 (그 휴일 이후로)", chunks:[
+        {en:"The cameras", ko:"그 카메라들은", t:"subj"},
+        {en:"have been lost", ko:"분실된 상태였다", t:"verb"},
+        {en:"since the holiday", ko:"그 휴일 이후로", t:"mod"}]},
+      {n:21, full:"나의 누나는 일기를 써 왔다 (그 휴일 이후로)", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"has kept", ko:"써 왔다", t:"verb"},
+        {en:"a diary", ko:"일기를", t:"obj"},
+        {en:"since the holiday", ko:"그 휴일 이후로", t:"mod"}]},
+      {n:22, full:"그 소설은 그 작가를 전설로 만들었다", chunks:[
+        {en:"The novel", ko:"그 소설은", t:"subj"},
+        {en:"has made", ko:"만들었다", t:"verb"},
+        {en:"the author", ko:"그 작가를", t:"obj"},
+        {en:"a legend", ko:"전설로", t:"comp"}]},
+      {n:23, full:"그 폭풍은 그 잡지 전체를 망가뜨려 버렸다", chunks:[
+        {en:"The storm", ko:"그 폭풍은", t:"subj"},
+        {en:"has ruined", ko:"망가뜨려 버렸다", t:"verb"},
+        {en:"the whole magazine", ko:"그 잡지 전체를", t:"obj"}]},
+      {n:24, full:"우리는 그런 광경을 본 적 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"have never seen", ko:"본 적 없다", t:"verb"},
+        {en:"such a view", ko:"그런 광경을", t:"obj"}]},
+      {n:25, full:"우리는 그 기사들을 모으지 않았다 (아직)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"haven't collected", ko:"모으지 않았다", t:"verb"},
+        {en:"the articles", ko:"그 기사들을", t:"obj"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:26, full:"나의 누나는 나에게 그녀의 일기를 막 주었다", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"has just given", ko:"막 주었다", t:"verb"},
+        {en:"me", ko:"나에게", t:"obj"},
+        {en:"her diary", ko:"그녀의 일기를", t:"obj"}]},
+      {n:27, full:"그 소설은 막 출간되었다", chunks:[
+        {en:"The novel", ko:"그 소설은", t:"subj"},
+        {en:"has just been published", ko:"막 출간되었다", t:"verb"}]},
+      {n:28, full:"그 광경은 계속 맑았다 (그 폭풍 이후로)", chunks:[
+        {en:"The view", ko:"그 광경은", t:"subj"},
+        {en:"has been", ko:"계속 ~였다", t:"verb"},
+        {en:"clear", ko:"맑은", t:"comp"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:29, full:"그 작가는 시를 출간한 적 없다", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"hasn't published", ko:"출간한 적 없다", t:"verb"},
+        {en:"a poem", ko:"시를", t:"obj"}]},
+      {n:30, full:"그 비평가는 그 기사를 끝냈다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"has finished", ko:"끝냈다", t:"verb"},
+        {en:"the article", ko:"그 기사를", t:"obj"}]},
+      {n:31, full:"나는 오래된 카메라를 모아 왔다 (오랫동안)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have collected", ko:"모아 왔다", t:"verb"},
+        {en:"old cameras", ko:"오래된 카메라를", t:"obj"},
+        {en:"for a long time", ko:"오랫동안", t:"mod"}]},
+      {n:32, full:"그 시는 번역되지 않았다 (아직)", chunks:[
+        {en:"The poem", ko:"그 시는", t:"subj"},
+        {en:"has not been translated", ko:"번역되지 않았다", t:"verb"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:33, full:"그 비평가들은 그 소설을 읽어 본 적 있다 (전에)", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"have read", ko:"읽어 본 적 있다", t:"verb"},
+        {en:"the novel", ko:"그 소설을", t:"obj"},
+        {en:"before", ko:"전에", t:"mod"}]},
+      {n:34, full:"그 기사들은 모아진 적 없다", chunks:[
+        {en:"The articles", ko:"그 기사들은", t:"subj"},
+        {en:"have never been collected", ko:"모아진 적 없다", t:"verb"}]},
+      {n:35, full:"그 작가는 답을 받지 못했다", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"hasn't been given", ko:"받지 못했다", t:"verb"},
+        {en:"an answer", ko:"답을", t:"mod"}]},
+      {n:36, full:"그 잡지는 나타난 적 없다 (이 섬에)", chunks:[
+        {en:"The magazine", ko:"그 잡지는", t:"subj"},
+        {en:"has never appeared", ko:"나타난 적 없다", t:"verb"},
+        {en:"on this island", ko:"이 섬에", t:"mod"}]},
+      {n:37, full:"그 잡지는 판매되어 왔다 (그 역에서) (지난달부터)", chunks:[
+        {en:"The magazine", ko:"그 잡지는", t:"subj"},
+        {en:"has been sold", ko:"판매되어 왔다", t:"verb"},
+        {en:"at the station", ko:"그 역에서", t:"mod"},
+        {en:"since the past month", ko:"지난달부터", t:"mod"}]},
+      {n:38, full:"그 광경은 이미 맑아졌다", chunks:[
+        {en:"The view", ko:"그 광경은", t:"subj"},
+        {en:"has already become", ko:"이미 ~해졌다", t:"verb"},
+        {en:"clear", ko:"맑게", t:"comp"}]},
+    ]},
+    { id:"과거완료·미래완료", items:[
+      {n:1, full:"나는 그 소설을 끝내 놓을 것이다 (다음 달까지는)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ll have finished", ko:"끝내 놓을 것이다", t:"verb"},
+        {en:"the novel", ko:"그 소설을", t:"obj"},
+        {en:"by next month", ko:"다음 달까지는", t:"mod"}]},
+      {n:2, ctx:{en:"The hotel was busy that evening.", ko:"그 호텔은 그날 저녁 붐볐다."}, full:"그 손님들은 모이지 않았었다 (아직)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"hadn't gathered", ko:"모이지 않았었다", t:"verb"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:3, ctx:{en:"The child slept well that night.", ko:"그 아이는 그날 밤 잘 잤다."}, full:"나의 아버지는 그 아이에게 옛이야기를 해 주었었다", chunks:[
+        {en:"My father", ko:"나의 아버지는", t:"subj"},
+        {en:"had told", ko:"해 주었었다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"an old story", ko:"옛이야기를", t:"obj"}]},
+      {n:4, full:"그 손님들은 조용하게 유지되어 있었다 (한 시간 동안)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"had been kept", ko:"유지되어 있었다", t:"verb"},
+        {en:"quiet", ko:"조용하게", t:"comp"},
+        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
+      {n:5, full:"그 회사는 그 전체 일정을 지켜 오고 있었다 (지난 계절부터)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had kept", ko:"지켜 오고 있었다", t:"verb"},
+        {en:"the entire schedule", ko:"그 전체 일정을", t:"obj"},
+        {en:"since the previous season", ko:"지난 계절부터", t:"mod"}]},
+      {n:6, full:"그 전체 일정은 확정되어 있을 것이다 (다음 달까지는)", chunks:[
+        {en:"The entire schedule", ko:"그 전체 일정은", t:"subj"},
+        {en:"will have been confirmed", ko:"확정되어 있을 것이다", t:"verb"},
+        {en:"by next month", ko:"다음 달까지는", t:"mod"}]},
+      {n:7, full:"그 파티는 계속되었었다 (세 시간 동안)", chunks:[
+        {en:"The party", ko:"그 파티는", t:"subj"},
+        {en:"had continued", ko:"계속되었었다", t:"verb"},
+        {en:"for three hours", ko:"세 시간 동안", t:"mod"}]},
+      {n:8, full:"나의 형은 그의 아기를 보지 못했을 것이다 (단 한 번도) (다음 달까지는)", chunks:[
+        {en:"My brother", ko:"나의 형은", t:"subj"},
+        {en:"won't have seen", ko:"보지 못했을 것이다", t:"verb"},
+        {en:"his baby", ko:"그의 아기를", t:"obj"},
+        {en:"even once", ko:"단 한 번도", t:"mod"},
+        {en:"by next month", ko:"다음 달까지는", t:"mod"}]},
+      {n:9, full:"그 축제는 계속되었었다 (새벽까지)", chunks:[
+        {en:"The festival", ko:"그 축제는", t:"subj"},
+        {en:"had continued", ko:"계속되었었다", t:"verb"},
+        {en:"until dawn", ko:"새벽까지", t:"mod"}]},
+      {n:10, full:"그 회사는 그 결혼식 전체를 준비해 놓을 것이다 (다음 계절까지는)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"will have arranged", ko:"준비해 놓을 것이다", t:"verb"},
+        {en:"the entire wedding", ko:"그 결혼식 전체를", t:"obj"},
+        {en:"by next season", ko:"다음 계절까지는", t:"mod"}]},
+      {n:11, ctx:{en:"The new leader found the schedule on the desk.", ko:"그 새 대표는 그 책상 위에서 그 일정표를 발견했다."}, full:"그 전 대표는 그 전체 일정을 이미 준비해 놓았었다", chunks:[
+        {en:"The former leader", ko:"그 전 대표는", t:"subj"},
+        {en:"had already arranged", ko:"이미 준비해 놓았었다", t:"verb"},
+        {en:"the entire schedule", ko:"그 전체 일정을", t:"obj"}]},
+      {n:12, full:"그 회사는 결혼식을 미룬 적이 없었다 (전에는)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"hadn't delayed", ko:"미룬 적이 없었다", t:"verb"},
+        {en:"a wedding", ko:"결혼식을", t:"obj"},
+        {en:"before", ko:"전에는", t:"mod"}]},
+      {n:13, ctx:{en:"The company gives every member an award after ten years.", ko:"그 회사는 10년 후 모든 사원에게 상을 준다."}, full:"나의 형은 일해 온 게 되지 않을 것이다 (그 회사에서) (10년 동안) (다음 계절까지는)", chunks:[
+        {en:"My brother", ko:"나의 형은", t:"subj"},
+        {en:"won't have worked", ko:"일해 온 게 되지 않을 것이다", t:"verb"},
+        {en:"at the company", ko:"그 회사에서", t:"mod"},
+        {en:"for ten years", ko:"10년 동안", t:"mod"},
+        {en:"by next season", ko:"다음 계절까지는", t:"mod"}]},
+      {n:14, full:"그 회사는 그 일정을 확정해 놓지 않았을 것이다 (내일까지는)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"won't have confirmed", ko:"확정해 놓지 않았을 것이다", t:"verb"},
+        {en:"the schedule", ko:"그 일정을", t:"obj"},
+        {en:"by tomorrow", ko:"내일까지는", t:"mod"}]},
+      {n:15, full:"그 문은 닫힌 채로 유지되어 있을 것이다 (새벽까지)", chunks:[
+        {en:"The gate", ko:"그 문은", t:"subj"},
+        {en:"will have been kept", ko:"유지되어 있을 것이다", t:"verb"},
+        {en:"closed", ko:"닫힌 채로", t:"comp"},
+        {en:"until dawn", ko:"새벽까지", t:"mod"}]},
+      {n:16, full:"그 회사는 외국인 대표를 임명한 적이 없었다 (전에는)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had never appointed", ko:"임명한 적이 없었다", t:"verb"},
+        {en:"a foreign leader", ko:"외국인 대표를", t:"obj"},
+        {en:"before", ko:"전에는", t:"mod"}]},
+      {n:17, ctx:{en:"No one came to the hotel that night.", ko:"그날 밤 아무도 그 호텔에 오지 않았다."}, full:"그 회사는 그 파티를 취소했었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had cancelled", ko:"취소했었다", t:"verb"},
+        {en:"the party", ko:"그 파티를", t:"obj"}]},
+      {n:18, full:"그 방은 따뜻하게 유지되어 있을 것이다 (저녁까지)", chunks:[
+        {en:"The room", ko:"그 방은", t:"subj"},
+        {en:"will have been kept", ko:"유지되어 있을 것이다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"},
+        {en:"until the evening", ko:"저녁까지", t:"mod"}]},
+      {n:19, ctx:{en:"Every guest knew the evening plan.", ko:"모든 손님이 저녁 계획을 알고 있었다."}, full:"그 회사는 그 손님들에게 최종 일정을 보냈었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had sent", ko:"보냈었다", t:"verb"},
+        {en:"the guests", ko:"그 손님들에게", t:"obj"},
+        {en:"a final schedule", ko:"최종 일정을", t:"obj"}]},
+      {n:20, ctx:{en:"The guests still waited at the hotel.", ko:"그 손님들은 여전히 그 호텔에서 기다렸다."}, full:"그 축제들은 취소되지 않았었다 (아직)", chunks:[
+        {en:"The festivals", ko:"그 축제들은", t:"subj"},
+        {en:"hadn't been cancelled", ko:"취소되지 않았었다", t:"verb"},
+        {en:"yet", ko:"아직", t:"mod"}]},
+      {n:21, full:"모든 손님은 티켓을 받아 놓았을 것이다 (저녁까지는)", chunks:[
+        {en:"Every guest", ko:"모든 손님은", t:"subj"},
+        {en:"will have been given", ko:"받아 놓았을 것이다", t:"verb"},
+        {en:"a ticket", ko:"티켓을", t:"mod"},
+        {en:"by the evening", ko:"저녁까지는", t:"mod"}]},
+      {n:22, full:"그 축제는 끝나 있을 것이다 (새벽 전에)", chunks:[
+        {en:"The festival", ko:"그 축제는", t:"subj"},
+        {en:"will have ended", ko:"끝나 있을 것이다", t:"verb"},
+        {en:"before dawn", ko:"새벽 전에", t:"mod"}]},
+      {n:23, ctx:{en:"The room became noisy that evening.", ko:"그 방은 그날 저녁 시끄러워졌다."}, full:"그 대표들은 최종 상을 막 발표했었다", chunks:[
+        {en:"The leaders", ko:"그 대표들은", t:"subj"},
+        {en:"had just announced", ko:"막 발표했었다", t:"verb"},
+        {en:"the final award", ko:"최종 상을", t:"obj"}]},
+      {n:24, full:"그 날씨는 따뜻해져 있을 것이다 (다음 계절까지는)", chunks:[
+        {en:"The weather", ko:"그 날씨는", t:"subj"},
+        {en:"will have become", ko:"~해져 있을 것이다", t:"verb"},
+        {en:"warm", ko:"따뜻하게", t:"comp"},
+        {en:"by next season", ko:"다음 계절까지는", t:"mod"}]},
+      {n:25, full:"그 상들은 발표되어 있을 것이다 (저녁까지는)", chunks:[
+        {en:"The awards", ko:"그 상들은", t:"subj"},
+        {en:"will have been announced", ko:"발표되어 있을 것이다", t:"verb"},
+        {en:"by the evening", ko:"저녁까지는", t:"mod"}]},
+      {n:26, full:"나는 결혼식에 참석한 적이 없었다 (전에는)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"had never attended", ko:"참석한 적이 없었다", t:"verb"},
+        {en:"a wedding", ko:"결혼식에", t:"obj"},
+        {en:"before", ko:"전에는", t:"mod"}]},
+      {n:27, full:"나의 누나는 졸업해 있을 것이다 (내년까지는)", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"will have graduated", ko:"졸업해 있을 것이다", t:"verb"},
+        {en:"by next year", ko:"내년까지는", t:"mod"}]},
+      {n:28, full:"그 대표는 그의 경력을 이어 온 게 될 것이다 (10년 동안) (그 기념일까지는)", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"will have continued", ko:"이어 온 게 될 것이다", t:"verb"},
+        {en:"his career", ko:"그의 경력을", t:"obj"},
+        {en:"for ten years", ko:"10년 동안", t:"mod"},
+        {en:"by the anniversary", ko:"그 기념일까지는", t:"mod"}]},
+      {n:29, full:"갑작스러운 폭풍이 그 축제를 망쳐 버렸었다", chunks:[
+        {en:"A sudden storm", ko:"갑작스러운 폭풍이", t:"subj"},
+        {en:"had ruined", ko:"망쳐 버렸었다", t:"verb"},
+        {en:"the festival", ko:"그 축제를", t:"obj"}]},
+      {n:30, ctx:{en:"The office was quiet that morning.", ko:"그 사무실은 그날 아침 조용했다."}, full:"그 전 대표는 가 버렸었다 (해외로)", chunks:[
+        {en:"The former leader", ko:"그 전 대표는", t:"subj"},
+        {en:"had gone", ko:"가 버렸었다", t:"verb"},
+        {en:"abroad", ko:"해외로", t:"mod"}]},
+      {n:31, full:"나의 형은 일해 온 게 될 것이다 (그 박물관에서) (1년 동안) (다음 계절까지는)", chunks:[
+        {en:"My brother", ko:"나의 형은", t:"subj"},
+        {en:"will have worked", ko:"일해 온 게 될 것이다", t:"verb"},
+        {en:"at the museum", ko:"그 박물관에서", t:"mod"},
+        {en:"for a year", ko:"1년 동안", t:"mod"},
+        {en:"by next season", ko:"다음 계절까지는", t:"mod"}]},
+      {n:32, full:"그 약은 그 환자를 차분하게 만들어 놓았을 것이다 (저녁까지는)", chunks:[
+        {en:"The medicine", ko:"그 약은", t:"subj"},
+        {en:"will have made", ko:"만들어 놓았을 것이다", t:"verb"},
+        {en:"the patient", ko:"그 환자를", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"},
+        {en:"by the evening", ko:"저녁까지는", t:"mod"}]},
+      {n:33, full:"그 파티들은 취소되어 있을 것이다 (내일까지는)", chunks:[
+        {en:"The parties", ko:"그 파티들은", t:"subj"},
+        {en:"will have been cancelled", ko:"취소되어 있을 것이다", t:"verb"},
+        {en:"by tomorrow", ko:"내일까지는", t:"mod"}]},
+      {n:34, full:"나의 형은 공부한 적이 없었다 (해외에서) (그의 졸업 전에는)", chunks:[
+        {en:"My brother", ko:"나의 형은", t:"subj"},
+        {en:"had never studied", ko:"공부한 적이 없었다", t:"verb"},
+        {en:"abroad", ko:"해외에서", t:"mod"},
+        {en:"before his graduation", ko:"그의 졸업 전에는", t:"mod"}]},
+      {n:35, ctx:{en:"I met the new leader at the office.", ko:"나는 그 사무실에서 새 대표를 만났다."}, full:"그 회사는 새 대표를 이미 임명했었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had already appointed", ko:"이미 임명했었다", t:"verb"},
+        {en:"a new leader", ko:"새 대표를", t:"obj"}]},
+      {n:36, full:"그 팀은 겨뤄 본 게 될 것이다 (해외에서) (두 번) (그 시즌이 끝날 때까지는)", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"will have competed", ko:"겨뤄 본 게 될 것이다", t:"verb"},
+        {en:"abroad", ko:"해외에서", t:"mod"},
+        {en:"twice", ko:"두 번", t:"mod"},
+        {en:"by the end of the season", ko:"그 시즌이 끝날 때까지는", t:"mod"}]},
+      {n:37, ctx:{en:"The team played well last month.", ko:"그 팀은 지난달 잘 뛰었다."}, full:"그 팀은 이전의 갈등을 해결했었다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"had settled", ko:"해결했었다", t:"verb"},
+        {en:"the previous conflict", ko:"이전의 갈등을", t:"obj"}]},
+      {n:38, full:"그 의사는 모든 환자의 운동을 제한했었다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"had limited", ko:"제한했었다", t:"verb"},
+        {en:"the exercise of every patient", ko:"모든 환자의 운동을", t:"obj"}]},
+      {n:39, full:"우리는 그 호텔 전체를 예약해 놓을 것이다 (다음 달까지는)", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"'ll have reserved", ko:"예약해 놓을 것이다", t:"verb"},
+        {en:"the entire hotel", ko:"그 호텔 전체를", t:"obj"},
+        {en:"by next month", ko:"다음 달까지는", t:"mod"}]},
+      {n:40, ctx:{en:"Our rooms were ready on the weekend.", ko:"우리 방들은 주말에 준비되어 있었다."}, full:"우리는 그 호텔을 예약했었다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"'d reserved", ko:"예약했었다", t:"verb"},
+        {en:"the hotel", ko:"그 호텔을", t:"obj"}]},
+      {n:41, ctx:{en:"A new cup stood on her desk.", ko:"새 우승컵이 그녀의 책상 위에 놓여 있었다."}, full:"그 운동선수는 상을 막 받았었다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"had just been given", ko:"막 받았었다", t:"verb"},
+        {en:"an award", ko:"상을", t:"mod"}]},
+      {n:42, ctx:{en:"The station was quiet at dawn.", ko:"그 역은 새벽에 조용했다."}, full:"그 시계들은 멈춰 있었다", chunks:[
+        {en:"The clocks", ko:"그 시계들은", t:"subj"},
+        {en:"had stopped", ko:"멈춰 있었다", t:"verb"}]},
+      {n:43, ctx:{en:"The critic read the whole novel that evening.", ko:"그 비평가는 그날 저녁 그 소설 전체를 읽었다."}, full:"그 작가는 그 소설 전체를 출간했었다", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"had published", ko:"출간했었다", t:"verb"},
+        {en:"the entire novel", ko:"그 소설 전체를", t:"obj"}]},
+      {n:44, full:"나의 누나는 모든 축제에 참석한 게 될 것이다 (저녁까지는)", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"will have attended", ko:"참석한 게 될 것이다", t:"verb"},
+        {en:"every festival", ko:"모든 축제에", t:"obj"},
+        {en:"by the evening", ko:"저녁까지는", t:"mod"}]},
+      {n:45, full:"그 여배우는 상을 받은 적이 없었다 (전에는)", chunks:[
+        {en:"The actress", ko:"그 여배우는", t:"subj"},
+        {en:"had never been given", ko:"받은 적이 없었다", t:"verb"},
+        {en:"an award", ko:"상을", t:"mod"},
+        {en:"before", ko:"전에는", t:"mod"}]},
+      {n:46, full:"그 시계는 멈춰 있지 않을 것이다 (새벽까지는)", chunks:[
+        {en:"The clock", ko:"그 시계는", t:"subj"},
+        {en:"won't have stopped", ko:"멈춰 있지 않을 것이다", t:"verb"},
+        {en:"by dawn", ko:"새벽까지는", t:"mod"}]},
+      {n:47, full:"그 간호사는 그 환자에게 마지막 약을 주어 놓았을 것이다 (새벽까지는)", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"will have given", ko:"주어 놓았을 것이다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"the final medicine", ko:"마지막 약을", t:"obj"},
+        {en:"by dawn", ko:"새벽까지는", t:"mod"}]},
+      {n:48, full:"그 손님들은 초대받은 게 될 것이다 (두 번) (그 결혼식까지는)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"will have been invited", ko:"초대받은 게 될 것이다", t:"verb"},
+        {en:"twice", ko:"두 번", t:"mod"},
+        {en:"by the wedding", ko:"그 결혼식까지는", t:"mod"}]},
+      {n:49, full:"그 시인은 그의 경력을 이어 오고 있었다 (그 전쟁 이후로)", chunks:[
+        {en:"The poet", ko:"그 시인은", t:"subj"},
+        {en:"had continued", ko:"이어 오고 있었다", t:"verb"},
+        {en:"his career", ko:"그의 경력을", t:"obj"},
+        {en:"since the war", ko:"그 전쟁 이후로", t:"mod"}]},
+      {n:50, full:"그 파티는 계속되어 오고 있을 것이다 (여섯 시간 동안) (새벽까지는)", chunks:[
+        {en:"The party", ko:"그 파티는", t:"subj"},
+        {en:"will have been continuing", ko:"계속되어 오고 있을 것이다", t:"verb"},
+        {en:"for six hours", ko:"여섯 시간 동안", t:"mod"},
+        {en:"by dawn", ko:"새벽까지는", t:"mod"}]},
+      {n:51, full:"그 상은 그 운동선수를 자랑스럽게 만들었었다", chunks:[
+        {en:"The award", ko:"그 상은", t:"subj"},
+        {en:"had made", ko:"만들었었다", t:"verb"},
+        {en:"the athlete", ko:"그 운동선수를", t:"obj"},
+        {en:"proud", ko:"자랑스럽게", t:"comp"}]},
+      {n:52, full:"그 학교는 그 연설의 시간을 제한한 적이 없었다 (전에는)", chunks:[
+        {en:"The school", ko:"그 학교는", t:"subj"},
+        {en:"had never limited", ko:"제한한 적이 없었다", t:"verb"},
+        {en:"the time of the speech", ko:"그 연설의 시간을", t:"obj"},
+        {en:"before", ko:"전에는", t:"mod"}]},
+      {n:53, full:"그 작가는 소설 세 편을 출간한 게 될 것이다 (그 기념일까지는)", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"will have published", ko:"출간한 게 될 것이다", t:"verb"},
+        {en:"three novels", ko:"소설 세 편을", t:"obj"},
+        {en:"by the anniversary", ko:"그 기념일까지는", t:"mod"}]},
+      {n:54, full:"나는 가 본 게 될 것이다 (그 사원에) (세 번) (그 기념일까지는)", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"'ll have been to", ko:"가 본 게 될 것이다", t:"verb"},
+        {en:"the temple", ko:"그 사원에", t:"mod"},
+        {en:"three times", ko:"세 번", t:"mod"},
+        {en:"by the anniversary", ko:"그 기념일까지는", t:"mod"}]},
+      {n:55, full:"그 엔진은 망가져 있었다 (그 아이에 의해)", chunks:[
+        {en:"The engine", ko:"그 엔진은", t:"subj"},
+        {en:"had been broken", ko:"망가져 있었다", t:"verb"},
+        {en:"by the child", ko:"그 아이에 의해", t:"mod"}]},
+      {n:56, full:"그 축제는 끝나지 않았었다 (새벽까지)", chunks:[
+        {en:"The festival", ko:"그 축제는", t:"subj"},
+        {en:"had not ended", ko:"끝나지 않았었다", t:"verb"},
+        {en:"until dawn", ko:"새벽까지", t:"mod"}]},
+      {n:57, ctx:{en:"The members smiled at each other.", ko:"그 구성원들은 서로에게 미소 지었다."}, full:"이전의 갈등은 해결되었었다 (그 팀에 의해)", chunks:[
+        {en:"The former conflict", ko:"이전의 갈등은", t:"subj"},
+        {en:"had been settled", ko:"해결되었었다", t:"verb"},
+        {en:"by the team", ko:"그 팀에 의해", t:"mod"}]},
+      {n:58, full:"그 문은 닫힌 채로 유지되어 있었다 (그 폭풍 이후로)", chunks:[
+        {en:"The gate", ko:"그 문은", t:"subj"},
+        {en:"had been kept", ko:"유지되어 있었다", t:"verb"},
+        {en:"closed", ko:"닫힌 채로", t:"comp"},
+        {en:"since the storm", ko:"그 폭풍 이후로", t:"mod"}]},
+      {n:59, full:"우리는 그런 갑작스러운 폭풍을 본 적이 없었다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"'d never seen", ko:"본 적이 없었다", t:"verb"},
+        {en:"such a sudden storm", ko:"그런 갑작스러운 폭풍을", t:"obj"}]},
+      {n:60, full:"나의 누나는 공부해 왔었다 (그 학교에서) (6년 동안)", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"had studied", ko:"공부해 왔었다", t:"verb"},
+        {en:"at the school", ko:"그 학교에서", t:"mod"},
+        {en:"for six years", ko:"6년 동안", t:"mod"}]},
+      {n:61, full:"그 대표는 그 팀에게 최종 답변을 주어 놓았을 것이다 (그 주말까지는)", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"will have given", ko:"주어 놓았을 것이다", t:"verb"},
+        {en:"the team", ko:"그 팀에게", t:"obj"},
+        {en:"a final answer", ko:"최종 답변을", t:"obj"},
+        {en:"by the weekend", ko:"그 주말까지는", t:"mod"}]},
+      {n:62, ctx:{en:"Every event started on time.", ko:"모든 행사가 정시에 시작되었다."}, full:"그 전체 일정은 준비되어 있었다 (그 전 대표에 의해)", chunks:[
+        {en:"The entire schedule", ko:"그 전체 일정은", t:"subj"},
+        {en:"had been arranged", ko:"준비되어 있었다", t:"verb"},
+        {en:"by the former leader", ko:"그 전 대표에 의해", t:"mod"}]},
+      {n:63, ctx:{en:"The guests carried the schedule that morning.", ko:"그 손님들은 그날 아침 그 일정표를 들고 다녔다."}, full:"그 연설은 이미 발표되었었다", chunks:[
+        {en:"The speech", ko:"그 연설은", t:"subj"},
+        {en:"had already been announced", ko:"이미 발표되었었다", t:"verb"}]},
+      {n:64, full:"그 최종 상은 취소되었었다", chunks:[
+        {en:"The final award", ko:"그 최종 상은", t:"subj"},
+        {en:"had been cancelled", ko:"취소되었었다", t:"verb"}]},
+      {n:65, full:"그 작가는 그 소설 전체를 출간해 놓을 것이다 (그 기념일까지는)", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"will have published", ko:"출간해 놓을 것이다", t:"verb"},
+        {en:"the entire novel", ko:"그 소설 전체를", t:"obj"},
+        {en:"by the anniversary", ko:"그 기념일까지는", t:"mod"}]},
+      {n:66, full:"그 시인은 살아 오고 있었다 (그 도시에서) (그 전쟁 이후로)", chunks:[
+        {en:"The poet", ko:"그 시인은", t:"subj"},
+        {en:"had been living", ko:"살아 오고 있었다", t:"verb"},
+        {en:"in the city", ko:"그 도시에서", t:"mod"},
+        {en:"since the war", ko:"그 전쟁 이후로", t:"mod"}]},
+      {n:67, full:"그 비평가는 그 기념일 파티에 참석한 적이 없었다 (전에는)", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"hadn't attended", ko:"참석한 적이 없었다", t:"verb"},
+        {en:"the anniversary party", ko:"그 기념일 파티에", t:"obj"},
+        {en:"before", ko:"전에는", t:"mod"}]},
+      {n:68, full:"그 손님들은 기다려 오고 있었다 (그 역에서) (한 시간 동안)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"had been waiting", ko:"기다려 오고 있었다", t:"verb"},
+        {en:"at the station", ko:"그 역에서", t:"mod"},
+        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
+      {n:69, ctx:{en:"The camera does not work now.", ko:"그 카메라는 지금 작동하지 않는다."}, full:"그 아이가 그 오래된 카메라를 망가뜨렸었다", chunks:[
+        {en:"The child", ko:"그 아이가", t:"subj"},
+        {en:"had broken", ko:"망가뜨렸었다", t:"verb"},
+        {en:"the old camera", ko:"그 오래된 카메라를", t:"obj"}]},
+      {n:70, full:"그 파티는 계속된 게 될 것이다 (여섯 시간 동안) (새벽까지는)", chunks:[
+        {en:"The party", ko:"그 파티는", t:"subj"},
+        {en:"will have continued", ko:"계속된 게 될 것이다", t:"verb"},
+        {en:"for six hours", ko:"여섯 시간 동안", t:"mod"},
+        {en:"by dawn", ko:"새벽까지는", t:"mod"}]},
+      {n:71, full:"그 회사는 그 결혼식을 준비해 오고 있었다 (한 달 동안)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had been arranging", ko:"준비해 오고 있었다", t:"verb"},
+        {en:"the wedding", ko:"그 결혼식을", t:"obj"},
+        {en:"for a month", ko:"한 달 동안", t:"mod"}]},
+      {n:72, full:"그 결혼식 전체는 준비되어 있을 것이다 (다음 계절 전에)", chunks:[
+        {en:"The entire wedding", ko:"그 결혼식 전체는", t:"subj"},
+        {en:"will have been arranged", ko:"준비되어 있을 것이다", t:"verb"},
+        {en:"before next season", ko:"다음 계절 전에", t:"mod"}]},
+      {n:73, ctx:{en:"The critic arrived at the office late.", ko:"그 비평가는 그 사무실에 늦게 도착했다."}, full:"그 연설은 이미 끝나 있었다", chunks:[
+        {en:"The speech", ko:"그 연설은", t:"subj"},
+        {en:"had already ended", ko:"이미 끝나 있었다", t:"verb"}]},
+    ]},
+    { id:"조동사(3): 관용 조동사구·조동사+have p.p.", items:[
+      {n:1, ctx:{en:"No one can remove the trouble.", ko:"아무도 그 문제를 없앨 수 없다."}, full:"나는 그 문제를 견디는 편이 낫다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"may as well endure", ko:"견디는 편이 낫다", t:"verb"},
+        {en:"the trouble", ko:"그 문제를", t:"obj"}]},
+      {n:2, ctx:{en:"Broken glass is on the road at the bridge.", ko:"그 다리에서 도로 위에 깨진 유리가 있다."}, full:"그 자동차 사고는 일어났을지도 모른다 (그 다리에서)", chunks:[
+        {en:"The car accident", ko:"그 자동차 사고는", t:"subj"},
+        {en:"might have happened", ko:"일어났을지도 모른다", t:"verb"},
+        {en:"at the bridge", ko:"그 다리에서", t:"mod"}]},
+      {n:3, ctx:{en:"The fire reached the hotel.", ko:"그 불이 그 호텔에 닿았다."}, full:"그 손님들은 탈출했어야 했다 (그 불이 나기 전에)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"should have escaped", ko:"탈출했어야 했다", t:"verb"},
+        {en:"before the fire", ko:"그 불이 나기 전에", t:"mod"}]},
+      {n:4, ctx:{en:"The author only followed the rule.", ko:"그 작가는 그저 규칙을 따랐을 뿐이다."}, full:"그 비평가는 그 작가를 비난하지 말았어야 했다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"ought not to have blamed", ko:"비난하지 말았어야 했다", t:"verb"},
+        {en:"the author", ko:"그 작가를", t:"obj"}]},
+      {n:5, ctx:{en:"Someone stole the key at night.", ko:"누군가 밤에 그 열쇠를 훔쳤다."}, full:"우리는 그 열쇠를 안전하게 보관했어야 했다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"should have kept", ko:"보관했어야 했다", t:"verb"},
+        {en:"the key", ko:"그 열쇠를", t:"obj"},
+        {en:"safe", ko:"안전하게", t:"comp"}]},
+      {n:6, full:"나는 나의 형을 부러워하지 않을 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"cannot help envying", ko:"부러워하지 않을 수 없다", t:"verb"},
+        {en:"my brother", ko:"나의 형을", t:"obj"}]},
+      {n:7, full:"나는 그 대안 계획을 받아들일 수밖에 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have no choice but to accept", ko:"받아들일 수밖에 없다", t:"verb"},
+        {en:"the alternate plan", ko:"그 대안 계획을", t:"obj"}]},
+      {n:8, full:"그 아이는 울지 않을 수 없다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"cannot but cry", ko:"울지 않을 수 없다", t:"verb"}]},
+      {n:9, ctx:{en:"The umbrella is not in the school bag.", ko:"그 우산이 그 책가방 안에 없다."}, full:"그 아이는 그 우산을 잃어버렸을지도 모른다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"may have lost", ko:"잃어버렸을지도 모른다", t:"verb"},
+        {en:"the umbrella", ko:"그 우산을", t:"obj"}]},
+      {n:10, full:"그 졸업생은 선택할 수밖에 없다 (그 대안 진로를)", chunks:[
+        {en:"The graduate", ko:"그 졸업생은", t:"subj"},
+        {en:"has no choice but to opt", ko:"선택할 수밖에 없다", t:"verb"},
+        {en:"for the alternate career", ko:"그 대안 진로를", t:"mod"}]},
+      {n:11, ctx:{en:"The other plans failed.", ko:"다른 계획들은 실패했다."}, full:"우리는 그 대안 조정안을 받아들이는 편이 낫다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"may as well accept", ko:"받아들이는 편이 낫다", t:"verb"},
+        {en:"the alternate arrangement", ko:"그 대안 조정안을", t:"obj"}]},
+      {n:12, full:"나는 그 작가를 존경하지 않을 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"cannot but admire", ko:"존경하지 않을 수 없다", t:"verb"},
+        {en:"the author", ko:"그 작가를", t:"obj"}]},
+      {n:13, ctx:{en:"The leader left the company suddenly.", ko:"그 대표는 갑자기 그 회사를 떠났다."}, full:"그 대표는 처벌받았을지도 모른다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"might have been punished", ko:"처벌받았을지도 모른다", t:"verb"}]},
+      {n:14, ctx:{en:"The alarm rang at the first touch.", ko:"그 경보기는 첫 접촉에 울렸다."}, full:"그 범죄는 예방되었을지도 모른다", chunks:[
+        {en:"The crime", ko:"그 범죄는", t:"subj"},
+        {en:"may have been prevented", ko:"예방되었을지도 모른다", t:"verb"}]},
+      {n:15, full:"우리는 그 계획을 불가피한 선택이라고 부르지 않을 수 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"cannot but call", ko:"부르지 않을 수 없다", t:"verb"},
+        {en:"the plan", ko:"그 계획을", t:"obj"},
+        {en:"an inevitable choice", ko:"불가피한 선택이라고", t:"comp"}]},
+      {n:16, ctx:{en:"The result will not change.", ko:"그 결과는 바뀌지 않을 것이다."}, full:"그 팀은 그 운명을 받아들이는 편이 낫다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"may as well accept", ko:"받아들이는 편이 낫다", t:"verb"},
+        {en:"the fate", ko:"그 운명을", t:"obj"}]},
+      {n:17, ctx:{en:"Only the leader finished the project.", ko:"그 대표만 그 프로젝트를 끝냈다."}, full:"그 회사는 모든 구성원에게 보상할 필요 없었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"need not have rewarded", ko:"보상할 필요 없었다", t:"verb"},
+        {en:"every member", ko:"모든 구성원에게", t:"obj"}]},
+      {n:18, full:"그 의사는 그 통증을 무시할 수밖에 없었다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"had no choice but to ignore", ko:"무시할 수밖에 없었다", t:"verb"},
+        {en:"the pain", ko:"그 통증을", t:"obj"}]},
+      {n:19, full:"그 팀은 견딜 수밖에 없다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"has no choice but to endure", ko:"견딜 수밖에 없다", t:"verb"}]},
+      {n:20, ctx:{en:"No one heard the alarm in the morning.", ko:"아침에 아무도 그 경보기를 듣지 못했다."}, full:"그 경보기는 멈췄음에 틀림없다 (새벽에)", chunks:[
+        {en:"The alarm", ko:"그 경보기는", t:"subj"},
+        {en:"must have stopped", ko:"멈췄음에 틀림없다", t:"verb"},
+        {en:"at dawn", ko:"새벽에", t:"mod"}]},
+      {n:21, ctx:{en:"The doctor added three bitter leaves.", ko:"그 의사는 쓴 잎 세 장을 넣었다."}, full:"그 약이 쓴 맛이 나는 것도 당연하다", chunks:[
+        {en:"The medicine", ko:"그 약이", t:"subj"},
+        {en:"may well taste", ko:"맛이 나는 것도 당연하다", t:"verb"},
+        {en:"bitter", ko:"쓴", t:"comp"}]},
+      {n:22, ctx:{en:"The nurse called the doctor at once.", ko:"그 간호사는 즉시 그 의사를 불렀다."}, full:"그 간호사는 그 증상을 무시했을 리 없다", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"cannot have ignored", ko:"무시했을 리 없다", t:"verb"},
+        {en:"the symptom", ko:"그 증상을", t:"obj"}]},
+      {n:23, ctx:{en:"The gate does not open now.", ko:"그 문은 지금 열리지 않는다."}, full:"그 손님들이 그 문을 잠갔을지도 모른다", chunks:[
+        {en:"The guests", ko:"그 손님들이", t:"subj"},
+        {en:"might have locked", ko:"잠갔을지도 모른다", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"}]},
+      {n:24, ctx:{en:"The crowd did not accept the apology.", ko:"그 군중은 그 사과를 받아들이지 않았다."}, full:"그 사과는 진솔했어야 했다", chunks:[
+        {en:"The apology", ko:"그 사과는", t:"subj"},
+        {en:"should have been", ko:"~였어야 했다", t:"verb"},
+        {en:"honest", ko:"진솔한", t:"comp"}]},
+      {n:25, full:"그 위험은 받아들여지는 것도 당연하다 (그 회사에 의해)", chunks:[
+        {en:"The risk", ko:"그 위험은", t:"subj"},
+        {en:"may well be accepted", ko:"받아들여지는 것도 당연하다", t:"verb"},
+        {en:"by the company", ko:"그 회사에 의해", t:"mod"}]},
+      {n:26, ctx:{en:"The window is broken.", ko:"그 창문이 깨져 있다."}, full:"그 군중이 밀어붙였음에 틀림없다 (그 창문에)", chunks:[
+        {en:"The crowd", ko:"그 군중이", t:"subj"},
+        {en:"must have pressed", ko:"밀어붙였음에 틀림없다", t:"verb"},
+        {en:"against the window", ko:"그 창문에", t:"mod"}]},
+      {n:27, ctx:{en:"The two patients have the same name.", ko:"그 두 환자는 같은 이름을 가지고 있다."}, full:"그 의사들은 잘못된 환자를 진찰했을지도 모른다", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"might have examined", ko:"진찰했을지도 모른다", t:"verb"},
+        {en:"the wrong patient", ko:"잘못된 환자를", t:"obj"}]},
+      {n:28, ctx:{en:"The parents left the room.", ko:"그 부모는 그 방을 떠났다."}, full:"그 아이들이 우는 것도 당연하다", chunks:[
+        {en:"The children", ko:"그 아이들이", t:"subj"},
+        {en:"may well cry", ko:"우는 것도 당연하다", t:"verb"}]},
+      {n:29, ctx:{en:"The teacher already knew the truth.", ko:"그 선생님은 이미 진실을 알고 있었다."}, full:"너는 그런 어리석은 변명을 하지 말았어야 했다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should not have made", ko:"하지 말았어야 했다", t:"verb"},
+        {en:"such a foolish excuse", ko:"그런 어리석은 변명을", t:"obj"}]},
+      {n:30, ctx:{en:"The witness changed the story.", ko:"그 목격자는 진술을 바꿨다."}, full:"그 목격자는 유죄였을지도 모른다", chunks:[
+        {en:"The witness", ko:"그 목격자는", t:"subj"},
+        {en:"might have been", ko:"~였을지도 모른다", t:"verb"},
+        {en:"guilty", ko:"유죄인", t:"comp"}]},
+      {n:31, ctx:{en:"The same child broke the rule again.", ko:"같은 아이가 또 그 규칙을 어겼다."}, full:"그 변명은 용서되지 말았어야 했다", chunks:[
+        {en:"The excuse", ko:"그 변명은", t:"subj"},
+        {en:"should not have been forgiven", ko:"용서되지 말았어야 했다", t:"verb"}]},
+      {n:32, full:"그 대표는 그 분노를 차라리 무시하겠다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"would rather ignore", ko:"차라리 무시하겠다", t:"verb"},
+        {en:"the anger", ko:"그 분노를", t:"obj"}]},
+      {n:33, full:"나는 그 문제를 감지하지 않을 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"cannot help sensing", ko:"감지하지 않을 수 없다", t:"verb"},
+        {en:"the trouble", ko:"그 문제를", t:"obj"}]},
+      {n:34, ctx:{en:"The clock in the car stopped at dawn.", ko:"그 차 안의 시계는 새벽에 멈췄다."}, full:"그 사고는 일어났음에 틀림없다 (새벽에)", chunks:[
+        {en:"The accident", ko:"그 사고는", t:"subj"},
+        {en:"must have happened", ko:"일어났음에 틀림없다", t:"verb"},
+        {en:"at dawn", ko:"새벽에", t:"mod"}]},
+      {n:35, ctx:{en:"The critics are wet.", ko:"그 비평가들은 젖어 있다."}, full:"그 비평가들은 그 우산을 잊었을지도 모른다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"may have forgotten", ko:"잊었을지도 모른다", t:"verb"},
+        {en:"the umbrella", ko:"그 우산을", t:"obj"}]},
+      {n:36, ctx:{en:"The author ignored every warning.", ko:"그 작가는 모든 경고를 무시했다."}, full:"그 비평가가 그 작가를 비난하는 것도 당연하다", chunks:[
+        {en:"The critic", ko:"그 비평가가", t:"subj"},
+        {en:"may well blame", ko:"비난하는 것도 당연하다", t:"verb"},
+        {en:"the author", ko:"그 작가를", t:"obj"}]},
+      {n:37, ctx:{en:"The author gives no answer.", ko:"그 작가는 아무 답도 주지 않는다."}, full:"그 비평가가 그 작가의 분노를 감지하는 것도 당연하다", chunks:[
+        {en:"The critic", ko:"그 비평가가", t:"subj"},
+        {en:"may well sense", ko:"감지하는 것도 당연하다", t:"verb"},
+        {en:"the anger of the author", ko:"그 작가의 분노를", t:"obj"}]},
+      {n:38, ctx:{en:"The previous plan was safer.", ko:"이전 계획이 더 안전했다."}, full:"네가 그 선택을 후회하는 것도 당연하다", chunks:[
+        {en:"You", ko:"네가", t:"subj"},
+        {en:"may well regret", ko:"후회하는 것도 당연하다", t:"verb"},
+        {en:"the choice", ko:"그 선택을", t:"obj"}]},
+      {n:39, ctx:{en:"The gate is still closed.", ko:"그 문은 아직 닫혀 있다."}, full:"그 손님들은 기다리는 편이 낫다 (그 데스크에서)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"may as well wait", ko:"기다리는 편이 낫다", t:"verb"},
+        {en:"at the desk", ko:"그 데스크에서", t:"mod"}]},
+      {n:40, ctx:{en:"The engine stopped again.", ko:"그 엔진이 또 멈췄다."}, full:"그 엔진은 점검되었어야 했다", chunks:[
+        {en:"The engine", ko:"그 엔진은", t:"subj"},
+        {en:"should have been inspected", ko:"점검되었어야 했다", t:"verb"}]},
+      {n:41, full:"우리는 그 안전한 계획을 선호하지 않을 수 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"cannot help but prefer", ko:"선호하지 않을 수 없다", t:"verb"},
+        {en:"the safe plan", ko:"그 안전한 계획을", t:"obj"}]},
+      {n:42, ctx:{en:"The keys were in the car.", ko:"그 열쇠들은 그 차 안에 있었다."}, full:"우리는 그 호텔 전체를 뒤질 필요 없었다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"need not have searched", ko:"뒤질 필요 없었다", t:"verb"},
+        {en:"the whole hotel", ko:"그 호텔 전체를", t:"obj"}]},
+      {n:43, ctx:{en:"The author won the award again.", ko:"그 작가가 또 그 상을 받았다."}, full:"다른 구성원들이 그 작가를 부러워하는 것도 당연하다", chunks:[
+        {en:"The other members", ko:"다른 구성원들이", t:"subj"},
+        {en:"may well envy", ko:"부러워하는 것도 당연하다", t:"verb"},
+        {en:"the author", ko:"그 작가를", t:"obj"}]},
+      {n:44, ctx:{en:"The parents searched all night.", ko:"그 부모는 밤새 찾아다녔다."}, full:"그 아이들은 달아나지 말았어야 했다", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"should not have escaped", ko:"달아나지 말았어야 했다", t:"verb"}]},
+      {n:45, full:"우리는 그 지연을 견딜 수밖에 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"have no choice but to endure", ko:"견딜 수밖에 없다", t:"verb"},
+        {en:"the delay", ko:"그 지연을", t:"obj"}]},
+      {n:46, full:"그들은 그 위험을 받아들이지 않을 수 없다", chunks:[
+        {en:"They", ko:"그들은", t:"subj"},
+        {en:"cannot but accept", ko:"받아들이지 않을 수 없다", t:"verb"},
+        {en:"the risk", ko:"그 위험을", t:"obj"}]},
+      {n:47, full:"우리는 그 운명을 받아들일 수밖에 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"have no choice but to accept", ko:"받아들일 수밖에 없다", t:"verb"},
+        {en:"the fate", ko:"그 운명을", t:"obj"}]},
+      {n:48, ctx:{en:"Many guests went to the hospital.", ko:"많은 손님이 그 병원에 갔다."}, full:"그 손님들은 고통받았을지도 모른다 (그 자동차 사고로)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"may have suffered", ko:"고통받았을지도 모른다", t:"verb"},
+        {en:"from the car accident", ko:"그 자동차 사고로", t:"mod"}]},
+      {n:49, ctx:{en:"The leader returned the stolen money.", ko:"그 대표는 훔친 돈을 돌려주었다."}, full:"그 대표는 미안했을지도 모른다 (그 범죄에 대해)", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"may have been", ko:"~였을지도 모른다", t:"verb"},
+        {en:"sorry", ko:"미안한", t:"comp"},
+        {en:"for the crime", ko:"그 범죄에 대해", t:"mod"}]},
+      {n:50, ctx:{en:"The nurse gave the wrong medicine.", ko:"그 간호사가 잘못된 약을 주었다."}, full:"그 의사는 그 간호사에게 경고를 주었어야 했다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"should have given", ko:"주었어야 했다", t:"verb"},
+        {en:"the nurse", ko:"그 간호사에게", t:"obj"},
+        {en:"a warning", ko:"경고를", t:"obj"}]},
+      {n:51, ctx:{en:"The police found the sign of guilt.", ko:"경찰이 유죄의 흔적을 찾았다."}, full:"그 대표는 그 죄를 자백했어야 했다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"should have confessed", ko:"자백했어야 했다", t:"verb"},
+        {en:"the guilt", ko:"그 죄를", t:"obj"}]},
+      {n:52, ctx:{en:"The leader still refuses to meet the team.", ko:"그 대표는 여전히 그 팀 만나기를 거부한다."}, full:"그 잘못은 용서되었을 리 없다", chunks:[
+        {en:"The fault", ko:"그 잘못은", t:"subj"},
+        {en:"cannot have been forgiven", ko:"용서되었을 리 없다", t:"verb"}]},
+      {n:53, ctx:{en:"The company has no money now.", ko:"그 회사는 지금 돈이 없다."}, full:"그 회사는 그 돈을 낭비했을지도 모른다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"may have wasted", ko:"낭비했을지도 모른다", t:"verb"},
+        {en:"the money", ko:"그 돈을", t:"obj"}]},
+      {n:54, full:"그 아이들은 차라리 머물겠다 (집에)", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"would rather stay", ko:"차라리 머물겠다", t:"verb"},
+        {en:"at home", ko:"집에", t:"mod"}]},
+      {n:55, full:"그 작가는 그 상을 차라리 거절하겠다", chunks:[
+        {en:"The author", ko:"그 작가는", t:"subj"},
+        {en:"would rather refuse", ko:"차라리 거절하겠다", t:"verb"},
+        {en:"the award", ko:"그 상을", t:"obj"}]},
+      {n:56, full:"우리는 그 고통을 차라리 견디겠다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"would rather endure", ko:"차라리 견디겠다", t:"verb"},
+        {en:"the pain", ko:"그 고통을", t:"obj"}]},
+      {n:57, ctx:{en:"The team went to the wrong station.", ko:"그 팀은 잘못된 역으로 갔다."}, full:"그 대표는 그 팀에게 잘못된 주소를 주었음에 틀림없다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"must have given", ko:"주었음에 틀림없다", t:"verb"},
+        {en:"the team", ko:"그 팀에게", t:"obj"},
+        {en:"a wrong address", ko:"잘못된 주소를", t:"obj"}]},
+      {n:58, ctx:{en:"Someone entered the office at night.", ko:"누군가 밤에 그 사무실에 들어왔다."}, full:"너는 그 문을 잠갔어야 했다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should have locked", ko:"잠갔어야 했다", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"}]},
+      {n:59, full:"그 팀은 그 결과를 받아들이지 않을 수 없다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"cannot help but accept", ko:"받아들이지 않을 수 없다", t:"verb"},
+        {en:"the result", ko:"그 결과를", t:"obj"}]},
+      {n:60, ctx:{en:"The rain stopped before the event.", ko:"그 비는 그 행사 전에 그쳤다."}, full:"그 손님들은 우산을 가져올 필요 없었다", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"need not have brought", ko:"가져올 필요 없었다", t:"verb"},
+        {en:"umbrellas", ko:"우산을", t:"obj"}]},
+      {n:61, ctx:{en:"The train departs tomorrow.", ko:"그 기차는 내일 출발한다."}, full:"너는 쉬는 편이 낫다 (그 호텔에서)", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"may as well rest", ko:"쉬는 편이 낫다", t:"verb"},
+        {en:"at the hotel", ko:"그 호텔에서", t:"mod"}]},
+      {n:62, full:"우리는 그 결과를 받아들이지 않을 수 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"cannot but accept", ko:"받아들이지 않을 수 없다", t:"verb"},
+        {en:"the result", ko:"그 결과를", t:"obj"}]},
+      {n:63, ctx:{en:"The police found the key.", ko:"경찰이 그 열쇠를 찾았다."}, full:"그 목격자들은 결백했을 리 없다", chunks:[
+        {en:"The witnesses", ko:"그 목격자들은", t:"subj"},
+        {en:"cannot have been", ko:"~였을 리 없다", t:"verb"},
+        {en:"innocent", ko:"결백한", t:"comp"}]},
+      {n:64, ctx:{en:"The office door is open.", ko:"그 사무실 문이 열려 있다."}, full:"그 열쇠들은 도난당했음에 틀림없다", chunks:[
+        {en:"The keys", ko:"그 열쇠들은", t:"subj"},
+        {en:"must have been stolen", ko:"도난당했음에 틀림없다", t:"verb"}]},
+      {n:65, ctx:{en:"The nurse forgot the medicine.", ko:"그 간호사는 그 약을 잊었다."}, full:"그 환자는 그 고통을 겪지 말았어야 했다", chunks:[
+        {en:"The patient", ko:"그 환자는", t:"subj"},
+        {en:"should not have suffered", ko:"겪지 말았어야 했다", t:"verb"},
+        {en:"the pain", ko:"그 고통을", t:"obj"}]},
+      {n:66, full:"그 계획은 시의적절한 선택이라고 불리는 것도 당연하다", chunks:[
+        {en:"The plan", ko:"그 계획은", t:"subj"},
+        {en:"may well be called", ko:"불리는 것도 당연하다", t:"verb"},
+        {en:"an opportune choice", ko:"시의적절한 선택이라고", t:"comp"}]},
+      {n:67, ctx:{en:"The police already knew the truth.", ko:"경찰은 이미 진실을 알고 있었다."}, full:"그 대표는 그 범죄를 자백했어야 했다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"ought to have confessed", ko:"자백했어야 했다", t:"verb"},
+        {en:"the crime", ko:"그 범죄를", t:"obj"}]},
+      {n:68, full:"그 선생님은 그 아이에게 경고를 주지 않을 수 없다", chunks:[
+        {en:"The teacher", ko:"그 선생님은", t:"subj"},
+        {en:"cannot but give", ko:"주지 않을 수 없다", t:"verb"},
+        {en:"the child", ko:"그 아이에게", t:"obj"},
+        {en:"a warning", ko:"경고를", t:"obj"}]},
+      {n:69, full:"그 팀의 운명은 결정되는 것도 당연하다 (오늘 밤)", chunks:[
+        {en:"The fate of the team", ko:"그 팀의 운명은", t:"subj"},
+        {en:"may well be settled", ko:"결정되는 것도 당연하다", t:"verb"},
+        {en:"tonight", ko:"오늘 밤", t:"mod"}]},
+      {n:70, ctx:{en:"The police searched for another witness.", ko:"경찰은 또 다른 목격자를 찾았다."}, full:"유죄의 흔적은 명확했을 리 없다", chunks:[
+        {en:"The sign of guilt", ko:"유죄의 흔적은", t:"subj"},
+        {en:"cannot have been", ko:"~였을 리 없다", t:"verb"},
+        {en:"clear", ko:"명확한", t:"comp"}]},
+      {n:71, ctx:{en:"The apology did not calm the crowd.", ko:"그 사과는 그 군중을 진정시키지 못했다."}, full:"그 사과는 어리석었을지도 모른다", chunks:[
+        {en:"The apology", ko:"그 사과는", t:"subj"},
+        {en:"may have been", ko:"~였을지도 모른다", t:"verb"},
+        {en:"foolish", ko:"어리석은", t:"comp"}]},
+      {n:72, ctx:{en:"The fire reached the kitchen.", ko:"그 불이 그 주방에 닿았다."}, full:"그 팀은 그 경보기를 무시하지 말았어야 했다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"should not have ignored", ko:"무시하지 말았어야 했다", t:"verb"},
+        {en:"the alarm", ko:"그 경보기를", t:"obj"}]},
+      {n:73, ctx:{en:"The member was innocent.", ko:"그 구성원은 결백했다."}, full:"그 회사는 그 구성원을 처벌하지 말았어야 했다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"should not have punished", ko:"처벌하지 말았어야 했다", t:"verb"},
+        {en:"the member", ko:"그 구성원을", t:"obj"}]},
+      {n:74, ctx:{en:"No child moved for an hour.", ko:"한 시간 동안 어떤 아이도 움직이지 않았다."}, full:"그 아이들은 차분하게 유지되었음에 틀림없다", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"must have been kept", ko:"유지되었음에 틀림없다", t:"verb"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:75, ctx:{en:"The team finished the whole project.", ko:"그 팀은 그 프로젝트 전체를 끝냈다."}, full:"그 팀은 보상을 받았어야 했다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"should have been given", ko:"받았어야 했다", t:"verb"},
+        {en:"a reward", ko:"보상을", t:"mod"}]},
+      {n:76, full:"그 회사는 그 불가피한 지연을 받아들일 수밖에 없다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"has no choice but to accept", ko:"받아들일 수밖에 없다", t:"verb"},
+        {en:"the inevitable delay", ko:"그 불가피한 지연을", t:"obj"}]},
+      {n:77, ctx:{en:"The child walked out without a key.", ko:"그 아이는 열쇠 없이 걸어 나갔다."}, full:"그 문은 잠겨 있었을 리 없다", chunks:[
+        {en:"The gate", ko:"그 문은", t:"subj"},
+        {en:"cannot have been locked", ko:"잠겨 있었을 리 없다", t:"verb"}]},
+      {n:78, full:"그 대표는 그 지연을 탓하지 않을 수 없다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"cannot help blaming", ko:"탓하지 않을 수 없다", t:"verb"},
+        {en:"the delay", ko:"그 지연을", t:"obj"}]},
+      {n:79, ctx:{en:"The engine stopped on the highway.", ko:"그 엔진이 그 고속도로에서 멈췄다."}, full:"그 회사들은 그 엔진을 점검했어야 했다", chunks:[
+        {en:"The companies", ko:"그 회사들은", t:"subj"},
+        {en:"should have inspected", ko:"점검했어야 했다", t:"verb"},
+        {en:"the engine", ko:"그 엔진을", t:"obj"}]},
+      {n:80, ctx:{en:"The event began an hour late.", ko:"그 행사는 한 시간 늦게 시작했다."}, full:"그 손님들은 서두를 필요 없었다", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"need not have hurried", ko:"서두를 필요 없었다", t:"verb"}]},
+      {n:81, full:"그 비평가는 그 회사를 비난하지 않을 수 없다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"cannot but blame", ko:"비난하지 않을 수 없다", t:"verb"},
+        {en:"the company", ko:"그 회사를", t:"obj"}]},
+      {n:82, ctx:{en:"The company asked for the receipt.", ko:"그 회사가 그 영수증을 요구했다."}, full:"그 영수증은 버려지지 말았어야 했다", chunks:[
+        {en:"The receipt", ko:"그 영수증은", t:"subj"},
+        {en:"should not have been thrown away", ko:"버려지지 말았어야 했다", t:"verb"}]},
+      {n:83, full:"나는 그 진솔한 의도를 존경하지 않을 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"cannot help admiring", ko:"존경하지 않을 수 없다", t:"verb"},
+        {en:"the honest intention", ko:"그 진솔한 의도를", t:"obj"}]},
+      {n:84, full:"우리는 그 이전 선택을 후회하지 않을 수 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"cannot help regretting", ko:"후회하지 않을 수 없다", t:"verb"},
+        {en:"the previous choice", ko:"그 이전 선택을", t:"obj"}]},
+      {n:85, ctx:{en:"The gate locks itself at night.", ko:"그 문은 밤에 저절로 잠긴다."}, full:"너는 그 문을 잠글 필요 없었다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"need not have locked", ko:"잠글 필요 없었다", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"}]},
+      {n:86, full:"그 운동선수는 그 기회를 받는 것도 당연하다", chunks:[
+        {en:"The athlete", ko:"그 운동선수는", t:"subj"},
+        {en:"may well be given", ko:"받는 것도 당연하다", t:"verb"},
+        {en:"the chance", ko:"그 기회를", t:"mod"}]},
+      {n:87, ctx:{en:"The child caused no trouble.", ko:"그 아이는 아무 문제도 일으키지 않았다."}, full:"우리는 그 결백한 아이를 용서했어야 했다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"ought to have forgiven", ko:"용서했어야 했다", t:"verb"},
+        {en:"the innocent child", ko:"그 결백한 아이를", t:"obj"}]},
+      {n:88, ctx:{en:"The critics finished two articles.", ko:"그 비평가들은 기사 두 편을 끝냈다."}, full:"그 비평가들은 그 한 달 전체를 낭비했을 리 없다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"cannot have wasted", ko:"낭비했을 리 없다", t:"verb"},
+        {en:"the whole month", ko:"그 한 달 전체를", t:"obj"}]},
+      {n:89, ctx:{en:"The police closed the festival early.", ko:"경찰이 그 축제를 일찍 닫았다."}, full:"그 범죄는 일어났을지도 모른다 (그 축제 동안)", chunks:[
+        {en:"The crime", ko:"그 범죄는", t:"subj"},
+        {en:"may have happened", ko:"일어났을지도 모른다", t:"verb"},
+        {en:"during the festival", ko:"그 축제 동안", t:"mod"}]},
+      {n:90, ctx:{en:"Every room was open.", ko:"모든 방이 열려 있었다."}, full:"경찰은 그 호텔을 수색했음에 틀림없다", chunks:[
+        {en:"The police", ko:"경찰은", t:"subj"},
+        {en:"must have searched", ko:"수색했음에 틀림없다", t:"verb"},
+        {en:"the hotel", ko:"그 호텔을", t:"obj"}]},
+      {n:91, full:"그 회사는 그 요청을 거절할 수밖에 없었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"had no choice but to refuse", ko:"거절할 수밖에 없었다", t:"verb"},
+        {en:"the request", ko:"그 요청을", t:"obj"}]},
+      {n:92, ctx:{en:"The child was at school.", ko:"그 아이는 학교에 있었다."}, full:"그 아이는 그 사고를 일으켰을 리 없다", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"cannot have caused", ko:"일으켰을 리 없다", t:"verb"},
+        {en:"the accident", ko:"그 사고를", t:"obj"}]},
+      {n:93, ctx:{en:"The moment has not come.", ko:"그 순간은 오지 않았다."}, full:"그 회사는 기다리는 편이 낫다 (시의적절한 순간을)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"may as well wait", ko:"기다리는 편이 낫다", t:"verb"},
+        {en:"for the opportune moment", ko:"시의적절한 순간을", t:"mod"}]},
+      {n:94, ctx:{en:"The gate was locked all night.", ko:"그 문은 밤새 잠겨 있었다."}, full:"그 손님들은 달아났을 리 없다 (그 문을 통해)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"cannot have escaped", ko:"달아났을 리 없다", t:"verb"},
+        {en:"through the gate", ko:"그 문을 통해", t:"mod"}]},
+      {n:95, ctx:{en:"The crowd left the hotel in a minute.", ko:"그 군중은 순식간에 그 호텔을 떠났다."}, full:"그 소음이 그 군중을 화나게 만들었음에 틀림없다", chunks:[
+        {en:"The noise", ko:"그 소음이", t:"subj"},
+        {en:"must have made", ko:"만들었음에 틀림없다", t:"verb"},
+        {en:"the crowd", ko:"그 군중을", t:"obj"},
+        {en:"angry", ko:"화나게", t:"comp"}]},
+      {n:96, full:"우리는 그 작가를 존경하지 않을 수 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"cannot help but admire", ko:"존경하지 않을 수 없다", t:"verb"},
+        {en:"the author", ko:"그 작가를", t:"obj"}]},
+      {n:97, ctx:{en:"The key is not on the desk.", ko:"그 열쇠가 그 책상 위에 없다."}, full:"누군가 그 열쇠를 훔쳤음에 틀림없다", chunks:[
+        {en:"Someone", ko:"누군가", t:"subj"},
+        {en:"must have stolen", ko:"훔쳤음에 틀림없다", t:"verb"},
+        {en:"the key", ko:"그 열쇠를", t:"obj"}]},
+      {n:98, full:"나는 그 부담을 차라리 받아들이겠다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"would rather accept", ko:"차라리 받아들이겠다", t:"verb"},
+        {en:"the burden", ko:"그 부담을", t:"obj"}]},
+      {n:99, ctx:{en:"The child is not in the room.", ko:"그 아이는 그 방에 없다."}, full:"그 아이는 달아났음에 틀림없다 (그 문을 통해)", chunks:[
+        {en:"The child", ko:"그 아이는", t:"subj"},
+        {en:"must have escaped", ko:"달아났음에 틀림없다", t:"verb"},
+        {en:"through the gate", ko:"그 문을 통해", t:"mod"}]},
+      {n:100, ctx:{en:"The accident was not the fault of the nurse.", ko:"그 사고는 그 간호사의 잘못이 아니었다."}, full:"그 의사는 미안해하지 말았어야 했다 (그 사고에 대해)", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"should not have been", ko:"~이지 말았어야 했다", t:"verb"},
+        {en:"sorry", ko:"미안한", t:"comp"},
+        {en:"for the accident", ko:"그 사고에 대해", t:"mod"}]},
+      {n:101, full:"나는 그 이야기를 믿지 않을 수 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"cannot help believing", ko:"믿지 않을 수 없다", t:"verb"},
+        {en:"the story", ko:"그 이야기를", t:"obj"}]},
+      {n:102, full:"우리는 그 일정을 엄격하게 유지할 수밖에 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"have no choice but to keep", ko:"유지할 수밖에 없다", t:"verb"},
+        {en:"the schedule", ko:"그 일정을", t:"obj"},
+        {en:"strict", ko:"엄격하게", t:"comp"}]},
+      {n:103, ctx:{en:"The team cannot carry more.", ko:"그 팀은 더 이상 짊어질 수 없다."}, full:"그 대표는 그 부담을 가볍게 유지하는 편이 낫다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"may as well keep", ko:"유지하는 편이 낫다", t:"verb"},
+        {en:"the burden", ko:"그 부담을", t:"obj"},
+        {en:"light", ko:"가볍게", t:"comp"}]},
+      {n:104, ctx:{en:"The company asked for the receipt.", ko:"그 회사가 그 영수증을 요구했다."}, full:"너는 그 영수증을 잃어버리지 말았어야 했다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"should not have lost", ko:"잃어버리지 말았어야 했다", t:"verb"},
+        {en:"the receipt", ko:"그 영수증을", t:"obj"}]},
+      {n:105, full:"그 시의적절한 순간은 놓쳐지는 것도 당연하다", chunks:[
+        {en:"The opportune moment", ko:"그 시의적절한 순간은", t:"subj"},
+        {en:"may well be lost", ko:"놓쳐지는 것도 당연하다", t:"verb"}]},
+      {n:106, ctx:{en:"The team worked through every night for a month.", ko:"그 팀은 한 달 동안 매일 밤새워 일했다."}, full:"그 상이 그 고통에 값하는 것도 당연하다", chunks:[
+        {en:"The award", ko:"그 상이", t:"subj"},
+        {en:"may well be", ko:"~인 것도 당연하다", t:"verb"},
+        {en:"worth the pain", ko:"그 고통에 값하는", t:"comp"}]},
+      {n:107, ctx:{en:"The guests waited a whole hour.", ko:"그 손님들은 꼬박 한 시간을 기다렸다."}, full:"그 회사는 사과했어야 했다 (그 손님들에게) (그 지연에 대해)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"should have apologized", ko:"사과했어야 했다", t:"verb"},
+        {en:"to the guests", ko:"그 손님들에게", t:"mod"},
+        {en:"for the delay", ko:"그 지연에 대해", t:"mod"}]},
+      {n:108, full:"그 회사는 그 고객에게 답변을 줄 수밖에 없다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"has no choice but to give", ko:"줄 수밖에 없다", t:"verb"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
+        {en:"an answer", ko:"답변을", t:"obj"}]},
+      {n:109, ctx:{en:"The child confessed the fault at once.", ko:"그 아이는 즉시 그 잘못을 자백했다."}, full:"우리는 그 잘못을 용서했어야 했다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"ought to have forgiven", ko:"용서했어야 했다", t:"verb"},
+        {en:"the fault", ko:"그 잘못을", t:"obj"}]},
+      {n:110, ctx:{en:"The athlete lost every game this season.", ko:"그 운동선수는 이번 시즌 모든 경기를 졌다."}, full:"그 운동선수의 경력이 끝나는 것도 당연하다 (곧)", chunks:[
+        {en:"The career of the athlete", ko:"그 운동선수의 경력이", t:"subj"},
+        {en:"may well end", ko:"끝나는 것도 당연하다", t:"verb"},
+        {en:"soon", ko:"곧", t:"mod"}]},
+      {n:111, ctx:{en:"The alternate plan has a deep risk.", ko:"그 대안 계획은 깊은 위험을 가지고 있다."}, full:"그 회사는 선택하는 편이 낫다 (그 안전한 계획을)", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"may as well opt", ko:"선택하는 편이 낫다", t:"verb"},
+        {en:"for the safe plan", ko:"그 안전한 계획을", t:"mod"}]},
+      {n:112, ctx:{en:"The alarm started without a cause.", ko:"그 경보기가 이유 없이 울리기 시작했다."}, full:"그 아이가 잘못된 키를 눌렀을지도 모른다", chunks:[
+        {en:"The child", ko:"그 아이가", t:"subj"},
+        {en:"may have pressed", ko:"눌렀을지도 모른다", t:"verb"},
+        {en:"the wrong key", ko:"잘못된 키를", t:"obj"}]},
+      {n:113, ctx:{en:"The gate stood open all night.", ko:"그 문은 밤새 열린 채로 있었다."}, full:"그 문은 열린 채로 두어졌음에 틀림없다", chunks:[
+        {en:"The gate", ko:"그 문은", t:"subj"},
+        {en:"must have been left", ko:"두어졌음에 틀림없다", t:"verb"},
+        {en:"open", ko:"열린 채로", t:"comp"}]},
+      {n:114, ctx:{en:"The previous advice never failed.", ko:"이전 조언은 한 번도 틀리지 않았다."}, full:"네가 그 이전 조언을 선호하는 것도 당연하다", chunks:[
+        {en:"You", ko:"네가", t:"subj"},
+        {en:"may well prefer", ko:"선호하는 것도 당연하다", t:"verb"},
+        {en:"the previous advice", ko:"그 이전 조언을", t:"obj"}]},
+      {n:115, ctx:{en:"The guests searched every bag.", ko:"그 손님들은 모든 가방을 뒤졌다."}, full:"그 손님들은 그 영수증을 잃어버렸음에 틀림없다", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"must have lost", ko:"잃어버렸음에 틀림없다", t:"verb"},
+        {en:"the receipt", ko:"그 영수증을", t:"obj"}]},
+      {n:116, ctx:{en:"The rain stopped in the morning.", ko:"그 비는 아침에 그쳤다."}, full:"그 우산은 분실되었을지도 모른다", chunks:[
+        {en:"The umbrella", ko:"그 우산은", t:"subj"},
+        {en:"may have been lost", ko:"분실되었을지도 모른다", t:"verb"}]},
+      {n:117, full:"그 손님들은 울지 않을 수 없다 (그 결혼식에서)", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"cannot help crying", ko:"울지 않을 수 없다", t:"verb"},
+        {en:"at the wedding", ko:"그 결혼식에서", t:"mod"}]},
+      {n:118, ctx:{en:"Every member kept a paper.", ko:"모든 구성원이 종이 한 장을 가지고 있었다."}, full:"모든 구성원은 영수증을 받았음에 틀림없다", chunks:[
+        {en:"Every member", ko:"모든 구성원은", t:"subj"},
+        {en:"must have been given", ko:"받았음에 틀림없다", t:"verb"},
+        {en:"a receipt", ko:"영수증을", t:"mod"}]},
+    ]},
+    { id:"명령문·청유문·감탄문·의문문", items:[
+      {n:1, full:"무엇이 그 손님들을 조용하게 만들었니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"made", ko:"만들었니", t:"verb"},
+        {en:"the guests", ko:"그 손님들을", t:"obj"},
+        {en:"silent", ko:"조용하게", t:"comp"}]},
+      {n:2, full:"조심스럽게 행동하자", chunks:[
+        {en:"Let us behave", ko:"행동하자", t:"verb"},
+        {en:"with caution", ko:"조심스럽게", t:"mod"}]},
+      {n:3, full:"그 아이들이 조용하게 유지되도록 두지 마라", chunks:[
+        {en:"Do not let", ko:"두지 마라", t:"verb"},
+        {en:"the children", ko:"그 아이들이", t:"subj"},
+        {en:"be kept", ko:"유지되도록", t:"verb"},
+        {en:"silent", ko:"조용하게", t:"comp"}]},
+      {n:4, full:"그 수프는 어떤 맛이 나니?", chunks:[
+        {en:"How", ko:"어떻게", t:"comp"},
+        {en:"does", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"the soup", ko:"그 수프는", t:"subj"},
+        {en:"taste", ko:"맛이 나다", t:"verb"}]},
+      {n:5, full:"그 섬이 얼마나 멋진 광경을 가지고 있는가!", chunks:[
+        {en:"What an awesome view", ko:"얼마나 멋진 광경을", t:"obj"},
+        {en:"the island", ko:"그 섬이", t:"subj"},
+        {en:"has", ko:"가지고 있는가", t:"verb"}]},
+      {n:6, full:"그 두 상자의 무게를 비교해라", chunks:[
+        {en:"Compare", ko:"비교해라", t:"verb"},
+        {en:"the weight of the two boxes", ko:"그 두 상자의 무게를", t:"obj"}]},
+      {n:7, full:"그 모험이 얼마나 놀라웠는가!", chunks:[
+        {en:"How amazing", ko:"얼마나 놀라운", t:"comp"},
+        {en:"the adventure", ko:"그 모험이", t:"subj"},
+        {en:"was", ko:"~였는가", t:"verb"}]},
+      {n:8, full:"그 팀은 그 방법을 따를 거니?", chunks:[
+        {en:"Will", ko:"~할 거니?", t:"skip", c:"verb"},
+        {en:"the team", ko:"그 팀은", t:"subj"},
+        {en:"follow", ko:"따르다", t:"verb"},
+        {en:"the method", ko:"그 방법을", t:"obj"}]},
+      {n:9, full:"어느 축제가 새벽에 끝나니?", chunks:[
+        {en:"Which festival", ko:"어느 축제가", t:"subj"},
+        {en:"ends", ko:"끝나니", t:"verb"},
+        {en:"at dawn", ko:"새벽에", t:"mod"}]},
+      {n:10, full:"그 방법의 목적은 무엇이니?", chunks:[
+        {en:"What", ko:"무엇이", t:"comp"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"the purpose of the method", ko:"그 방법의 목적은", t:"subj"}]},
+      {n:11, full:"그 손님들은 어디에서 기다려야 하니?", chunks:[
+        {en:"Where", ko:"어디에서", t:"mod"},
+        {en:"should", ko:"~해야 하니?", t:"skip", c:"verb"},
+        {en:"the guests", ko:"그 손님들은", t:"subj"},
+        {en:"wait", ko:"기다리다", t:"verb"}]},
+      {n:12, full:"어느 기사가 수집되었니?", chunks:[
+        {en:"Which article", ko:"어느 기사가", t:"subj"},
+        {en:"has been collected", ko:"수집되었니", t:"verb"}]},
+      {n:13, full:"그 티켓은 얼마의 돈이 드니?", chunks:[
+        {en:"How much money", ko:"얼마의 돈이", t:"obj"},
+        {en:"does", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"the ticket", ko:"그 티켓은", t:"subj"},
+        {en:"cost", ko:"들다", t:"verb"}]},
+      {n:14, full:"그 산은 얼마나 높니?", chunks:[
+        {en:"How high", ko:"얼마나 높이", t:"comp"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"the mountain", ko:"그 산은", t:"subj"}]},
+      {n:15, full:"그 이유가 잊히지 않게 하라", chunks:[
+        {en:"Let", ko:"하라", t:"verb"},
+        {en:"the reason", ko:"그 이유가", t:"subj"},
+        {en:"not be forgotten", ko:"잊히지 않도록", t:"verb"}]},
+      {n:16, full:"그 비평가는 무엇을 비교했니?", chunks:[
+        {en:"What", ko:"무엇을", t:"obj"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the critic", ko:"그 비평가는", t:"subj"},
+        {en:"compare", ko:"비교하다", t:"verb"}]},
+      {n:17, full:"그 아이들을 조용하게 두지 마라", chunks:[
+        {en:"Do not keep", ko:"두지 마라", t:"verb"},
+        {en:"the children", ko:"그 아이들을", t:"obj"},
+        {en:"silent", ko:"조용하게", t:"comp"}]},
+      {n:18, full:"그 방은 조용하게 유지되고 있니?", chunks:[
+        {en:"Is", ko:"~이니?", t:"skip", c:"verb"},
+        {en:"the room", ko:"그 방은", t:"subj"},
+        {en:"being kept", ko:"유지되고 있는", t:"verb"},
+        {en:"silent", ko:"조용하게", t:"comp"}]},
+      {n:19, full:"그 손님들은 왜 조용하니?", chunks:[
+        {en:"Why", ko:"왜", t:"mod"},
+        {en:"are", ko:"~이니", t:"verb"},
+        {en:"the guests", ko:"그 손님들은", t:"subj"},
+        {en:"silent", ko:"조용한", t:"comp"}]},
+      {n:20, full:"그 축제들은 취소되었니?", chunks:[
+        {en:"Were", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the festivals", ko:"그 축제들은", t:"subj"},
+        {en:"cancelled", ko:"취소된", t:"verb"}]},
+      {n:21, full:"그 기사들은 그 작가에 의해 출간되었니?", chunks:[
+        {en:"Were", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the articles", ko:"그 기사들은", t:"subj"},
+        {en:"published", ko:"출간된", t:"verb"},
+        {en:"by the author", ko:"그 작가에 의해", t:"mod"}]},
+      {n:22, full:"무엇이 그 소음을 일으켰니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"caused", ko:"일으켰니", t:"verb"},
+        {en:"the noise", ko:"그 소음을", t:"obj"}]},
+      {n:23, full:"무엇이 그 비평가들에 의해 비교되었니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"was compared", ko:"비교되었니", t:"verb"},
+        {en:"by the critics", ko:"그 비평가들에 의해", t:"mod"}]},
+      {n:24, full:"누구의 이유가 믿을 만하니?", chunks:[
+        {en:"Whose reason", ko:"누구의 이유가", t:"subj"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"credible", ko:"믿을 만한", t:"comp"}]},
+      {n:25, full:"예의 바르게 굴어라 (그 손님들에게)", chunks:[
+        {en:"Be", ko:"~해라", t:"verb"},
+        {en:"polite", ko:"예의 바르게", t:"comp"},
+        {en:"to the guests", ko:"그 손님들에게", t:"mod"}]},
+      {n:26, full:"얼마나 많은 손님이 그 사무실에 들어갔니?", chunks:[
+        {en:"How many guests", ko:"얼마나 많은 손님이", t:"subj"},
+        {en:"entered", ko:"들어갔니", t:"verb"},
+        {en:"the office", ko:"그 사무실에", t:"obj"}]},
+      {n:27, full:"그 회사는 왜 그 파티를 취소했니?", chunks:[
+        {en:"Why", ko:"왜", t:"mod"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the company", ko:"그 회사는", t:"subj"},
+        {en:"cancel", ko:"취소하다", t:"verb"},
+        {en:"the party", ko:"그 파티를", t:"obj"}]},
+      {n:28, ctx:{en:"The parents blamed the boy for the game.", ko:"그 부모는 그 게임 때문에 그 소년을 나무랐다."}, full:"그 소년은 정말 공부한다 (매일 밤)", chunks:[
+        {en:"The boy", ko:"그 소년은", t:"subj"},
+        {en:"does study", ko:"정말 공부한다", t:"verb"},
+        {en:"every night", ko:"매일 밤", t:"mod"}]},
+      {n:29, full:"그 대표는 그 비용을 신경 쓰니?", chunks:[
+        {en:"Does", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"the leader", ko:"그 대표는", t:"subj"},
+        {en:"mind", ko:"신경 쓰다", t:"verb"},
+        {en:"the cost", ko:"그 비용을", t:"obj"}]},
+      {n:30, full:"그 손님들은 얼마나 일찍 도착했니?", chunks:[
+        {en:"How early", ko:"얼마나 일찍", t:"mod"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the guests", ko:"그 손님들은", t:"subj"},
+        {en:"arrive", ko:"도착하다", t:"verb"}]},
+      {n:31, full:"우리는 무엇을 비교해야 하니?", chunks:[
+        {en:"What", ko:"무엇을", t:"obj"},
+        {en:"should", ko:"~해야 하니?", t:"skip", c:"verb"},
+        {en:"we", ko:"우리는", t:"subj"},
+        {en:"compare", ko:"비교하다", t:"verb"}]},
+      {n:32, full:"누가 그 문을 밀었다고 너는 믿니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"do you believe", ko:"", t:"skip"},
+        {en:"pushed", ko:"밀었다고 믿니", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"}]},
+      {n:33, full:"조심스럽게 행동하자 (그 문에서)", chunks:[
+        {en:"Let's behave", ko:"행동하자", t:"verb"},
+        {en:"with caution", ko:"조심스럽게", t:"mod"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:34, full:"그것이 얼마나 끔찍한 폭풍이었는가!", chunks:[
+        {en:"What a terrible storm", ko:"얼마나 끔찍한 폭풍", t:"comp"},
+        {en:"it", ko:"그것이", t:"subj"},
+        {en:"was", ko:"~였는가", t:"verb"}]},
+      {n:35, full:"우리가 그 문에서 기다려도 되니?", chunks:[
+        {en:"May", ko:"~해도 되니?", t:"skip", c:"verb"},
+        {en:"we", ko:"우리가", t:"subj"},
+        {en:"wait", ko:"기다리다", t:"verb"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:36, full:"그 대표가 왜 그 요청을 거절했다고 너는 생각하니?", chunks:[
+        {en:"Why", ko:"왜", t:"mod"},
+        {en:"do you suppose", ko:"", t:"skip"},
+        {en:"the leader", ko:"그 대표가", t:"subj"},
+        {en:"refused", ko:"거절했다고 생각하니", t:"verb"},
+        {en:"the request", ko:"그 요청을", t:"obj"}]},
+      {n:37, full:"그 회사는 그 세금을 낸다, 그리고 그 구성원들도 그렇다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"pays", ko:"낸다", t:"verb"},
+        {en:"the tax,", ko:"그 세금을", t:"obj"},
+        {en:"and", ko:"", t:"skip"},
+        {en:"the members", ko:"그 구성원들도", t:"subj"},
+        {en:"do too", ko:"그렇다", t:"verb"}]},
+      {n:38, full:"그 팀은 얼마나 자주 겨루니?", chunks:[
+        {en:"How often", ko:"얼마나 자주", t:"mod"},
+        {en:"does", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"the team", ko:"그 팀은", t:"subj"},
+        {en:"compete", ko:"겨루다", t:"verb"}]},
+      {n:39, full:"무엇이 그 비평가들에 의해 비교되었다고 너는 생각하니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"do you think", ko:"", t:"skip"},
+        {en:"was compared", ko:"비교되었다고 생각하니", t:"verb"},
+        {en:"by the critics", ko:"그 비평가들에 의해", t:"mod"}]},
+      {n:40, full:"그 문은 밀리고 있니?", chunks:[
+        {en:"Is", ko:"~이니?", t:"skip", c:"verb"},
+        {en:"the gate", ko:"그 문은", t:"subj"},
+        {en:"being pushed", ko:"밀리고 있는", t:"verb"}]},
+      {n:41, full:"그것들이 얼마나 훌륭한 아이디어인가!", chunks:[
+        {en:"What brilliant ideas", ko:"얼마나 훌륭한 아이디어", t:"comp"},
+        {en:"they", ko:"그것들이", t:"subj"},
+        {en:"are", ko:"~인가", t:"verb"}]},
+      {n:42, full:"누가 그 상을 받을 거라고 너는 상상하니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"do you imagine", ko:"", t:"skip"},
+        {en:"will win", ko:"받을 거라고 상상하니", t:"verb"},
+        {en:"the award", ko:"그 상을", t:"obj"}]},
+      {n:43, full:"그 문이 열리게 하라", chunks:[
+        {en:"Let", ko:"하라", t:"verb"},
+        {en:"the gate", ko:"그 문이", t:"subj"},
+        {en:"be opened", ko:"열리도록", t:"verb"}]},
+      {n:44, full:"깊게 숨 쉬어라", chunks:[
+        {en:"Breathe", ko:"숨 쉬어라", t:"verb"},
+        {en:"deeply", ko:"깊게", t:"mod"}]},
+      {n:45, full:"절대 속삭이지 마라 (그 수업 중에)", chunks:[
+        {en:"Never whisper", ko:"절대 속삭이지 마라", t:"verb"},
+        {en:"during the class", ko:"그 수업 중에", t:"mod"}]},
+      {n:46, full:"그 폭풍들이 얼마나 끔찍했는가!", chunks:[
+        {en:"How terrible", ko:"얼마나 끔찍한", t:"comp"},
+        {en:"the storms", ko:"그 폭풍들이", t:"subj"},
+        {en:"were", ko:"~였는가", t:"verb"}]},
+      {n:47, full:"그 손님들이 어디에 모였다고 너는 생각하니?", chunks:[
+        {en:"Where", ko:"어디에", t:"mod"},
+        {en:"do you think", ko:"", t:"skip"},
+        {en:"the guests", ko:"그 손님들이", t:"subj"},
+        {en:"gathered", ko:"모였다고 생각하니", t:"verb"}]},
+      {n:48, full:"그 도로는 눈으로 덮였니?", chunks:[
+        {en:"Was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the road", ko:"그 도로는", t:"subj"},
+        {en:"covered", ko:"덮인", t:"verb"},
+        {en:"by the snow", ko:"눈으로", t:"mod"}]},
+      {n:49, full:"소리 지르지 마라 (그 모퉁이에서)", chunks:[
+        {en:"Do not shout", ko:"소리 지르지 마라", t:"verb"},
+        {en:"at the corner", ko:"그 모퉁이에서", t:"mod"}]},
+      {n:50, full:"경계해라 (그 모퉁이에서)", chunks:[
+        {en:"Be", ko:"~해라", t:"verb"},
+        {en:"alert", ko:"경계하게", t:"comp"},
+        {en:"at the corner", ko:"그 모퉁이에서", t:"mod"}]},
+      {n:51, ctx:{en:"No one expected the train on time.", ko:"아무도 그 기차가 정시에 올 거라 예상하지 않았다."}, full:"그 기차는 정말 도착했다 (정시에)", chunks:[
+        {en:"The train", ko:"그 기차는", t:"subj"},
+        {en:"did arrive", ko:"정말 도착했다", t:"verb"},
+        {en:"on time", ko:"정시에", t:"mod"}]},
+      {n:52, full:"나의 누나는 매일 아침 노래한다, 그리고 나도 그렇다", chunks:[
+        {en:"My sister", ko:"나의 누나는", t:"subj"},
+        {en:"sings", ko:"노래한다", t:"verb"},
+        {en:"every morning,", ko:"매일 아침", t:"mod"},
+        {en:"and", ko:"", t:"skip"},
+        {en:"I", ko:"나도", t:"subj"},
+        {en:"do too", ko:"그렇다", t:"verb"}]},
+      {n:53, full:"그 방법이 얼마나 훌륭한가!", chunks:[
+        {en:"How brilliant", ko:"얼마나 훌륭한", t:"comp"},
+        {en:"the method", ko:"그 방법이", t:"subj"},
+        {en:"is", ko:"~인가", t:"verb"}]},
+      {n:54, full:"그 작가들은 무엇을 출간했니?", chunks:[
+        {en:"What", ko:"무엇을", t:"obj"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the authors", ko:"그 작가들은", t:"subj"},
+        {en:"publish", ko:"출간하다", t:"verb"}]},
+      {n:55, full:"너는 그 박물관에 가 본 적 있니?", chunks:[
+        {en:"Have", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"ever been to", ko:"가 본 적 있다", t:"verb"},
+        {en:"the museum", ko:"그 박물관에", t:"mod"}]},
+      {n:56, full:"그 거리가 얼마나 먼가!", chunks:[
+        {en:"How great", ko:"얼마나 먼", t:"comp"},
+        {en:"the distance", ko:"그 거리가", t:"subj"},
+        {en:"is", ko:"~인가", t:"verb"}]},
+      {n:57, full:"그 문은 누구에 의해 밀렸니?", chunks:[
+        {en:"By whom", ko:"누구에 의해", t:"mod"},
+        {en:"was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the gate", ko:"그 문은", t:"subj"},
+        {en:"pushed", ko:"밀린", t:"verb"}]},
+      {n:58, full:"너는 그 소음을 신경 쓰니?", chunks:[
+        {en:"Do", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"mind", ko:"신경 쓰다", t:"verb"},
+        {en:"the noise", ko:"그 소음을", t:"obj"}]},
+      {n:59, full:"너는 그 목적을 아니?", chunks:[
+        {en:"Do", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"know", ko:"알다", t:"verb"},
+        {en:"the purpose", ko:"그 목적을", t:"obj"}]},
+      {n:60, full:"내가 여기에서 내 이름을 등록해도 되니?", chunks:[
+        {en:"Can", ko:"~해도 되니?", t:"skip", c:"verb"},
+        {en:"I", ko:"내가", t:"subj"},
+        {en:"register", ko:"등록하다", t:"verb"},
+        {en:"my name", ko:"내 이름을", t:"obj"},
+        {en:"here", ko:"여기에서", t:"mod"}]},
+      {n:61, full:"그 티켓이 분실되지 않게 하라", chunks:[
+        {en:"Let", ko:"하라", t:"verb"},
+        {en:"the ticket", ko:"그 티켓이", t:"subj"},
+        {en:"not be lost", ko:"분실되지 않도록", t:"verb"}]},
+      {n:62, full:"그 계획은 어떻게 들리니?", chunks:[
+        {en:"How", ko:"어떻게", t:"comp"},
+        {en:"does", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"the plan", ko:"그 계획은", t:"subj"},
+        {en:"sound", ko:"들리다", t:"verb"}]},
+      {n:63, ctx:{en:"The critics warned the team about the rule.", ko:"그 비평가들은 그 규칙에 대해 그 팀에 경고했다."}, full:"그 팀은 그 규칙을 정말 지킨다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"does obey", ko:"정말 지킨다", t:"verb"},
+        {en:"the rule", ko:"그 규칙을", t:"obj"}]},
+      {n:64, full:"그 작가는 얼마나 많은 기사를 출간했니?", chunks:[
+        {en:"How many articles", ko:"얼마나 많은 기사를", t:"obj"},
+        {en:"has", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the author", ko:"그 작가는", t:"subj"},
+        {en:"published", ko:"출간하다", t:"verb"}]},
+      {n:65, full:"그 바다가 얼마나 멋진가!", chunks:[
+        {en:"How awesome", ko:"얼마나 멋진", t:"comp"},
+        {en:"the ocean", ko:"그 바다가", t:"subj"},
+        {en:"is", ko:"~인가", t:"verb"}]},
+      {n:66, full:"그 비용이 비교되게 하라", chunks:[
+        {en:"Let", ko:"하라", t:"verb"},
+        {en:"the cost", ko:"그 비용이", t:"subj"},
+        {en:"be compared", ko:"비교되도록", t:"verb"}]},
+      {n:67, full:"어느 방법이 직접적이니?", chunks:[
+        {en:"Which method", ko:"어느 방법이", t:"subj"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"direct", ko:"직접적인", t:"comp"}]},
+      {n:68, full:"그 회사가 왜 그 파티를 취소했다고 너는 생각하니?", chunks:[
+        {en:"Why", ko:"왜", t:"mod"},
+        {en:"do you think", ko:"", t:"skip"},
+        {en:"the company", ko:"그 회사가", t:"subj"},
+        {en:"cancelled", ko:"취소했다고 생각하니", t:"verb"},
+        {en:"the party", ko:"그 파티를", t:"obj"}]},
+      {n:69, full:"그 아이들은 그 수영장에서 헤엄친다, 그리고 그 어른들도 그렇다", chunks:[
+        {en:"The children", ko:"그 아이들은", t:"subj"},
+        {en:"swim", ko:"헤엄친다", t:"verb"},
+        {en:"in the pool,", ko:"그 수영장에서", t:"mod"},
+        {en:"and", ko:"", t:"skip"},
+        {en:"the adults", ko:"그 어른들도", t:"subj"},
+        {en:"do too", ko:"그렇다", t:"verb"}]},
+      {n:70, full:"너는 그 두 산의 높이를 비교할 수 있니?", chunks:[
+        {en:"Can", ko:"~할 수 있니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"compare", ko:"비교하다", t:"verb"},
+        {en:"the height of the two mountains", ko:"그 두 산의 높이를", t:"obj"}]},
+      {n:71, full:"그 방법의 목적을 절대 잊지 마라", chunks:[
+        {en:"Never forget", ko:"절대 잊지 마라", t:"verb"},
+        {en:"the purpose of the method", ko:"그 방법의 목적을", t:"obj"}]},
+      {n:72, full:"그 사원은 얼마나 높니?", chunks:[
+        {en:"How tall", ko:"얼마나 높이", t:"comp"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"the temple", ko:"그 사원은", t:"subj"}]},
+      {n:73, full:"무엇이 그 군중에 의해 밀렸니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"was pushed", ko:"밀렸니", t:"verb"},
+        {en:"by the crowd", ko:"그 군중에 의해", t:"mod"}]},
+      {n:74, full:"그 손님들은 예의 바르니?", chunks:[
+        {en:"Are", ko:"~이니", t:"verb"},
+        {en:"the guests", ko:"그 손님들은", t:"subj"},
+        {en:"polite", ko:"예의 바른", t:"comp"}]},
+      {n:75, full:"그 문을 부드럽게 밀어라", chunks:[
+        {en:"Push", ko:"밀어라", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"},
+        {en:"gently", ko:"부드럽게", t:"mod"}]},
+      {n:76, full:"그 손님들에게 그 이유를 말해라", chunks:[
+        {en:"Tell", ko:"말해라", t:"verb"},
+        {en:"the guests", ko:"그 손님들에게", t:"obj"},
+        {en:"the reason", ko:"그 이유를", t:"obj"}]},
+      {n:77, full:"우리는 조용해야 하니?", chunks:[
+        {en:"Should", ko:"~해야 하니?", t:"skip", c:"verb"},
+        {en:"we", ko:"우리는", t:"subj"},
+        {en:"be", ko:"~이다", t:"verb"},
+        {en:"silent", ko:"조용한", t:"comp"}]},
+      {n:78, full:"그 기사들이 출간되게 하라", chunks:[
+        {en:"Let", ko:"하라", t:"verb"},
+        {en:"the articles", ko:"그 기사들이", t:"subj"},
+        {en:"be published", ko:"출간되도록", t:"verb"}]},
+      {n:79, full:"그 아이들은 이유를 들었니?", chunks:[
+        {en:"Were", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the children", ko:"그 아이들은", t:"subj"},
+        {en:"given", ko:"받은", t:"verb"},
+        {en:"a reason", ko:"이유를", t:"mod"}]},
+      {n:80, full:"그 축제는 무엇에 의해 망가졌니?", chunks:[
+        {en:"By what", ko:"무엇에 의해", t:"mod"},
+        {en:"was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the festival", ko:"그 축제는", t:"subj"},
+        {en:"ruined", ko:"망가진", t:"verb"}]},
+      {n:81, full:"그 티켓의 비용을 신경 써라", chunks:[
+        {en:"Mind", ko:"신경 써라", t:"verb"},
+        {en:"the cost of the ticket", ko:"그 티켓의 비용을", t:"obj"}]},
+      {n:82, full:"어느 방법이 직접적이라고 너는 생각하니?", chunks:[
+        {en:"Which method", ko:"어느 방법이", t:"subj"},
+        {en:"do you think", ko:"", t:"skip"},
+        {en:"is", ko:"~라고 생각하니", t:"verb"},
+        {en:"direct", ko:"직접적인", t:"comp"}]},
+      {n:83, full:"내가 그 사무실에 들어가도 되니?", chunks:[
+        {en:"May", ko:"~해도 되니?", t:"skip", c:"verb"},
+        {en:"I", ko:"내가", t:"subj"},
+        {en:"enter", ko:"들어가다", t:"verb"},
+        {en:"the office", ko:"그 사무실에", t:"obj"}]},
+      {n:84, full:"그 축제는 언제 끝날 거니?", chunks:[
+        {en:"When", ko:"언제", t:"mod"},
+        {en:"will", ko:"~할 거니?", t:"skip", c:"verb"},
+        {en:"the festival", ko:"그 축제는", t:"subj"},
+        {en:"end", ko:"끝나다", t:"verb"}]},
+      {n:85, full:"그 손님들은 어디로 안내되었니?", chunks:[
+        {en:"Where", ko:"어디로", t:"mod"},
+        {en:"were", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the guests", ko:"그 손님들은", t:"subj"},
+        {en:"directed", ko:"안내된", t:"verb"}]},
+      {n:86, full:"누가 그 문에서 경계하고 있니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"alert", ko:"경계하는", t:"comp"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:87, full:"너는 그 두 섬을 무엇이라고 부르니?", chunks:[
+        {en:"What", ko:"무엇이라고", t:"comp"},
+        {en:"do", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"call", ko:"부르다", t:"verb"},
+        {en:"the two islands", ko:"그 두 섬을", t:"obj"}]},
+      {n:88, full:"누구의 카메라가 그 바닥에 떨어졌다고 너는 상상하니?", chunks:[
+        {en:"Whose camera", ko:"누구의 카메라가", t:"subj"},
+        {en:"do you imagine", ko:"", t:"skip"},
+        {en:"fell", ko:"떨어졌다고 상상하니", t:"verb"},
+        {en:"to the floor", ko:"그 바닥에", t:"mod"}]},
+      {n:89, full:"그 주장은 일찍 도착했다, 그리고 그 팀도 그랬다", chunks:[
+        {en:"The captain", ko:"그 주장은", t:"subj"},
+        {en:"arrived", ko:"도착했다", t:"verb"},
+        {en:"early,", ko:"일찍", t:"mod"},
+        {en:"and", ko:"", t:"skip"},
+        {en:"the team", ko:"그 팀도", t:"subj"},
+        {en:"did too", ko:"그랬다", t:"verb"}]},
+      {n:90, full:"그 아이들은 학교에서 예의 바르게 행동하니?", chunks:[
+        {en:"Do", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"the children", ko:"그 아이들은", t:"subj"},
+        {en:"behave", ko:"예의 바르게 행동하다", t:"verb"},
+        {en:"at school", ko:"학교에서", t:"mod"}]},
+      {n:91, full:"그 눈이 얼마나 부드럽게 내렸는가!", chunks:[
+        {en:"How gently", ko:"얼마나 부드럽게", t:"mod"},
+        {en:"the snow", ko:"그 눈이", t:"subj"},
+        {en:"fell", ko:"내렸는가", t:"verb"}]},
+      {n:92, full:"그 대표가 얼마나 어리석은 이유를 댔는가!", chunks:[
+        {en:"What a silly reason", ko:"얼마나 어리석은 이유를", t:"obj"},
+        {en:"the leader", ko:"그 대표가", t:"subj"},
+        {en:"gave", ko:"댔는가", t:"verb"}]},
+      {n:93, full:"속삭이지 마라 (그 연설 중에)", chunks:[
+        {en:"Do not whisper", ko:"속삭이지 마라", t:"verb"},
+        {en:"during the speech", ko:"그 연설 중에", t:"mod"}]},
+      {n:94, full:"그 축제가 언제 끝날 거라고 너는 짐작하니?", chunks:[
+        {en:"When", ko:"언제", t:"mod"},
+        {en:"do you guess", ko:"", t:"skip"},
+        {en:"the festival", ko:"그 축제가", t:"subj"},
+        {en:"will end", ko:"끝날 거라고 짐작하니", t:"verb"}]},
+      {n:95, full:"그 팀은 그 문제를 어떻게 풀었니?", chunks:[
+        {en:"How", ko:"어떻게", t:"mod"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the team", ko:"그 팀은", t:"subj"},
+        {en:"solve", ko:"풀다", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"}]},
+      {n:96, full:"그 팀이 그 문제를 어떻게 풀었다고 너는 짐작하니?", chunks:[
+        {en:"How", ko:"어떻게", t:"mod"},
+        {en:"do you guess", ko:"", t:"skip"},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"solved", ko:"풀었다고 짐작하니", t:"verb"},
+        {en:"the problem", ko:"그 문제를", t:"obj"}]},
+      {n:97, full:"그 문을 조심스럽게 당겨라", chunks:[
+        {en:"Pull", ko:"당겨라", t:"verb"},
+        {en:"the door", ko:"그 문을", t:"obj"},
+        {en:"with caution", ko:"조심스럽게", t:"mod"}]},
+      {n:98, full:"그 이유는 믿을 만하니?", chunks:[
+        {en:"Is", ko:"~이니", t:"verb"},
+        {en:"the reason", ko:"그 이유는", t:"subj"},
+        {en:"credible", ko:"믿을 만한", t:"comp"}]},
+      {n:99, full:"나에게 그 방법을 보여줘라", chunks:[
+        {en:"Show", ko:"보여줘라", t:"verb"},
+        {en:"me", ko:"나에게", t:"obj"},
+        {en:"the method", ko:"그 방법을", t:"obj"}]},
+      {n:100, full:"그 파티는 왜 취소되었니?", chunks:[
+        {en:"Why", ko:"왜", t:"mod"},
+        {en:"was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the party", ko:"그 파티는", t:"subj"},
+        {en:"cancelled", ko:"취소된", t:"verb"}]},
+      {n:101, full:"그 방을 조용하게 유지해라", chunks:[
+        {en:"Keep", ko:"유지해라", t:"verb"},
+        {en:"the room", ko:"그 방을", t:"obj"},
+        {en:"silent", ko:"조용하게", t:"comp"}]},
+      {n:102, full:"이 사진은 언제 찍혔니?", chunks:[
+        {en:"When", ko:"언제", t:"mod"},
+        {en:"was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"this picture", ko:"이 사진은", t:"subj"},
+        {en:"taken", ko:"찍힌", t:"verb"}]},
+      {n:103, full:"그 문은 어떻게 열렸니?", chunks:[
+        {en:"How", ko:"어떻게", t:"mod"},
+        {en:"was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the gate", ko:"그 문은", t:"subj"},
+        {en:"opened", ko:"열린", t:"verb"}]},
+      {n:104, full:"그 문이 밀리게 두지 마라", chunks:[
+        {en:"Do not let", ko:"두지 마라", t:"verb"},
+        {en:"the gate", ko:"그 문이", t:"subj"},
+        {en:"be pushed", ko:"밀리도록", t:"verb"}]},
+      {n:105, full:"너는 그 광경에 놀랐니?", chunks:[
+        {en:"Were", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"amazed", ko:"놀란", t:"verb"},
+        {en:"by the view", ko:"그 광경에", t:"mod"}]},
+      {n:106, full:"그 비평가들이 무엇을 비교했다고 너는 믿니?", chunks:[
+        {en:"What", ko:"무엇을", t:"obj"},
+        {en:"do you believe", ko:"", t:"skip"},
+        {en:"the critics", ko:"그 비평가들이", t:"subj"},
+        {en:"compared", ko:"비교했다고 믿니", t:"verb"}]},
+      {n:107, full:"그 축제는 얼마나 빨리 끝날 거니?", chunks:[
+        {en:"How soon", ko:"얼마나 빨리", t:"mod"},
+        {en:"will", ko:"~할 거니?", t:"skip", c:"verb"},
+        {en:"the festival", ko:"그 축제는", t:"subj"},
+        {en:"end", ko:"끝나다", t:"verb"}]},
+      {n:108, full:"무엇이 그 소음을 일으켰다고 너는 생각하니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"do you think", ko:"", t:"skip"},
+        {en:"caused", ko:"일으켰다고 생각하니", t:"verb"},
+        {en:"the noise", ko:"그 소음을", t:"obj"}]},
+      {n:109, full:"그 손님들은 어디에 모였니?", chunks:[
+        {en:"Where", ko:"어디에", t:"mod"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the guests", ko:"그 손님들은", t:"subj"},
+        {en:"gather", ko:"모이다", t:"verb"}]},
+      {n:110, full:"누가 그 무게를 비교할 수 있니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"can compare", ko:"비교할 수 있니", t:"verb"},
+        {en:"the weight", ko:"그 무게를", t:"obj"}]},
+      {n:111, full:"누가 그 문을 밀었니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"pushed", ko:"밀었니", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"}]},
+      {n:112, full:"예의 바르게 굴자", chunks:[
+        {en:"Let's be", ko:"~하자", t:"verb"},
+        {en:"polite", ko:"예의 바르게", t:"comp"}]},
+      {n:113, full:"너는 누구의 카메라를 잃어버렸니?", chunks:[
+        {en:"Whose camera", ko:"누구의 카메라를", t:"obj"},
+        {en:"did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"lose", ko:"잃어버리다", t:"verb"}]},
+      {n:114, full:"그 비평가들은 그 두 소설을 비교했니?", chunks:[
+        {en:"Did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the critics", ko:"그 비평가들은", t:"subj"},
+        {en:"compare", ko:"비교하다", t:"verb"},
+        {en:"the two novels", ko:"그 두 소설을", t:"obj"}]},
+      {n:115, full:"그 아이들이 조용하게 유지되도록 하라", chunks:[
+        {en:"Let", ko:"하라", t:"verb"},
+        {en:"the children", ko:"그 아이들이", t:"subj"},
+        {en:"be kept", ko:"유지되도록", t:"verb"},
+        {en:"silent", ko:"조용하게", t:"comp"}]},
+      {n:116, ctx:{en:"The leader blamed me for the wrong answer.", ko:"그 대표는 잘못된 답 때문에 나를 나무랐다."}, full:"나는 그 답을 정말 안다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"do know", ko:"정말 안다", t:"verb"},
+        {en:"the answer", ko:"그 답을", t:"obj"}]},
+      {n:117, full:"너는 누구의 기사를 읽었니?", chunks:[
+        {en:"Whose article", ko:"누구의 기사를", t:"obj"},
+        {en:"have", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"read", ko:"읽다", t:"verb"}]},
+      {n:118, full:"누가 그 기사들을 썼니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"wrote", ko:"썼니", t:"verb"},
+        {en:"the articles", ko:"그 기사들을", t:"obj"}]},
+      {n:119, full:"그 문을 당기지 마라", chunks:[
+        {en:"Do not pull", ko:"당기지 마라", t:"verb"},
+        {en:"the gate", ko:"그 문을", t:"obj"}]},
+      {n:120, full:"내가 사진을 찍어도 되니?", chunks:[
+        {en:"Could", ko:"~해도 되니?", t:"skip", c:"verb"},
+        {en:"I", ko:"내가", t:"subj"},
+        {en:"take", ko:"찍다", t:"verb"},
+        {en:"a picture", ko:"사진을", t:"obj"}]},
+      {n:121, full:"그 아이는 가쁘게 숨 쉬고 있니?", chunks:[
+        {en:"Is", ko:"~이니?", t:"skip", c:"verb"},
+        {en:"the child", ko:"그 아이는", t:"subj"},
+        {en:"breathing", ko:"숨 쉬고 있는", t:"verb"},
+        {en:"hard", ko:"가쁘게", t:"mod"}]},
+      {n:122, full:"누구의 카메라가 그 바닥에 떨어졌니?", chunks:[
+        {en:"Whose camera", ko:"누구의 카메라가", t:"subj"},
+        {en:"fell", ko:"떨어졌니", t:"verb"},
+        {en:"to the floor", ko:"그 바닥에", t:"mod"}]},
+      {n:123, full:"그 바다는 얼마나 깊니?", chunks:[
+        {en:"How deep", ko:"얼마나 깊이", t:"comp"},
+        {en:"is", ko:"~이니", t:"verb"},
+        {en:"the ocean", ko:"그 바다는", t:"subj"}]},
+      {n:124, full:"어리석게 굴지 마라", chunks:[
+        {en:"Do not be", ko:"~하지 마라", t:"verb"},
+        {en:"silly", ko:"어리석게", t:"comp"}]},
+      {n:125, full:"그 산이 얼마나 대단한 높이를 가지고 있는가!", chunks:[
+        {en:"What a great height", ko:"얼마나 대단한 높이를", t:"obj"},
+        {en:"the mountain", ko:"그 산이", t:"subj"},
+        {en:"has", ko:"가지고 있는가", t:"verb"}]},
+      {n:126, full:"그 군중은 그 모퉁이에서 소리 질렀니?", chunks:[
+        {en:"Did", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the crowd", ko:"그 군중은", t:"subj"},
+        {en:"shout", ko:"소리 지르다", t:"verb"},
+        {en:"at the corner", ko:"그 모퉁이에서", t:"mod"}]},
+      {n:127, full:"너는 그 새 방법을 어떻게 여기니?", chunks:[
+        {en:"How", ko:"어떻게", t:"comp"},
+        {en:"do", ko:"~하니?", t:"skip", c:"verb"},
+        {en:"you", ko:"너는", t:"subj"},
+        {en:"find", ko:"여기다", t:"verb"},
+        {en:"the new method", ko:"그 새 방법을", t:"obj"}]},
+      {n:128, full:"누가 그 기사들을 썼다고 너는 생각하니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"do you think", ko:"", t:"skip"},
+        {en:"wrote", ko:"썼다고 생각하니", t:"verb"},
+        {en:"the articles", ko:"그 기사들을", t:"obj"}]},
+      {n:129, full:"그 기사들은 누구에 의해 쓰였니?", chunks:[
+        {en:"By whom", ko:"누구에 의해", t:"mod"},
+        {en:"were", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the articles", ko:"그 기사들은", t:"subj"},
+        {en:"written", ko:"쓰인", t:"verb"}]},
+      {n:130, full:"그 비용은 비교되었니?", chunks:[
+        {en:"Has", ko:"~했니?", t:"skip", c:"verb"},
+        {en:"the cost", ko:"그 비용은", t:"subj"},
+        {en:"been compared", ko:"비교된", t:"verb"}]},
+      {n:131, full:"누가 그 섬에 가 본 적 있니?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"has ever been to", ko:"가 본 적 있니", t:"verb"},
+        {en:"the island", ko:"그 섬에", t:"mod"}]},
+      {n:132, full:"우리는 어느 방법을 따라야 하니?", chunks:[
+        {en:"Which method", ko:"어느 방법을", t:"obj"},
+        {en:"should", ko:"~해야 하니?", t:"skip", c:"verb"},
+        {en:"we", ko:"우리는", t:"subj"},
+        {en:"follow", ko:"따르다", t:"verb"}]},
+      {n:133, full:"그 소년들은 그 지붕 위로 오른다, 그리고 그 소녀들도 그렇다", chunks:[
+        {en:"The boys", ko:"그 소년들은", t:"subj"},
+        {en:"climb", ko:"오른다", t:"verb"},
+        {en:"onto the roof,", ko:"그 지붕 위로", t:"mod"},
+        {en:"and", ko:"", t:"skip"},
+        {en:"the girls", ko:"그 소녀들도", t:"subj"},
+        {en:"do too", ko:"그렇다", t:"verb"}]},
+      {n:134, full:"그 상은 누구에 의해 발표되었니?", chunks:[
+        {en:"By whom", ko:"누구에 의해", t:"mod"},
+        {en:"was", ko:"~였니?", t:"skip", c:"verb"},
+        {en:"the award", ko:"그 상은", t:"subj"},
+        {en:"announced", ko:"발표된", t:"verb"}]},
+      {n:135, full:"무엇이 그 지연을 일으켰다고 너는 생각하니?", chunks:[
+        {en:"What", ko:"무엇이", t:"subj"},
+        {en:"do you suppose", ko:"", t:"skip"},
+        {en:"caused", ko:"일으켰다고 생각하니", t:"verb"},
+        {en:"the delay", ko:"그 지연을", t:"obj"}]},
+      {n:136, full:"그 두 방법을 비교하자", chunks:[
+        {en:"Let's compare", ko:"비교하자", t:"verb"},
+        {en:"the two methods", ko:"그 두 방법을", t:"obj"}]},
+    ]},
+    { id:"명사절 that·간접의문문", items:[
+      {n:1, full:"그 저자는 그 박물관이 그 기록 전체를 보관한다는 것을 인정한다", chunks:[
+        {en:"The author", ko:"그 저자는", t:"subj"},
+        {en:"admits", ko:"인정한다", t:"verb"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the museum", ko:"그 박물관이", t:"subj"},
+        {en:"keeps", ko:"보관한다", t:"verb"},
+        {en:"the whole record", ko:"그 기록 전체를", t:"obj"}]},
+      {n:2, full:"그 손님들은 그 길이 어디에서 시작되었는지를 보았다", chunks:[
+        {en:"The guests", ko:"그 손님들은", t:"subj"},
+        {en:"were shown", ko:"보게 되었다", t:"verb"},
+        {en:"where", ko:"어디에서 ~인지를", t:"mod", link:true, marker:true, span:3},
+        {en:"the path", ko:"그 길이", t:"subj"},
+        {en:"started", ko:"시작되었는지", t:"verb"}]},
+      {n:3, full:"그 보고서는 그 사고가 어떻게 일어났는지를 분명하게 밝혔다", chunks:[
+        {en:"The report", ko:"그 보고서는", t:"subj"},
+        {en:"made", ko:"만들었다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"clear", ko:"분명하게", t:"comp"},
+        {en:"how", ko:"어떻게 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the accident", ko:"그 사고가", t:"subj"},
+        {en:"happened", ko:"일어났는지", t:"verb"}]},
+      {n:4, full:"그 기사는 그 이론이 진짜인지를 밝힌다", chunks:[
+        {en:"The article", ko:"그 기사는", t:"subj"},
+        {en:"states", ko:"밝힌다", t:"verb"},
+        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:4},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"real", ko:"진짜인지", t:"comp"}]},
+      {n:5, full:"그 대표는 그 팀이 그 위험을 받아들일 수밖에 없다고 주장한다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"insists", ko:"주장한다", t:"verb"},
+        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:4},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"has no choice but to accept", ko:"받아들일 수밖에 없다고", t:"verb"},
+        {en:"the risk", ko:"그 위험을", t:"obj"}]},
+      {n:6, full:"그 보고서는 그 소식이 언제 나타났는지를 밝힌다", chunks:[
+        {en:"The report", ko:"그 보고서는", t:"subj"},
+        {en:"states", ko:"밝힌다", t:"verb"},
+        {en:"when", ko:"언제 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the news", ko:"그 소식이", t:"subj"},
+        {en:"appeared", ko:"나타났는지", t:"verb"}]},
+      {n:7, full:"그 대표는 그 팀이 어느 방법을 따라야 하는지를 분명하게 밝혔다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"made", ko:"만들었다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"clear", ko:"분명하게", t:"comp"},
+        {en:"which method", ko:"어느 방법을 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"should follow", ko:"따라야 하는지", t:"verb"}]},
+      {n:8, full:"나는 그 티켓이 얼마의 돈이 드는지 궁금하다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"wonder", ko:"궁금하다", t:"verb"},
+        {en:"how much money", ko:"얼마의 돈이 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the ticket", ko:"그 티켓이", t:"subj"},
+        {en:"costs", ko:"드는지", t:"verb"}]},
+      {n:9, full:"그 저자가 그 아이디어를 복제했음에 틀림없다고 주장된다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is claimed", ko:"주장된다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the author", ko:"그 저자가", t:"subj"},
+        {en:"must have copied", ko:"복제했음에 틀림없다고", t:"verb"},
+        {en:"the idea", ko:"그 아이디어를", t:"obj"}]},
+      {n:10, full:"그 이론이 낡았다고 주장되어 왔다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"has been argued", ko:"주장되어 왔다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"old", ko:"낡았다고", t:"comp"}]},
+      {n:11, full:"나는 그 소식이 진짜인지 궁금하다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"wonder", ko:"궁금하다", t:"verb"},
+        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:4},
+        {en:"the news", ko:"그 소식이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"real", ko:"진짜인지", t:"comp"}]},
+      {n:12, full:"어느 방법이 직접적인지는 분명하지 않다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is not", ko:"~이지 않다", t:"verb"},
+        {en:"clear", ko:"분명한", t:"comp"},
+        {en:"which method", ko:"어느 방법이 ~인지가", t:"subj", link:true, marker:true, span:3},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"direct", ko:"직접적인지", t:"comp"}]},
+      {n:13, full:"나의 의견은 그 방법이 안전하다는 것이다", chunks:[
+        {en:"My opinion", ko:"나의 의견은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"that", ko:"~라는 것", t:"comp", link:true, marker:true, span:4},
+        {en:"the method", ko:"그 방법이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"safe", ko:"안전하다는", t:"comp"}]},
+      {n:14, full:"그 비평가는 그 이론이 사실인지 의심한다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"doubts", ko:"의심한다", t:"verb"},
+        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:4},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"true", ko:"사실인지", t:"comp"}]},
+      {n:15, full:"그 대표는 그 팀이 어느 방법을 따랐는지를 설명했다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"explained", ko:"설명했다", t:"verb"},
+        {en:"what method", ko:"어느 방법을 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"followed", ko:"따랐는지", t:"verb"}]},
+      {n:16, full:"그 저자가 그 주장을 부인한다는 것은 흥미롭다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"curious", ko:"흥미로운", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:4},
+        {en:"the author", ko:"그 저자가", t:"subj"},
+        {en:"denies", ko:"부인한다는", t:"verb"},
+        {en:"the claim", ko:"그 주장을", t:"obj"}]},
+      {n:17, full:"문제는 그 도구가 안전한지이다", chunks:[
+        {en:"The problem", ko:"문제는", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"whether", ko:"~인지", t:"comp", link:true, marker:true, span:4},
+        {en:"the tool", ko:"그 도구가", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"safe", ko:"안전한지", t:"comp"}]},
+      {n:18, full:"그 사실이 진짜인지는 중요하지 않다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"does not matter", ko:"중요하지 않다", t:"verb"},
+        {en:"whether", ko:"~인지가", t:"subj", link:true, marker:true, span:4},
+        {en:"the fact", ko:"그 사실이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"real", ko:"진짜인지", t:"comp"}]},
+      {n:19, full:"그 선생님은 그 반에게 그 방법이 중요하다는 것을 가르쳤다", chunks:[
+        {en:"The teacher", ko:"그 선생님은", t:"subj"},
+        {en:"taught", ko:"가르쳤다", t:"verb"},
+        {en:"the class", ko:"그 반에게", t:"obj"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:3},
+        {en:"the method", ko:"그 방법이", t:"subj"},
+        {en:"matters", ko:"중요하다는", t:"verb"}]},
+      {n:20, full:"그 도구가 안전하다고 주장된다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is claimed", ko:"주장된다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the tool", ko:"그 도구가", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"safe", ko:"안전하다고", t:"comp"}]},
+      {n:21, full:"그 비평가들은 그 이론이 왜 실패했는지를 설명했다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"explained", ko:"설명했다", t:"verb"},
+        {en:"why", ko:"왜 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"failed", ko:"실패했는지", t:"verb"}]},
+      {n:22, full:"그 길이 바뀌었다는 것은 중요하다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"important", ko:"중요한", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:3},
+        {en:"the path", ko:"그 길이", t:"subj"},
+        {en:"has changed", ko:"바뀌었다는", t:"verb"}]},
+      {n:23, full:"우리는 그 소식이 그렇게 늦게 나타난 것을 이상하게 여겼다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"found", ko:"여겼다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"strange", ko:"이상하게", t:"comp"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the news", ko:"그 소식이", t:"subj"},
+        {en:"appeared", ko:"나타났다는", t:"verb"},
+        {en:"so late", ko:"그렇게 늦게", t:"mod"}]},
+      {n:24, full:"그 대표는 그 손님들에게 그 일정이 바뀌지 않을 거라고 약속했다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"promised", ko:"약속했다", t:"verb"},
+        {en:"the guests", ko:"그 손님들에게", t:"obj"},
+        {en:"the schedule", ko:"그 일정이", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:2},
+        {en:"would not change", ko:"바뀌지 않을 거라고", t:"verb"}]},
+      {n:25, full:"그 저자는 그 이론이 진짜라는 것을 인정한다", chunks:[
+        {en:"The author", ko:"그 저자는", t:"subj"},
+        {en:"admits", ko:"인정한다", t:"verb"},
+        {en:"the theory", ko:"그 이론이", t:"subj", link:true, outer:"obj", outerKo:"~라는 것을", span:3},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"real", ko:"진짜라고", t:"comp"}]},
+      {n:26, full:"그 대표는 어느 도구가 필요한지를 설명했다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"explained", ko:"설명했다", t:"verb"},
+        {en:"which tool", ko:"어느 도구가 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"necessary", ko:"필요했는지", t:"comp"}]},
+      {n:27, full:"우리는 그 길이 안전하다고 결론지었다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"concluded", ko:"결론지었다", t:"verb"},
+        {en:"the path", ko:"그 길이", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:3},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"safe", ko:"안전했다고", t:"comp"}]},
+      {n:28, full:"그 증거는 그 도구가 안전하다는 것을 분명하게 밝혔다", chunks:[
+        {en:"The proof", ko:"그 증거는", t:"subj"},
+        {en:"made", ko:"만들었다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"clear", ko:"분명하게", t:"comp"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the tool", ko:"그 도구가", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"safe", ko:"안전하다는", t:"comp"}]},
+      {n:29, full:"그 도구가 안전하다는 것은 필수적이다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"essential", ko:"필수적인", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:4},
+        {en:"the tool", ko:"그 도구가", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"safe", ko:"안전하다는", t:"comp"}]},
+      {n:30, full:"그 저자는 그 길이 어떻게 만들어졌는지를 서술했다", chunks:[
+        {en:"The author", ko:"그 저자는", t:"subj"},
+        {en:"described", ko:"서술했다", t:"verb"},
+        {en:"how", ko:"어떻게 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the path", ko:"그 길이", t:"subj"},
+        {en:"was made", ko:"만들어졌는지", t:"verb"}]},
+      {n:31, full:"그 간호사는 나에게 그 열이 사라졌다고 말했다", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"told", ko:"말했다", t:"verb"},
+        {en:"me", ko:"나에게", t:"obj"},
+        {en:"the fever", ko:"그 열이", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:2},
+        {en:"had gone", ko:"사라졌다고", t:"verb"}]},
+      {n:32, full:"그 회사들은 그 도구가 안전하다고 주장한다", chunks:[
+        {en:"The companies", ko:"그 회사들은", t:"subj"},
+        {en:"claim", ko:"주장한다", t:"verb"},
+        {en:"the tool", ko:"그 도구가", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:3},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"safe", ko:"안전하다고", t:"comp"}]},
+      {n:33, full:"그 비평가들은 그 도구가 안전했는지를 분명하게 밝혔다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"made", ko:"만들었다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"clear", ko:"분명하게", t:"comp"},
+        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:4},
+        {en:"the tool", ko:"그 도구가", t:"subj"},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"safe", ko:"안전했는지", t:"comp"}]},
+      {n:34, full:"그 대표는 그 팀이 그 위험을 받아들였다고 주장한다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"insists", ko:"주장한다", t:"verb"},
+        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:4},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"accepted", ko:"받아들였다고", t:"verb"},
+        {en:"the risk", ko:"그 위험을", t:"obj"}]},
+      {n:35, full:"우리는 그 소식이 진짜라는 말을 들었다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"were told", ko:"들었다", t:"verb"},
+        {en:"that", ko:"~라는 것을", t:"mod", link:true, marker:true, span:4},
+        {en:"the news", ko:"그 소식이", t:"subj"},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"real", ko:"진짜라고", t:"comp"}]},
+      {n:36, full:"그 이론이 낡았다고 결론지어졌다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"was concluded", ko:"결론지어졌다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"old", ko:"낡았다고", t:"comp"}]},
+      {n:37, full:"그 보고서들은 그 주제가 바뀌었다는 것을 언급한다", chunks:[
+        {en:"The reports", ko:"그 보고서들은", t:"subj"},
+        {en:"note", ko:"언급한다", t:"verb"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:3},
+        {en:"the topic", ko:"그 주제가", t:"subj"},
+        {en:"has changed", ko:"바뀌었다는", t:"verb"}]},
+      {n:38, full:"그 목격자가 그 사고를 보았을 리 없다고 여겨진다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is believed", ko:"여겨진다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the witness", ko:"그 목격자가", t:"subj"},
+        {en:"cannot have seen", ko:"보았을 리 없다고", t:"verb"},
+        {en:"the accident", ko:"그 사고를", t:"obj"}]},
+      {n:39, full:"그 의사는 그 환자에게 그 열이 돌아올 거라고 경고했다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"warned", ko:"경고했다", t:"verb"},
+        {en:"the patient", ko:"그 환자에게", t:"obj"},
+        {en:"the fever", ko:"그 열이", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:2},
+        {en:"would return", ko:"돌아올 거라고", t:"verb"}]},
+      {n:40, full:"그 이론이 낡았는지를 아는 것이 필요하다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"necessary", ko:"필요한", t:"comp"},
+        {en:"to know", ko:"아는 것이", t:"subj"},
+        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:4},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"old", ko:"낡았는지", t:"comp"}]},
+      {n:41, full:"그 비평가들은 그 소식이 사실이었을지도 모른다는 것을 부인한다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"deny", ko:"부인한다", t:"verb"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the news", ko:"그 소식이", t:"subj"},
+        {en:"might have been", ko:"~였을지도 모른다는", t:"verb"},
+        {en:"true", ko:"사실", t:"comp"}]},
+      {n:42, full:"그 전문가들은 그 세부사항이 진짜라고 주장한다", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"argue", ko:"주장한다", t:"verb"},
+        {en:"the detail", ko:"그 세부사항이", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:3},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"real", ko:"진짜라고", t:"comp"}]},
+      {n:43, full:"그 비평가는 그 출처가 어디였는지를 물었다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"asked", ko:"물었다", t:"verb"},
+        {en:"where", ko:"어디에 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the source", ko:"그 출처가", t:"subj"},
+        {en:"was", ko:"있었는지", t:"verb"}]},
+      {n:44, full:"모든 손님이 그 문에서 등록하는 것이 필요하다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"necessary", ko:"필요한", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:4},
+        {en:"every guest", ko:"모든 손님이", t:"subj"},
+        {en:"register", ko:"등록해야 한다는", t:"verb"},
+        {en:"at the gate", ko:"그 문에서", t:"mod"}]},
+      {n:45, full:"그 비평가는 우리에게 그 저자가 그 주장을 부인했다는 것을 상기시켰다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"reminded", ko:"상기시켰다", t:"verb"},
+        {en:"us", ko:"우리에게", t:"obj"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the author", ko:"그 저자가", t:"subj"},
+        {en:"had denied", ko:"부인했다는", t:"verb"},
+        {en:"the claim", ko:"그 주장을", t:"obj"}]},
+      {n:46, full:"그 비평가들은 그 소식이 사실이라는 것을 부인한다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"deny", ko:"부인한다", t:"verb"},
+        {en:"the news", ko:"그 소식이", t:"subj", link:true, outer:"obj", outerKo:"~라는 것을", span:3},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"true", ko:"사실이라고", t:"comp"}]},
+      {n:47, full:"우리는 그 섬이 바뀌었다는 것을 명백하게 여긴다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"consider", ko:"여긴다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"obvious", ko:"명백하게", t:"comp"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:3},
+        {en:"the island", ko:"그 섬이", t:"subj"},
+        {en:"has changed", ko:"바뀌었다는", t:"verb"}]},
+      {n:48, full:"그 대표는 그 사실이 중요하다고 주장한다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"insists", ko:"주장한다", t:"verb"},
+        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:3},
+        {en:"the fact", ko:"그 사실이", t:"subj"},
+        {en:"matters", ko:"중요하다고", t:"verb"}]},
+      {n:49, full:"그 비평가는 그 팀이 얼마나 자주 겨루는지를 물었다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"asked", ko:"물었다", t:"verb"},
+        {en:"how often", ko:"얼마나 자주 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"competes", ko:"겨루는지", t:"verb"}]},
+      {n:50, full:"나는 그 출처가 진짜가 아니라고 의심한다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"suspect", ko:"의심한다", t:"verb"},
+        {en:"the source", ko:"그 출처가", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:3},
+        {en:"is not", ko:"~이지 않다", t:"verb"},
+        {en:"real", ko:"진짜가 아니라고", t:"comp"}]},
+      {n:51, full:"그 회사는 그 계획이 바뀌었는지를 보고할 것이다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"will report", ko:"보고할 것이다", t:"verb"},
+        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the plan", ko:"그 계획이", t:"subj"},
+        {en:"has changed", ko:"바뀌었는지", t:"verb"}]},
+      {n:52, full:"나는 누가 그 기사를 썼는지 궁금하다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"wonder", ko:"궁금하다", t:"verb"},
+        {en:"who", ko:"누가 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"wrote", ko:"썼는지", t:"verb"},
+        {en:"the article", ko:"그 기사를", t:"obj"}]},
+      {n:53, full:"그 간호사는 그 증상이 열의 징후였다는 것을 설명했다", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"explained", ko:"설명했다", t:"verb"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the symptom", ko:"그 증상이", t:"subj"},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"a sign of a fever", ko:"열의 징후였다는", t:"comp"}]},
+      {n:54, full:"그 비평가들은 그 소식의 출처가 진짜가 아니라고 의심한다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"suspect", ko:"의심한다", t:"verb"},
+        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:4},
+        {en:"the source of the news", ko:"그 소식의 출처가", t:"subj"},
+        {en:"is not", ko:"~이지 않다", t:"verb"},
+        {en:"real", ko:"진짜가 아니라고", t:"comp"}]},
+      {n:55, full:"그 의사는 그 열이 계속되었는지를 물었다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"asked", ko:"물었다", t:"verb"},
+        {en:"if", ko:"~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the fever", ko:"그 열이", t:"subj"},
+        {en:"had continued", ko:"계속되었는지", t:"verb"}]},
+      {n:56, full:"그 간호사는 그 증상이 무엇을 뜻했는지를 물었다", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"asked", ko:"물었다", t:"verb"},
+        {en:"what", ko:"무엇을 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the symptom", ko:"그 증상이", t:"subj"},
+        {en:"meant", ko:"뜻했는지", t:"verb"}]},
+      {n:57, full:"누가 그 기사를 썼는지는 분명하지 않다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is not", ko:"~이지 않다", t:"verb"},
+        {en:"clear", ko:"분명한", t:"comp"},
+        {en:"who", ko:"누가 ~인지가", t:"subj", link:true, marker:true, span:3},
+        {en:"wrote", ko:"썼는지", t:"verb"},
+        {en:"the article", ko:"그 기사를", t:"obj"}]},
+      {n:58, full:"그 의사는 그 환자가 한 달 동안 머물 것을 제안한다", chunks:[
+        {en:"The doctor", ko:"그 의사는", t:"subj"},
+        {en:"suggests", ko:"제안한다", t:"verb"},
+        {en:"that", ko:"~할 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the patient", ko:"그 환자가", t:"subj"},
+        {en:"stay", ko:"머물러야 한다고", t:"verb"},
+        {en:"for a month", ko:"한 달 동안", t:"mod"}]},
+      {n:59, full:"그 주제가 흥미로웠다고 언급되었다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"was mentioned", ko:"언급되었다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the topic", ko:"그 주제가", t:"subj"},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"curious", ko:"흥미로웠다고", t:"comp"}]},
+      {n:60, full:"그 소식이 진짜라는 것은 명백하다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"obvious", ko:"명백한", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:4},
+        {en:"the news", ko:"그 소식이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"real", ko:"진짜라는", t:"comp"}]},
+      {n:61, full:"그 비밀 통로가 어떻게 만들어졌는지가 서술되었다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"was described", ko:"서술되었다", t:"verb"},
+        {en:"how", ko:"어떻게 ~인지가", t:"subj", link:true, marker:true, span:3},
+        {en:"the secret path", ko:"그 비밀 통로가", t:"subj"},
+        {en:"was made", ko:"만들어졌는지", t:"verb"}]},
+      {n:62, full:"그 보고서는 그 저자가 얼마나 많은 기사를 출간했는지를 밝힌다", chunks:[
+        {en:"The report", ko:"그 보고서는", t:"subj"},
+        {en:"states", ko:"밝힌다", t:"verb"},
+        {en:"how many articles", ko:"얼마나 많은 기사를 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the author", ko:"그 저자가", t:"subj"},
+        {en:"published", ko:"출간했는지", t:"verb"}]},
+      {n:63, full:"그 대표는 그 팀이 그 위험을 받아들일 것을 주장한다", chunks:[
+        {en:"The leader", ko:"그 대표는", t:"subj"},
+        {en:"insists", ko:"주장한다", t:"verb"},
+        {en:"that", ko:"~할 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the team", ko:"그 팀이", t:"subj"},
+        {en:"accept", ko:"받아들여야 한다고", t:"verb"},
+        {en:"the risk", ko:"그 위험을", t:"obj"}]},
+      {n:64, full:"그 전체 일정이 확정되는 것이 중요하다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"important", ko:"중요한", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:3},
+        {en:"the entire schedule", ko:"그 전체 일정이", t:"subj"},
+        {en:"be confirmed", ko:"확정되어야 한다는", t:"verb"}]},
+      {n:65, full:"그 티켓이 얼마인지는 명백하다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"obvious", ko:"명백한", t:"comp"},
+        {en:"how much", ko:"얼마나 ~인지가", t:"subj", link:true, marker:true, span:3},
+        {en:"the ticket", ko:"그 티켓이", t:"subj"},
+        {en:"costs", ko:"드는지", t:"verb"}]},
+      {n:66, full:"그 회사는 그 고객에게 그 도구가 안전하다는 것을 말했다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"told", ko:"말했다", t:"verb"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the tool", ko:"그 도구가", t:"subj"},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"safe", ko:"안전하다고", t:"comp"}]},
+      {n:67, full:"나는 그 사원이 얼마나 높은지 궁금하다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"wonder", ko:"궁금하다", t:"verb"},
+        {en:"how tall", ko:"얼마나 높이 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"the temple", ko:"그 사원이", t:"subj"},
+        {en:"is", ko:"~인지", t:"verb"}]},
+      {n:68, full:"그 간호사는 그 열이 사라졌다고 시사했다", chunks:[
+        {en:"The nurse", ko:"그 간호사는", t:"subj"},
+        {en:"suggested", ko:"시사했다", t:"verb"},
+        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:3},
+        {en:"the fever", ko:"그 열이", t:"subj"},
+        {en:"had gone", ko:"사라졌다고", t:"verb"}]},
+      {n:69, full:"문제는 누가 그 기사를 썼는지이다", chunks:[
+        {en:"The question", ko:"문제는", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"who", ko:"누가 ~인지", t:"comp", link:true, marker:true, span:3},
+        {en:"wrote", ko:"썼는지", t:"verb"},
+        {en:"the article", ko:"그 기사를", t:"obj"}]},
+      {n:70, full:"그 비평가는 우리에게 그 이론이 낡았다는 것을 보여주었다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"showed", ko:"보여주었다", t:"verb"},
+        {en:"us", ko:"우리에게", t:"obj"},
+        {en:"the theory", ko:"그 이론이", t:"subj", link:true, outer:"obj", outerKo:"~라는 것을", span:3},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"old", ko:"낡았다고", t:"comp"}]},
+      {n:71, full:"그 전문가들은 그 이론이 실패했다는 것을 분명하게 여긴다", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"think", ko:"여긴다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"clear", ko:"분명하게", t:"comp"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:3},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"failed", ko:"실패했다는", t:"verb"}]},
+      {n:72, full:"그 비평가들은 그 기사가 곧 출간될 것을 제안한다", chunks:[
+        {en:"The critics", ko:"그 비평가들은", t:"subj"},
+        {en:"suggest", ko:"제안한다", t:"verb"},
+        {en:"that", ko:"~할 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the article", ko:"그 기사가", t:"subj"},
+        {en:"be published", ko:"출간되어야 한다고", t:"verb"},
+        {en:"soon", ko:"곧", t:"mod"}]},
+      {n:73, full:"그 길이 어떻게 만들어졌는지는 흥미롭다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"curious", ko:"흥미로운", t:"comp"},
+        {en:"how", ko:"어떻게 ~인지가", t:"subj", link:true, marker:true, span:3},
+        {en:"the path", ko:"그 길이", t:"subj"},
+        {en:"was made", ko:"만들어졌는지", t:"verb"}]},
+      {n:74, full:"문제는 그 출처가 비밀이라는 것이다", chunks:[
+        {en:"The problem", ko:"문제는", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"that", ko:"~라는 것", t:"comp", link:true, marker:true, span:4},
+        {en:"the source", ko:"그 출처가", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"a secret", ko:"비밀이라는", t:"comp"}]},
+      {n:75, full:"그 보고서들은 그 출처가 진짜가 아니었다는 것을 명백하게 밝혔다", chunks:[
+        {en:"The reports", ko:"그 보고서들은", t:"subj"},
+        {en:"made", ko:"만들었다", t:"verb"},
+        {en:"it", ko:"그것을", t:"obj"},
+        {en:"obvious", ko:"명백하게", t:"comp"},
+        {en:"that", ko:"~라는 것을", t:"obj", link:true, marker:true, span:4},
+        {en:"the source", ko:"그 출처가", t:"subj"},
+        {en:"was not", ko:"~이지 않았다", t:"verb"},
+        {en:"real", ko:"진짜가 아니었다는", t:"comp"}]},
+      {n:76, full:"사실은 그 이론이 낡았다는 것이다", chunks:[
+        {en:"The fact", ko:"사실은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"that", ko:"~라는 것", t:"comp", link:true, marker:true, span:4},
+        {en:"the theory", ko:"그 이론이", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"old", ko:"낡았다는", t:"comp"}]},
+      {n:77, full:"그 저자가 그 출처를 설명하는 것이 필수적이다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"essential", ko:"필수적인", t:"comp"},
+        {en:"that", ko:"~라는 것이", t:"subj", link:true, marker:true, span:4},
+        {en:"the author", ko:"그 저자가", t:"subj"},
+        {en:"explain", ko:"설명해야 한다는", t:"verb"},
+        {en:"the source", ko:"그 출처를", t:"obj"}]},
+      {n:78, full:"그 섬이 바뀌었다고 보고된다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is reported", ko:"보고된다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:3},
+        {en:"the island", ko:"그 섬이", t:"subj"},
+        {en:"has changed", ko:"바뀌었다고", t:"verb"}]},
+      {n:79, full:"그 호텔이 그 요금을 올렸다고 언급된다", chunks:[
+        {en:"It", ko:"그것은", t:"subj"},
+        {en:"is noted", ko:"언급된다", t:"verb"},
+        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:4},
+        {en:"the hotel", ko:"그 호텔이", t:"subj"},
+        {en:"raised", ko:"올렸다고", t:"verb"},
+        {en:"the fee", ko:"그 요금을", t:"obj"}]},
+      {n:80, full:"증거는 그 세부사항이 중요하다는 것이다", chunks:[
+        {en:"The proof", ko:"증거는", t:"subj"},
+        {en:"is", ko:"~이다", t:"verb"},
+        {en:"that", ko:"~라는 것", t:"comp", link:true, marker:true, span:3},
+        {en:"the detail", ko:"그 세부사항이", t:"subj"},
+        {en:"matters", ko:"중요하다는", t:"verb"}]},
+      {n:81, full:"그 비평가는 누구의 카메라가 그 바닥에 떨어졌는지를 물었다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"asked", ko:"물었다", t:"verb"},
+        {en:"whose camera", ko:"누구의 카메라가 ~인지를", t:"obj", link:true, marker:true, span:3},
+        {en:"fell", ko:"떨어졌는지", t:"verb"},
+        {en:"to the floor", ko:"그 바닥에", t:"mod"}]},
+      {n:82, full:"그 비평가는 그 주제가 흥미로웠다고 언급했다", chunks:[
+        {en:"The critic", ko:"그 비평가는", t:"subj"},
+        {en:"mentioned", ko:"언급했다", t:"verb"},
+        {en:"the topic", ko:"그 주제가", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:3},
+        {en:"was", ko:"~였다", t:"verb"},
+        {en:"curious", ko:"흥미로웠다고", t:"comp"}]},
     ]},
   ],
   vocab:[

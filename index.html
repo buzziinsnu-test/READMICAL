@@ -21,6 +21,7 @@
   --c-o:#5aa9e0;   /* 목적어 O 파랑 */
   --c-c:#d071a6;   /* 보어 C  핑크 */
   --c-m:#a7abb0;   /* 수식어 M 회색 */
+  --c-link:#bcb2a0; /* 링크 전용 — 성분 아님. mod와 온도로 구분 */
   --c-s-soft:#eaf4df; --c-v-soft:#fdeedd; --c-o-soft:#e5f1fb; --c-c-soft:#f8e9f2; --c-m-soft:#eef0f1;
 
   --ink:#3f3f45;        /* 로고 다크그레이 글자색 */
@@ -207,6 +208,50 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
 .pill.subj{background:var(--c-s)} .pill.verb{background:var(--c-v)} .pill.obj{background:var(--c-o)}
 .pill.comp{background:var(--c-c);border-radius:999px} .pill.mod{background:var(--c-m)}
 .pill.bad{outline:2px solid #d64545;outline-offset:1px}
+.pill.mk{background:none!important;border:2px dashed currentColor;padding:2px 9px}
+.pill.mk.subj{color:var(--c-s)} .pill.mk.obj{color:var(--c-o)}
+.pill.mk.comp{color:var(--c-c)} .pill.mk.mod{color:var(--c-m)}
+.pill.cl{background:none!important;border:none;padding:2px 4px;font-family:var(--font-en);font-size:20px}
+.pill.cl.subj{color:var(--c-s)} .pill.cl.obj{color:var(--c-o)}
+.pill.cl.comp{color:var(--c-c)} .pill.cl.mod{color:var(--c-m)}
+/* skip : 판정 없이 통과하는 형식 요소 (do you think / there / and / 의문문 조동사) */
+.chunk.skip{background:none!important;border:none!important;color:#8f9298!important;font-style:italic}
+.chunk.skip.c-verb{color:var(--c-v)!important}
+/* 표지 청크 : 블럭 없이 텍스트만, 확정되면 성분색 + 크게 팝 */
+.chunk.marker{background:none!important;border:none!important;color:#8f9298!important;font-style:italic}
+.chunk.marker.lit{font-weight:600}
+.chunk.marker.lit.pop{animation:popbig .34s ease}
+@keyframes popbig{0%{transform:scale(1)}40%{transform:scale(1.30)}100%{transform:scale(1)}}
+.chunk.marker.t-subj{color:var(--c-s)!important} .chunk.marker.t-obj{color:var(--c-o)!important}
+.chunk.marker.t-comp{color:var(--c-c)!important} .chunk.marker.t-mod{color:var(--c-m)!important}
+/* 사슬 아이콘 : 판정 전 신호 */
+.linkicon{position:absolute;top:-15px;left:-16px;width:28px;height:15px;color:var(--c-link);
+  z-index:6;pointer-events:none;transition:opacity .25s}
+.stage.mode-bar .linkicon{left:-30px}
+.linkicon.off{opacity:0}
+/* 절 괄호 : 판정 후 결과 */
+.chunk .br{position:absolute;top:50%;transform:translateY(-50%);font-family:var(--font-en);
+  font-size:30px;color:var(--c-link);z-index:3;pointer-events:none;transition:color .25s}
+.chunk .br.l{left:-5px} .chunk .br.r{right:-5px}
+.stage.mode-bar .chunk .br.l{left:-16px} .stage.mode-bar .chunk .br.r{right:-16px}
+.chunk .br.pop{animation:brpop .42s ease}
+@keyframes brpop{0%{transform:translateY(-50%) scale(.15);opacity:0}55%{transform:translateY(-50%) scale(1.4);opacity:1}100%{transform:translateY(-50%) scale(1);opacity:1}}
+.br.r-subj{color:var(--c-s)} .br.r-obj{color:var(--c-o)}
+.br.r-comp{color:var(--c-c)} .br.r-mod{color:var(--c-m)}
+/* 맥락문 */
+.ctxbox{border-left:4px solid var(--line-strong);padding:8px 12px;margin-bottom:10px;background:#fafaf8;display:none}
+.ctxbox.on{display:block}
+.ctxbox .cen{font-family:var(--font-en);font-size:15px;color:#8b8d92}
+.ctxbox .cko{font-size:11.5px;color:#a0a2a7;margin-top:2px}
+/* 링크 도움 3단 */
+.helpseg{display:flex;border:2px solid var(--line-strong);width:max-content;max-width:100%;margin-bottom:16px;flex-wrap:wrap}
+.helpseg button{border:none;background:var(--card);padding:7px 13px;font-weight:700;font-size:12.5px;
+  border-right:2px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:1px;line-height:1.15;font-family:inherit;cursor:pointer}
+.helpseg button small{font-size:9.5px;font-weight:600;color:#9a9da2}
+.helpseg button:last-child{border-right:none}
+.helpseg button.on{background:var(--ink);color:#fff}
+.helpseg button.on small{color:#c9c9cf}
+.helplabel{font-size:12px;font-weight:800;color:#3f3f45;margin:0 0 6px}
 
 /* 성분 판별 패드 (연습) */
 .pad{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:10px}
@@ -521,6 +566,13 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
       <input type="checkbox" class="slowv-chk" onchange="toggleSlowVerb(this.checked)">
       <span class="slowv-sw"></span>
     </label>
+
+    <div class="helplabel">절 링크 도움</div>
+    <div class="helpseg" id="helpseg" onclick="pickHelp(event)">
+      <button data-h="full" class="on">기호+속도<small>사슬 보임 · 느려짐</small></button>
+      <button data-h="slow">속도만<small>사슬 없음 · 느려짐</small></button>
+      <button data-h="none">없음<small>맨몸</small></button>
+    </div>
     <div class="modewrap">
 
       <div class="modecard">
@@ -575,6 +627,8 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
       <button data-s="1" class="on">보통</button>
       <button data-s="1.5">빠름</button>
     </div>
+
+    <div class="ctxbox" id="ctxbox"><div class="cen" id="ctx_en"></div><div class="cko" id="ctx_ko"></div></div>
 
     <div class="stage" id="stage">
       <div class="judgeline" id="judgeline"></div>
@@ -785,7 +839,7 @@ function go(id){
   document.getElementById(id).classList.add('active');
   document.getElementById('app').scrollTop=0;
   window.scrollTo(0,0);
-  if(id==='s_mode') document.querySelectorAll('.slowv-chk').forEach(el=>{ el.checked=SLOWV; });
+  if(id==='s_mode'){ document.querySelectorAll('.slowv-chk').forEach(el=>{ el.checked=SLOWV; }); syncHelpSeg(); }
 }
 
 /* ============ 진도 리스트 렌더 ============ */
@@ -983,8 +1037,9 @@ const NS='http://www.w3.org/2000/svg';
 const $=id=>document.getElementById(id);
 
 /* 예전 ver1/ver2에서 가져온 성분 도형 (텍스트 뒤에 SVG) */
-function shape(el,t){
+function shape(el,t,plain){
   el.querySelectorAll('.sh').forEach(n=>n.remove());
+  if(plain || t==='skip') return;                 // 표지·skip 청크는 도형 없음
   const w=el.offsetWidth,h=el.offsetHeight;
   const s=document.createElementNS(NS,'svg'); s.setAttribute('class','sh');
   s.setAttribute('viewBox',`0 0 ${w} ${h}`); s.setAttribute('width',w); s.setAttribute('height',h);
@@ -993,7 +1048,6 @@ function shape(el,t){
   else if(t==='verb') s.appendChild(mk('polygon',{points:`2,2 ${w-2},${h/2} 2,${h-2}`,fill:CC.verb,'fill-opacity':.5,stroke:CC.verb,'stroke-width':2}));
   else if(t==='comp') s.appendChild(mk('ellipse',{cx:w/2,cy:h/2,rx:w/2-2,ry:h/2-2,fill:CC.comp,'fill-opacity':.4,stroke:CC.comp,'stroke-width':2}));
   else if(t==='obj') s.appendChild(mk('rect',{x:2,y:2,width:w-4,height:h-4,fill:'none',stroke:CC.obj,'stroke-width':2.5}));
-  else if(t==='conj') s.appendChild(mk('polygon',{points:`2,2 ${w-2},${h/2} 2,${h-2}`,fill:'none',stroke:CC.mod,'stroke-width':2}));
   else if(t==='mod'){ s.appendChild(mk('path',{d:`M10 4 Q3 ${h/2} 10 ${h-4}`,fill:'none',stroke:CC.mod,'stroke-width':2}));
                       s.appendChild(mk('path',{d:`M${w-10} 4 Q${w-3} ${h/2} ${w-10} ${h-4}`,fill:'none',stroke:CC.mod,'stroke-width':2})); }
   el.insertBefore(s,el.firstChild);
@@ -1024,8 +1078,32 @@ function loadSentence(){
   $('study_prog').style.width=(session.idx/session.items.length*100)+'%';
   $('next_btn').textContent=(session.idx<session.items.length-1)?'다음 문장':'결과 보기';
   $('playbtn').textContent='시작';
-  it.chunks.forEach(d=>{ const el=document.createElement('div'); el.className='chunk';
-    el.innerHTML='<span>'+d.en+'</span>'; track.appendChild(el); study.ch.push({el,d,done:false}); });
+  /* ★ C안 : 절이 문장 끝에서 닫히면 닫기 판정 없음. 중간에서 닫힐 때만 */
+  const N=it.chunks.length, closers=it.chunks.map(()=>[]);
+  it.chunks.forEach((d,j)=>{ if(!d.link)return;
+    const end=Math.min(j+(d.span||1)-1, N-1); d._end=end;
+    if(end < N-1) closers[end].push({at:j, role:d.outer||d.t}); });
+  closers.forEach(a=>a.sort((x,y)=>y.at-x.at));                 // 안쪽부터 닫기
+
+  it.chunks.forEach((d,j)=>{ const el=document.createElement('div'); el.className='chunk';
+    if(d.marker) el.classList.add('marker');
+    if(d.t==='skip'){ el.classList.add('skip'); if(d.c) el.classList.add('c-'+d.c); }
+    el.innerHTML='<span>'+d.en+'</span>';
+    if(d.link) el.insertAdjacentHTML('beforeend', ICON_SVG(++__lkid));
+    track.appendChild(el);
+    const steps=[];
+    if(d.t==='skip') steps.push({kind:'skip'});
+    else{
+      if(d.outer) steps.push({kind:'open', role:d.outer, ko:d.outerKo});
+      steps.push({kind:'self', role:d.t, ko:d.ko});
+      closers[j].forEach(cl=>steps.push({kind:'close', role:cl.role, at:cl.at}));
+    }
+    study.ch.push({el,d,steps,si:0,done:false}); });
+
+  /* 맥락문 */
+  const cb=$('ctxbox');
+  if(it.ctx && it.ctx.en){ cb.classList.add('on'); $('ctx_en').textContent=it.ctx.en; $('ctx_ko').textContent=it.ctx.ko||''; }
+  else cb.classList.remove('on');
 
   const stage=$('stage'); stage.className='stage mode-'+study.mode;
   $('judgeline').style.display = study.mode==='bar' ? 'block':'none';
@@ -1046,6 +1124,27 @@ function loadSentence(){
 
   // 판정바 실전은 자동으로 흐르기 시작
   if(study.mode==='bar' && study.sub==='real') startPlay();
+  requestAnimationFrame(()=>{ if(study&&study.ch.length) paintLinks(); });
+}
+
+/* ---- 사슬(판정 전) + 절 괄호(판정 후) ---- */
+function paintLinks(){
+  study.ch.forEach(c=>{ c.el.querySelectorAll('.br').forEach(n=>n.remove()); });
+  study.ch.forEach((c,i)=>{
+    const d=c.d; if(!d.link) return;
+    const icon=c.el.querySelector('.linkicon');
+    const opened = c.si>0 || c.done;              // 절 시작 판정이 끝났는가
+    if(icon) icon.classList.toggle('off', HELP!=='full' || opened);
+    if(!opened) return;
+    const role=d.outer||d.t, end=Math.min(d._end, study.ch.length-1);
+    const L=d.rel?'\u2039':'[', R=d.rel?'\u203A':']';
+    const l=document.createElement('span'); l.className='br l pop r-'+role; l.textContent=L; c.el.appendChild(l);
+    const ec=study.ch[end];
+    const ci=ec.steps.findIndex(st=>st.kind==='close'&&st.at===i);
+    const pend = ci>=0 && ec.si<=ci;              // 닫기 판정이 아직 남았으면 베이지
+    const r=document.createElement('span'); r.className='br r pop '+(pend?'':'r-'+role);
+    r.textContent=R; ec.el.appendChild(r);
+  });
 }
 
 function updateTapnote(){
@@ -1081,6 +1180,27 @@ function scrollCursor(animate){
   stem.style.top   = (chH + 20)+'px';         // 청크 아래 밑줄
 }
 const SLOW_BAR=2.0, SLOW_CUR=1.8;
+const SLOW_BAR_L=2.6, SLOW_CUR_L=2.0;              // 링크 감속
+let HELP = localStorage_get('linkHelp') || 'full'; // full | slow | none
+let __lkid = 0;
+const ICON_SVG = i => `<svg class="linkicon" viewBox="0 0 40 22" xmlns="http://www.w3.org/2000/svg">`
+  + `<defs><mask id="lk${i}"><rect width="40" height="22" fill="#fff"/>`
+  + `<rect x="17" y="3" width="21" height="16" rx="8" fill="none" stroke="#000" stroke-width="7"/></mask></defs>`
+  + `<g fill="none" stroke="currentColor" stroke-width="3.4">`
+  + `<rect x="2" y="3" width="21" height="16" rx="8" mask="url(#lk${i})"/>`
+  + `<rect x="17" y="3" width="21" height="16" rx="8"/></g></svg>`;
+function pickHelp(e){
+  const b=e.target.closest('button'); if(!b)return;
+  HELP=b.dataset.h; window.__rmPrefs=window.__rmPrefs||{}; window.__rmPrefs.linkHelp=HELP;
+  [...b.parentNode.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  if(study&&study.ch&&study.ch.length) paintLinks();
+}
+function syncHelpSeg(){
+  const seg=$('helpseg'); if(!seg)return;
+  [...seg.children].forEach(x=>x.classList.toggle('on', x.dataset.h===HELP));
+}
+/* 감속 대상 : 링크 청크 또는 절이 닫히는 청크 */
+function isSlowLink(c){ return HELP!=='none' && (c.d.link || (c.steps&&c.steps.some(st=>st.kind==='close'))); }
 let SLOWV = localStorage_get('slowVerb')==='1';
 function localStorage_get(k){ try{ return window.__rmPrefs&&window.__rmPrefs[k]; }catch(e){ return null; } }
 function toggleSlowVerb(on){ SLOWV=on; window.__rmPrefs=window.__rmPrefs||{}; window.__rmPrefs.slowVerb=on?'1':'0';
@@ -1088,6 +1208,7 @@ function toggleSlowVerb(on){ SLOWV=on; window.__rmPrefs=window.__rmPrefs||{}; wi
 function setDwell(){ const c=study.ch[study.idx]; if(!c)return;
   let d=(1600+c.d.en.length*95)/study.lvl;
   if(SLOWV && c.d.t==='verb') d*=SLOW_CUR;
+  if(isSlowLink(c)) d*=SLOW_CUR_L;
   study.dwellMax=d; study.dwell=0; $('gfill').style.transform='scaleX(1)'; }
 
 /* ---- 지면 : 힌트 없는 평문 ---- */
@@ -1108,29 +1229,31 @@ function tick(t){
   if(study.mode==='bar'){
     const W=$('stage').clientWidth, LX=CURX(), PRE=W*0.35, OUT=W*0.15, sb=$('stage').getBoundingClientRect();
     let f=1;
-    if(SLOWV){                                         // 동사에서 느리게: 판정선 앞 35%부터 경사 감속
-      for(const c of study.ch){
-        if(c.done || c.d.t!=='verb') continue;
-        const r=c.el.getBoundingClientRect(), l=r.left-sb.left, rg=r.right-sb.left;
-        let k=0;
-        if(l<=LX && rg>=LX) k=1;
-        else if(l>LX && l<LX+PRE) k=1-(l-LX)/PRE;
-        else if(rg<LX && rg>LX-OUT) k=(rg-(LX-OUT))/OUT;
-        if(k>0){ k=k*k*(3-2*k); f=Math.min(f, 1/(1+(SLOW_BAR-1)*k)); }
-      }
+    for(const c of study.ch){                          // 판정선 앞 35%부터 경사 감속 (동사 / 링크)
+      if(c.done) continue;
+      let mag=0;
+      if(SLOWV && c.d.t==='verb') mag=Math.max(mag,SLOW_BAR);
+      if(isSlowLink(c))           mag=Math.max(mag,SLOW_BAR_L);
+      if(!mag) continue;
+      const r=c.el.getBoundingClientRect(), l=r.left-sb.left, rg=r.right-sb.left;
+      let k=0;
+      if(l<=LX && rg>=LX) k=1;
+      else if(l>LX && l<LX+PRE) k=1-(l-LX)/PRE;
+      else if(rg<LX && rg>LX-OUT) k=(rg-(LX-OUT))/OUT;
+      if(k>0){ k=k*k*(3-2*k); f=Math.min(f, 1/(1+(mag-1)*k)); }
     }
     study.x -= (W*0.20*study.lvl*f)*dt/1000; $('track').style.left=study.x+'px';
     const c=study.ch[study.idx];
     if(c && !c.done){
       const r=c.el.getBoundingClientRect(), s=$('stage').getBoundingClientRect();
       const center=r.left - s.left + r.width/2, rightEdge=r.right - s.left;
-      if(c.d.t==='conj'){ if(center<=CURX()) resolve(true); }        // 접속사: 판정 없이 자동 통과
+      if(c.d.t==='skip'){ if(center<=CURX()) resolve(true); }        // skip: 판정 없이 자동 통과
       else if(study.sub==='real'){ if(center<=CURX()) resolve(true); }
-      else if(rightEdge < CURX()) resolve(false);
+      else if(rightEdge < CURX()){ while(c && !c.done) resolve(false); }   // 놓치면 남은 단계 전부 오답
     }
   } else if(study.mode==='cursor' && study.sub==='practice'){
     const cc=study.ch[study.idx];
-    if(cc && !cc.done && cc.d.t==='conj'){ resolve(true); }          // 접속사: 체류 없이 통과
+    if(cc && !cc.done && cc.d.t==='skip'){ resolve(true); }          // skip: 체류 없이 통과
     else {
       study.dwell+=dt; $('gfill').style.transform='scaleX('+Math.max(0,1-study.dwell/study.dwellMax).toFixed(3)+')';
       if(study.dwell>=study.dwellMax) resolve(false);
@@ -1141,19 +1264,35 @@ function tick(t){
 }
 
 /* ---- 확정 ---- */
+function addPill(role,ko,ok,extra){
+  if(!ko) return;
+  const accum=$('accum'); if(accum.querySelector('.ph')) accum.innerHTML='';
+  const p=document.createElement('span');
+  p.className='pill '+role+(extra?' '+extra:'')+(ok?'':' bad');
+  p.textContent=ko; accum.appendChild(p);
+}
+/* 한 단계 확정. 절 시작(open) → 자기 역할(self) → 절 끝(close) 순서 */
 function resolve(ok){
   const c=study.ch[study.idx]; if(!c||c.done) return;
-  const isConj = c.d.t==='conj';
-  c.done=true; c.el.classList.add('lit','done',c.d.t); shape(c.el,c.d.t);
-  if(!isConj){ c.el.classList.add('pop'); setTimeout(()=>c.el.classList.remove('pop'),320); }
+  const st=c.steps[c.si];
   const it=session.items[session.idx];
-  if(!ok && !isConj) session.wrong.add(it.n);
-  if(!isConj && c.d.ko){
-    const accum=$('accum'); if(accum.querySelector('.ph')) accum.innerHTML='';
-    const p=document.createElement('span'); p.className='pill '+c.d.t+(ok?'':' bad');
-    p.textContent = c.d.t==='mod' ? '('+c.d.ko+')' : c.d.ko; accum.appendChild(p);
+  if(st.kind!=='skip' && !ok) session.wrong.add(it.n);
+  if(st.kind==='self' || st.kind==='skip'){
+    c.el.classList.add('lit','done');
+    if(st.kind!=='skip'){
+      c.el.classList.add(st.role,'t-'+st.role,'pop'); setTimeout(()=>c.el.classList.remove('pop'),320);
+      addPill(st.role, (st.role==='mod'&&!c.d.marker)?'('+st.ko+')':st.ko, ok);
+    }
+    shape(c.el, st.role, c.d.marker || st.kind==='skip');
+  } else if(st.kind==='open'){
+    addPill(st.role, st.ko, ok, 'mk');
+  } else {                                        // close
+    const dd=study.ch[st.at].d;
+    addPill(st.role, dd.rel?'\u203A':']', ok, 'cl');
   }
-  study.idx++;
+  c.si++;
+  if(c.si>=c.steps.length){ c.done=true; study.idx++; }
+  paintLinks();
   if(study.idx>=study.ch.length){ study.run=false; sentenceDone(); return; }
   if(study.mode==='cursor'){ scrollCursor(true); if(study.sub==='practice'&&study.run) setDwell(); }
 }
@@ -1184,12 +1323,13 @@ function answer(t){
   if(!study||study.sub!=='practice') return;
   if(study.mode!=='page' && !study.run){ startPlay(); return; }   // 판정바/커서 연습: 첫 입력이 곧 시작
   const c=study.ch[study.idx]; if(!c||c.done) return;
-  if(c.d.t==='conj') return;                 // 접속사는 판정 대상이 아님
+  const st=c.steps[c.si];
+  if(st.kind==='skip') return;               // skip은 판정 대상이 아님
   if(study.mode==='bar'){
     const r=c.el.getBoundingClientRect(), s=$('stage').getBoundingClientRect();
     if(r.left - s.left > CURX()+60) return;   // 아직 판정선 한참 전이면 무시
   }
-  resolve(t===c.d.t);
+  resolve(t===st.role);
 }
 
 /* 실전: 탭/큰 버튼/아무 키 → 현재 성분 확정 (판정바·커서·지면 공통) */
