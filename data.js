@@ -4285,7 +4285,7 @@ const DATA = {
         {en:"must be given", ko:"받아야 한다", t:"verb"},
         {en:"a mask", ko:"마스크를", t:"obj"}]},
     ]},
-    { id:"현재완료(1)", items:[
+    { id:"완료시제(1)", items:[
       {n:1, full:"그 바다는 계속 잔잔한 상태였다 (그 폭풍 이후로)", chunks:[
         {en:"The ocean", ko:"그 바다는", t:"subj"},
         {en:"has remained", ko:"계속 ~인 상태였다", t:"verb"},
@@ -4627,7 +4627,7 @@ const DATA = {
         {en:"the road", ko:"그 도로를", t:"obj"},
         {en:"wet", ko:"젖게", t:"comp"}]},
     ]},
-    { id:"현재완료(2)", items:[
+    { id:"완료시제(2)", items:[
       {n:1, full:"나는 외국 잡지를 모은 적 없다", chunks:[
         {en:"I", ko:"나는", t:"subj"},
         {en:"haven't collected", ko:"모은 적 없다", t:"verb"},
@@ -4794,7 +4794,7 @@ const DATA = {
         {en:"has already become", ko:"이미 ~해졌다", t:"verb"},
         {en:"clear", ko:"맑게", t:"comp"}]},
     ]},
-    { id:"과거완료·미래완료", items:[
+    { id:"완료시제(3)", items:[
       {n:1, full:"나는 그 소설을 끝내 놓을 것이다 (다음 달까지는)", chunks:[
         {en:"I", ko:"나는", t:"subj"},
         {en:"'ll have finished", ko:"끝내 놓을 것이다", t:"verb"},
@@ -5605,7 +5605,7 @@ const DATA = {
         {en:"must have been given", ko:"받았음에 틀림없다", t:"verb"},
         {en:"a receipt", ko:"영수증을", t:"obj"}]},
     ]},
-    { id:"명령문·의문문", items:[
+    { id:"명령문·청유문·감탄문·의문문", items:[
       {n:1, full:"무엇이 그 손님들을 조용하게 만들었니?", chunks:[
         {en:"What", ko:"무엇이", t:"subj"},
         {en:"made", ko:"만들었니", t:"verb"},
