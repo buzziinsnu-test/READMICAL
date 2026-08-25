@@ -3758,7 +3758,7 @@ const DATA = {
         {en:"The company", ko:"그 회사는", t:"subj"},
         {en:"was not able to pay", ko:"낼 수 없었다", t:"verb"},
         {en:"the fee", ko:"그 요금을", t:"obj"}]},
-      {n:23, ctx:{en:"The rule belongs to the company.", ko:"그 규정은 그 회사에 속한다."}, full:"그 규정은 바뀔 수 없다 (그 팀에 의해)", chunks:[
+      {n:23, ctx:{en:"The company made the rule.", ko:"그 회사가 그 규정을 만들었다."}, full:"그 규정은 바뀔 수 없다 (그 팀에 의해)", chunks:[
         {en:"The rule", ko:"그 규정은", t:"subj"},
         {en:"cannot be changed", ko:"바뀔 수 없다", t:"verb"},
         {en:"by the team", ko:"그 팀에 의해", t:"mod"}]},
@@ -3790,7 +3790,7 @@ const DATA = {
         {en:"The letter", ko:"그 편지는", t:"subj"},
         {en:"could be translated", ko:"번역될 수 있었다", t:"verb"},
         {en:"by the teacher", ko:"그 선생님에 의해", t:"mod"}]},
-      {n:31, ctx:{en:"The airport examines every bag.", ko:"그 공항은 모든 가방을 검사한다."}, full:"그 여권은 검사될 수 있다 (그 공항에서)", chunks:[
+      {n:31, ctx:{en:"The rule allows the airport to examine every bag.", ko:"그 규정은 그 공항이 모든 가방을 검사하도록 허용한다."}, full:"그 여권은 검사될 수 있다 (그 공항에서)", chunks:[
         {en:"The passport", ko:"그 여권은", t:"subj"},
         {en:"may be examined", ko:"검사될 수 있다", t:"verb"},
         {en:"at the airport", ko:"그 공항에서", t:"mod"}]},
@@ -3825,7 +3825,7 @@ const DATA = {
         {en:"You", ko:"너는", t:"subj"},
         {en:"may apply", ko:"신청해도 된다", t:"verb"},
         {en:"for a free ticket", ko:"무료 표를", t:"mod"}]},
-      {n:39, ctx:{en:"The guests learned to swim in the past.", ko:"그 손님들은 과거에 수영을 배웠다."}, full:"그 손님들은 헤엄칠 수 있다 (그 수영장에서)", chunks:[
+      {n:39, ctx:{en:"The guests were athletes in the past.", ko:"그 손님들은 과거에 운동선수였다."}, full:"그 손님들은 헤엄칠 수 있다 (그 수영장에서)", chunks:[
         {en:"The guests", ko:"그 손님들은", t:"subj"},
         {en:"are able to swim", ko:"헤엄칠 수 있다", t:"verb"},
         {en:"in the pool", ko:"그 수영장에서", t:"mod"}]},
@@ -3851,9 +3851,9 @@ const DATA = {
         {en:"can submit", ko:"제출해도 된다", t:"verb"},
         {en:"the paper", ko:"그 서류를", t:"obj"},
         {en:"at the office", ko:"그 사무실에서", t:"mod"}]},
-      {n:45, ctx:{en:"The problem was hard for the class.", ko:"그 문제는 그 반에게 어려웠다."}, full:"우리는 그 문제를 풀 수 있었다 (어제)", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"were able to solve", ko:"풀 수 있었다", t:"verb"},
+      {n:45, ctx:{en:"The class studied every night.", ko:"그 반은 매일 밤 공부했다."}, full:"그 반은 그 문제를 풀 수 있었다 (어제)", chunks:[
+        {en:"The class", ko:"그 반은", t:"subj"},
+        {en:"was able to solve", ko:"풀 수 있었다", t:"verb"},
         {en:"the problem", ko:"그 문제를", t:"obj"},
         {en:"yesterday", ko:"어제", t:"mod"}]},
       {n:46, ctx:{en:"The team discusses the rule now.", ko:"그 팀은 지금 그 규정을 논의한다."}, full:"그 규정은 바뀔 수 있다 (그 시즌 전에)", chunks:[
@@ -5335,7 +5335,7 @@ const DATA = {
         {en:"The leader", ko:"그 대표는", t:"subj"},
         {en:"should have confessed", ko:"자백했어야 했다", t:"verb"},
         {en:"the guilt", ko:"그 죄를", t:"obj"}]},
-      {n:52, ctx:{en:"The leader still refuses to meet the team.", ko:"그 대표는 여전히 그 팀 만나기를 거부한다."}, full:"그 잘못은 용서되었을 리 없다", chunks:[
+      {n:52, ctx:{en:"The leader still blames the team.", ko:"그 대표는 여전히 그 팀을 탓한다."}, full:"그 잘못은 용서되었을 리 없다", chunks:[
         {en:"The fault", ko:"그 잘못은", t:"subj"},
         {en:"cannot have been forgiven", ko:"용서되었을 리 없다", t:"verb"}]},
       {n:53, ctx:{en:"The company has no money now.", ko:"그 회사는 지금 돈이 없다."}, full:"그 회사는 그 돈을 낭비했을지도 모른다", chunks:[
@@ -6498,12 +6498,10 @@ const DATA = {
         {en:"the patient", ko:"그 환자에게", t:"obj"},
         {en:"the fever", ko:"그 열이", t:"subj", link:true, outer:"obj", outerKo:"~라고", span:2},
         {en:"would return", ko:"돌아올 거라고", t:"verb"}]},
-      {n:40, full:"그 이론이 낡았는지를 아는 것이 필요하다", chunks:[
+      {n:40, full:"그 이론이 낡았는지는 중요하지 않다", chunks:[
         {en:"It", ko:"그것은", t:"subj"},
-        {en:"is", ko:"~이다", t:"verb"},
-        {en:"necessary", ko:"필요한", t:"comp"},
-        {en:"to know", ko:"아는 것이", t:"subj"},
-        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:4},
+        {en:"does not matter", ko:"중요하지 않다", t:"verb"},
+        {en:"whether", ko:"~인지가", t:"subj", link:true, marker:true, span:4},
         {en:"the theory", ko:"그 이론이", t:"subj"},
         {en:"is", ko:"~이다", t:"verb"},
         {en:"old", ko:"낡았는지", t:"comp"}]},
