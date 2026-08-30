@@ -100,8 +100,8 @@ const DATA = {
         {en:"The plane", ko:"그 비행기가", t:"subj"},
         {en:"appears", ko:"나타난다", t:"verb"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:6, full:"손님들이 시장에서 돌아다닌다", chunks:[
-        {en:"Customers", ko:"손님들이", t:"subj"},
+      {n:6, full:"고객들이 시장에서 돌아다닌다", chunks:[
+        {en:"Customers", ko:"고객들이", t:"subj"},
         {en:"wander", ko:"돌아다닌다", t:"verb"},
         {en:"at the market", ko:"시장에서", t:"mod"}]},
       {n:7, full:"기억은 영원히 사라진다", chunks:[
@@ -164,8 +164,8 @@ const DATA = {
         {en:"Critics", ko:"비평가들이", t:"subj"},
         {en:"wander", ko:"돌아다닌다", t:"verb"},
         {en:"in the city", ko:"그 도시에서", t:"mod"}]},
-      {n:22, full:"손님들이 창가에서 망설인다", chunks:[
-        {en:"Customers", ko:"손님들이", t:"subj"},
+      {n:22, full:"고객들이 창가에서 망설인다", chunks:[
+        {en:"Customers", ko:"고객들이", t:"subj"},
         {en:"hesitate", ko:"망설인다", t:"verb"},
         {en:"at the window", ko:"창가에서", t:"mod"}]},
       {n:23, full:"환자들이 병원에서 잔다", chunks:[
@@ -220,8 +220,8 @@ const DATA = {
         {en:"The plane", ko:"그 비행기는", t:"subj"},
         {en:"is", ko:"~이다", t:"verb"},
         {en:"ready", ko:"준비된", t:"comp"}]},
-      {n:10, full:"손님들이 거리에서 젖는다", chunks:[
-        {en:"Customers", ko:"손님들이", t:"subj"},
+      {n:10, full:"고객들이 거리에서 젖는다", chunks:[
+        {en:"Customers", ko:"고객들이", t:"subj"},
         {en:"get", ko:"~해진다", t:"verb"},
         {en:"wet", ko:"젖은", t:"comp"},
         {en:"on the street", ko:"거리에서", t:"mod"}]},
@@ -332,8 +332,8 @@ const DATA = {
         {en:"holds", ko:"~한 채로 유지된다", t:"verb"},
         {en:"true", ko:"사실인", t:"comp"},
         {en:"in the conflict", ko:"그 갈등 속에서", t:"mod"}]},
-      {n:7, full:"그 손님은 창가에서 차분하게 행동한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:7, full:"그 고객은 창가에서 차분하게 행동한다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"acts", ko:"~하게 행동한다", t:"verb"},
         {en:"calm", ko:"차분한", t:"comp"},
         {en:"at the window", ko:"창가에서", t:"mod"}]},
@@ -524,8 +524,8 @@ const DATA = {
         {en:"draws", ko:"그린다", t:"verb"},
         {en:"the picture", ko:"그 그림을", t:"obj"},
         {en:"at the window", ko:"창가에서", t:"mod"}]},
-      {n:15, full:"그 손님은 그 수프를 먹는다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:15, full:"그 고객은 그 수프를 먹는다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"eats", ko:"먹는다", t:"verb"},
         {en:"the soup", ko:"그 수프를", t:"obj"}]},
       {n:16, full:"그 남자는 사무실에서 그 편지를 기억한다", chunks:[
@@ -698,13 +698,13 @@ const DATA = {
         {en:"addresses", ko:"다룬다", t:"verb"},
         {en:"the truth", ko:"그 진실을", t:"obj"},
         {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:12, full:"그 손님은 거리에서 그 환자에게 공감한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:12, full:"그 고객은 거리에서 그 환자에게 공감한다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"sympathizes with", ko:"공감한다", t:"verb"},
         {en:"the patient", ko:"그 환자에게", t:"obj"},
         {en:"in the street", ko:"거리에서", t:"mod"}]},
-      {n:13, full:"그 손님은 그 도시에서 그 문제를 가중시킨다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:13, full:"그 고객은 그 도시에서 그 문제를 가중시킨다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"adds to", ko:"가중시킨다", t:"verb"},
         {en:"the problem", ko:"그 문제를", t:"obj"},
         {en:"in the city", ko:"그 도시에서", t:"mod"}]},
@@ -766,8 +766,8 @@ const DATA = {
         {en:"hopes for", ko:"바란다", t:"verb"},
         {en:"a change", ko:"변화를", t:"obj"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:26, full:"그 손님은 밤에 그 정원에 들어간다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:26, full:"그 고객은 밤에 그 정원에 들어간다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"enters", ko:"들어간다", t:"verb"},
         {en:"the garden", ko:"그 정원에", t:"obj"},
         {en:"at night", ko:"밤에", t:"mod"}]},
@@ -776,8 +776,8 @@ const DATA = {
         {en:"accounts for", ko:"설명한다", t:"verb"},
         {en:"the problem", ko:"그 문제를", t:"obj"},
         {en:"at school", ko:"학교에서", t:"mod"}]},
-      {n:28, full:"그 손님은 시장에서 그 결과를 기다린다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:28, full:"그 고객은 시장에서 그 결과를 기다린다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"awaits", ko:"기다린다", t:"verb"},
         {en:"the result", ko:"그 결과를", t:"obj"},
         {en:"at the market", ko:"시장에서", t:"mod"}]},
@@ -806,8 +806,8 @@ const DATA = {
         {en:"inhabit", ko:"산다", t:"verb"},
         {en:"the forest", ko:"그 숲에", t:"obj"},
         {en:"near the deep river", ko:"그 깊은 강 근처에", t:"mod"}]},
-      {n:34, full:"그 손님은 시장에서 그 가격에 반대한다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:34, full:"그 고객은 시장에서 그 가격에 반대한다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"objects to", ko:"반대한다", t:"verb"},
         {en:"the price", ko:"그 가격에", t:"obj"},
         {en:"at the market", ko:"시장에서", t:"mod"}]},
@@ -853,22 +853,22 @@ const DATA = {
         {en:"lends", ko:"빌려준다", t:"verb"},
         {en:"the man", ko:"그 남자에게", t:"obj"},
         {en:"a coat", ko:"코트를", t:"obj"}]},
-      {n:3, full:"그 회사들은 그 손님에게 코트를 판다", chunks:[
+      {n:3, full:"그 회사들은 그 고객에게 코트를 판다", chunks:[
         {en:"The companies", ko:"그 회사들은", t:"subj"},
         {en:"sell", ko:"판다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"a coat", ko:"코트를", t:"obj"}]},
       {n:4, full:"그 여자들은 그 남자에게 그림을 만들어준다", chunks:[
         {en:"The women", ko:"그 여자들은", t:"subj"},
         {en:"make", ko:"만들어준다", t:"verb"},
         {en:"the man", ko:"그 남자에게", t:"obj"},
         {en:"a picture", ko:"그림을", t:"obj"}]},
-      {n:5, full:"그 손님은 그 친구에게 과일을 주문해준다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:5, full:"그 고객은 그 친구에게 과일을 주문해준다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"orders", ko:"주문해준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"fruit", ko:"과일을", t:"obj"}]},
-      {n:6, full:"그 손님은 그 회사에 답변을 요청한다", chunks:[{en:"The customer",ko:"그 손님은",t:"subj"},{en:"requests",ko:"요청한다",t:"verb"},{en:"an answer",ko:"답변을",t:"obj"},{en:"of the company",ko:"그 회사에",t:"mod"}]},
+      {n:6, full:"그 고객은 그 회사에 답변을 요청한다", chunks:[{en:"The customer",ko:"그 고객은",t:"subj"},{en:"requests",ko:"요청한다",t:"verb"},{en:"an answer",ko:"답변을",t:"obj"},{en:"of the company",ko:"그 회사에",t:"mod"}]},
       {n:7, full:"그 아이는 그 전문가에게 부탁을 한다", chunks:[
         {en:"The child", ko:"그 아이는", t:"subj"},
         {en:"asks", ko:"부탁한다", t:"verb"},
@@ -884,15 +884,15 @@ const DATA = {
         {en:"calls", ko:"불러준다", t:"verb"},
         {en:"the woman", ko:"그 여자에게", t:"obj"},
         {en:"a taxi", ko:"택시를", t:"obj"}]},
-      {n:10, full:"그 회사들은 그 손님에게 1분을 내준다", chunks:[
+      {n:10, full:"그 회사들은 그 고객에게 1분을 내준다", chunks:[
         {en:"The companies", ko:"그 회사들은", t:"subj"},
         {en:"spare", ko:"내준다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"a minute", ko:"1분을", t:"obj"}]},
-      {n:11, full:"그 회사들은 그 손님에게 답을 준다", chunks:[
+      {n:11, full:"그 회사들은 그 고객에게 답을 준다", chunks:[
         {en:"The companies", ko:"그 회사들은", t:"subj"},
         {en:"give", ko:"준다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"an answer", ko:"답을", t:"obj"}]},
       {n:12, full:"그 운동선수는 그 소녀에게 과일을 던져준다", chunks:[
         {en:"The athlete", ko:"그 운동선수는", t:"subj"},
@@ -923,7 +923,7 @@ const DATA = {
         {en:"tell", ko:"말해준다", t:"verb"},
         {en:"the child", ko:"그 아이에게", t:"obj"},
         {en:"a story", ko:"이야기를", t:"obj"}]},
-      {n:18, full:"그 손님들은 그 비평가에게 부탁을 한다", chunks:[{en:"The customers",ko:"그 손님들은",t:"subj"},{en:"ask",ko:"청한다",t:"verb"},{en:"the critic",ko:"그 비평가에게",t:"obj"},{en:"a favor",ko:"부탁을",t:"obj"}]},
+      {n:18, full:"그 고객들은 그 비평가에게 부탁을 한다", chunks:[{en:"The customers",ko:"그 고객들은",t:"subj"},{en:"ask",ko:"청한다",t:"verb"},{en:"the critic",ko:"그 비평가에게",t:"obj"},{en:"a favor",ko:"부탁을",t:"obj"}]},
       {n:19, full:"그 소년은 그 친구에게 상자를 던져준다", chunks:[
         {en:"The boy", ko:"그 소년은", t:"subj"},
         {en:"throws", ko:"던져준다", t:"verb"},
@@ -990,16 +990,16 @@ const DATA = {
         {en:"prepares", ko:"준비해준다", t:"verb"},
         {en:"the patient", ko:"그 환자에게", t:"obj"},
         {en:"soup", ko:"수프를", t:"obj"}]},
-      {n:33, full:"그 손님은 그 회사에 진실을 요구한다", chunks:[{en:"The customer",ko:"그 손님은",t:"subj"},{en:"demands",ko:"요구한다",t:"verb"},{en:"the truth",ko:"진실을",t:"obj"},{en:"of the company",ko:"그 회사에",t:"mod"}]},
-      {n:34, full:"그 회사들은 그 손님에게 음식을 준비해준다", chunks:[
+      {n:33, full:"그 고객은 그 회사에 진실을 요구한다", chunks:[{en:"The customer",ko:"그 고객은",t:"subj"},{en:"demands",ko:"요구한다",t:"verb"},{en:"the truth",ko:"진실을",t:"obj"},{en:"of the company",ko:"그 회사에",t:"mod"}]},
+      {n:34, full:"그 회사들은 그 고객에게 음식을 준비해준다", chunks:[
         {en:"The companies", ko:"그 회사들은", t:"subj"},
         {en:"prepare", ko:"준비해준다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"food", ko:"음식을", t:"obj"}]},
-      {n:35, full:"그 회사는 그 손님에게 편지를 보낸다", chunks:[
+      {n:35, full:"그 회사는 그 고객에게 편지를 보낸다", chunks:[
         {en:"The company", ko:"그 회사는", t:"subj"},
         {en:"sends", ko:"보낸다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"a letter", ko:"편지를", t:"obj"}]},
       {n:36, full:"그 시민들은 그 환자에게 의사를 불러준다", chunks:[
         {en:"The citizens", ko:"그 시민들은", t:"subj"},
@@ -1026,8 +1026,8 @@ const DATA = {
         {en:"shows", ko:"보여준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"a story", ko:"이야기를", t:"obj"}]},
-      {n:41, full:"그 손님은 그 친구에게 과일을 판다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:41, full:"그 고객은 그 친구에게 과일을 판다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"sells", ko:"판다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"fruit", ko:"과일을", t:"obj"}]},
@@ -1051,10 +1051,10 @@ const DATA = {
         {en:"cook", ko:"요리해준다", t:"verb"},
         {en:"the child", ko:"그 아이에게", t:"obj"},
         {en:"soup", ko:"수프를", t:"obj"}]},
-      {n:46, full:"그 회사는 그 손님에게 상자를 빌려준다", chunks:[
+      {n:46, full:"그 회사는 그 고객에게 상자를 빌려준다", chunks:[
         {en:"The company", ko:"그 회사는", t:"subj"},
         {en:"lends", ko:"빌려준다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"a box", ko:"상자를", t:"obj"}]},
       {n:47, full:"그 남자는 그 아이에게 음식을 사준다", chunks:[
         {en:"The man", ko:"그 남자는", t:"subj"},
@@ -1101,18 +1101,18 @@ const DATA = {
         {en:"hand", ko:"건네준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"a letter", ko:"편지를", t:"obj"}]},
-      {n:56, full:"그 건축가들은 그 손님에게 그림을 보여준다", chunks:[
+      {n:56, full:"그 건축가들은 그 고객에게 그림을 보여준다", chunks:[
         {en:"The architects", ko:"그 건축가들은", t:"subj"},
         {en:"show", ko:"보여준다", t:"verb"},
-        {en:"the customer", ko:"그 손님에게", t:"obj"},
+        {en:"the customer", ko:"그 고객에게", t:"obj"},
         {en:"a picture", ko:"그림을", t:"obj"}]},
       {n:57, full:"그 환자들은 그 의사에게 답을 요구한다", chunks:[
         {en:"The patients", ko:"그 환자들은", t:"subj"},
         {en:"demand", ko:"요구한다", t:"verb"},
         {en:"an answer", ko:"답을", t:"obj"},
         {en:"of the doctor", ko:"그 의사에게", t:"mod"}]},
-      {n:58, full:"그 손님들은 그 친구에게 코트를 골라준다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
+      {n:58, full:"그 고객들은 그 친구에게 코트를 골라준다", chunks:[
+        {en:"The customers", ko:"그 고객들은", t:"subj"},
         {en:"choose", ko:"골라준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"a coat", ko:"코트를", t:"obj"}]},
@@ -1203,15 +1203,15 @@ const DATA = {
         {en:"spares", ko:"내준다", t:"verb"},
         {en:"the guest", ko:"그 손님에게", t:"obj"},
         {en:"a minute", ko:"1분을", t:"obj"}]},
-      {n:78, full:"그 손님들은 그 친구에게 코트를 사준다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
+      {n:78, full:"그 고객들은 그 친구에게 코트를 사준다", chunks:[
+        {en:"The customers", ko:"그 고객들은", t:"subj"},
         {en:"buy", ko:"사준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"a coat", ko:"코트를", t:"obj"}]}
     ]},
     { id:"4형식(2)", items:[
-      {n:1, full:"그 손님은 그 친구에게 시계를 사준다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:1, full:"그 고객은 그 친구에게 시계를 사준다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"buys", ko:"사준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"a watch", ko:"시계를", t:"obj"}]},
@@ -1237,7 +1237,7 @@ const DATA = {
         {en:"the architect", ko:"그 건축가에게", t:"obj"},
         {en:"a flower", ko:"꽃을", t:"obj"}]},
       {n:6, full:"그 회사는 그 시민에게 문을 일찍 판다", chunks:[{en:"The company",ko:"그 회사는",t:"subj"},{en:"sells",ko:"판다",t:"verb"},{en:"the citizen",ko:"그 시민에게",t:"obj"},{en:"a door",ko:"문을",t:"obj"},{en:"early",ko:"일찍",t:"mod"}]},
-      {n:7, full:"그 건축가는 그 손님에게 문을 보여준다", chunks:[{en:"The architect",ko:"그 건축가는",t:"subj"},{en:"shows",ko:"보여준다",t:"verb"},{en:"the customer",ko:"그 손님에게",t:"obj"},{en:"a door",ko:"문을",t:"obj"}]},
+      {n:7, full:"그 건축가는 그 고객에게 문을 보여준다", chunks:[{en:"The architect",ko:"그 건축가는",t:"subj"},{en:"shows",ko:"보여준다",t:"verb"},{en:"the customer",ko:"그 고객에게",t:"obj"},{en:"a door",ko:"문을",t:"obj"}]},
       {n:8, full:"그 비평가들은 학교에서 그 전문가에게 의자를 준다", chunks:[
         {en:"The critics", ko:"그 비평가들은", t:"subj"},
         {en:"give", ko:"준다", t:"verb"},
@@ -1304,8 +1304,8 @@ const DATA = {
         {en:"hands", ko:"건네준다", t:"verb"},
         {en:"the expert", ko:"그 전문가에게", t:"obj"},
         {en:"a paper", ko:"서류를", t:"obj"}]},
-      {n:20, full:"그 손님들은 밤에 그 여동생에게 공을 준다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
+      {n:20, full:"그 고객들은 밤에 그 여동생에게 공을 준다", chunks:[
+        {en:"The customers", ko:"그 고객들은", t:"subj"},
         {en:"give", ko:"준다", t:"verb"},
         {en:"the sister", ko:"그 여동생에게", t:"obj"},
         {en:"a ball", ko:"공을", t:"obj"},
@@ -1361,8 +1361,8 @@ const DATA = {
         {en:"the doctor", ko:"그 의사에게", t:"obj"},
         {en:"a cup", ko:"컵을", t:"obj"},
         {en:"at the market", ko:"시장에서", t:"mod"}]},
-      {n:30, full:"그 손님들은 거리에서 그 친구에게 책상을 보여준다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
+      {n:30, full:"그 고객들은 거리에서 그 친구에게 책상을 보여준다", chunks:[
+        {en:"The customers", ko:"그 고객들은", t:"subj"},
         {en:"show", ko:"보여준다", t:"verb"},
         {en:"the friend", ko:"그 친구에게", t:"obj"},
         {en:"a desk", ko:"책상을", t:"obj"},
@@ -1476,10 +1476,10 @@ const DATA = {
         {en:"is covered", ko:"덮인다", t:"verb"},
         {en:"by the expert", ko:"그 전문가에 의해", t:"mod"},
         {en:"on the road", ko:"길 위에서", t:"mod"}]},
-      {n:14, full:"그 병들은 그 손님에 의해 닦인다", chunks:[
+      {n:14, full:"그 병들은 그 고객에 의해 닦인다", chunks:[
         {en:"The bottles", ko:"그 병들은", t:"subj"},
         {en:"are cleaned", ko:"닦인다", t:"verb"},
-        {en:"by the customer", ko:"그 손님에 의해", t:"mod"}]},
+        {en:"by the customer", ko:"그 고객에 의해", t:"mod"}]},
       {n:15, full:"그 담요는 방에서 그 친구에 의해 만져진다", chunks:[
         {en:"The blanket", ko:"그 담요는", t:"subj"},
         {en:"is touched", ko:"만져진다", t:"verb"},
@@ -1511,10 +1511,10 @@ const DATA = {
         {en:"is moved", ko:"옮겨진다", t:"verb"},
         {en:"by the doctor", ko:"그 의사에 의해", t:"mod"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:22, full:"그 형제들은 그 손님에 의해 통제된다", chunks:[
+      {n:22, full:"그 형제들은 그 고객에 의해 통제된다", chunks:[
         {en:"The brothers", ko:"그 형제들은", t:"subj"},
         {en:"are controlled", ko:"통제된다", t:"verb"},
-        {en:"by the customer", ko:"그 손님에 의해", t:"mod"}]},
+        {en:"by the customer", ko:"그 고객에 의해", t:"mod"}]},
       {n:23, full:"그 시계는 집에서 그 전문가에 의해 착용된다", chunks:[
         {en:"The watch", ko:"그 시계는", t:"subj"},
         {en:"is worn", ko:"착용된다", t:"verb"},
@@ -1549,11 +1549,11 @@ const DATA = {
         {en:"for the woman", ko:"그 여자에게", t:"mod"},
         {en:"by the man", ko:"그 남자에 의해", t:"mod"},
         {en:"in the hall", ko:"그 강당에서", t:"mod"}]},
-      {n:5, full:"코트가 집에서 그 손님에 의해 그 여동생에게 구매된다", chunks:[
+      {n:5, full:"코트가 집에서 그 고객에 의해 그 여동생에게 구매된다", chunks:[
         {en:"A coat", ko:"코트가", t:"subj"},
         {en:"is bought", ko:"구매된다", t:"verb"},
         {en:"for the sister", ko:"그 여동생에게", t:"mod"},
-        {en:"by the customer", ko:"그 손님에 의해", t:"mod"},
+        {en:"by the customer", ko:"그 고객에 의해", t:"mod"},
         {en:"at home", ko:"집에서", t:"mod"}]},
       {n:6, full:"편지가 시장에서 그 시인에 의해 그 친구에게 쓰인다", chunks:[
         {en:"A letter", ko:"편지가", t:"subj"},
@@ -1567,8 +1567,8 @@ const DATA = {
         {en:"a flower", ko:"꽃을", t:"obj"},
         {en:"by the guest", ko:"그 손님에 의해", t:"mod"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:8, full:"그 손님들은 그 전문가에 의해 책을 사게 된다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
+      {n:8, full:"그 고객들은 그 전문가에 의해 책을 사게 된다", chunks:[
+        {en:"The customers", ko:"그 고객들은", t:"subj"},
         {en:"are sold", ko:"사게 된다", t:"verb"},
         {en:"a book", ko:"책을", t:"obj"},
         {en:"by the expert", ko:"그 전문가에 의해", t:"mod"}]},
@@ -1627,8 +1627,8 @@ const DATA = {
         {en:"to the girl", ko:"그 소녀에게", t:"mod"},
         {en:"by the woman", ko:"그 여자에 의해", t:"mod"},
         {en:"early", ko:"일찍", t:"mod"}]},
-      {n:19, full:"그 손님들은 그 회사에 의해 코트를 사게 된다", chunks:[
-        {en:"The customers", ko:"그 손님들은", t:"subj"},
+      {n:19, full:"그 고객들은 그 회사에 의해 코트를 사게 된다", chunks:[
+        {en:"The customers", ko:"그 고객들은", t:"subj"},
         {en:"are sold", ko:"사게 된다", t:"verb"},
         {en:"a coat", ko:"코트를", t:"obj"},
         {en:"by the company", ko:"그 회사에 의해", t:"mod"}]},
@@ -1638,11 +1638,11 @@ const DATA = {
         {en:"of the doctor", ko:"그 의사에게", t:"mod"},
         {en:"by the patient", ko:"그 환자에 의해", t:"mod"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:21, full:"답이 수업 후에 그 손님에 의해 그 회사에 요구된다", chunks:[
+      {n:21, full:"답이 수업 후에 그 고객에 의해 그 회사에 요구된다", chunks:[
         {en:"An answer", ko:"답이", t:"subj"},
         {en:"is demanded", ko:"요구된다", t:"verb"},
         {en:"of the company", ko:"그 회사에", t:"mod"},
-        {en:"by the customer", ko:"그 손님에 의해", t:"mod"},
+        {en:"by the customer", ko:"그 고객에 의해", t:"mod"},
         {en:"after class", ko:"수업 후에", t:"mod"}]},
       {n:22, full:"지도가 시간이 지나면서 그 친구에 의해 그 남자에게 구해진다", chunks:[
         {en:"A map", ko:"지도가", t:"subj"},
@@ -1687,11 +1687,11 @@ const DATA = {
         {en:"are spared", ko:"할애받는다", t:"verb"},
         {en:"a minute", ko:"1분을", t:"obj"},
         {en:"by the doctor", ko:"그 의사에 의해", t:"mod"}]},
-      {n:30, full:"코트가 집에서 그 손님에 의해 그 친구에게 구매된다", chunks:[
+      {n:30, full:"코트가 집에서 그 고객에 의해 그 친구에게 구매된다", chunks:[
         {en:"A coat", ko:"코트가", t:"subj"},
         {en:"is bought", ko:"구매된다", t:"verb"},
         {en:"for the friend", ko:"그 친구에게", t:"mod"},
-        {en:"by the customer", ko:"그 손님에 의해", t:"mod"},
+        {en:"by the customer", ko:"그 고객에 의해", t:"mod"},
         {en:"at home", ko:"집에서", t:"mod"}]},
       {n:31, full:"그 의사들은 그 건축가에게 그림을 보게 된다", chunks:[
         {en:"The doctors", ko:"그 의사들은", t:"subj"},
@@ -1786,13 +1786,13 @@ const DATA = {
         {en:"a book", ko:"책을", t:"obj"},
         {en:"by the doctor", ko:"그 의사에 의해", t:"mod"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:48, full:"그 손님은 그 도시에서 그 회사에게 편지를 전달받는다", chunks:[
-        {en:"The customer", ko:"그 손님은", t:"subj"},
+      {n:48, full:"그 고객은 그 도시에서 그 회사에게 편지를 전달받는다", chunks:[
+        {en:"The customer", ko:"그 고객은", t:"subj"},
         {en:"is sent", ko:"전달받는다", t:"verb"},
         {en:"a letter", ko:"편지를", t:"obj"},
         {en:"by the company", ko:"그 회사에 의해", t:"mod"},
         {en:"in the city", ko:"그 도시에서", t:"mod"}]},
-      {n:49, full:"진실이 그 손님에 의해 그 회사에 요구된다", chunks:[{en:"The truth",ko:"진실이",t:"subj"},{en:"is demanded",ko:"요구된다",t:"verb"},{en:"of the company",ko:"그 회사에",t:"mod"},{en:"by the customer",ko:"그 손님에 의해",t:"mod"}]},
+      {n:49, full:"진실이 그 고객에 의해 그 회사에 요구된다", chunks:[{en:"The truth",ko:"진실이",t:"subj"},{en:"is demanded",ko:"요구된다",t:"verb"},{en:"of the company",ko:"그 회사에",t:"mod"},{en:"by the customer",ko:"그 고객에 의해",t:"mod"}]},
       {n:50, full:"노력이 아침에 그 회사에 의해 그 팀에 요구된다", chunks:[
         {en:"Effort", ko:"노력이", t:"subj"},
         {en:"is required", ko:"요구된다", t:"verb"},
@@ -1862,10 +1862,10 @@ const DATA = {
         {en:"to the sister", ko:"그 여동생에게", t:"mod"},
         {en:"by the guest", ko:"그 손님에 의해", t:"mod"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:63, full:"책이 그 전문가에 의해 그 손님들에게 판매된다", chunks:[  /* ↔ #8 */
+      {n:63, full:"책이 그 전문가에 의해 그 고객들에게 판매된다", chunks:[  /* ↔ #8 */
         {en:"A book", ko:"책이", t:"subj"},
         {en:"is sold", ko:"판매된다", t:"verb"},
-        {en:"to the customers", ko:"그 손님들에게", t:"mod"},
+        {en:"to the customers", ko:"그 고객들에게", t:"mod"},
         {en:"by the expert", ko:"그 전문가에 의해", t:"mod"}]},
       {n:64, full:"공이 시장에서 그 남자에 의해 그 소년에게 던져진다", chunks:[  /* ↔ #10 */
         {en:"A ball", ko:"공이", t:"subj"},
@@ -1889,10 +1889,10 @@ const DATA = {
         {en:"is handed", ko:"건네진다", t:"verb"},
         {en:"to the brothers", ko:"그 형제들에게", t:"mod"},
         {en:"by the poet", ko:"그 시인에 의해", t:"mod"}]},
-      {n:68, full:"코트가 그 회사에 의해 그 손님들에게 판매된다", chunks:[  /* ↔ #19 */
+      {n:68, full:"코트가 그 회사에 의해 그 고객들에게 판매된다", chunks:[  /* ↔ #19 */
         {en:"A coat", ko:"코트가", t:"subj"},
         {en:"is sold", ko:"판매된다", t:"verb"},
-        {en:"to the customers", ko:"그 손님들에게", t:"mod"},
+        {en:"to the customers", ko:"그 고객들에게", t:"mod"},
         {en:"by the company", ko:"그 회사에 의해", t:"mod"}]},
       {n:69, full:"답이 그 친구에 의해 그 아이들에게 전해진다", chunks:[  /* ↔ #23 */
         {en:"An answer", ko:"답이", t:"subj"},
@@ -1949,10 +1949,10 @@ const DATA = {
         {en:"to the child", ko:"그 아이에게", t:"mod"},
         {en:"by the doctor", ko:"그 의사에 의해", t:"mod"},
         {en:"in the morning", ko:"아침에", t:"mod"}]},
-      {n:79, full:"편지가 그 도시에서 그 회사에 의해 그 손님에게 전달된다", chunks:[  /* ↔ #48 */
+      {n:79, full:"편지가 그 도시에서 그 회사에 의해 그 고객에게 전달된다", chunks:[  /* ↔ #48 */
         {en:"A letter", ko:"편지가", t:"subj"},
         {en:"is sent", ko:"전달된다", t:"verb"},
-        {en:"to the customer", ko:"그 손님에게", t:"mod"},
+        {en:"to the customer", ko:"그 고객에게", t:"mod"},
         {en:"by the company", ko:"그 회사에 의해", t:"mod"},
         {en:"in the city", ko:"그 도시에서", t:"mod"}]},
       {n:80, full:"공이 학교에서 그 소년에 의해 그 친구에게 던져진다", chunks:[  /* ↔ #54 */
@@ -6864,9 +6864,9 @@ const DATA = {
       {en:"be", ko:["~이다/있다"], pos:"v"},
       {en:"become", ko:["~이 되다"], pos:"v"},
       {en:"feel", ko:["느끼다"], pos:"v"},
-      {en:"get", ko:["얻다","~하게 하다"], pos:"v"},
+      {en:"get", ko:["~해지다"], pos:"v"},
       {en:"look", ko:["보다","~해 보이다"], pos:"v"},
-      {en:"smell", ko:["냄새나다","냄새"], pos:"v"},
+      {en:"smell", ko:["~한 냄새가 나다"], pos:"v"},
       {en:"sound", ko:["~하게 들리다","소리"], pos:"v"},
       {en:"taste", ko:["~한 맛이 나다"], pos:"v"}
     ]},
@@ -6893,20 +6893,20 @@ const DATA = {
       {en:"sky", ko:["하늘"], pos:"n"},
       {en:"truth", ko:["진실"], pos:"n"},
       {en:"act", ko:["행동하다"], pos:"v"},
-      {en:"break", ko:["깨다"], pos:"v"},
-      {en:"come", ko:["오다"], pos:"v"},
-      {en:"fall", ko:["떨어지다"], pos:"v"},
-      {en:"go", ko:["가다"], pos:"v"},
-      {en:"grow", ko:["자라다"], pos:"v"},
-      {en:"hold", ko:["잡다","열다"], pos:"v"},
+      {en:"break", ko:["~하게 되다"], pos:"v"},
+      {en:"come", ko:["~하게 되다"], pos:"v"},
+      {en:"fall", ko:["~해지다"], pos:"v"},
+      {en:"go", ko:["~해지다"], pos:"v"},
+      {en:"grow", ko:["~해지다"], pos:"v"},
+      {en:"hold", ko:["~한 채로 유지되다"], pos:"v"},
       {en:"remain", ko:["남다"], pos:"v"},
-      {en:"run", ko:["달리다"], pos:"v"},
+      {en:"run", ko:["~한 상태다"], pos:"v"},
       {en:"seem", ko:["~인 것 같다"], pos:"v"},
-      {en:"sit", ko:["앉다"], pos:"v"},
-      {en:"stand", ko:["서다"], pos:"v"},
-      {en:"stay", ko:["머무르다"], pos:"v"},
+      {en:"sit", ko:["~한 채로 있다"], pos:"v"},
+      {en:"stand", ko:["~한 상태로 있다"], pos:"v"},
+      {en:"stay", ko:["~한 상태를 유지하다"], pos:"v"},
       {en:"turn", ko:["~하게 되다","돌다"], pos:"v"},
-      {en:"prove", ko:["입증하다"], pos:"v"}
+      {en:"prove", ko:["~로 드러나다"], pos:"v"}
     ]},
     { id:"3형식(1)", items:[
       {en:"build", ko:["짓다"], pos:"v"},
@@ -6944,24 +6944,24 @@ const DATA = {
       {en:"bridge", ko:["다리"], pos:"n"},
       {en:"history", ko:["역사"], pos:"n"},
       {en:"food", ko:["음식"], pos:"n"},
-      {en:"answer", ko:["대답하다","답"], pos:"n"},
+      {en:"answer", ko:["답"], pos:"n"},
       {en:"office", ko:["사무실"], pos:"n"},
       {en:"field", ko:["들판","분야"], pos:"n"},
       {en:"house", ko:["집"], pos:"n"}
     ]},{ id:"3형식(2)", items:[
       {en:"enter", ko:["들어가다"], pos:"v"},
-      {en:"address", ko:["다루다","주소"], pos:"v"},
+      {en:"address", ko:["다루다","연설하다"], pos:"v"},
       {en:"add", ko:["더하다"], pos:"v"},
       {en:"hope", ko:["바라다"], pos:"v"},
       {en:"object", ko:["반대하다"], pos:"v"},
       {en:"wait", ko:["기다리다"], pos:"v"},
       {en:"change", ko:["바꾸다","변화"], pos:"n"},
       {en:"account", ko:["계좌","설명"], pos:"v"},
-      {en:"answer", ko:["대답하다","답"], pos:"v"},
+      {en:"answer", ko:["대답하다"], pos:"v"},
       {en:"approach", ko:["다가가다"], pos:"v"},
       {en:"attend", ko:["참석하다"], pos:"v"},
       {en:"await", ko:["기다리다"], pos:"v"},
-      {en:"consider", ko:["~라고 여기다"], pos:"v"},
+      {en:"consider", ko:["고려하다"], pos:"v"},
       {en:"discuss", ko:["논의하다"], pos:"v"},
       {en:"inhabit", ko:["거주하다"], pos:"v"},
       {en:"interfere", ko:["간섭하다"], pos:"v"},
@@ -6989,7 +6989,7 @@ const DATA = {
       {en:"write", ko:["쓰다"], pos:"v"},
       {en:"demand", ko:["요구하다"], pos:"v"},
       {en:"do", ko:["하다"], pos:"v"},
-      {en:"get", ko:["얻다","~하게 하다"], pos:"v"},
+      {en:"get", ko:["구해주다"], pos:"v"},
       {en:"lend", ko:["빌려주다"], pos:"v"},
       {en:"order", ko:["명령하다","주문"], pos:"v"},
       {en:"prepare", ko:["준비하다"], pos:"v"},
@@ -7020,12 +7020,12 @@ const DATA = {
       {en:"game", ko:["경기"], pos:"n"},
       {en:"money", ko:["돈"], pos:"n"},
       {en:"mother", ko:["어머니"], pos:"n"},
-      {en:"name", ko:["이름","~라고 명명하다"], pos:"n"},
+      {en:"name", ko:["이름"], pos:"n"},
       {en:"paper", ko:["종이"], pos:"n"},
       {en:"plan", ko:["계획"], pos:"n"},
       {en:"question", ko:["질문"], pos:"n"},
       {en:"sister", ko:["자매"], pos:"n"},
-      {en:"watch", ko:["보다","시계"], pos:"n"}
+      {en:"watch", ko:["시계"], pos:"n"}
     ]},
     { id:"3형식수동태", items:[
       {en:"clean", ko:["깨끗한","청소하다"], pos:"v"},
@@ -7045,7 +7045,7 @@ const DATA = {
     { id:"4형식수동태", items:[
       {en:"pass", ko:["건네다","지나가다"], pos:"v"},
       {en:"sing-sang-sung", ko:["노래하다"], pos:"v"},
-      {en:"save", ko:["구하다","아껴주다"], pos:"v"},
+      {en:"save", ko:["자리를 맡아주다"], pos:"v"},
       {en:"effort", ko:["노력"], pos:"n"},
       {en:"song", ko:["노래"], pos:"n"},
       {en:"seat", ko:["좌석"], pos:"n"},
@@ -7073,12 +7073,11 @@ const DATA = {
       {en:"victim", ko:["피해자"], pos:"n"},
       {en:"water", ko:["물"], pos:"n"},
       {en:"call", ko:["부르다","~라고 부르다"], pos:"v"},
-      {en:"name", ko:["이름","~라고 명명하다"], pos:"v"},
+      {en:"name", ko:["~라고 명명하다"], pos:"v"},
       {en:"leave", ko:["떠나다","~한 채로 두다"], pos:"v"},
       {en:"elect", ko:["선출하다"], pos:"v"},
       {en:"president", ko:["회장","대통령"], pos:"n"},
-      {en:"captain", ko:["주장","선장"], pos:"n"},
-      {en:"readmical", ko:["(고유명사) 수업명"], pos:"n"},
+      {en:"captain", ko:["주장","선장"], pos:"n"}
     ]},
     { id:"5형식(2)", items:[
       {en:"agree", ko:["동의하다"], pos:"v"},
@@ -7118,8 +7117,8 @@ const DATA = {
       {en:"science", ko:["과학"], pos:"n"},
       {en:"old", ko:["오래된","늙은"], pos:"adj"},
       {en:"proud", ko:["자랑스러운"], pos:"adj"},
-      {en:"watch", ko:["보다","시계"], pos:"v"},
-      {en:"have", ko:["가지다","~하게 시키다"], pos:"v"},
+      {en:"watch", ko:["보다"], pos:"v"},
+      {en:"have", ko:["~하게 시키다","~하게 당하다"], pos:"v"},
       {en:"let", ko:["~하게 두다"], pos:"v"},
       {en:"see", ko:["보다"], pos:"v"},
       {en:"hear", ko:["듣다"], pos:"v"},
@@ -7163,7 +7162,7 @@ const DATA = {
       {en:"month", ko:["달","월"], pos:"n"},
       {en:"season", ko:["계절"], pos:"n"},
       {en:"future", ko:["미래"], pos:"n"},
-      {en:"bright", ko:["밝은"], pos:"adj"},
+      {en:"bright", ko:["총명한"], pos:"adj"},
       {en:"loud", ko:["시끄러운"], pos:"adj"},
       {en:"new", ko:["새로운"], pos:"adj"},
       {en:"next", ko:["다음의"], pos:"adj"},
@@ -7264,6 +7263,241 @@ const DATA = {
       {en:"roof", ko:["지붕"], pos:"n"},
       {en:"present", ko:["현재의", "현재", "선물"], pos:"a"},
       {en:"now", ko:["지금"], pos:"ad"},
+    ]},
+    { id:"조동사(1)", items:[
+      {en:"apply", ko:["신청하다 (apply for)", "적용하다"], pos:"v"},
+      {en:"examine", ko:["검사하다", "진찰하다"], pos:"v"},
+      {en:"lift", ko:["들어 올리다"], pos:"v"},
+      {en:"pay", ko:["지불하다"], pos:"v"},
+      {en:"protect", ko:["보호하다"], pos:"v"},
+      {en:"register", ko:["등록하다"], pos:"v"},
+      {en:"repeat", ko:["반복하다"], pos:"v"},
+      {en:"solve", ko:["해결하다"], pos:"v"},
+      {en:"submit", ko:["제출하다"], pos:"v"},
+      {en:"translate", ko:["번역하다"], pos:"v"},
+      {en:"fee", ko:["요금", "수수료"], pos:"n"},
+      {en:"helmet", ko:["헬멧"], pos:"n"},
+      {en:"law", ko:["법"], pos:"n"},
+      {en:"mask", ko:["마스크"], pos:"n"},
+      {en:"passport", ko:["여권"], pos:"n"},
+      {en:"rule", ko:["규칙", "지배하다"], pos:"n"},
+      {en:"tax", ko:["세금"], pos:"n"},
+      {en:"uniform", ko:["제복", "유니폼"], pos:"n"},
+      {en:"able", ko:["~할 수 있는 (be able to)"], pos:"a"},
+      {en:"safe", ko:["안전한"], pos:"a"},
+      {en:"strict", ko:["엄격한"], pos:"a"}
+    ]},
+    { id:"조동사(2)", items:[
+      {en:"avoid", ko:["피하다"], pos:"v"},
+      {en:"follow", ko:["따르다", "준수하다"], pos:"v"},
+      {en:"hurry", ko:["서두르다"], pos:"v"},
+      {en:"quit", ko:["그만두다"], pos:"v"},
+      {en:"rest", ko:["쉬다", "휴식"], pos:"v"},
+      {en:"stretch", ko:["뻗다", "스트레칭하다"], pos:"v"},
+      {en:"ache", ko:["통증", "아프다"], pos:"n"},
+      {en:"advice", ko:["조언"], pos:"n"},
+      {en:"clue", ko:["단서"], pos:"n"},
+      {en:"exercise", ko:["운동", "운동하다"], pos:"n"},
+      {en:"fever", ko:["열"], pos:"n"},
+      {en:"medicine", ko:["약"], pos:"n"},
+      {en:"nurse", ko:["간호사"], pos:"n"},
+      {en:"sign", ko:["징후", "표시"], pos:"n"},
+      {en:"symptom", ko:["증상"], pos:"n"}
+    ]},
+    { id:"완료시제(1)", items:[
+      {en:"achieve", ko:["이루다", "달성하다"], pos:"v"},
+      {en:"complete", ko:["완료하다", "완전한"], pos:"v"},
+      {en:"continue", ko:["계속되다", "계속하다"], pos:"v"},
+      {en:"improve", ko:["개선하다", "나아지다"], pos:"v"},
+      {en:"lose", ko:["잃다", "지다"], pos:"v"},
+      {en:"recover", ko:["회복하다", "되찾다"], pos:"v"},
+      {en:"repair", ko:["수리하다"], pos:"v"},
+      {en:"ruin", ko:["망치다", "파괴하다"], pos:"v"},
+      {en:"adventure", ko:["모험"], pos:"n"},
+      {en:"culture", ko:["문화"], pos:"n"},
+      {en:"distance", ko:["거리"], pos:"n"},
+      {en:"experience", ko:["경험", "경험하다"], pos:"n"},
+      {en:"hotel", ko:["호텔"], pos:"n"},
+      {en:"island", ko:["섬"], pos:"n"},
+      {en:"language", ko:["언어"], pos:"n"},
+      {en:"mountain", ko:["산"], pos:"n"},
+      {en:"museum", ko:["박물관"], pos:"n"},
+      {en:"ocean", ko:["대양", "바다"], pos:"n"},
+      {en:"temple", ko:["사원", "절"], pos:"n"},
+      {en:"foreign", ko:["외국의"], pos:"a"},
+      {en:"recent", ko:["최근의"], pos:"a"},
+      {en:"whole", ko:["전체의"], pos:"a"},
+      {en:"abroad", ko:["해외로", "해외에서"], pos:"ad"},
+      {en:"already", ko:["이미", "벌써"], pos:"ad"},
+      {en:"just", ko:["방금", "막"], pos:"ad"},
+      {en:"never", ko:["한 번도 ~않다"], pos:"ad"},
+      {en:"yet", ko:["아직 (부정문·의문문)"], pos:"ad"},
+      {en:"since", ko:["~ 이래로"], pos:"prep"}
+    ]},
+    { id:"완료시제(2)", items:[
+      {en:"collect", ko:["모으다", "수집하다"], pos:"v"},
+      {en:"publish", ko:["출판하다", "게재하다"], pos:"v"},
+      {en:"article", ko:["기사", "글"], pos:"n"},
+      {en:"author", ko:["작가", "저자"], pos:"n"},
+      {en:"camera", ko:["카메라"], pos:"n"},
+      {en:"diary", ko:["일기"], pos:"n"},
+      {en:"magazine", ko:["잡지"], pos:"n"},
+      {en:"novel", ko:["소설"], pos:"n"},
+      {en:"poem", ko:["시"], pos:"n"},
+      {en:"view", ko:["전망", "견해", "바라보다"], pos:"n"}
+    ]},
+    { id:"완료시제(3)", items:[
+      {en:"announce", ko:["발표하다"], pos:"v"},
+      {en:"appoint", ko:["임명하다"], pos:"v"},
+      {en:"arrange", ko:["준비하다", "배치하다"], pos:"v"},
+      {en:"cancel", ko:["취소하다"], pos:"v"},
+      {en:"confirm", ko:["확인하다", "확정하다"], pos:"v"},
+      {en:"delay", ko:["지연시키다", "지연"], pos:"v"},
+      {en:"end", ko:["끝나다", "끝내다", "끝"], pos:"v"},
+      {en:"gather", ko:["모이다", "모으다"], pos:"v"},
+      {en:"graduate", ko:["졸업하다"], pos:"v"},
+      {en:"limit", ko:["제한하다", "한계"], pos:"v"},
+      {en:"reserve", ko:["예약하다"], pos:"v"},
+      {en:"settle", ko:["해결하다", "정착하다"], pos:"v"},
+      {en:"anniversary", ko:["기념일"], pos:"n"},
+      {en:"award", ko:["상", "수여하다"], pos:"n"},
+      {en:"career", ko:["경력", "직업"], pos:"n"},
+      {en:"clock", ko:["시계"], pos:"n"},
+      {en:"dawn", ko:["새벽"], pos:"n"},
+      {en:"evening", ko:["저녁"], pos:"n"},
+      {en:"festival", ko:["축제"], pos:"n"},
+      {en:"party", ko:["파티"], pos:"n"},
+      {en:"speech", ko:["연설"], pos:"n"},
+      {en:"wedding", ko:["결혼식"], pos:"n"},
+      {en:"entire", ko:["전체의"], pos:"a"},
+      {en:"final", ko:["마지막의", "최종의"], pos:"a"},
+      {en:"former", ko:["전(前)의", "이전의"], pos:"a"},
+      {en:"previous", ko:["이전의"], pos:"a"},
+      {en:"sudden", ko:["갑작스러운"], pos:"a"},
+      {en:"until", ko:["~까지"], pos:"prep"}
+    ]},
+    { id:"조동사(3)", items:[
+      {en:"accept", ko:["받아들이다"], pos:"v"},
+      {en:"admire", ko:["감탄하다", "존경하다"], pos:"v"},
+      {en:"blame", ko:["탓하다", "비난하다"], pos:"v"},
+      {en:"confess", ko:["자백하다", "고백하다"], pos:"v"},
+      {en:"cry", ko:["울다", "외치다"], pos:"v"},
+      {en:"endure", ko:["견디다"], pos:"v"},
+      {en:"envy", ko:["부러워하다"], pos:"v"},
+      {en:"escape", ko:["탈출하다", "달아나다"], pos:"v"},
+      {en:"forgive", ko:["용서하다"], pos:"v"},
+      {en:"ignore", ko:["무시하다"], pos:"v"},
+      {en:"inspect", ko:["점검하다", "검사하다"], pos:"v"},
+      {en:"lock", ko:["잠그다", "자물쇠"], pos:"v"},
+      {en:"opt", ko:["선택하다 (opt for)"], pos:"v"},
+      {en:"prefer", ko:["선호하다"], pos:"v"},
+      {en:"press", ko:["누르다"], pos:"v"},
+      {en:"prevent", ko:["막다", "예방하다"], pos:"v"},
+      {en:"punish", ko:["처벌하다"], pos:"v"},
+      {en:"refuse", ko:["거절하다"], pos:"v"},
+      {en:"regret", ko:["후회하다"], pos:"v"},
+      {en:"search", ko:["수색하다", "찾다 (search for)"], pos:"v"},
+      {en:"sense", ko:["감지하다", "감각"], pos:"v"},
+      {en:"suffer", ko:["겪다", "시달리다 (suffer from)"], pos:"v"},
+      {en:"waste", ko:["낭비하다"], pos:"v"},
+      {en:"accident", ko:["사고"], pos:"n"},
+      {en:"alarm", ko:["경보", "알람"], pos:"n"},
+      {en:"anger", ko:["분노"], pos:"n"},
+      {en:"apology", ko:["사과"], pos:"n"},
+      {en:"burden", ko:["짐", "부담"], pos:"n"},
+      {en:"chance", ko:["기회", "가능성"], pos:"n"},
+      {en:"choice", ko:["선택"], pos:"n"},
+      {en:"crime", ko:["범죄"], pos:"n"},
+      {en:"excuse", ko:["변명", "용서하다"], pos:"n"},
+      {en:"fate", ko:["운명"], pos:"n"},
+      {en:"fault", ko:["잘못", "결함"], pos:"n"},
+      {en:"guilt", ko:["죄책감", "유죄"], pos:"n"},
+      {en:"key", ko:["열쇠", "키(건반)"], pos:"n"},
+      {en:"pain", ko:["고통"], pos:"n"},
+      {en:"receipt", ko:["영수증"], pos:"n"},
+      {en:"reward", ko:["보상", "보상하다"], pos:"n"},
+      {en:"risk", ko:["위험"], pos:"n"},
+      {en:"trouble", ko:["곤란", "문제"], pos:"n"},
+      {en:"umbrella", ko:["우산"], pos:"n"},
+      {en:"alternate", ko:["대안의", "대체의"], pos:"a"},
+      {en:"bitter", ko:["쓰라린", "쓴"], pos:"a"},
+      {en:"foolish", ko:["어리석은"], pos:"a"},
+      {en:"inevitable", ko:["피할 수 없는"], pos:"a"},
+      {en:"innocent", ko:["무죄의", "결백한"], pos:"a"},
+      {en:"opportune", ko:["시의적절한"], pos:"a"},
+      {en:"sorry", ko:["미안한", "유감스러운 (be sorry for)"], pos:"a"},
+      {en:"worth", ko:["~할 가치가 있는"], pos:"a"},
+      {en:"wrong", ko:["잘못된", "틀린"], pos:"a"}
+    ]},
+    { id:"명령문·청유문·감탄문·의문문", items:[
+      {en:"amaze", ko:["놀라게 하다"], pos:"v"},
+      {en:"behave", ko:["행동하다", "예의 바르게 굴다"], pos:"v"},
+      {en:"breathe", ko:["숨쉬다"], pos:"v"},
+      {en:"compare", ko:["비교하다"], pos:"v"},
+      {en:"guess", ko:["추측하다", "짐작하다"], pos:"v"},
+      {en:"imagine", ko:["상상하다", "생각하다"], pos:"v"},
+      {en:"mind", ko:["꺼리다", "신경 쓰다", "마음"], pos:"v"},
+      {en:"pull", ko:["당기다"], pos:"v"},
+      {en:"push", ko:["밀다"], pos:"v"},
+      {en:"shout", ko:["소리치다"], pos:"v"},
+      {en:"suppose", ko:["생각하다", "가정하다"], pos:"v"},
+      {en:"think", ko:["생각하다"], pos:"v"},
+      {en:"whisper", ko:["속삭이다"], pos:"v"},
+      {en:"caution", ko:["조심", "주의"], pos:"n"},
+      {en:"corner", ko:["모퉁이", "구석"], pos:"n"},
+      {en:"cost", ko:["비용", "(비용이) 들다"], pos:"n"},
+      {en:"height", ko:["높이", "키"], pos:"n"},
+      {en:"method", ko:["방법"], pos:"n"},
+      {en:"purpose", ko:["목적"], pos:"n"},
+      {en:"reason", ko:["이유"], pos:"n"},
+      {en:"weight", ko:["무게"], pos:"n"},
+      {en:"alert", ko:["경계하는", "기민한", "경보"], pos:"a"},
+      {en:"awesome", ko:["굉장한", "경탄스러운"], pos:"a"},
+      {en:"brilliant", ko:["훌륭한", "뛰어난"], pos:"a"},
+      {en:"credible", ko:["믿을 만한"], pos:"a"},
+      {en:"direct", ko:["직접적인", "안내하다"], pos:"a"},
+      {en:"great", ko:["굉장한", "큰"], pos:"a"},
+      {en:"polite", ko:["예의 바른"], pos:"a"},
+      {en:"silent", ko:["조용한"], pos:"a"},
+      {en:"silly", ko:["어리석은"], pos:"a"},
+      {en:"terrible", ko:["끔찍한"], pos:"a"},
+      {en:"ever", ko:["한 번이라도 (의문문·부정문에서)"], pos:"ad"},
+      {en:"gently", ko:["부드럽게", "살살"], pos:"ad"}
+    ]},
+    { id:"명사절", items:[
+      {en:"admit", ko:["인정하다"], pos:"v"},
+      {en:"argue", ko:["주장하다", "논하다"], pos:"v"},
+      {en:"claim", ko:["주장하다", "주장"], pos:"v"},
+      {en:"conclude", ko:["결론짓다"], pos:"v"},
+      {en:"deny", ko:["부인하다"], pos:"v"},
+      {en:"describe", ko:["묘사하다", "서술하다"], pos:"v"},
+      {en:"doubt", ko:["의심하다", "의심"], pos:"v"},
+      {en:"explain", ko:["설명하다"], pos:"v"},
+      {en:"insist", ko:["주장하다", "고집하다 (insist on)"], pos:"v"},
+      {en:"matter", ko:["중요하다", "문제", "사안"], pos:"v"},
+      {en:"mention", ko:["언급하다"], pos:"v"},
+      {en:"note", ko:["주목하다", "언급하다", "메모"], pos:"v"},
+      {en:"report", ko:["보도하다", "보고하다", "보고서"], pos:"v"},
+      {en:"state", ko:["진술하다", "밝히다", "상태"], pos:"v"},
+      {en:"suggest", ko:["제안하다", "시사하다"], pos:"v"},
+      {en:"suspect", ko:["의심하다"], pos:"v"},
+      {en:"wonder", ko:["궁금해하다"], pos:"v"},
+      {en:"detail", ko:["세부 사항"], pos:"n"},
+      {en:"fact", ko:["사실"], pos:"n"},
+      {en:"news", ko:["소식", "뉴스 (단수 취급)"], pos:"n"},
+      {en:"path", ko:["길", "경로"], pos:"n"},
+      {en:"proof", ko:["증거"], pos:"n"},
+      {en:"secret", ko:["비밀", "비밀의"], pos:"n"},
+      {en:"source", ko:["출처", "원천"], pos:"n"},
+      {en:"theory", ko:["이론"], pos:"n"},
+      {en:"tool", ko:["도구"], pos:"n"},
+      {en:"topic", ko:["주제"], pos:"n"},
+      {en:"curious", ko:["궁금한", "호기심 많은"], pos:"a"},
+      {en:"essential", ko:["필수적인", "반드시 필요한"], pos:"a"},
+      {en:"important", ko:["중요한"], pos:"a"},
+      {en:"necessary", ko:["필요한"], pos:"a"},
+      {en:"obvious", ko:["명백한"], pos:"a"},
+      {en:"real", ko:["진짜의", "실제의"], pos:"a"}
     ]},
   ],
   memory:[
