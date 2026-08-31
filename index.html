@@ -1426,7 +1426,7 @@ function loadWord(){
     prompt.className='big kr'; prompt.textContent=w.ko.join(', ');
     sub.textContent='첫 철자: '+w.en[0];
     choices.style.display='none'; inp.style.display='block'; inp.value=''; inp.focus();
-    inp.onkeydown=(e)=>{ if(e.key==='Enter') submitTyped(); };
+    inp.onkeydown=vAnswerKey;
   }
 }
 function pickChoice(btn,ok,box){
@@ -1438,6 +1438,31 @@ function pickChoice(btn,ok,box){
     feedback(false,w); }
   showNext();
 }
+/* 한 → 영 : 엔터 두 번 (1번째 = 채점, 2번째 = 다음 문제) */
+function vEnterStep(){
+  if(!vsess) return;
+  if(!vsess.answered) submitTyped();
+  else nextWord();
+}
+function vAnswerKey(e){
+  if(e.key!=='Enter') return;
+  if(e.isComposing||e.keyCode===229) return;   // 한글 IME 조합 중이면 무시
+  if(e.repeat) return;                         // 길게 눌러 넘어가는 것 방지
+  e.preventDefault();
+  vEnterStep();
+}
+/* 입력창에서 포커스가 빠져도 엔터가 먹도록 (모바일에서 키보드 내렸을 때 등) */
+addEventListener('keydown',e=>{
+  if(e.key!=='Enter'||e.isComposing||e.keyCode===229||e.repeat) return;
+  if(!document.getElementById('v_study').classList.contains('active')) return;
+  if(!vsess||vsess.dir!=='ko2en') return;
+  const t=e.target;
+  if(t===document.getElementById('v_answer')) return;  // 입력창 핸들러가 이미 처리
+  if(t===document.getElementById('v_next')) return;    // 버튼 기본 클릭에 맡김
+  e.preventDefault();
+  vEnterStep();
+});
+
 function submitTyped(){
   if(vsess.answered) return;
   const w=vsess.items[vsess.idx];
