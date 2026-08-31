@@ -291,6 +291,45 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
 .copybtn:active{transform:translateY(2px)}
 .copybtn.done{background:var(--c-s-soft);border-color:var(--c-s);color:#4c7a1f}
 
+/* 오답 목록 */
+.print-title{display:none;font-family:var(--font-title);font-size:19px;margin:0 0 14px}
+.wrong-list{margin-top:16px}
+.wl-h{font-family:var(--font-title);font-size:14px;color:var(--ink-soft);margin:0 2px 9px;
+  display:flex;justify-content:space-between;align-items:center}
+.wl-item{border:2px solid var(--line);background:var(--paper);padding:12px 13px;margin-bottom:10px}
+.wl-num{font-family:var(--font-title);font-size:11.5px;color:var(--ink-soft)}
+.wl-en{font-family:var(--font-en);font-size:18px;color:var(--ink);margin-top:4px;line-height:1.5}
+.wl-accum{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px}
+table.wl-tbl{width:100%;border-collapse:collapse}
+table.wl-tbl th{font-family:var(--font-title);font-size:11.5px;color:var(--ink-soft);text-align:left;
+  padding:6px 8px;border-bottom:2px solid var(--line-strong);white-space:nowrap}
+table.wl-tbl td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.wl-tbl .c-en{font-family:var(--font-en);font-size:17px;color:var(--ink)}
+table.wl-tbl .c-ipa{font-family:var(--font-en);font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
+table.wl-tbl .c-ko{font-family:var(--font-kr);font-weight:600;font-size:14px;color:var(--ink)}
+table.wl-tbl .miss{color:#c23b3b}
+.pdfbtn{width:100%;margin-top:4px;border:2px solid var(--line-strong);background:var(--card);border-radius:0;
+  font-family:var(--font-title);font-size:15px;padding:12px;box-shadow:0 2px 0 var(--line)}
+.pdfbtn:active{transform:translateY(2px);box-shadow:0 0 0 var(--line)}
+
+/* PDF 내보내기 (브라우저 인쇄 → PDF로 저장) */
+@media print{
+  @page{margin:14mm}
+  html,body{background:#fff!important}
+  #app{max-width:none;min-height:0;overflow:visible;box-shadow:none;background:#fff}
+  .screen{display:none!important}
+  .screen.active{display:block!important;padding:0;animation:none}
+  .topbar,.bottom,.hint,.copybtn,.pdfbtn,.result-h{display:none!important}
+  .print-title{display:block}
+  .result-box{border:none;box-shadow:none;padding:0;min-height:0;margin:0}
+  .result-nums{font-size:15px;text-align:left;letter-spacing:0;margin:0 0 4px}
+  .wrong-list{margin-top:16px}
+  .wl-item,tr{break-inside:avoid}
+  .wl-item{border:1px solid #bbb;background:#fff}
+  .pill{outline:none}
+  .pill.bad{outline:2px solid #d64545}
+}
+
 /* 단어 미니게임 */
 .word-prompt{border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
   padding:34px 16px;text-align:center;box-shadow:var(--shadow);margin-bottom:22px}
@@ -658,11 +697,14 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
 <!-- ============ 문장 : 결과(틀린 문장) ============ -->
   <section id="s_result" class="screen">
     <div class="topbar"><button class="back" onclick="go('s_units')">‹</button><span class="crumb">학습 완료</span></div>
+    <h1 class="print-title" id="s_print_title"></h1>
     <div class="result-h">틀린 문장</div>
     <div class="result-box">
       <div class="result-nums" id="result_nums"></div>
       <button class="copybtn" id="copybtn" onclick="copyWrong()">복사하기</button>
     </div>
+    <div class="wrong-list" id="s_wrong_list"></div>
+    <button class="pdfbtn" id="s_pdfbtn" onclick="exportPDF()" style="display:none">PDF로 내보내기</button>
     <div class="hint">번호를 복사해 두면 다음에 “선택 문장 학습”에 붙여넣어 복습할 수 있어요.</div>
     <div class="bottom"><button class="primary" onclick="go('home')">홈으로</button></div>
   </section>
@@ -729,11 +771,14 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
   <!-- ============ 단어 : 결과 ============ -->
   <section id="v_result" class="screen">
     <div class="topbar"><button class="back" onclick="go('v_units')">‹</button><span class="crumb">학습 완료</span></div>
+    <h1 class="print-title" id="v_print_title"></h1>
     <div class="result-h" id="v_result_h">틀린 단어</div>
     <div class="result-box">
       <div class="result-nums" id="v_result_nums"></div>
       <button class="copybtn" id="v_copybtn" onclick="copyWrongVocab()">복사하기</button>
     </div>
+    <div class="wrong-list" id="v_wrong_list"></div>
+    <button class="pdfbtn" id="v_pdfbtn" onclick="exportPDF()" style="display:none">PDF로 내보내기</button>
     <div class="hint">번호를 복사해 “선택 단어 학습”에 붙여넣어 복습할 수 있어요.</div>
     <div class="bottom"><button class="primary" onclick="go('home')">홈으로</button></div>
   </section>
@@ -1069,7 +1114,7 @@ function CURX(){ return $('stage').clientWidth*0.30; }
 function CURSX(){ return $('stage').clientWidth*0.34; }
 
 function loadSentence(){
-  study.run=false; study.lastT=0; study.idx=0; study.ch=[];
+  study.run=false; study.lastT=0; study.idx=0; study.ch=[]; study.log=[];
   const it=session.items[session.idx];
   const track=$('track'), accum=$('accum');
   track.removeAttribute('style');
@@ -1266,6 +1311,7 @@ function tick(t){
 /* ---- 확정 ---- */
 function addPill(role,ko,ok,extra){
   if(!ko) return;
+  if(study) (study.log=study.log||[]).push({role,ko,ok,extra:extra||''});   // 결과 화면 재현용
   const accum=$('accum'); if(accum.querySelector('.ph')) accum.innerHTML='';
   const p=document.createElement('span');
   p.className='pill '+role+(extra?' '+extra:'')+(ok?'':' bad');
@@ -1299,6 +1345,11 @@ function resolve(ok){
 
 function sentenceDone(){
   study.run=false;
+  const done=session.items[session.idx];                       // 오답 목록용 기록
+  (session.detail=session.detail||{})[done.n]={
+    en: done.chunks.map(c=>c.en).join(' '),
+    pills: (study.log||[]).slice()
+  };
   $('study_prog').style.width=((session.idx+1)/session.items.length*100)+'%';
   const last = session.idx >= session.items.length-1;
   $('tapnote').textContent = last ? '완료! 결과로 넘어갑니다…' : '완료! 다음 문장으로…';
@@ -1368,7 +1419,32 @@ function showSentenceResult(){
   else { el.className='result-nums none'; el.textContent='다 맞았어요 🎉'; }
   const cb=document.getElementById('copybtn'); cb.className='copybtn'; cb.textContent='복사하기';
   cb.style.display = wrong.length? 'block':'none';
+  renderWrongSentences(wrong);
+  document.getElementById('s_print_title').textContent='리드미컬 오답노트 · 문장 · '+(session.unit||'');
   go('s_result');
+}
+function renderWrongSentences(wrong){
+  const box=document.getElementById('s_wrong_list'), btn=document.getElementById('s_pdfbtn');
+  box.innerHTML=''; btn.style.display = wrong.length?'block':'none';
+  if(!wrong.length) return;
+  const h=document.createElement('div'); h.className='wl-h';
+  h.innerHTML='<span>틀린 문장 '+wrong.length+'개</span><span>'+(session.unit||'')+'</span>';
+  box.appendChild(h);
+  const detail=session.detail||{};
+  wrong.forEach(n=>{
+    const d=detail[n]; if(!d) return;
+    const item=document.createElement('div'); item.className='wl-item';
+    const num=document.createElement('div'); num.className='wl-num'; num.textContent=n+'번';
+    const en=document.createElement('div'); en.className='wl-en'; en.textContent=d.en;
+    const ac=document.createElement('div'); ac.className='wl-accum';
+    d.pills.forEach(p=>{
+      const s=document.createElement('span');
+      s.className='pill '+p.role+(p.extra?' '+p.extra:'')+(p.ok?'':' bad');
+      s.textContent=p.ko; ac.appendChild(s);
+    });
+    item.appendChild(num); item.appendChild(en); item.appendChild(ac);
+    box.appendChild(item);
+  });
 }
 function copyWrong(){
   const txt=[...session.wrong].sort((a,b)=>a-b).join(', ');
@@ -1399,7 +1475,7 @@ function flatVocab(){ const out=[]; DATA.vocab.forEach((u,ui)=>u.items.forEach((
 function backVocabDir(){ go(vsess&&vsess.scope==='global'?'v_pick_global':'v_scope'); }
 
 function startVocab(dir){
-  vsess.dir=dir; vsess.idx=0; vsess.wrong=[]; vsess.answered=false;
+  vsess.dir=dir; vsess.idx=0; vsess.wrong=[]; vsess.wrongItems=[]; vsess.answered=false;
   document.getElementById('v_study_crumb').textContent=(dir==='en2ko'?'영 → 한':'한 → 영');
   go('v_study'); loadWord();
 }
@@ -1433,7 +1509,7 @@ function pickChoice(btn,ok,box){
   if(vsess.answered) return; vsess.answered=true;
   const w=vsess.items[vsess.idx];
   if(ok){ btn.classList.add('right'); feedback(true); }
-  else { btn.classList.add('wrong'); vsess.wrong.push(w.gid||w.en);
+  else { btn.classList.add('wrong'); vsess.wrong.push(w.gid||w.en); vsess.wrongItems.push(w);
     [...box.children].forEach(b=>{ if(b.textContent===w.ko.join(', ')) b.classList.add('right'); });
     feedback(false,w); }
   showNext();
@@ -1470,7 +1546,7 @@ function submitTyped(){
   if(!val) return;
   vsess.answered=true;
   const ok = val===w.en.toLowerCase();  // 그 외 오타 불허(정확 일치)
-  if(!ok) vsess.wrong.push(w.gid||w.en);
+  if(!ok){ vsess.wrong.push(w.gid||w.en); vsess.wrongItems.push(w); }
   feedback(ok,w); showNext();
 }
 function feedback(ok,w){
@@ -1494,8 +1570,35 @@ function showVocabResult(){
     document.getElementById('v_copybtn').style.display='block';
   } else { el.className='result-nums none'; el.textContent='다 맞았어요 🎉'; document.getElementById('v_copybtn').style.display='none'; }
   const cb=document.getElementById('v_copybtn'); cb.className='copybtn'; cb.textContent='복사하기';
+  renderWrongVocab();
+  document.getElementById('v_print_title').textContent=
+    '리드미컬 오답노트 · 단어 · '+(vsess.dir==='en2ko'?'영 → 한':'한 → 영');
   go('v_result');
 }
+/* 한→영 오답이면 영단어를, 영→한 오답이면 뜻을 다른 색으로 */
+function renderWrongVocab(){
+  const box=document.getElementById('v_wrong_list'), btn=document.getElementById('v_pdfbtn');
+  const list=vsess.wrongItems||[];
+  box.innerHTML=''; btn.style.display = list.length?'block':'none';
+  if(!list.length) return;
+  const missEn = vsess.dir==='ko2en';
+  const h=document.createElement('div'); h.className='wl-h';
+  h.innerHTML='<span>틀린 단어 '+list.length+'개</span><span>'+(missEn?'한 → 영':'영 → 한')+'</span>';
+  box.appendChild(h);
+  const t=document.createElement('table'); t.className='wl-tbl';
+  t.innerHTML='<thead><tr><th>단어</th><th>발음</th><th>뜻</th></tr></thead>';
+  const tb=document.createElement('tbody');
+  list.forEach(w=>{
+    const tr=document.createElement('tr');
+    const a=document.createElement('td'); a.className='c-en'+(missEn?' miss':''); a.textContent=w.en;
+    const b=document.createElement('td'); b.className='c-ipa'; b.textContent=w.ipa||'';
+    const c=document.createElement('td'); c.className='c-ko'+(missEn?'':' miss'); c.textContent=w.ko.join(', ');
+    tr.appendChild(a); tr.appendChild(b); tr.appendChild(c); tb.appendChild(tr);
+  });
+  t.appendChild(tb); box.appendChild(t);
+}
+/* 브라우저 인쇄 → “PDF로 저장” (라이브러리 없이, 한글 폰트 그대로) */
+function exportPDF(){ window.print(); }
 function copyWrongVocab(){
   const wrong=vsess.wrong; const txt=wrong.every(x=>typeof x==='number')?wrong.sort((a,b)=>a-b).join(', '):wrong.join(', ');
   navigator.clipboard?.writeText(txt);
