@@ -2593,7 +2593,7 @@ const DATA = {
         {en:"is considered", ko:"여겨진다", t:"verb"},
         {en:"strange", ko:"이상하다고", t:"comp"}]},
     ]},
-    { id:"MASH UP(문장 구조)", items:[
+    { id:"MASH UP(튜토리얼)", items:[
       {n:1, full:"그 책은 읽힌다 (한 의사에 의해)", chunks:[
         {en:"The book", ko:"그 책은", t:"subj"},
         {en:"is read", ko:"읽힌다", t:"verb"},
@@ -6228,6 +6228,550 @@ const DATA = {
         {en:"Let's compare", ko:"비교하자", t:"verb"},
         {en:"the two methods", ko:"그 두 방법을", t:"obj"}]},
     ]},
+    { id:"MASH UP(튜토리얼+)", items:[
+      {n:1, full:"그 사회의 발전이 보고된다 (매 시즌)", chunks:[
+        {en:"The progress of the society", ko:"그 사회의 발전이", t:"subj"},
+        {en:"is reported", ko:"보고된다", t:"verb"},
+        {en:"every season", ko:"매 시즌", t:"mod"}]},
+      {n:2, full:"그 기술자들은 그 기술의 발전을 이미 보게 되었다", chunks:[
+        {en:"The engineers", ko:"그 기술자들은", t:"subj"},
+        {en:"had been shown", ko:"이미 보게 되었다", t:"verb"},
+        {en:"the progress of the technology", ko:"그 기술의 발전을", t:"obj"}]},
+      {n:3, full:"그 승객들은 그 사고에 관한 사실을 듣게 되었다", chunks:[
+        {en:"The passengers", ko:"그 승객들은", t:"subj"},
+        {en:"were told", ko:"듣게 되었다", t:"verb"},
+        {en:"the fact about the accident", ko:"그 사고에 관한 사실을", t:"obj"}]},
+      {n:4, full:"그 전문가들은 그 기술을 십 년 동안 계속 연구해 온 상태일 것이다 (다음 시즌쯤에는)", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"will have been studying", ko:"계속 연구해 온 상태일 것이다", t:"verb"},
+        {en:"the technology", ko:"그 기술을", t:"obj"},
+        {en:"for a decade", ko:"십 년 동안", t:"mod"},
+        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
+      {n:5, full:"그 정부는 그 의회에 그 환경 전체에 관한 보고서를 보내고 있다", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"is sending", ko:"보내고 있다", t:"verb"},
+        {en:"the council", ko:"그 의회에", t:"obj"},
+        {en:"a report about the whole environment", ko:"그 환경 전체에 관한 보고서를", t:"obj"}]},
+      {n:6, full:"그 학자들은 모든 연구의 결과를 보게 되어야 한다", chunks:[
+        {en:"The scholars", ko:"그 학자들은", t:"subj"},
+        {en:"ought to be shown", ko:"보게 되어야 한다", t:"verb"},
+        {en:"the result of every study", ko:"모든 연구의 결과를", t:"obj"}]},
+      {n:7, full:"그 전문가들에게 그 환경을 보호하라고 요청해라", chunks:[
+        {en:"Ask", ko:"요청해라", t:"verb"},
+        {en:"the experts", ko:"그 전문가들에게", t:"obj"},
+        {en:"to protect the environment", ko:"그 환경을 보호하라고", t:"comp"}]},
+      {n:8, full:"그 사회는 곧 조용해지려 한다", chunks:[
+        {en:"The society", ko:"그 사회는", t:"subj"},
+        {en:"is about to become", ko:"곧 ~해지려 한다", t:"verb"},
+        {en:"quiet", ko:"조용", t:"comp"}]},
+      {n:9, full:"그 시민들은 이동하게 될 것이다 (다음 시즌쯤에는)", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"will have been made", ko:"~하게 될 것이다", t:"verb"},
+        {en:"to move", ko:"이동하도록", t:"comp"},
+        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
+      {n:10, full:"그 환경은 파괴되고 있었다 (그 폭풍에 의해)", chunks:[
+        {en:"The environment", ko:"그 환경은", t:"subj"},
+        {en:"was being ruined", ko:"파괴되고 있었다", t:"verb"},
+        {en:"by the storm", ko:"그 폭풍에 의해", t:"mod"}]},
+      {n:11, full:"기술은 매 시즌 발전한다", chunks:[
+        {en:"Technology", ko:"기술은", t:"subj"},
+        {en:"progresses", ko:"발전한다", t:"verb"},
+        {en:"every season", ko:"매 시즌", t:"mod"}]},
+      {n:12, full:"그 기술은 개선되고 있다 (그 회사에 의해)", chunks:[
+        {en:"The technology", ko:"그 기술은", t:"subj"},
+        {en:"is being improved", ko:"개선되고 있다", t:"verb"},
+        {en:"by the company", ko:"그 회사에 의해", t:"mod"}]},
+      {n:13, full:"그 자원봉사자들은 그 보고서 전체를 보게 되어서는 안 된다", chunks:[
+        {en:"The volunteers", ko:"그 자원봉사자들은", t:"subj"},
+        {en:"should not be shown", ko:"보게 되어서는 안 된다", t:"verb"},
+        {en:"the whole report", ko:"그 보고서 전체를", t:"obj"}]},
+      {n:14, full:"그 군중의 에너지가 커졌다 (새벽에)", chunks:[
+        {en:"The energy of the crowd", ko:"그 군중의 에너지가", t:"subj"},
+        {en:"grew", ko:"커졌다", t:"verb"},
+        {en:"at dawn", ko:"새벽에", t:"mod"}]},
+      {n:15, full:"그 환자들은 기다리게 되었었다 (한 시간 동안)", chunks:[
+        {en:"The patients", ko:"그 환자들은", t:"subj"},
+        {en:"had been made", ko:"~하게 되었었다", t:"verb"},
+        {en:"to wait", ko:"기다리도록", t:"comp"},
+        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
+      {n:16, full:"그 자원봉사자들은 그 환경을 위해 행동해야 한다", chunks:[
+        {en:"The volunteers", ko:"그 자원봉사자들은", t:"subj"},
+        {en:"have to act", ko:"행동해야 한다", t:"verb"},
+        {en:"for the environment", ko:"그 환경을 위해", t:"mod"}]},
+      {n:17, full:"그 공동체에 그 사회의 발전을 보여줘라", chunks:[
+        {en:"Show", ko:"보여줘라", t:"verb"},
+        {en:"the community", ko:"그 공동체에", t:"obj"},
+        {en:"the progress of the society", ko:"그 사회의 발전을", t:"obj"}]},
+      {n:18, full:"그 학자들은 매 시즌 그 사회의 발전을 발표한다", chunks:[
+        {en:"The scholars", ko:"그 학자들은", t:"subj"},
+        {en:"announce", ko:"발표한다", t:"verb"},
+        {en:"the progress of the society", ko:"그 사회의 발전을", t:"obj"},
+        {en:"every season", ko:"매 시즌", t:"mod"}]},
+      {n:19, full:"그 사고는 그 군중을 경계하게 만들었음이 틀림없다", chunks:[
+        {en:"The accident", ko:"그 사고는", t:"subj"},
+        {en:"must have made", ko:"만들었음이 틀림없다", t:"verb"},
+        {en:"the crowd", ko:"그 군중을", t:"obj"},
+        {en:"alert", ko:"경계하게", t:"comp"}]},
+      {n:20, full:"그 승객들이 웃는 것이 들릴 것이다 (그 탑승구에서)", chunks:[
+        {en:"The passengers", ko:"그 승객들이", t:"subj"},
+        {en:"will be heard", ko:"들릴 것이다", t:"verb"},
+        {en:"to laugh", ko:"웃는 것이", t:"comp"},
+        {en:"at the gate", ko:"그 탑승구에서", t:"mod"}]},
+      {n:21, full:"그 지도자들은 그 위원회에 그 범죄를 보여줄 필요는 없었다", chunks:[
+        {en:"The leaders", ko:"그 지도자들은", t:"subj"},
+        {en:"need not have shown", ko:"보여줄 필요는 없었다", t:"verb"},
+        {en:"the committee", ko:"그 위원회에", t:"obj"},
+        {en:"the crime", ko:"그 범죄를", t:"obj"}]},
+      {n:22, full:"그 새 법은 그 환경을 깨끗하게 유지한다", chunks:[
+        {en:"The new law", ko:"그 새 법은", t:"subj"},
+        {en:"keeps", ko:"유지한다", t:"verb"},
+        {en:"the environment", ko:"그 환경을", t:"obj"},
+        {en:"clean", ko:"깨끗하게", t:"comp"}]},
+      {n:23, full:"그 시민들은 그 환경에 대해 침묵한 채로 있을 수 없다", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"cannot remain", ko:"있을 수 없다", t:"verb"},
+        {en:"silent", ko:"침묵한 채로", t:"comp"},
+        {en:"about the environment", ko:"그 환경에 대해", t:"mod"}]},
+      {n:24, full:"그 전문가는 그 반에게 그 기술의 발전을 가르치고 있다", chunks:[
+        {en:"The expert", ko:"그 전문가는", t:"subj"},
+        {en:"is teaching", ko:"가르치고 있다", t:"verb"},
+        {en:"the class", ko:"그 반에게", t:"obj"},
+        {en:"the progress of the technology", ko:"그 기술의 발전을", t:"obj"}]},
+      {n:25, full:"그 회사들은 그 전문가들에게 그 기술을 개선해 달라고 요청할 것이다 (다음 주말에)", chunks:[
+        {en:"The companies", ko:"그 회사들은", t:"subj"},
+        {en:"will ask", ko:"요청할 것이다", t:"verb"},
+        {en:"the experts", ko:"그 전문가들에게", t:"obj"},
+        {en:"to improve the technology", ko:"그 기술을 개선해 달라고", t:"comp"},
+        {en:"next weekend", ko:"다음 주말에", t:"mod"}]},
+      {n:26, full:"그 환자들은 경계 상태로 유지되고 있다", chunks:[
+        {en:"The patients", ko:"그 환자들은", t:"subj"},
+        {en:"are being kept", ko:"유지되고 있다", t:"verb"},
+        {en:"alert", ko:"경계 상태로", t:"comp"}]},
+      {n:27, full:"그 위원회는 그 보고서 전부를 받아들였다", chunks:[
+        {en:"The committee", ko:"그 위원회는", t:"subj"},
+        {en:"has accepted", ko:"받아들였다", t:"verb"},
+        {en:"all the reports", ko:"그 보고서 전부를", t:"obj"}]},
+      {n:28, full:"그 기술자들은 그 기술에 대해 점점 궁금해지고 있던 상태였다", chunks:[
+        {en:"The engineers", ko:"그 기술자들은", t:"subj"},
+        {en:"had been growing", ko:"점점 ~해지고 있던 상태였다", t:"verb"},
+        {en:"curious", ko:"궁금", t:"comp"},
+        {en:"about the technology", ko:"그 기술에 대해", t:"mod"}]},
+      {n:29, full:"그 공무원들은 계속 일하게 될지도 모른다 (밤새도록)", chunks:[
+        {en:"The officers", ko:"그 공무원들은", t:"subj"},
+        {en:"may be kept", ko:"계속 ~하게 될지도 모른다", t:"verb"},
+        {en:"working", ko:"일하도록", t:"comp"},
+        {en:"through the night", ko:"밤새도록", t:"mod"}]},
+      {n:30, full:"그 경제는 엄격한 규칙에 의해 통치되어야 한다", chunks:[
+        {en:"The economy", ko:"그 경제는", t:"subj"},
+        {en:"must be governed", ko:"통치되어야 한다", t:"verb"},
+        {en:"by a strict rule", ko:"엄격한 규칙에 의해", t:"mod"}]},
+      {n:31, full:"그 정부는 그 위험을 받아들일 수밖에 없다", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"has no choice but to accept", ko:"받아들일 수밖에 없다", t:"verb"},
+        {en:"the risk", ko:"그 위험을", t:"obj"}]},
+      {n:32, full:"그 정부는 그 이전 계획을 취소했었다", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"had cancelled", ko:"취소했었다", t:"verb"},
+        {en:"the previous plan", ko:"그 이전 계획을", t:"obj"}]},
+      {n:33, full:"그 환자들은 그 결과 전체를 받아야 한다", chunks:[
+        {en:"The patients", ko:"그 환자들은", t:"subj"},
+        {en:"must be given", ko:"받아야 한다", t:"verb"},
+        {en:"the whole result", ko:"그 결과 전체를", t:"obj"}]},
+      {n:34, full:"그 의사들은 그 환자들의 건강에 대해 주의를 기울여야 한다", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"ought to be", ko:"~해야 한다", t:"verb"},
+        {en:"alert", ko:"주의를 기울이는 상태로", t:"comp"},
+        {en:"about the health of the patients", ko:"그 환자들의 건강에 대해", t:"mod"}]},
+      {n:35, full:"우리는 그 환경에 기회를 주었어야 했다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"should have given", ko:"주었어야 했다", t:"verb"},
+        {en:"the environment", ko:"그 환경에", t:"obj"},
+        {en:"a chance", ko:"기회를", t:"obj"}]},
+      {n:36, full:"그 학자들은 그 선수들의 신경을 연구했다 (십 년 동안)", chunks:[
+        {en:"The scholars", ko:"그 학자들은", t:"subj"},
+        {en:"studied", ko:"연구했다", t:"verb"},
+        {en:"the nerves of the athletes", ko:"그 선수들의 신경을", t:"obj"},
+        {en:"for a decade", ko:"십 년 동안", t:"mod"}]},
+      {n:37, full:"그 사회는 안전하게 유지되었어야 했다", chunks:[
+        {en:"The society", ko:"그 사회는", t:"subj"},
+        {en:"should have been kept", ko:"유지되었어야 했다", t:"verb"},
+        {en:"safe", ko:"안전하게", t:"comp"}]},
+      {n:38, full:"그 기술은 개선되었었다 (그 축제 전에)", chunks:[
+        {en:"The technology", ko:"그 기술은", t:"subj"},
+        {en:"had been improved", ko:"개선되었었다", t:"verb"},
+        {en:"before the festival", ko:"그 축제 전에", t:"mod"}]},
+      {n:39, full:"그 전문가들은 그 기술이 발전하는 것을 지켜보고 있을 것이다 (바로 그 순간에)", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"will be watching", ko:"지켜보고 있을 것이다", t:"verb"},
+        {en:"the technology", ko:"그 기술이", t:"obj"},
+        {en:"progress", ko:"발전하는 것을", t:"comp"},
+        {en:"at that moment", ko:"바로 그 순간에", t:"mod"}]},
+      {n:40, full:"그 전문가들은 그 계획을 바꾸도록 강요당할지도 모른다", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"might be forced", ko:"강요당할지도 모른다", t:"verb"},
+        {en:"to change the plan", ko:"그 계획을 바꾸도록", t:"comp"}]},
+      {n:41, full:"너는 네 건강에 신경 쓰는 편이 낫다", chunks:[
+        {en:"You", ko:"너는", t:"subj"},
+        {en:"had better mind", ko:"신경 쓰는 편이 낫다", t:"verb"},
+        {en:"your health", ko:"네 건강에", t:"obj"}]},
+      {n:42, full:"그 신경들은 무너질 수도 있었다 (그 발표 전에)", chunks:[
+        {en:"The nerves", ko:"그 신경들은", t:"subj"},
+        {en:"could fail", ko:"무너질 수도 있었다", t:"verb"},
+        {en:"before the announcement", ko:"그 발표 전에", t:"mod"}]},
+      {n:43, full:"그 가족들은 그 부엌이 청소되게 하고 있다 (이번 주말에)", chunks:[
+        {en:"The families", ko:"그 가족들은", t:"subj"},
+        {en:"are having", ko:"~되게 하고 있다", t:"verb"},
+        {en:"the kitchen", ko:"그 부엌이", t:"obj"},
+        {en:"cleaned", ko:"청소되도록", t:"comp"},
+        {en:"this weekend", ko:"이번 주말에", t:"mod"}]},
+      {n:44, full:"그 사회의 발전이 얼마나 대단한가!", chunks:[
+        {en:"How great", ko:"얼마나 대단한가", t:"comp"},
+        {en:"the progress of the society", ko:"그 사회의 발전이", t:"subj"},
+        {en:"is", ko:"~인가", t:"verb"}]},
+      {n:45, full:"그 의회는 그 전문가들이 그 에너지를 연구하도록 허락했을 것이다 (다음 십 년 안에)", chunks:[
+        {en:"The council", ko:"그 의회는", t:"subj"},
+        {en:"will have allowed", ko:"허락했을 것이다", t:"verb"},
+        {en:"the experts", ko:"그 전문가들이", t:"obj"},
+        {en:"to study the energy", ko:"그 에너지를 연구하도록", t:"comp"},
+        {en:"within the next decade", ko:"다음 십 년 안에", t:"mod"}]},
+      {n:46, full:"그 경제는 계속 발전해 오고 있다 (지난 시즌 이후로)", chunks:[
+        {en:"The economy", ko:"그 경제는", t:"subj"},
+        {en:"has been progressing", ko:"계속 발전해 오고 있다", t:"verb"},
+        {en:"since the past season", ko:"지난 시즌 이후로", t:"mod"}]},
+      {n:47, full:"그 기술의 마법은 감탄받지 않을 수 없다", chunks:[
+        {en:"The magic of the technology", ko:"그 기술의 마법은", t:"subj"},
+        {en:"cannot but be admired", ko:"감탄받지 않을 수 없다", t:"verb"}]},
+      {n:48, full:"그 경제는 발전하고 있다 (지금 이 순간)", chunks:[
+        {en:"The economy", ko:"그 경제는", t:"subj"},
+        {en:"is progressing", ko:"발전하고 있다", t:"verb"},
+        {en:"at this moment", ko:"지금 이 순간", t:"mod"}]},
+      {n:49, full:"그 환경은 파괴되어 있을 것이다 (그 범죄에 의해)", chunks:[
+        {en:"The environment", ko:"그 환경은", t:"subj"},
+        {en:"will have been ruined", ko:"파괴되어 있을 것이다", t:"verb"},
+        {en:"by the crime", ko:"그 범죄에 의해", t:"mod"}]},
+      {n:50, full:"그 사회는 변할 것이다 (그 전쟁 이후에)", chunks:[
+        {en:"The society", ko:"그 사회는", t:"subj"},
+        {en:"is going to change", ko:"변할 것이다", t:"verb"},
+        {en:"after the war", ko:"그 전쟁 이후에", t:"mod"}]},
+      {n:51, full:"그 마법은 그 시민들에게 이상하게 보여서는 안 된다", chunks:[
+        {en:"The magic", ko:"그 마법은", t:"subj"},
+        {en:"must not appear", ko:"보여서는 안 된다", t:"verb"},
+        {en:"strange", ko:"이상하게", t:"comp"},
+        {en:"to the citizens", ko:"그 시민들에게", t:"mod"}]},
+      {n:52, full:"그 의사들은 그 시민들의 건강을 보고할 것이다 (다음 시즌에)", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"will report", ko:"보고할 것이다", t:"verb"},
+        {en:"the health of the citizens", ko:"그 시민들의 건강을", t:"obj"},
+        {en:"next season", ko:"다음 시즌에", t:"mod"}]},
+      {n:53, full:"나는 그 에너지를 낭비하기보다 그 환경을 보호하는 편이 낫겠다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"would rather protect", ko:"보호하는 편이 낫겠다", t:"verb"},
+        {en:"the environment", ko:"그 환경을", t:"obj"},
+        {en:"than waste the energy", ko:"그 에너지를 낭비하기보다", t:"mod"}]},
+      {n:54, full:"그 정부는 무엇을 발표하고 있었는가?", chunks:[
+        {en:"What", ko:"무엇을", t:"obj"},
+        {en:"was the government announcing", ko:"그 정부는 발표하고 있었는가", t:"verb"}]},
+      {n:55, full:"그 전문가들은 그 기술을 연구하도록 허락받을 것이다 (다음 시즌에)", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"will be allowed", ko:"허락받을 것이다", t:"verb"},
+        {en:"to study the technology", ko:"그 기술을 연구하도록", t:"comp"},
+        {en:"next season", ko:"다음 시즌에", t:"mod"}]},
+      {n:56, full:"그 공무원들은 그 보고서 전부를 받았을 것이다 (그 축제 전에)", chunks:[
+        {en:"The officers", ko:"그 공무원들은", t:"subj"},
+        {en:"will have been given", ko:"받았을 것이다", t:"verb"},
+        {en:"all the reports", ko:"그 보고서 전부를", t:"obj"},
+        {en:"before the festival", ko:"그 축제 전에", t:"mod"}]},
+      {n:57, full:"그 정부는 그 시민들에게 그 경제의 변화를 보여주었다 (지난 시즌에)", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"showed", ko:"보여주었다", t:"verb"},
+        {en:"the citizens", ko:"그 시민들에게", t:"obj"},
+        {en:"the change of the economy", ko:"그 경제의 변화를", t:"obj"},
+        {en:"in the past season", ko:"지난 시즌에", t:"mod"}]},
+      {n:58, full:"그 의사들은 그 환자들에게 그 위험을 말하지 않을 수 없다", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"cannot help telling", ko:"말하지 않을 수 없다", t:"verb"},
+        {en:"the patients", ko:"그 환자들에게", t:"obj"},
+        {en:"the risk", ko:"그 위험을", t:"obj"}]},
+      {n:59, full:"우리는 그 안전한 기술을 선택하는 편이 낫다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"may as well opt for", ko:"선택하는 편이 낫다", t:"verb"},
+        {en:"the safe technology", ko:"그 안전한 기술을", t:"obj"}]},
+      {n:60, full:"모든 시민은 기회를 받아야 한다", chunks:[
+        {en:"Every citizen", ko:"모든 시민은", t:"subj"},
+        {en:"should be given", ko:"받아야 한다", t:"verb"},
+        {en:"a chance", ko:"기회를", t:"obj"}]},
+      {n:61, full:"그 전문가들은 그 에너지에 대해 엄격할 필요는 없다", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"do not have to be", ko:"~할 필요는 없다", t:"verb"},
+        {en:"strict", ko:"엄격", t:"comp"},
+        {en:"about the energy", ko:"그 에너지에 대해", t:"mod"}]},
+      {n:62, full:"우리는 그 사회의 발전에 감탄하지 않을 수 없다", chunks:[
+        {en:"We", ko:"우리는", t:"subj"},
+        {en:"cannot but admire", ko:"감탄하지 않을 수 없다", t:"verb"},
+        {en:"the progress of the society", ko:"그 사회의 발전에", t:"obj"}]},
+      {n:63, full:"그 정부는 그 시민들에게 새 계획을 약속했을 것이다 (다음 시즌쯤에는)", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"will have promised", ko:"약속했을 것이다", t:"verb"},
+        {en:"the citizens", ko:"그 시민들에게", t:"obj"},
+        {en:"a new plan", ko:"새 계획을", t:"obj"},
+        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
+      {n:64, full:"그 범죄는 막아졌음이 틀림없다 (그 경보에 의해)", chunks:[
+        {en:"The crime", ko:"그 범죄는", t:"subj"},
+        {en:"must have been prevented", ko:"막아졌음이 틀림없다", t:"verb"},
+        {en:"by the alarm", ko:"그 경보에 의해", t:"mod"}]},
+      {n:65, full:"그 의사들은 그 환자들이 회복하는 것을 계속 지켜보고 있었다 (한 시간 동안)", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"had been watching", ko:"계속 지켜보고 있었다", t:"verb"},
+        {en:"the patients", ko:"그 환자들이", t:"obj"},
+        {en:"recover", ko:"회복하는 것을", t:"comp"},
+        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
+      {n:66, full:"모든 시민은 건강 보고서를 받는다", chunks:[
+        {en:"Every citizen", ko:"모든 시민은", t:"subj"},
+        {en:"is given", ko:"받는다", t:"verb"},
+        {en:"a health report", ko:"건강 보고서를", t:"obj"}]},
+      {n:67, full:"그 약이 그 환자들을 차분하게 유지했음이 틀림없다", chunks:[
+        {en:"The medicine", ko:"그 약이", t:"subj"},
+        {en:"must have kept", ko:"유지했음이 틀림없다", t:"verb"},
+        {en:"the patients", ko:"그 환자들을", t:"obj"},
+        {en:"calm", ko:"차분하게", t:"comp"}]},
+      {n:68, full:"그 환자들의 신경이 무너지고 있던 상태였다 (여러 시간 동안)", chunks:[
+        {en:"The nerves of the patients", ko:"그 환자들의 신경이", t:"subj"},
+        {en:"had been failing", ko:"무너지고 있던 상태였다", t:"verb"},
+        {en:"for hours", ko:"여러 시간 동안", t:"mod"}]},
+      {n:69, full:"그 자원봉사자들은 그 보고서 전부를 모으고 있다", chunks:[
+        {en:"The volunteers", ko:"그 자원봉사자들은", t:"subj"},
+        {en:"are gathering", ko:"모으고 있다", t:"verb"},
+        {en:"all the reports", ko:"그 보고서 전부를", t:"obj"}]},
+      {n:70, full:"그 시민들은 그 환경을 보호해야 한다", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"must protect", ko:"보호해야 한다", t:"verb"},
+        {en:"the environment", ko:"그 환경을", t:"obj"}]},
+      {n:71, full:"그 회사들은 그 경제에 대해 차분해 보이는 것도 당연하다", chunks:[
+        {en:"The companies", ko:"그 회사들은", t:"subj"},
+        {en:"may well seem", ko:"보이는 것도 당연하다", t:"verb"},
+        {en:"calm", ko:"차분해", t:"comp"},
+        {en:"about the economy", ko:"그 경제에 대해", t:"mod"}]},
+      {n:72, full:"모든 환자는 그 결과를 듣게 되었을 것이다 (다음 주말쯤에는)", chunks:[
+        {en:"Every patient", ko:"모든 환자는", t:"subj"},
+        {en:"will have been told", ko:"듣게 되었을 것이다", t:"verb"},
+        {en:"the result", ko:"그 결과를", t:"obj"},
+        {en:"by next weekend", ko:"다음 주말쯤에는", t:"mod"}]},
+      {n:73, full:"누구에 의해 그 기술이 개선되었는가?", chunks:[
+        {en:"By whom", ko:"누구에 의해", t:"mod"},
+        {en:"was the technology improved", ko:"그 기술이 개선되었는가", t:"verb"}]},
+      {n:74, full:"그 팀은 그 발전에 대한 보상을 받았다", chunks:[
+        {en:"The team", ko:"그 팀은", t:"subj"},
+        {en:"has been given", ko:"받았다", t:"verb"},
+        {en:"a reward for the progress", ko:"그 발전에 대한 보상을", t:"obj"}]},
+      {n:75, full:"그 전문가들은 그 공동체가 그 사회의 발전을 이해하도록 도와야 한다", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"should help", ko:"도와야 한다", t:"verb"},
+        {en:"the community", ko:"그 공동체가", t:"obj"},
+        {en:"understand the progress of the society", ko:"그 사회의 발전을 이해하도록", t:"comp"}]},
+      {n:76, full:"기술은 지도자 없이도 발전할 수 있다", chunks:[
+        {en:"Technology", ko:"기술은", t:"subj"},
+        {en:"can progress", ko:"발전할 수 있다", t:"verb"},
+        {en:"without a leader", ko:"지도자 없이도", t:"mod"}]},
+      {n:77, full:"그 경제는 회복되고 있을 것이다 (다음 시즌쯤에는)", chunks:[
+        {en:"The economy", ko:"그 경제는", t:"subj"},
+        {en:"will be recovering", ko:"회복되고 있을 것이다", t:"verb"},
+        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
+      {n:78, full:"그 기술의 마법이 잊히지 않게 하자", chunks:[
+        {en:"Let", ko:"~하게 하자", t:"verb"},
+        {en:"the magic of the technology", ko:"그 기술의 마법이", t:"obj"},
+        {en:"not be forgotten", ko:"잊히지 않도록", t:"comp"}]},
+      {n:79, full:"그 신경들은 차분해져 있을 것이다 (새벽쯤에는)", chunks:[
+        {en:"The nerves", ko:"그 신경들은", t:"subj"},
+        {en:"will have become", ko:"~해져 있을 것이다", t:"verb"},
+        {en:"calm", ko:"차분", t:"comp"},
+        {en:"by dawn", ko:"새벽쯤에는", t:"mod"}]},
+      {n:80, full:"그 지도자는 그 도시를 바꾸도록 만들어지는 것도 당연하다", chunks:[
+        {en:"The leader", ko:"그 지도자는", t:"subj"},
+        {en:"may well be made", ko:"만들어지는 것도 당연하다", t:"verb"},
+        {en:"to change the city", ko:"그 도시를 바꾸도록", t:"comp"}]},
+      {n:81, full:"누가 그 경제를 통치하고 있는가?", chunks:[
+        {en:"Who", ko:"누가", t:"subj"},
+        {en:"is governing", ko:"통치하고 있는가", t:"verb"},
+        {en:"the economy", ko:"그 경제를", t:"obj"}]},
+      {n:82, full:"그 시민들은 그 지도자를 천재라고 부를지도 모른다", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"may call", ko:"부를지도 모른다", t:"verb"},
+        {en:"the leader", ko:"그 지도자를", t:"obj"},
+        {en:"a genius", ko:"천재라고", t:"comp"}]},
+      {n:83, full:"그 전문가들은 그 바다의 에너지를 연구하도록 요청받고 있었다", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"were being asked", ko:"요청받고 있었다", t:"verb"},
+        {en:"to study the energy of the ocean", ko:"그 바다의 에너지를 연구하도록", t:"comp"}]},
+      {n:84, full:"그 회사는 그 팀에게 그 발전에 대한 보상을 주었다", chunks:[
+        {en:"The company", ko:"그 회사는", t:"subj"},
+        {en:"has given", ko:"주었다", t:"verb"},
+        {en:"the team", ko:"그 팀에게", t:"obj"},
+        {en:"a reward for the progress", ko:"그 발전에 대한 보상을", t:"obj"}]},
+      {n:85, full:"정말 훌륭한 기술이구나!", chunks:[
+        {en:"What a brilliant technology", ko:"정말 훌륭한 기술", t:"comp"},
+        {en:"it", ko:"그것은", t:"subj"},
+        {en:"is", ko:"~이구나", t:"verb"}]},
+      {n:86, full:"그 환경은 깨끗하게 유지된다 (그 시민들에 의해)", chunks:[
+        {en:"The environment", ko:"그 환경은", t:"subj"},
+        {en:"is kept", ko:"유지된다", t:"verb"},
+        {en:"clean", ko:"깨끗하게", t:"comp"},
+        {en:"by the citizens", ko:"그 시민들에 의해", t:"mod"}]},
+      {n:87, full:"그 환자들은 약을 받고 있었다 (바로 그 순간에)", chunks:[
+        {en:"The patients", ko:"그 환자들은", t:"subj"},
+        {en:"were being given", ko:"받고 있었다", t:"verb"},
+        {en:"medicine", ko:"약을", t:"obj"},
+        {en:"at that moment", ko:"바로 그 순간에", t:"mod"}]},
+      {n:88, full:"그 사회는 어리석은 것도 당연하다", chunks:[
+        {en:"The society", ko:"그 사회는", t:"subj"},
+        {en:"may well be", ko:"~인 것도 당연하다", t:"verb"},
+        {en:"foolish", ko:"어리석", t:"comp"}]},
+      {n:89, full:"그 환경은 깨끗하게 유지되어야 한다", chunks:[
+        {en:"The environment", ko:"그 환경은", t:"subj"},
+        {en:"must be kept", ko:"유지되어야 한다", t:"verb"},
+        {en:"clean", ko:"깨끗하게", t:"comp"}]},
+      {n:90, full:"그 사회는 그 기술에 대해 궁금해지고 있다", chunks:[
+        {en:"The society", ko:"그 사회는", t:"subj"},
+        {en:"is becoming", ko:"~해지고 있다", t:"verb"},
+        {en:"curious", ko:"궁금", t:"comp"},
+        {en:"about the technology", ko:"그 기술에 대해", t:"mod"}]},
+      {n:91, full:"그 기술은 그 사회에 큰 발전을 가져다주었다", chunks:[
+        {en:"The technology", ko:"그 기술은", t:"subj"},
+        {en:"has brought", ko:"가져다주었다", t:"verb"},
+        {en:"the society", ko:"그 사회에", t:"obj"},
+        {en:"great progress", ko:"큰 발전을", t:"obj"}]},
+      {n:92, full:"그 사회 전체가 조용해졌다 (그 전쟁 이후에)", chunks:[
+        {en:"The whole society", ko:"그 사회 전체가", t:"subj"},
+        {en:"grew", ko:"~해졌다", t:"verb"},
+        {en:"quiet", ko:"조용", t:"comp"},
+        {en:"after the war", ko:"그 전쟁 이후에", t:"mod"}]},
+      {n:93, full:"그 전문가들은 그 공항에 도착할지도 모른다 (새벽 전에)", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"might arrive", ko:"도착할지도 모른다", t:"verb"},
+        {en:"at the airport", ko:"그 공항에", t:"mod"},
+        {en:"before dawn", ko:"새벽 전에", t:"mod"}]},
+      {n:94, full:"그 사고는 결함 없이 일어났을 리가 없다", chunks:[
+        {en:"The accident", ko:"그 사고는", t:"subj"},
+        {en:"cannot have happened", ko:"일어났을 리가 없다", t:"verb"},
+        {en:"without a fault", ko:"결함 없이", t:"mod"}]},
+      {n:95, full:"그 전문가들은 그 발표를 준비하고 있을 것이다 (오늘 밤에)", chunks:[
+        {en:"The experts", ko:"그 전문가들은", t:"subj"},
+        {en:"will be getting", ko:"~하고 있을 것이다", t:"verb"},
+        {en:"ready", ko:"준비된 상태로", t:"comp"},
+        {en:"for the announcement", ko:"그 발표를 위해", t:"mod"},
+        {en:"tonight", ko:"오늘 밤에", t:"mod"}]},
+      {n:96, full:"그 교사들은 그 반에게 기술의 마법을 보여주고 있었다", chunks:[
+        {en:"The teachers", ko:"그 교사들은", t:"subj"},
+        {en:"were showing", ko:"보여주고 있었다", t:"verb"},
+        {en:"the class", ko:"그 반에게", t:"obj"},
+        {en:"the magic of technology", ko:"기술의 마법을", t:"obj"}]},
+      {n:97, full:"그 군중은 그 기술의 마법을 보게 될 것이다", chunks:[
+        {en:"The crowd", ko:"그 군중은", t:"subj"},
+        {en:"will be shown", ko:"보게 될 것이다", t:"verb"},
+        {en:"the magic of the technology", ko:"그 기술의 마법을", t:"obj"}]},
+      {n:98, full:"그 반은 그 폭풍의 위험을 배웠을지도 모른다", chunks:[
+        {en:"The class", ko:"그 반은", t:"subj"},
+        {en:"may have been taught", ko:"배웠을지도 모른다", t:"verb"},
+        {en:"the danger of the storm", ko:"그 폭풍의 위험을", t:"obj"}]},
+      {n:99, full:"그 시민들은 그 사회가 변하는 것을 볼 것이다 (다음 십 년 안에)", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"will see", ko:"볼 것이다", t:"verb"},
+        {en:"the society", ko:"그 사회가", t:"obj"},
+        {en:"change", ko:"변하는 것을", t:"comp"},
+        {en:"in the next decade", ko:"다음 십 년 안에", t:"mod"}]},
+      {n:100, full:"그 구역 전체가 점검되고 있었다 (그 위원회에 의해)", chunks:[
+        {en:"The whole area", ko:"그 구역 전체가", t:"subj"},
+        {en:"was being inspected", ko:"점검되고 있었다", t:"verb"},
+        {en:"by the committee", ko:"그 위원회에 의해", t:"mod"}]},
+      {n:101, full:"모든 승객이 그 구역을 떠나라고 통보받았을 것이다 (새벽쯤에는)", chunks:[
+        {en:"All the passengers", ko:"모든 승객이", t:"subj"},
+        {en:"will have been told", ko:"통보받았을 것이다", t:"verb"},
+        {en:"to leave the area", ko:"그 구역을 떠나라고", t:"comp"},
+        {en:"by dawn", ko:"새벽쯤에는", t:"mod"}]},
+      {n:102, full:"그 지도자들은 그 자원봉사자들을 일하게 만들고 있었다 (밤새도록)", chunks:[
+        {en:"The leaders", ko:"그 지도자들은", t:"subj"},
+        {en:"were making", ko:"만들고 있었다", t:"verb"},
+        {en:"the volunteers", ko:"그 자원봉사자들을", t:"obj"},
+        {en:"work", ko:"일하게", t:"comp"},
+        {en:"through the night", ko:"밤새도록", t:"mod"}]},
+      {n:103, full:"그 의사들은 그 환자들에게 그 연구의 결과를 말할 것이다", chunks:[
+        {en:"The doctors", ko:"그 의사들은", t:"subj"},
+        {en:"will tell", ko:"말할 것이다", t:"verb"},
+        {en:"the patients", ko:"그 환자들에게", t:"obj"},
+        {en:"the result of the study", ko:"그 연구의 결과를", t:"obj"}]},
+      {n:104, full:"그 정부는 그 시민들이 그 사실을 알게 했음이 틀림없다", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"must have let", ko:"~하게 했음이 틀림없다", t:"verb"},
+        {en:"the citizens", ko:"그 시민들이", t:"obj"},
+        {en:"know the fact", ko:"그 사실을 알게", t:"comp"}]},
+      {n:105, full:"그 에너지는 사라져 있을 것이다 (새벽쯤에는)", chunks:[
+        {en:"The energy", ko:"그 에너지는", t:"subj"},
+        {en:"will have gone", ko:"사라져 있을 것이다", t:"verb"},
+        {en:"by dawn", ko:"새벽쯤에는", t:"mod"}]},
+      {n:106, full:"그 환경이 그 폭풍에 의해 파괴되었는가?", chunks:[
+        {en:"Was the environment ruined", ko:"그 환경이 파괴되었는가", t:"verb"},
+        {en:"by the storm", ko:"그 폭풍에 의해", t:"mod"}]},
+      {n:107, full:"나는 그 기술의 결과가 이상하다고 느껴본 적이 없다", chunks:[
+        {en:"I", ko:"나는", t:"subj"},
+        {en:"have never found", ko:"느껴본 적이 없다", t:"verb"},
+        {en:"the result of the technology", ko:"그 기술의 결과가", t:"obj"},
+        {en:"strange", ko:"이상하다고", t:"comp"}]},
+      {n:108, full:"그 경제는 엄격한 법에 의해 통치되었다", chunks:[
+        {en:"The economy", ko:"그 경제는", t:"subj"},
+        {en:"was governed", ko:"통치되었다", t:"verb"},
+        {en:"by a strict law", ko:"엄격한 법에 의해", t:"mod"}]},
+      {n:109, full:"그 정부는 그 의회에 그 위험을 보여주었을지도 모른다", chunks:[
+        {en:"The government", ko:"그 정부는", t:"subj"},
+        {en:"might have shown", ko:"보여주었을지도 모른다", t:"verb"},
+        {en:"the council", ko:"그 의회에", t:"obj"},
+        {en:"the danger", ko:"그 위험을", t:"obj"}]},
+      {n:110, full:"그 선수들은 회복할 수 있었다 (그 사고 이후에)", chunks:[
+        {en:"The athletes", ko:"그 선수들은", t:"subj"},
+        {en:"were able to recover", ko:"회복할 수 있었다", t:"verb"},
+        {en:"after the accident", ko:"그 사고 이후에", t:"mod"}]},
+      {n:111, full:"그 시민들은 건강 보고서를 받게 될 것이다 (십 년마다)", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"will be sent", ko:"받게 될 것이다", t:"verb"},
+        {en:"a health report", ko:"건강 보고서를", t:"obj"},
+        {en:"every decade", ko:"십 년마다", t:"mod"}]},
+      {n:112, full:"그 환자들은 계속 기다리게 되고 있었다 (한 시간 동안)", chunks:[
+        {en:"The patients", ko:"그 환자들은", t:"subj"},
+        {en:"were being kept", ko:"계속 ~하게 되고 있었다", t:"verb"},
+        {en:"waiting", ko:"기다리도록", t:"comp"},
+        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
+      {n:113, full:"그 에너지가 낭비되지 않게 하자", chunks:[
+        {en:"Let", ko:"~하게 하자", t:"verb"},
+        {en:"the energy", ko:"그 에너지가", t:"obj"},
+        {en:"not be wasted", ko:"낭비되지 않도록", t:"comp"}]},
+      {n:114, full:"그 기술자들은 그 공동체에 안전한 방법을 보여준다", chunks:[
+        {en:"The engineers", ko:"그 기술자들은", t:"subj"},
+        {en:"show", ko:"보여준다", t:"verb"},
+        {en:"the community", ko:"그 공동체에", t:"obj"},
+        {en:"a safe method", ko:"안전한 방법을", t:"obj"}]},
+      {n:115, full:"그 회사들은 그 위원회에 진실을 말했어야 했다", chunks:[
+        {en:"The companies", ko:"그 회사들은", t:"subj"},
+        {en:"ought to have told", ko:"말했어야 했다", t:"verb"},
+        {en:"the committee", ko:"그 위원회에", t:"obj"},
+        {en:"the truth", ko:"진실을", t:"obj"}]},
+      {n:116, full:"그 공무원은 차분해 보인다 (그 발표 전에)", chunks:[
+        {en:"The officer", ko:"그 공무원은", t:"subj"},
+        {en:"looks", ko:"보인다", t:"verb"},
+        {en:"calm", ko:"차분해", t:"comp"},
+        {en:"before the announcement", ko:"그 발표 전에", t:"mod"}]},
+      {n:117, full:"그 시민들은 경고를 받았어야 했다", chunks:[
+        {en:"The citizens", ko:"그 시민들은", t:"subj"},
+        {en:"should have been given", ko:"받았어야 했다", t:"verb"},
+        {en:"a warning", ko:"경고를", t:"obj"}]},
+      {n:118, full:"그 부엌 바닥들은 씻겨야 한다 (그 축제 전에)", chunks:[
+        {en:"The kitchen floors", ko:"그 부엌 바닥들은", t:"subj"},
+        {en:"have to be washed", ko:"씻겨야 한다", t:"verb"},
+        {en:"before the festival", ko:"그 축제 전에", t:"mod"}]},
+      {n:119, full:"그 환경을 보호해라", chunks:[
+        {en:"Protect", ko:"보호해라", t:"verb"},
+        {en:"the environment", ko:"그 환경을", t:"obj"}]},
+      {n:120, full:"그 선수들의 신경이 무너지고 있었다", chunks:[
+        {en:"The nerves of the athletes", ko:"그 선수들의 신경이", t:"subj"},
+        {en:"were failing", ko:"무너지고 있었다", t:"verb"}]},
+    ]},
     { id:"명사절", items:[
       {n:1, full:"그 저자는 그 박물관이 그 기록 전체를 보관한다는 것을 인정한다", chunks:[
         {en:"The author", ko:"그 저자는", t:"subj"},
@@ -6790,566 +7334,6 @@ const DATA = {
         {en:"was", ko:"~였다", t:"verb"},
         {en:"curious", ko:"흥미로웠다고", t:"comp"}]},
     ]},
-    { id:"MASH UP(시제·조동사)", items:[
-      {n:1, full:"그 시민들의 건강이 나아졌다고 보도된다", chunks:[
-        {en:"It", ko:"", t:"skip"},
-        {en:"is reported", ko:"보도된다", t:"verb"},
-        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:3},
-        {en:"the health of the citizens", ko:"그 시민들의 건강이", t:"subj"},
-        {en:"has improved", ko:"나아졌다", t:"verb"}]},
-      {n:2, full:"그 기술자들은 그 기술의 발전을 이미 보게 되었다", chunks:[
-        {en:"The engineers", ko:"그 기술자들은", t:"subj"},
-        {en:"had been shown", ko:"이미 보게 되었다", t:"verb"},
-        {en:"the progress of the technology", ko:"그 기술의 발전을", t:"obj"}]},
-      {n:3, full:"우리는 그 정부가 바뀌었다고 듣게 되었다", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"were told", ko:"듣게 되었다", t:"verb"},
-        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:3},
-        {en:"the government", ko:"그 정부가", t:"subj"},
-        {en:"had changed", ko:"바뀌었다", t:"verb"}]},
-      {n:4, full:"그 전문가들은 그 기술을 십 년 동안 계속 연구해 온 상태일 것이다 (다음 시즌쯤에는)", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"will have been studying", ko:"계속 연구해 온 상태일 것이다", t:"verb"},
-        {en:"the technology", ko:"그 기술을", t:"obj"},
-        {en:"for a decade", ko:"십 년 동안", t:"mod"},
-        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
-      {n:5, full:"그 정부는 그 의회에 그 환경 전체에 관한 보고서를 보내고 있다", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"is sending", ko:"보내고 있다", t:"verb"},
-        {en:"the council", ko:"그 의회에", t:"obj"},
-        {en:"a report about the whole environment", ko:"그 환경 전체에 관한 보고서를", t:"obj"}]},
-      {n:6, full:"그 학자들은 모든 연구의 결과를 보게 되어야 한다", chunks:[
-        {en:"The scholars", ko:"그 학자들은", t:"subj"},
-        {en:"ought to be shown", ko:"보게 되어야 한다", t:"verb"},
-        {en:"the result of every study", ko:"모든 연구의 결과를", t:"obj"}]},
-      {n:7, full:"그 전문가들에게 그 환경을 보호하라고 요청해라", chunks:[
-        {en:"Ask", ko:"요청해라", t:"verb"},
-        {en:"the experts", ko:"그 전문가들에게", t:"obj"},
-        {en:"to protect the environment", ko:"그 환경을 보호하라고", t:"comp"}]},
-      {n:8, full:"그 사회는 곧 조용해지려 한다", chunks:[
-        {en:"The society", ko:"그 사회는", t:"subj"},
-        {en:"is about to become", ko:"곧 ~해지려 한다", t:"verb"},
-        {en:"quiet", ko:"조용", t:"comp"}]},
-      {n:9, full:"그 시민들은 이동하게 될 것이다 (다음 시즌쯤에는)", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"will have been made", ko:"~하게 될 것이다", t:"verb"},
-        {en:"to move", ko:"이동하도록", t:"comp"},
-        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
-      {n:10, full:"그 환경은 파괴되고 있었다 (그 폭풍에 의해)", chunks:[
-        {en:"The environment", ko:"그 환경은", t:"subj"},
-        {en:"was being ruined", ko:"파괴되고 있었다", t:"verb"},
-        {en:"by the storm", ko:"그 폭풍에 의해", t:"mod"}]},
-      {n:11, full:"기술은 매 시즌 발전한다", chunks:[
-        {en:"Technology", ko:"기술은", t:"subj"},
-        {en:"progresses", ko:"발전한다", t:"verb"},
-        {en:"every season", ko:"매 시즌", t:"mod"}]},
-      {n:12, full:"그 기술은 개선되고 있다 (그 회사에 의해)", chunks:[
-        {en:"The technology", ko:"그 기술은", t:"subj"},
-        {en:"is being improved", ko:"개선되고 있다", t:"verb"},
-        {en:"by the company", ko:"그 회사에 의해", t:"mod"}]},
-      {n:13, full:"우리는 그 에너지가 낭비되었다고 들어서는 안 된다", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"should not be told", ko:"들어서는 안 된다", t:"verb"},
-        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:3},
-        {en:"the energy", ko:"그 에너지가", t:"subj"},
-        {en:"was wasted", ko:"낭비되었다", t:"verb"}]},
-      {n:14, full:"그 군중의 에너지가 커졌다 (새벽에)", chunks:[
-        {en:"The energy of the crowd", ko:"그 군중의 에너지가", t:"subj"},
-        {en:"grew", ko:"커졌다", t:"verb"},
-        {en:"at dawn", ko:"새벽에", t:"mod"}]},
-      {n:15, full:"그 환자들은 기다리게 되었었다 (한 시간 동안)", chunks:[
-        {en:"The patients", ko:"그 환자들은", t:"subj"},
-        {en:"had been made", ko:"~하게 되었었다", t:"verb"},
-        {en:"to wait", ko:"기다리도록", t:"comp"},
-        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
-      {n:16, full:"그 자원봉사자들은 그 환경을 위해 행동해야 한다", chunks:[
-        {en:"The volunteers", ko:"그 자원봉사자들은", t:"subj"},
-        {en:"have to act", ko:"행동해야 한다", t:"verb"},
-        {en:"for the environment", ko:"그 환경을 위해", t:"mod"}]},
-      {n:17, full:"그 공동체에 그 사회의 발전을 보여줘라", chunks:[
-        {en:"Show", ko:"보여줘라", t:"verb"},
-        {en:"the community", ko:"그 공동체에", t:"obj"},
-        {en:"the progress of the society", ko:"그 사회의 발전을", t:"obj"}]},
-      {n:18, full:"그 학자들은 매 시즌 그 사회의 발전을 발표한다", chunks:[
-        {en:"The scholars", ko:"그 학자들은", t:"subj"},
-        {en:"announce", ko:"발표한다", t:"verb"},
-        {en:"the progress of the society", ko:"그 사회의 발전을", t:"obj"},
-        {en:"every season", ko:"매 시즌", t:"mod"}]},
-      {n:19, full:"그 사고는 그 군중을 경계하게 만들었음이 틀림없다", chunks:[
-        {en:"The accident", ko:"그 사고는", t:"subj"},
-        {en:"must have made", ko:"만들었음이 틀림없다", t:"verb"},
-        {en:"the crowd", ko:"그 군중을", t:"obj"},
-        {en:"alert", ko:"경계하게", t:"comp"}]},
-      {n:20, full:"그 승객들이 웃는 것이 들릴 것이다 (그 탑승구에서)", chunks:[
-        {en:"The passengers", ko:"그 승객들이", t:"subj"},
-        {en:"will be heard", ko:"들릴 것이다", t:"verb"},
-        {en:"to laugh", ko:"웃는 것이", t:"comp"},
-        {en:"at the gate", ko:"그 탑승구에서", t:"mod"}]},
-      {n:21, full:"그 지도자들은 그 위원회에 그 범죄를 보여줄 필요는 없었다", chunks:[
-        {en:"The leaders", ko:"그 지도자들은", t:"subj"},
-        {en:"need not have shown", ko:"보여줄 필요는 없었다", t:"verb"},
-        {en:"the committee", ko:"그 위원회에", t:"obj"},
-        {en:"the crime", ko:"그 범죄를", t:"obj"}]},
-      {n:22, full:"그 새 법은 그 환경을 깨끗하게 유지한다", chunks:[
-        {en:"The new law", ko:"그 새 법은", t:"subj"},
-        {en:"keeps", ko:"유지한다", t:"verb"},
-        {en:"the environment", ko:"그 환경을", t:"obj"},
-        {en:"clean", ko:"깨끗하게", t:"comp"}]},
-      {n:23, full:"그 시민들은 그 환경에 대해 침묵한 채로 있을 수 없다", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"cannot remain", ko:"있을 수 없다", t:"verb"},
-        {en:"silent", ko:"침묵한 채로", t:"comp"},
-        {en:"about the environment", ko:"그 환경에 대해", t:"mod"}]},
-      {n:24, full:"그 전문가는 그 반에게 그 기술의 발전을 가르치고 있다", chunks:[
-        {en:"The expert", ko:"그 전문가는", t:"subj"},
-        {en:"is teaching", ko:"가르치고 있다", t:"verb"},
-        {en:"the class", ko:"그 반에게", t:"obj"},
-        {en:"the progress of the technology", ko:"그 기술의 발전을", t:"obj"}]},
-      {n:25, full:"그 회사들은 그 전문가들에게 그 기술을 개선해 달라고 요청할 것이다 (다음 주말에)", chunks:[
-        {en:"The companies", ko:"그 회사들은", t:"subj"},
-        {en:"will ask", ko:"요청할 것이다", t:"verb"},
-        {en:"the experts", ko:"그 전문가들에게", t:"obj"},
-        {en:"to improve the technology", ko:"그 기술을 개선해 달라고", t:"comp"},
-        {en:"next weekend", ko:"다음 주말에", t:"mod"}]},
-      {n:26, full:"그 환자들은 경계 상태로 유지되고 있다", chunks:[
-        {en:"The patients", ko:"그 환자들은", t:"subj"},
-        {en:"are being kept", ko:"유지되고 있다", t:"verb"},
-        {en:"alert", ko:"경계 상태로", t:"comp"}]},
-      {n:27, full:"아무도 그 마법이 어떻게 작동하는지를 설명한 적이 없다", chunks:[
-        {en:"Nobody", ko:"아무도", t:"subj"},
-        {en:"has explained", ko:"설명한 적이 없다", t:"verb"},
-        {en:"how", ko:"어떻게 ~인지를", t:"obj", link:true, marker:true, span:3},
-        {en:"the magic", ko:"그 마법이", t:"subj"},
-        {en:"works", ko:"작동하는지", t:"verb"}]},
-      {n:28, full:"그 기술자들은 그 기술에 대해 점점 궁금해지고 있던 상태였다", chunks:[
-        {en:"The engineers", ko:"그 기술자들은", t:"subj"},
-        {en:"had been growing", ko:"점점 ~해지고 있던 상태였다", t:"verb"},
-        {en:"curious", ko:"궁금", t:"comp"},
-        {en:"about the technology", ko:"그 기술에 대해", t:"mod"}]},
-      {n:29, full:"그 공무원들은 계속 일하게 될지도 모른다 (밤새도록)", chunks:[
-        {en:"The officers", ko:"그 공무원들은", t:"subj"},
-        {en:"may be kept", ko:"계속 ~하게 될지도 모른다", t:"verb"},
-        {en:"working", ko:"일하도록", t:"comp"},
-        {en:"through the night", ko:"밤새도록", t:"mod"}]},
-      {n:30, full:"그 경제는 엄격한 규칙에 의해 통치되어야 한다", chunks:[
-        {en:"The economy", ko:"그 경제는", t:"subj"},
-        {en:"must be governed", ko:"통치되어야 한다", t:"verb"},
-        {en:"by a strict rule", ko:"엄격한 규칙에 의해", t:"mod"}]},
-      {n:31, full:"그 정부는 그 위험을 받아들일 수밖에 없다", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"has no choice but to accept", ko:"받아들일 수밖에 없다", t:"verb"},
-        {en:"the risk", ko:"그 위험을", t:"obj"}]},
-      {n:32, full:"그 정부는 그 이전 계획을 취소했었다", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"had cancelled", ko:"취소했었다", t:"verb"},
-        {en:"the previous plan", ko:"그 이전 계획을", t:"obj"}]},
-      {n:33, full:"그 환자들은 그 결과 전체를 받아야 한다", chunks:[
-        {en:"The patients", ko:"그 환자들은", t:"subj"},
-        {en:"must be given", ko:"받아야 한다", t:"verb"},
-        {en:"the whole result", ko:"그 결과 전체를", t:"obj"}]},
-      {n:34, full:"그 의사들은 그 환자들의 건강에 대해 주의를 기울여야 한다", chunks:[
-        {en:"The doctors", ko:"그 의사들은", t:"subj"},
-        {en:"ought to be", ko:"~해야 한다", t:"verb"},
-        {en:"alert", ko:"주의를 기울이는 상태로", t:"comp"},
-        {en:"about the health of the patients", ko:"그 환자들의 건강에 대해", t:"mod"}]},
-      {n:35, full:"우리는 그 환경에 기회를 주었어야 했다", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"should have given", ko:"주었어야 했다", t:"verb"},
-        {en:"the environment", ko:"그 환경에", t:"obj"},
-        {en:"a chance", ko:"기회를", t:"obj"}]},
-      {n:36, full:"그 전문가들은 그 경제가 나아졌었다고 주장했다", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"argued", ko:"주장했다", t:"verb"},
-        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:3},
-        {en:"the economy", ko:"그 경제가", t:"subj"},
-        {en:"had improved", ko:"나아졌었다", t:"verb"}]},
-      {n:37, full:"그 사회는 안전하게 유지되었어야 했다", chunks:[
-        {en:"The society", ko:"그 사회는", t:"subj"},
-        {en:"should have been kept", ko:"유지되었어야 했다", t:"verb"},
-        {en:"safe", ko:"안전하게", t:"comp"}]},
-      {n:38, full:"그 기술은 개선되었었다 (그 축제 전에)", chunks:[
-        {en:"The technology", ko:"그 기술은", t:"subj"},
-        {en:"had been improved", ko:"개선되었었다", t:"verb"},
-        {en:"before the festival", ko:"그 축제 전에", t:"mod"}]},
-      {n:39, full:"그 전문가들은 그 기술이 발전하는 것을 지켜보고 있을 것이다 (바로 그 순간에)", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"will be watching", ko:"지켜보고 있을 것이다", t:"verb"},
-        {en:"the technology", ko:"그 기술이", t:"obj"},
-        {en:"progress", ko:"발전하는 것을", t:"comp"},
-        {en:"at that moment", ko:"바로 그 순간에", t:"mod"}]},
-      {n:40, full:"그 전문가들은 그 계획을 바꾸도록 강요당할지도 모른다", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"might be forced", ko:"강요당할지도 모른다", t:"verb"},
-        {en:"to change the plan", ko:"그 계획을 바꾸도록", t:"comp"}]},
-      {n:41, full:"너는 네 건강에 신경 쓰는 편이 낫다", chunks:[
-        {en:"You", ko:"너는", t:"subj"},
-        {en:"had better mind", ko:"신경 쓰는 편이 낫다", t:"verb"},
-        {en:"your health", ko:"네 건강에", t:"obj"}]},
-      {n:42, full:"그 신경들은 무너질 수도 있었다 (그 발표 전에)", chunks:[
-        {en:"The nerves", ko:"그 신경들은", t:"subj"},
-        {en:"could fail", ko:"무너질 수도 있었다", t:"verb"},
-        {en:"before the announcement", ko:"그 발표 전에", t:"mod"}]},
-      {n:43, full:"그 가족들은 그 부엌이 청소되게 하고 있다 (이번 주말에)", chunks:[
-        {en:"The families", ko:"그 가족들은", t:"subj"},
-        {en:"are having", ko:"~되게 하고 있다", t:"verb"},
-        {en:"the kitchen", ko:"그 부엌이", t:"obj"},
-        {en:"cleaned", ko:"청소되도록", t:"comp"},
-        {en:"this weekend", ko:"이번 주말에", t:"mod"}]},
-      {n:44, full:"그 사회의 발전이 얼마나 대단한가!", chunks:[
-        {en:"How great", ko:"얼마나 대단한가", t:"comp"},
-        {en:"the progress of the society", ko:"그 사회의 발전이", t:"subj"},
-        {en:"is", ko:"~인가", t:"verb"}]},
-      {n:45, full:"그 의회는 그 전문가들이 그 에너지를 연구하도록 허락했을 것이다 (다음 십 년 안에)", chunks:[
-        {en:"The council", ko:"그 의회는", t:"subj"},
-        {en:"will have allowed", ko:"허락했을 것이다", t:"verb"},
-        {en:"the experts", ko:"그 전문가들이", t:"obj"},
-        {en:"to study the energy", ko:"그 에너지를 연구하도록", t:"comp"},
-        {en:"within the next decade", ko:"다음 십 년 안에", t:"mod"}]},
-      {n:46, full:"그 경제는 계속 발전해 오고 있다 (지난 시즌 이후로)", chunks:[
-        {en:"The economy", ko:"그 경제는", t:"subj"},
-        {en:"has been progressing", ko:"계속 발전해 오고 있다", t:"verb"},
-        {en:"since the past season", ko:"지난 시즌 이후로", t:"mod"}]},
-      {n:47, full:"그 기술의 마법은 감탄받지 않을 수 없다", chunks:[
-        {en:"The magic of the technology", ko:"그 기술의 마법은", t:"subj"},
-        {en:"cannot but be admired", ko:"감탄받지 않을 수 없다", t:"verb"}]},
-      {n:48, full:"그 경제는 발전하고 있다 (지금 이 순간)", chunks:[
-        {en:"The economy", ko:"그 경제는", t:"subj"},
-        {en:"is progressing", ko:"발전하고 있다", t:"verb"},
-        {en:"at this moment", ko:"지금 이 순간", t:"mod"}]},
-      {n:49, full:"그 환경은 파괴되어 있을 것이다 (그 범죄에 의해)", chunks:[
-        {en:"The environment", ko:"그 환경은", t:"subj"},
-        {en:"will have been ruined", ko:"파괴되어 있을 것이다", t:"verb"},
-        {en:"by the crime", ko:"그 범죄에 의해", t:"mod"}]},
-      {n:50, full:"그 사회는 변할 것이다 (그 전쟁 이후에)", chunks:[
-        {en:"The society", ko:"그 사회는", t:"subj"},
-        {en:"is going to change", ko:"변할 것이다", t:"verb"},
-        {en:"after the war", ko:"그 전쟁 이후에", t:"mod"}]},
-      {n:51, full:"그 마법은 그 시민들에게 이상하게 보여서는 안 된다", chunks:[
-        {en:"The magic", ko:"그 마법은", t:"subj"},
-        {en:"must not appear", ko:"보여서는 안 된다", t:"verb"},
-        {en:"strange", ko:"이상하게", t:"comp"},
-        {en:"to the citizens", ko:"그 시민들에게", t:"mod"}]},
-      {n:52, full:"그 의사들은 그 시민들의 건강을 보고할 것이다 (다음 시즌에)", chunks:[
-        {en:"The doctors", ko:"그 의사들은", t:"subj"},
-        {en:"will report", ko:"보고할 것이다", t:"verb"},
-        {en:"the health of the citizens", ko:"그 시민들의 건강을", t:"obj"},
-        {en:"next season", ko:"다음 시즌에", t:"mod"}]},
-      {n:53, full:"나는 그 에너지를 낭비하기보다 그 환경을 보호하는 편이 낫겠다", chunks:[
-        {en:"I", ko:"나는", t:"subj"},
-        {en:"would rather protect", ko:"보호하는 편이 낫겠다", t:"verb"},
-        {en:"the environment", ko:"그 환경을", t:"obj"},
-        {en:"than waste the energy", ko:"그 에너지를 낭비하기보다", t:"mod"}]},
-      {n:54, full:"그 정부는 무엇을 발표하고 있었는가?", chunks:[
-        {en:"What", ko:"무엇을", t:"obj"},
-        {en:"was the government announcing", ko:"그 정부는 발표하고 있었는가", t:"verb"}]},
-      {n:55, full:"그 전문가들은 그 기술을 연구하도록 허락받을 것이다 (다음 시즌에)", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"will be allowed", ko:"허락받을 것이다", t:"verb"},
-        {en:"to study the technology", ko:"그 기술을 연구하도록", t:"comp"},
-        {en:"next season", ko:"다음 시즌에", t:"mod"}]},
-      {n:56, full:"그 공무원들은 그 보고서 전부를 받았을 것이다 (그 축제 전에)", chunks:[
-        {en:"The officers", ko:"그 공무원들은", t:"subj"},
-        {en:"will have been given", ko:"받았을 것이다", t:"verb"},
-        {en:"all the reports", ko:"그 보고서 전부를", t:"obj"},
-        {en:"before the festival", ko:"그 축제 전에", t:"mod"}]},
-      {n:57, full:"그 정부는 그 시민들에게 그 경제의 변화를 보여주었다 (지난 시즌에)", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"showed", ko:"보여주었다", t:"verb"},
-        {en:"the citizens", ko:"그 시민들에게", t:"obj"},
-        {en:"the change of the economy", ko:"그 경제의 변화를", t:"obj"},
-        {en:"in the past season", ko:"지난 시즌에", t:"mod"}]},
-      {n:58, full:"그 의사들은 그 환자들에게 그 위험을 말하지 않을 수 없다", chunks:[
-        {en:"The doctors", ko:"그 의사들은", t:"subj"},
-        {en:"cannot help telling", ko:"말하지 않을 수 없다", t:"verb"},
-        {en:"the patients", ko:"그 환자들에게", t:"obj"},
-        {en:"the risk", ko:"그 위험을", t:"obj"}]},
-      {n:59, full:"우리는 그 안전한 기술을 선택하는 편이 낫다", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"may as well opt for", ko:"선택하는 편이 낫다", t:"verb"},
-        {en:"the safe technology", ko:"그 안전한 기술을", t:"obj"}]},
-      {n:60, full:"모든 시민은 기회를 받아야 한다", chunks:[
-        {en:"Every citizen", ko:"모든 시민은", t:"subj"},
-        {en:"should be given", ko:"받아야 한다", t:"verb"},
-        {en:"a chance", ko:"기회를", t:"obj"}]},
-      {n:61, full:"그 전문가들은 그 에너지에 대해 엄격할 필요는 없다", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"do not have to be", ko:"~할 필요는 없다", t:"verb"},
-        {en:"strict", ko:"엄격", t:"comp"},
-        {en:"about the energy", ko:"그 에너지에 대해", t:"mod"}]},
-      {n:62, full:"우리는 그 사회의 발전에 감탄하지 않을 수 없다", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"cannot but admire", ko:"감탄하지 않을 수 없다", t:"verb"},
-        {en:"the progress of the society", ko:"그 사회의 발전에", t:"obj"}]},
-      {n:63, full:"그 정부는 그 시민들에게 새 계획을 약속했을 것이다 (다음 시즌쯤에는)", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"will have promised", ko:"약속했을 것이다", t:"verb"},
-        {en:"the citizens", ko:"그 시민들에게", t:"obj"},
-        {en:"a new plan", ko:"새 계획을", t:"obj"},
-        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
-      {n:64, full:"그 범죄는 막아졌음이 틀림없다 (그 경보에 의해)", chunks:[
-        {en:"The crime", ko:"그 범죄는", t:"subj"},
-        {en:"must have been prevented", ko:"막아졌음이 틀림없다", t:"verb"},
-        {en:"by the alarm", ko:"그 경보에 의해", t:"mod"}]},
-      {n:65, full:"그 의사들은 그 환자들이 회복하는 것을 계속 지켜보고 있었다 (한 시간 동안)", chunks:[
-        {en:"The doctors", ko:"그 의사들은", t:"subj"},
-        {en:"had been watching", ko:"계속 지켜보고 있었다", t:"verb"},
-        {en:"the patients", ko:"그 환자들이", t:"obj"},
-        {en:"recover", ko:"회복하는 것을", t:"comp"},
-        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
-      {n:66, full:"모든 시민은 건강 보고서를 받는다", chunks:[
-        {en:"Every citizen", ko:"모든 시민은", t:"subj"},
-        {en:"is given", ko:"받는다", t:"verb"},
-        {en:"a health report", ko:"건강 보고서를", t:"obj"}]},
-      {n:67, full:"그 약이 그 환자들을 차분하게 유지했음이 틀림없다", chunks:[
-        {en:"The medicine", ko:"그 약이", t:"subj"},
-        {en:"must have kept", ko:"유지했음이 틀림없다", t:"verb"},
-        {en:"the patients", ko:"그 환자들을", t:"obj"},
-        {en:"calm", ko:"차분하게", t:"comp"}]},
-      {n:68, full:"그 환자들의 신경이 무너지고 있던 상태였다 (여러 시간 동안)", chunks:[
-        {en:"The nerves of the patients", ko:"그 환자들의 신경이", t:"subj"},
-        {en:"had been failing", ko:"무너지고 있던 상태였다", t:"verb"},
-        {en:"for hours", ko:"여러 시간 동안", t:"mod"}]},
-      {n:69, full:"우리는 그 기술이 안전한지 궁금해하고 있다", chunks:[
-        {en:"We", ko:"우리는", t:"subj"},
-        {en:"are wondering", ko:"궁금해하고 있다", t:"verb"},
-        {en:"whether", ko:"~인지를", t:"obj", link:true, marker:true, span:3},
-        {en:"the technology", ko:"그 기술이", t:"subj"},
-        {en:"is safe", ko:"안전한지", t:"verb"}]},
-      {n:70, full:"그 시민들은 그 환경을 보호해야 한다", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"must protect", ko:"보호해야 한다", t:"verb"},
-        {en:"the environment", ko:"그 환경을", t:"obj"}]},
-      {n:71, full:"그 회사들은 그 경제에 대해 차분해 보이는 것도 당연하다", chunks:[
-        {en:"The companies", ko:"그 회사들은", t:"subj"},
-        {en:"may well seem", ko:"보이는 것도 당연하다", t:"verb"},
-        {en:"calm", ko:"차분해", t:"comp"},
-        {en:"about the economy", ko:"그 경제에 대해", t:"mod"}]},
-      {n:72, full:"모든 환자는 그 결과를 듣게 되었을 것이다 (다음 주말쯤에는)", chunks:[
-        {en:"Every patient", ko:"모든 환자는", t:"subj"},
-        {en:"will have been told", ko:"듣게 되었을 것이다", t:"verb"},
-        {en:"the result", ko:"그 결과를", t:"obj"},
-        {en:"by next weekend", ko:"다음 주말쯤에는", t:"mod"}]},
-      {n:73, full:"누구에 의해 그 기술이 개선되었는가?", chunks:[
-        {en:"By whom", ko:"누구에 의해", t:"mod"},
-        {en:"was the technology improved", ko:"그 기술이 개선되었는가", t:"verb"}]},
-      {n:74, full:"그 팀은 그 발전에 대한 보상을 받았다", chunks:[
-        {en:"The team", ko:"그 팀은", t:"subj"},
-        {en:"has been given", ko:"받았다", t:"verb"},
-        {en:"a reward for the progress", ko:"그 발전에 대한 보상을", t:"obj"}]},
-      {n:75, full:"그 전문가들은 그 공동체가 그 사회의 발전을 이해하도록 도와야 한다", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"should help", ko:"도와야 한다", t:"verb"},
-        {en:"the community", ko:"그 공동체가", t:"obj"},
-        {en:"understand the progress of the society", ko:"그 사회의 발전을 이해하도록", t:"comp"}]},
-      {n:76, full:"기술은 지도자 없이도 발전할 수 있다", chunks:[
-        {en:"Technology", ko:"기술은", t:"subj"},
-        {en:"can progress", ko:"발전할 수 있다", t:"verb"},
-        {en:"without a leader", ko:"지도자 없이도", t:"mod"}]},
-      {n:77, full:"그 경제는 회복되고 있을 것이다 (다음 시즌쯤에는)", chunks:[
-        {en:"The economy", ko:"그 경제는", t:"subj"},
-        {en:"will be recovering", ko:"회복되고 있을 것이다", t:"verb"},
-        {en:"by next season", ko:"다음 시즌쯤에는", t:"mod"}]},
-      {n:78, full:"그 기술의 마법이 잊히지 않게 하자", chunks:[
-        {en:"Let", ko:"~하게 하자", t:"verb"},
-        {en:"the magic of the technology", ko:"그 기술의 마법이", t:"obj"},
-        {en:"not be forgotten", ko:"잊히지 않도록", t:"comp"}]},
-      {n:79, full:"그 신경들은 차분해져 있을 것이다 (새벽쯤에는)", chunks:[
-        {en:"The nerves", ko:"그 신경들은", t:"subj"},
-        {en:"will have become", ko:"~해져 있을 것이다", t:"verb"},
-        {en:"calm", ko:"차분", t:"comp"},
-        {en:"by dawn", ko:"새벽쯤에는", t:"mod"}]},
-      {n:80, full:"그 지도자는 그 도시를 바꾸도록 만들어지는 것도 당연하다", chunks:[
-        {en:"The leader", ko:"그 지도자는", t:"subj"},
-        {en:"may well be made", ko:"만들어지는 것도 당연하다", t:"verb"},
-        {en:"to change the city", ko:"그 도시를 바꾸도록", t:"comp"}]},
-      {n:81, full:"누가 그 경제를 통치하고 있는가?", chunks:[
-        {en:"Who", ko:"누가", t:"subj"},
-        {en:"is governing", ko:"통치하고 있는가", t:"verb"},
-        {en:"the economy", ko:"그 경제를", t:"obj"}]},
-      {n:82, full:"그 시민들은 그 지도자를 천재라고 부를지도 모른다", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"may call", ko:"부를지도 모른다", t:"verb"},
-        {en:"the leader", ko:"그 지도자를", t:"obj"},
-        {en:"a genius", ko:"천재라고", t:"comp"}]},
-      {n:83, full:"그 전문가들은 그 바다의 에너지를 연구하도록 요청받고 있었다", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"were being asked", ko:"요청받고 있었다", t:"verb"},
-        {en:"to study the energy of the ocean", ko:"그 바다의 에너지를 연구하도록", t:"comp"}]},
-      {n:84, full:"그 회사는 그 팀에게 그 발전에 대한 보상을 주었다", chunks:[
-        {en:"The company", ko:"그 회사는", t:"subj"},
-        {en:"has given", ko:"주었다", t:"verb"},
-        {en:"the team", ko:"그 팀에게", t:"obj"},
-        {en:"a reward for the progress", ko:"그 발전에 대한 보상을", t:"obj"}]},
-      {n:85, full:"정말 훌륭한 기술이구나!", chunks:[
-        {en:"What a brilliant technology", ko:"정말 훌륭한 기술", t:"comp"},
-        {en:"it", ko:"그것은", t:"subj"},
-        {en:"is", ko:"~이구나", t:"verb"}]},
-      {n:86, full:"그 환경은 깨끗하게 유지된다 (그 시민들에 의해)", chunks:[
-        {en:"The environment", ko:"그 환경은", t:"subj"},
-        {en:"is kept", ko:"유지된다", t:"verb"},
-        {en:"clean", ko:"깨끗하게", t:"comp"},
-        {en:"by the citizens", ko:"그 시민들에 의해", t:"mod"}]},
-      {n:87, full:"그 환자들은 약을 받고 있었다 (바로 그 순간에)", chunks:[
-        {en:"The patients", ko:"그 환자들은", t:"subj"},
-        {en:"were being given", ko:"받고 있었다", t:"verb"},
-        {en:"medicine", ko:"약을", t:"obj"},
-        {en:"at that moment", ko:"바로 그 순간에", t:"mod"}]},
-      {n:88, full:"그 사회는 어리석은 것도 당연하다", chunks:[
-        {en:"The society", ko:"그 사회는", t:"subj"},
-        {en:"may well be", ko:"~인 것도 당연하다", t:"verb"},
-        {en:"foolish", ko:"어리석", t:"comp"}]},
-      {n:89, full:"그 환경은 깨끗하게 유지되어야 한다", chunks:[
-        {en:"The environment", ko:"그 환경은", t:"subj"},
-        {en:"must be kept", ko:"유지되어야 한다", t:"verb"},
-        {en:"clean", ko:"깨끗하게", t:"comp"}]},
-      {n:90, full:"그 사회는 그 기술에 대해 궁금해지고 있다", chunks:[
-        {en:"The society", ko:"그 사회는", t:"subj"},
-        {en:"is becoming", ko:"~해지고 있다", t:"verb"},
-        {en:"curious", ko:"궁금", t:"comp"},
-        {en:"about the technology", ko:"그 기술에 대해", t:"mod"}]},
-      {n:91, full:"그 기술은 그 사회에 큰 발전을 가져다주었다", chunks:[
-        {en:"The technology", ko:"그 기술은", t:"subj"},
-        {en:"has brought", ko:"가져다주었다", t:"verb"},
-        {en:"the society", ko:"그 사회에", t:"obj"},
-        {en:"great progress", ko:"큰 발전을", t:"obj"}]},
-      {n:92, full:"그 사회 전체가 조용해졌다 (그 전쟁 이후에)", chunks:[
-        {en:"The whole society", ko:"그 사회 전체가", t:"subj"},
-        {en:"grew", ko:"~해졌다", t:"verb"},
-        {en:"quiet", ko:"조용", t:"comp"},
-        {en:"after the war", ko:"그 전쟁 이후에", t:"mod"}]},
-      {n:93, full:"그 전문가들은 그 공항에 도착할지도 모른다 (새벽 전에)", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"might arrive", ko:"도착할지도 모른다", t:"verb"},
-        {en:"at the airport", ko:"그 공항에", t:"mod"},
-        {en:"before dawn", ko:"새벽 전에", t:"mod"}]},
-      {n:94, full:"그 사고는 결함 없이 일어났을 리가 없다", chunks:[
-        {en:"The accident", ko:"그 사고는", t:"subj"},
-        {en:"cannot have happened", ko:"일어났을 리가 없다", t:"verb"},
-        {en:"without a fault", ko:"결함 없이", t:"mod"}]},
-      {n:95, full:"그 전문가들은 그 발표를 준비하고 있을 것이다 (오늘 밤에)", chunks:[
-        {en:"The experts", ko:"그 전문가들은", t:"subj"},
-        {en:"will be getting", ko:"~하고 있을 것이다", t:"verb"},
-        {en:"ready", ko:"준비된 상태로", t:"comp"},
-        {en:"for the announcement", ko:"그 발표를 위해", t:"mod"},
-        {en:"tonight", ko:"오늘 밤에", t:"mod"}]},
-      {n:96, full:"그 교사들은 그 반에게 기술의 마법을 보여주고 있었다", chunks:[
-        {en:"The teachers", ko:"그 교사들은", t:"subj"},
-        {en:"were showing", ko:"보여주고 있었다", t:"verb"},
-        {en:"the class", ko:"그 반에게", t:"obj"},
-        {en:"the magic of technology", ko:"기술의 마법을", t:"obj"}]},
-      {n:97, full:"그 군중은 그 기술의 마법을 보게 될 것이다", chunks:[
-        {en:"The crowd", ko:"그 군중은", t:"subj"},
-        {en:"will be shown", ko:"보게 될 것이다", t:"verb"},
-        {en:"the magic of the technology", ko:"그 기술의 마법을", t:"obj"}]},
-      {n:98, full:"그 반은 그 폭풍의 위험을 배웠을지도 모른다", chunks:[
-        {en:"The class", ko:"그 반은", t:"subj"},
-        {en:"may have been taught", ko:"배웠을지도 모른다", t:"verb"},
-        {en:"the danger of the storm", ko:"그 폭풍의 위험을", t:"obj"}]},
-      {n:99, full:"그 시민들은 그 사회가 변하는 것을 볼 것이다 (다음 십 년 안에)", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"will see", ko:"볼 것이다", t:"verb"},
-        {en:"the society", ko:"그 사회가", t:"obj"},
-        {en:"change", ko:"변하는 것을", t:"comp"},
-        {en:"in the next decade", ko:"다음 십 년 안에", t:"mod"}]},
-      {n:100, full:"그 기술이 안전하다고 결론지어졌다", chunks:[
-        {en:"It", ko:"", t:"skip"},
-        {en:"was concluded", ko:"결론지어졌다", t:"verb"},
-        {en:"that", ko:"~라고", t:"subj", link:true, marker:true, span:3},
-        {en:"the technology", ko:"그 기술이", t:"subj"},
-        {en:"was safe", ko:"안전하다", t:"verb"}]},
-      {n:101, full:"모든 승객이 그 구역을 떠나라고 통보받았을 것이다 (새벽쯤에는)", chunks:[
-        {en:"All the passengers", ko:"모든 승객이", t:"subj"},
-        {en:"will have been told", ko:"통보받았을 것이다", t:"verb"},
-        {en:"to leave the area", ko:"그 구역을 떠나라고", t:"comp"},
-        {en:"by dawn", ko:"새벽쯤에는", t:"mod"}]},
-      {n:102, full:"그 지도자들은 그 자원봉사자들을 일하게 만들고 있었다 (밤새도록)", chunks:[
-        {en:"The leaders", ko:"그 지도자들은", t:"subj"},
-        {en:"were making", ko:"만들고 있었다", t:"verb"},
-        {en:"the volunteers", ko:"그 자원봉사자들을", t:"obj"},
-        {en:"work", ko:"일하게", t:"comp"},
-        {en:"through the night", ko:"밤새도록", t:"mod"}]},
-      {n:103, full:"그 의사들은 그 환자들에게 그 연구의 결과를 말할 것이다", chunks:[
-        {en:"The doctors", ko:"그 의사들은", t:"subj"},
-        {en:"will tell", ko:"말할 것이다", t:"verb"},
-        {en:"the patients", ko:"그 환자들에게", t:"obj"},
-        {en:"the result of the study", ko:"그 연구의 결과를", t:"obj"}]},
-      {n:104, full:"그 정부는 그 시민들이 그 사실을 알게 했음이 틀림없다", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"must have let", ko:"~하게 했음이 틀림없다", t:"verb"},
-        {en:"the citizens", ko:"그 시민들이", t:"obj"},
-        {en:"know the fact", ko:"그 사실을 알게", t:"comp"}]},
-      {n:105, full:"그 에너지는 사라져 있을 것이다 (새벽쯤에는)", chunks:[
-        {en:"The energy", ko:"그 에너지는", t:"subj"},
-        {en:"will have gone", ko:"사라져 있을 것이다", t:"verb"},
-        {en:"by dawn", ko:"새벽쯤에는", t:"mod"}]},
-      {n:106, full:"그 환경이 그 폭풍에 의해 파괴되었는가?", chunks:[
-        {en:"Was the environment ruined", ko:"그 환경이 파괴되었는가", t:"verb"},
-        {en:"by the storm", ko:"그 폭풍에 의해", t:"mod"}]},
-      {n:107, full:"나는 그 기술의 결과가 이상하다고 느껴본 적이 없다", chunks:[
-        {en:"I", ko:"나는", t:"subj"},
-        {en:"have never found", ko:"느껴본 적이 없다", t:"verb"},
-        {en:"the result of the technology", ko:"그 기술의 결과가", t:"obj"},
-        {en:"strange", ko:"이상하다고", t:"comp"}]},
-      {n:108, full:"그 경제는 엄격한 법에 의해 통치되었다", chunks:[
-        {en:"The economy", ko:"그 경제는", t:"subj"},
-        {en:"was governed", ko:"통치되었다", t:"verb"},
-        {en:"by a strict law", ko:"엄격한 법에 의해", t:"mod"}]},
-      {n:109, full:"그 정부는 그 의회에 그 위험을 보여주었을지도 모른다", chunks:[
-        {en:"The government", ko:"그 정부는", t:"subj"},
-        {en:"might have shown", ko:"보여주었을지도 모른다", t:"verb"},
-        {en:"the council", ko:"그 의회에", t:"obj"},
-        {en:"the danger", ko:"그 위험을", t:"obj"}]},
-      {n:110, full:"그 선수들은 회복할 수 있었다 (그 사고 이후에)", chunks:[
-        {en:"The athletes", ko:"그 선수들은", t:"subj"},
-        {en:"were able to recover", ko:"회복할 수 있었다", t:"verb"},
-        {en:"after the accident", ko:"그 사고 이후에", t:"mod"}]},
-      {n:111, full:"그 시민들은 건강 보고서를 받게 될 것이다 (십 년마다)", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"will be sent", ko:"받게 될 것이다", t:"verb"},
-        {en:"a health report", ko:"건강 보고서를", t:"obj"},
-        {en:"every decade", ko:"십 년마다", t:"mod"}]},
-      {n:112, full:"그 환자들은 계속 기다리게 되고 있었다 (한 시간 동안)", chunks:[
-        {en:"The patients", ko:"그 환자들은", t:"subj"},
-        {en:"were being kept", ko:"계속 ~하게 되고 있었다", t:"verb"},
-        {en:"waiting", ko:"기다리도록", t:"comp"},
-        {en:"for an hour", ko:"한 시간 동안", t:"mod"}]},
-      {n:113, full:"그 에너지가 낭비되지 않게 하자", chunks:[
-        {en:"Let", ko:"~하게 하자", t:"verb"},
-        {en:"the energy", ko:"그 에너지가", t:"obj"},
-        {en:"not be wasted", ko:"낭비되지 않도록", t:"comp"}]},
-      {n:114, full:"그 보고서들은 그 시민들에게 그 사회가 바뀌었다고 말한다", chunks:[
-        {en:"The reports", ko:"그 보고서들은", t:"subj"},
-        {en:"tell", ko:"말한다", t:"verb"},
-        {en:"the citizens", ko:"그 시민들에게", t:"obj"},
-        {en:"that", ko:"~라고", t:"obj", link:true, marker:true, span:3},
-        {en:"the society", ko:"그 사회가", t:"subj"},
-        {en:"has changed", ko:"바뀌었다", t:"verb"}]},
-      {n:115, full:"그 회사들은 그 위원회에 진실을 말했어야 했다", chunks:[
-        {en:"The companies", ko:"그 회사들은", t:"subj"},
-        {en:"ought to have told", ko:"말했어야 했다", t:"verb"},
-        {en:"the committee", ko:"그 위원회에", t:"obj"},
-        {en:"the truth", ko:"진실을", t:"obj"}]},
-      {n:116, full:"그 환경이 중요하다는 것은 분명하다", chunks:[
-        {en:"That", ko:"~라는 것은", t:"subj", link:true, marker:true, span:3},
-        {en:"the environment", ko:"그 환경이", t:"subj"},
-        {en:"matters", ko:"중요하다는", t:"verb"},
-        {en:"is", ko:"~하다", t:"verb"},
-        {en:"obvious", ko:"분명", t:"comp"}]},
-      {n:117, full:"그 시민들은 경고를 받았어야 했다", chunks:[
-        {en:"The citizens", ko:"그 시민들은", t:"subj"},
-        {en:"should have been given", ko:"받았어야 했다", t:"verb"},
-        {en:"a warning", ko:"경고를", t:"obj"}]},
-      {n:118, full:"그 부엌 바닥들은 씻겨야 한다 (그 축제 전에)", chunks:[
-        {en:"The kitchen floors", ko:"그 부엌 바닥들은", t:"subj"},
-        {en:"have to be washed", ko:"씻겨야 한다", t:"verb"},
-        {en:"before the festival", ko:"그 축제 전에", t:"mod"}]},
-      {n:119, full:"그 환경을 보호해라", chunks:[
-        {en:"Protect", ko:"보호해라", t:"verb"},
-        {en:"the environment", ko:"그 환경을", t:"obj"}]},
-      {n:120, full:"그 선수들의 신경이 무너지고 있었다", chunks:[
-        {en:"The nerves of the athletes", ko:"그 선수들의 신경이", t:"subj"},
-        {en:"were failing", ko:"무너지고 있었다", t:"verb"}]},
-    ]},
   ],
   vocab:[
     { id:"1형식(1)", items:[
@@ -7754,7 +7738,7 @@ const DATA = {
       {en:"drive", ipa:"/draɪv/", ko:["운전하다"], pos:"v"},
       {en:"forget", ipa:"/fərˈɡet/", ko:["잊다"], pos:"v"},
     ]},
-    { id:"MASH UP(문장 구조)", items:[
+    { id:"MASH UP(튜토리얼)", items:[
       {en:"vary", ipa:"/ˈveri/", ko:["다양하다"], pos:"v"},
       {en:"differ", ipa:"/ˈdɪfər/", ko:["다르다"], pos:"v"},
       {en:"happen", ipa:"/ˈhæpən/", ko:["일어나다"], pos:"v"},
@@ -8024,6 +8008,32 @@ const DATA = {
       {en:"ever", ipa:"/ˈevər/", ko:["한 번이라도 (의문문·부정문에서)"], pos:"ad"},
       {en:"gently", ipa:"/ˈdʒentli/", ko:["부드럽게", "살살"], pos:"ad"}
     ]},
+    { id:"MASH UP(튜토리얼+)", items:[
+      {en:"all", ipa:"/ɔːl/", ko:["모든", "전부"], pos:"det"},
+      {en:"committee", ipa:"/kəˈmɪti/", ko:["위원회"], pos:"n"},
+      {en:"community", ipa:"/kəˈmjuːnəti/", ko:["공동체", "지역사회"], pos:"n"},
+      {en:"council", ipa:"/ˈkaʊnsl/", ko:["의회", "협의회"], pos:"n"},
+      {en:"decade", ipa:"/ˈdekeɪd/", ko:["10년"], pos:"n"},
+      {en:"economy", ipa:"/ɪˈkɑːnəmi/", ko:["경제"], pos:"n"},
+      {en:"energy", ipa:"/ˈenərdʒi/", ko:["에너지", "활력"], pos:"n"},
+      {en:"engineer", ipa:"/ˌendʒɪˈnɪr/", ko:["기술자", "공학자"], pos:"n"},
+      {en:"environment", ipa:"/ɪnˈvaɪrənmənt/", ko:["환경"], pos:"n"},
+      {en:"every", ipa:"/ˈevri/", ko:["모든", "~마다"], pos:"det"},
+      {en:"govern", ipa:"/ˈɡʌvərn/", ko:["통치하다"], pos:"v"},
+      {en:"health", ipa:"/helθ/", ko:["건강"], pos:"n"},
+      {en:"magic", ipa:"/ˈmædʒɪk/", ko:["마법"], pos:"n"},
+      {en:"nerve", ipa:"/nɜːrv/", ko:["신경"], pos:"n"},
+      {en:"officer", ipa:"/ˈɔːfɪsər/", ko:["공무원", "장교"], pos:"n"},
+      {en:"passenger", ipa:"/ˈpæsɪndʒər/", ko:["승객"], pos:"n"},
+      {en:"progress", ipa:"/ˈprɑːɡres/", ko:["진보", "발전"], pos:"n"},
+      {en:"scholar", ipa:"/ˈskɑːlər/", ko:["학자"], pos:"n"},
+      {en:"society", ipa:"/səˈsaɪəti/", ko:["사회"], pos:"n"},
+      {en:"technology", ipa:"/tekˈnɑːlədʒi/", ko:["기술"], pos:"n"},
+      {en:"volunteer", ipa:"/ˌvɑːlənˈtɪr/", ko:["자원봉사자", "자원하다"], pos:"n"},
+      {en:"report", ipa:"/rɪˈpɔːrt/", ko:["보고서", "보고하다", "보도하다"], pos:"n"},
+      {en:"fact", ipa:"/fækt/", ko:["사실"], pos:"n"},
+      {en:"curious", ipa:"/ˈkjʊriəs/", ko:["궁금한", "호기심 많은"], pos:"a"}
+    ]},
     { id:"명사절", items:[
       {en:"admit", ipa:"/ədˈmɪt/", ko:["인정하다"], pos:"v"},
       {en:"argue", ipa:"/ˈɑːrɡjuː/", ko:["주장하다", "논하다"], pos:"v"},
@@ -8058,29 +8068,6 @@ const DATA = {
       {en:"necessary", ipa:"/ˈnesəseri/", ko:["필요한"], pos:"a"},
       {en:"obvious", ipa:"/ˈɑːbviəs/", ko:["명백한"], pos:"a"},
       {en:"real", ipa:"/ˈriːəl/", ko:["진짜의", "실제의"], pos:"a"}
-    ]},
-    { id:"MASH UP(시제·조동사)", items:[
-      {en:"all", ipa:"/ɔːl/", ko:["모든", "전부"], pos:"det"},
-      {en:"committee", ipa:"/kəˈmɪti/", ko:["위원회"], pos:"n"},
-      {en:"community", ipa:"/kəˈmjuːnəti/", ko:["공동체", "지역사회"], pos:"n"},
-      {en:"council", ipa:"/ˈkaʊnsl/", ko:["의회", "협의회"], pos:"n"},
-      {en:"decade", ipa:"/ˈdekeɪd/", ko:["10년"], pos:"n"},
-      {en:"economy", ipa:"/ɪˈkɑːnəmi/", ko:["경제"], pos:"n"},
-      {en:"energy", ipa:"/ˈenərdʒi/", ko:["에너지", "활력"], pos:"n"},
-      {en:"engineer", ipa:"/ˌendʒɪˈnɪr/", ko:["기술자", "공학자"], pos:"n"},
-      {en:"environment", ipa:"/ɪnˈvaɪrənmənt/", ko:["환경"], pos:"n"},
-      {en:"every", ipa:"/ˈevri/", ko:["모든", "~마다"], pos:"det"},
-      {en:"govern", ipa:"/ˈɡʌvərn/", ko:["통치하다"], pos:"v"},
-      {en:"health", ipa:"/helθ/", ko:["건강"], pos:"n"},
-      {en:"magic", ipa:"/ˈmædʒɪk/", ko:["마법"], pos:"n"},
-      {en:"nerve", ipa:"/nɜːrv/", ko:["신경"], pos:"n"},
-      {en:"officer", ipa:"/ˈɔːfɪsər/", ko:["공무원", "장교"], pos:"n"},
-      {en:"passenger", ipa:"/ˈpæsɪndʒər/", ko:["승객"], pos:"n"},
-      {en:"progress", ipa:"/ˈprɑːɡres/", ko:["진보", "발전"], pos:"n"},
-      {en:"scholar", ipa:"/ˈskɑːlər/", ko:["학자"], pos:"n"},
-      {en:"society", ipa:"/səˈsaɪəti/", ko:["사회"], pos:"n"},
-      {en:"technology", ipa:"/tekˈnɑːlədʒi/", ko:["기술"], pos:"n"},
-      {en:"volunteer", ipa:"/ˌvɑːlənˈtɪr/", ko:["자원봉사자", "자원하다"], pos:"n"},
     ]},
   ],
   memory:[
