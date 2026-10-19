@@ -387,7 +387,8 @@ ul.vt-list .m{font-family:var(--font-kr);font-weight:600;font-size:12px;color:va
 ul.vt-list .y{font-family:var(--font-kr);font-weight:600;font-size:11.5px;color:var(--c-c);margin-top:3px}
 
 /* 암기 미니게임 : 수여동사 전치사 그룹 */
-.grp-choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.grp-choices{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.grp-btn .g.g-kr{font-family:var(--font-kr);font-weight:800;font-size:21px;line-height:31px}
 .grp-btn{border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
   padding:18px 6px;box-shadow:0 2px 0 var(--line);text-align:center}
 .grp-btn:active{transform:translateY(2px);box-shadow:0 0 0 var(--line)}
@@ -840,6 +841,8 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
         <button class="grp-btn" data-g="to"  type="button"><span class="g">to</span><span class="h">‘쪽으로’ 도착</span></button>
         <button class="grp-btn" data-g="for" type="button"><span class="g">for</span><span class="h">‘위해’ 해‘줌’</span></button>
         <button class="grp-btn" data-g="of"  type="button"><span class="g">of</span><span class="h">‘로부터’ 요구</span></button>
+      
+        <button class="grp-btn" data-g="rev" type="button"><span class="g g-kr">역방향</span><span class="h">상대에게서 치르거나 덜어냄</span></button>
       </div>
       <div class="reveal" id="g_reveal"></div>
     </div>
@@ -1456,14 +1459,14 @@ function copyWrong(){
 let vsess=null;
 function chooseVocab(scope){
   let items=[];
-  if(scope==='all'){ items=DATA.vocab[curUnit].items.map((w,i)=>({...w,gid:tagGid(curUnit,i)})); }
+  if(scope==='all'){ items=DATA.vocab[curUnit].items.map((w,i)=>({...w,gid:tagGid(curUnit,i),local:i+1,num:i+1})); }
   else if(scope==='pick'){
     const nums=parseNums(document.getElementById('v_pick_input').value);
-    items=DATA.vocab[curUnit].items.map((w,i)=>({...w,gid:tagGid(curUnit,i),local:i+1})).filter(w=>nums.includes(w.local));
+    items=DATA.vocab[curUnit].items.map((w,i)=>({...w,gid:tagGid(curUnit,i),local:i+1,num:i+1})).filter(w=>nums.includes(w.local));
     if(!items.length){ alert('단어 번호를 입력해줘'); return; }
   } else { /* global */
     const nums=parseNums(document.getElementById('v_pick_global_input').value);
-    const flat=flatVocab(); items=flat.filter(w=>nums.includes(w.gid));
+    const flat=flatVocab(); items=flat.filter(w=>nums.includes(w.gid)).map(w=>({...w,num:w.gid}));
     if(!items.length){ alert('전체 번호를 입력해줘'); return; }
   }
   vsess={items,scope};
@@ -1482,7 +1485,7 @@ function startVocab(dir){
 function loadWord(){
   vsess.answered=false;
   const w=vsess.items[vsess.idx];
-  document.getElementById('v_meta').textContent=(vsess.idx+1)+' / '+vsess.items.length+(w.gid?'  ·  '+w.gid+'번':'');
+  document.getElementById('v_meta').textContent=(vsess.idx+1)+' / '+vsess.items.length+(w.num?'  ·  '+w.num+'번':'');
   document.getElementById('v_prog').style.width=(vsess.idx/vsess.items.length*100)+'%';
   document.getElementById('v_feedback').textContent=''; document.getElementById('v_feedback').className='feedback';
   document.getElementById('v_bottom').style.display='none';
@@ -1509,7 +1512,7 @@ function pickChoice(btn,ok,box){
   if(vsess.answered) return; vsess.answered=true;
   const w=vsess.items[vsess.idx];
   if(ok){ btn.classList.add('right'); feedback(true); }
-  else { btn.classList.add('wrong'); vsess.wrong.push(w.gid||w.en); vsess.wrongItems.push(w);
+  else { btn.classList.add('wrong'); vsess.wrong.push(w.num||w.en); vsess.wrongItems.push(w);
     [...box.children].forEach(b=>{ if(b.textContent===w.ko.join(', ')) b.classList.add('right'); });
     feedback(false,w); }
   showNext();
@@ -1546,7 +1549,7 @@ function submitTyped(){
   if(!val) return;
   vsess.answered=true;
   const ok = val===w.en.toLowerCase();  // 그 외 오타 불허(정확 일치)
-  if(!ok){ vsess.wrong.push(w.gid||w.en); vsess.wrongItems.push(w); }
+  if(!ok){ vsess.wrong.push(w.num||w.en); vsess.wrongItems.push(w); }
   feedback(ok,w); showNext();
 }
 function feedback(ok,w){
@@ -1617,10 +1620,12 @@ const M_BRIEF={
      '<p><b>자동사</b>를 골랐다면 붙는 전치사까지 입력해야 정답이에요.</p>'+
      '<p>동사 순서는 시작할 때마다 섞입니다.</p>',
   group:'<p>수여동사를 4형식에서 3형식으로 바꿀 때 붙는 <b>전치사 그룹</b>을 맞히는 연습이에요.</p>'+
-     '<p><b>to</b> 상대 ‘쪽으로’ 도착 · <b>for</b> 상대를 ‘위해’ 해‘줌’ · <b>of</b> 상대‘로부터’ 요구</p>'+
+     '<p><b>to</b> 상대 ‘쪽으로’ 도착 · <b>for</b> 상대를 ‘위해’ 해‘줌’ · <b>of</b> 상대에게 ‘묻기’ · <b>역방향</b> 상대에게서 치르거나 덜어냄(3형식 전환 X)</p>'+
+     '<p>save · spare는 뜻에 따라 for 그룹과 역방향으로 갈리고, ask가 ‘요청하다’일 때는 역방향의 예외예요.</p>'+
      '<p>of 그룹 중 <b>demand · request · require</b>는 4형식으로 쓰지 않아요. 정답에서 따로 알려줍니다.</p>'+
      '<p>동사 순서는 시작할 때마다 섞입니다.</p>'
 };
+function GL(g){ return g==='rev'?'역방향':g; }
 function memType(u){ return u.type==='group'?'group':'vt'; }
 function openMemUnit(i){
   const u=DATA.memory[i];
@@ -1702,9 +1707,10 @@ function showVTResult(){
     box.className='result-box list';
     const grp=(msess.type==='group');
     box.innerHTML='<ul class="vt-list">'+w.map(x=> grp
-      ? ('<li><div class="a">'+x.v+' <em>'+x.g+'</em></div>'+
-         '<div class="m">'+x.g+' 그룹 · '+x.ko+'</div>'+
+      ? ('<li><div class="a">'+x.v+' <em>'+GL(x.g)+'</em></div>'+
+         '<div class="m">'+GL(x.g)+' 그룹 · '+x.ko+'</div>'+
          (x.x?'<div class="x">4형식 X · '+x.x+'</div>':'')+
+         (x.note?'<div class="x">'+x.note+'</div>':'')+
          '<div class="y">내 답: '+x.mine+'</div></li>')
       : ('<li><div class="a">'+x.v+(x.prep?' <em>'+x.prep+'</em>':'')+'</div>'+
          '<div class="m">'+(x.prep?'자동사':'타동사')+' · '+x.ko+'</div>'+
@@ -1755,11 +1761,12 @@ function judgeGRP(picked){
     else b.classList.add('dim');
   });
   const rv=document.getElementById('g_reveal');
-  rv.innerHTML='<div class="r-top">'+q.v+' <em>'+q.g+'</em></div>'+
+  rv.innerHTML='<div class="r-top">'+q.v+' <em>'+GL(q.g)+'</em></div>'+
     '<div class="r-ko">'+q.ko+'</div>'+
-    (q.x?'<div class="r-x">4형식 X<small>'+q.x+'</small></div>':'');
+    (q.x?'<div class="r-x">4형식 X<small>'+q.x+'</small></div>':'')+
+    (q.note?'<div class="r-x">예외<small>'+q.note+'</small></div>':'');
   rv.classList.add('show');
-  if(!ok) msess.wrong.push({v:q.v,g:q.g,ko:q.ko,x:q.x,mine:picked,src:q});
+  if(!ok) msess.wrong.push({v:q.v,g:q.g,ko:q.ko,x:q.x,note:q.note,mine:GL(picked),src:q});
   document.getElementById('g_bottom').style.display='flex';
   document.getElementById('g_next').textContent=(msess.idx<msess.items.length-1)?'다음':'결과 보기';
 }
