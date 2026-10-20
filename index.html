@@ -492,6 +492,36 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
 .slowv-chk:checked + .slowv-sw{border-color:#f4a259;background:#fdf1e6}
 .slowv-chk:checked + .slowv-sw::after{background:#f4a259;transform:translateX(18px)}
 
+/* ---- 암기 · 삼단변화 ---- */
+.f-units{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.f-unit{border:2px solid var(--line-strong);background:var(--card);border-radius:var(--radius);
+  padding:13px 10px;font-family:var(--font-kr);font-weight:700;font-size:15px;color:var(--ink);
+  box-shadow:0 2px 0 var(--line);text-align:center;line-height:1.3;word-break:keep-all}
+.f-unit small{display:block;font-weight:600;font-size:11.5px;color:var(--ink-soft);margin-top:3px}
+.f-unit.on{background:var(--c-v-soft);border-color:var(--c-v)}
+.f-unit.end{box-shadow:0 2px 0 var(--c-v)}
+.f-unit:active{transform:translateY(2px)}
+.go:disabled{opacity:.45;transform:none}
+.f-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.f-box{min-height:78px;border:2px solid var(--line-strong);border-radius:var(--radius);background:var(--card);
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);padding:0 4px}
+.f-box.base{background:var(--paper);font-family:var(--font-en);font-size:19px;color:var(--ink-soft);
+  text-align:center;line-height:1.2;word-break:break-word}
+.f-box input{width:100%;height:74px;border:none;outline:none;background:transparent;text-align:center;
+  font-family:var(--font-en);font-size:19px;color:var(--ink);padding:0}
+.f-box:focus-within{border-color:var(--c-v)}
+.f-box.right{background:var(--c-s-soft);border-color:var(--c-s)}
+.f-box.wrong{background:var(--c-c-soft);border-color:var(--c-c)}
+.f-box.right input{color:#4c7a1f} .f-box.wrong input{color:#a83d7d}
+.f-labels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:7px;
+  font-family:var(--font-kr);font-weight:600;font-size:12px;color:var(--ink-soft);text-align:center}
+.f-note{display:block;font-family:var(--font-en);font-weight:600;font-size:14px;margin-top:2px;word-break:break-word}
+.f-note.ans{color:#a83d7d} .f-note.us{color:var(--c-o)}
+@media (min-width:760px){
+  .f-unit{font-size:17px;padding:16px 12px}
+  .f-box{min-height:96px} .f-box input{height:92px;font-size:24px} .f-box.base{font-size:24px}
+  .f-labels{font-size:14px} .f-note{font-size:17px}
+}
 </style>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#f4a259">
@@ -787,6 +817,10 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
   <!-- ============ 암기 : 진도 선택 ============ -->
   <section id="memory" class="screen">
     <div class="topbar"><button class="back" onclick="go('home')">‹</button><span class="crumb">MINIGAME · 암기</span></div>
+    <div class="stack">
+      <button class="bigbtn" onclick="openForms()">삼단변화<small>진도를 골라 과거·과거분사 쓰기</small></button>
+    </div>
+    <hr class="divider">
     <div class="stack" id="m_unit_list"></div>
     <div class="placeholder" id="m_empty" style="display:none">
       <div class="ic">🧩</div>
@@ -848,6 +882,38 @@ ul.vt-list .x{display:inline-block;font-family:var(--font-kr);font-weight:800;fo
     </div>
     <div class="bottom" id="g_bottom" style="display:none">
       <button class="primary" id="g_next" onclick="nextGRP()">다음</button>
+    </div>
+  </section>
+
+  <!-- ============ 암기 : 삼단변화 진도 선택 ============ -->
+  <section id="f_scope" class="screen">
+    <div class="topbar"><button class="back" onclick="go('memory')">‹</button><span class="crumb">암기 · 삼단변화</span></div>
+    <div class="field-label">어느 진도까지 낼까?</div>
+    <div class="f-units" id="f_unit_list"></div>
+    <button class="go" id="f_start_btn" onclick="startForms()" disabled>진도를 골라줘</button>
+    <div class="hint">고른 진도까지 나온 동사가 전부 섞여서 나와요.</div>
+  </section>
+
+  <!-- ============ 암기 : 삼단변화 학습 ============ -->
+  <section id="f_study" class="screen">
+    <div class="topbar"><button class="back" onclick="go('f_scope')">‹</button><span class="crumb" id="f_study_crumb">삼단변화</span></div>
+    <div class="study-top"><span class="qmeta" id="f_meta"></span><div class="progress"><i id="f_prog"></i></div></div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
+      <div class="word-prompt"><div class="big kr" id="f_prompt"></div></div>
+      <div class="f-row">
+        <div class="f-box base" id="f_base"></div>
+        <div class="f-box" id="f_w1"><input id="f_i1" type="text" name="f_x1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="과거형"></div>
+        <div class="f-box" id="f_w2"><input id="f_i2" type="text" name="f_x2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="과거분사"></div>
+      </div>
+      <div class="f-labels">
+        <div>원형</div>
+        <div>과거<span class="f-note" id="f_n1"></span></div>
+        <div>과거분사<span class="f-note" id="f_n2"></span></div>
+      </div>
+      <div class="feedback" id="f_feedback"></div>
+    </div>
+    <div class="bottom" id="f_bottom">
+      <button class="primary" id="f_next" onclick="formsAction()">확인</button>
     </div>
   </section>
 
@@ -1636,7 +1702,7 @@ function openMemUnit(i){
   document.getElementById('m_start_btn').textContent=u.items.length+'문제 시작';
   go('m_intro');
 }
-function startMem(pool){ (msess.type==='group'?startGRP:startVT)(pool); }
+function startMem(pool){ if(msess.type==='forms') return startForms(pool); (msess.type==='group'?startGRP:startVT)(pool); }
 function startVT(pool){
   const u=DATA.memory[msess.unit];
   const items=shuffle(((pool&&pool.length)?pool:u.items).slice());
@@ -1706,6 +1772,11 @@ function showVTResult(){
   if(w.length){
     box.className='result-box list';
     const grp=(msess.type==='group');
+    if(msess.type==='forms'){
+      box.innerHTML='<ul class="vt-list">'+w.map(x=>
+        '<li><div class="a">'+x.v+' – <em>'+fShow(x.p)+'</em> – <em>'+fShow(x.pp)+'</em></div>'+
+        '<div class="m">'+x.ko+'</div><div class="y">내 답: '+x.mine+'</div></li>').join('')+'</ul>';
+    } else
     box.innerHTML='<ul class="vt-list">'+w.map(x=> grp
       ? ('<li><div class="a">'+x.v+' <em>'+GL(x.g)+'</em></div>'+
          '<div class="m">'+GL(x.g)+' 그룹 · '+x.ko+'</div>'+
@@ -1773,6 +1844,116 @@ function judgeGRP(picked){
 function nextGRP(){
   if(msess.idx<msess.items.length-1){ msess.idx++; loadGRP(); } else showVTResult();
 }
+
+/* ============ 암기 미니게임 : 삼단변화 ============
+   동사 풀 = 고른 진도까지 DATA.vocab의 동사(pos v) 전부. 뜻은 처음 나온 진도의 뜻.
+   변화형 = DATA.forms[원형] = [과거, 과거분사]
+     "a|b" a 미국식 · b 영국식(정답 + 미국식 a를 한 번 더 보여줌), "a/b" 둘 다 표준
+   ================================================ */
+let fUpto=-1;
+function formsPool(upto){
+  const seen={}, out=[], F=DATA.forms||{};
+  DATA.vocab.slice(0,upto+1).forEach(u=>u.items.forEach(w=>{
+    if(!/^v/.test(w.pos||'')||seen[w.en]) return; seen[w.en]=1;
+    if(!F[w.en]){ console.warn('삼단변화 없음:',w.en); return; }
+    out.push({v:w.en, ko:(w.ko||[]).join(', '), p:F[w.en][0], pp:F[w.en][1]});
+  }));
+  return out;
+}
+function openForms(){
+  const box=document.getElementById('f_unit_list'); box.innerHTML='';
+  DATA.vocab.forEach((u,i)=>{
+    const b=document.createElement('button'); b.className='f-unit'; b.type='button';
+    b.innerHTML=u.id+'<small></small>'; b.onclick=()=>{ fUpto=i; paintForms(); };
+    box.appendChild(b);
+  });
+  paintForms(); go('f_scope');
+}
+function paintForms(){
+  const btns=document.querySelectorAll('#f_unit_list .f-unit');
+  btns.forEach((b,i)=>{
+    b.classList.toggle('on',i<=fUpto); b.classList.toggle('end',i===fUpto);
+    b.querySelector('small').textContent = i===fUpto ? '여기까지' : '';
+  });
+  const st=document.getElementById('f_start_btn');
+  if(fUpto<0){ st.disabled=true; st.textContent='진도를 골라줘'; return; }
+  const n=formsPool(fUpto).length;
+  st.disabled=!n; st.textContent = n ? ('동사 '+n+'개 시작') : '이 진도까지는 동사가 없어요';
+}
+function startForms(pool){
+  const items=shuffle(((pool&&pool.length)?pool:formsPool(fUpto)).slice());
+  msess={type:'forms',items:items,idx:0,wrong:[],answered:false};
+  document.getElementById('f_study_crumb').textContent='삼단변화 · ~'+DATA.vocab[fUpto].id;
+  go('f_study'); loadForms();
+}
+function fitInput(inp){ const n=inp.value.length; inp.style.fontSize = n>9 ? Math.max(13, Math.round(19*9/n))+'px' : ''; }
+function loadForms(){
+  msess.answered=false;
+  const q=msess.items[msess.idx], n=msess.items.length;
+  document.getElementById('f_meta').textContent=(msess.idx+1)+' / '+n;
+  document.getElementById('f_prog').style.width=(msess.idx/n*100)+'%';
+  document.getElementById('f_prompt').textContent=q.ko;
+  document.getElementById('f_base').textContent=q.v;
+  [1,2].forEach(k=>{
+    const inp=document.getElementById('f_i'+k);
+    inp.value=''; inp.disabled=false; inp.style.fontSize='';
+    document.getElementById('f_w'+k).className='f-box';
+    const nt=document.getElementById('f_n'+k); nt.textContent=''; nt.className='f-note';
+  });
+  const fb=document.getElementById('f_feedback'); fb.textContent=''; fb.className='feedback';
+  document.getElementById('f_next').textContent='확인';
+  document.getElementById('f_i1').focus();
+}
+function fNorm(s){ return s.trim().toLowerCase().replace(/\s+/g,' ').replace(/[.]+$/,''); }
+/* 'us' 미국식(또는 표준) 정답, 'uk' 영국식 정답, 'no' 오답 */
+function fJudge(typed,ans){
+  const t=fNorm(typed), [us,uk]=ans.split('|');
+  if(us.split('/').includes(t)) return 'us';
+  if(uk && uk.split('/').includes(t)) return 'uk';
+  return 'no';
+}
+function fShow(ans){ return ans.split('|').map(x=>x.split('/').join(' / ')).join(' · 영국식 '); }
+function gradeForms(){
+  if(msess.answered) return;
+  const i1=document.getElementById('f_i1'), i2=document.getElementById('f_i2');
+  const fb=document.getElementById('f_feedback');
+  if(!i1.value.trim()||!i2.value.trim()){
+    fb.className='feedback no'; fb.textContent='두 칸 다 써줘';
+    (i1.value.trim()?i2:i1).focus(); return;
+  }
+  msess.answered=true;
+  const q=msess.items[msess.idx];
+  const res=[fJudge(i1.value,q.p), fJudge(i2.value,q.pp)];
+  [q.p,q.pp].forEach((ans,k)=>{
+    const r=res[k], nt=document.getElementById('f_n'+(k+1));
+    document.getElementById('f_w'+(k+1)).className='f-box '+(r==='no'?'wrong':'right');
+    document.getElementById('f_i'+(k+1)).disabled=true;
+    if(r==='no'){ nt.className='f-note ans'; nt.textContent=fShow(ans); }
+    else if(r==='uk'){ nt.className='f-note us'; nt.textContent='미국식 '+ans.split('|')[0].split('/')[0]; }
+  });
+  const ok=res[0]!=='no'&&res[1]!=='no';
+  fb.className='feedback '+(ok?'ok':'no'); fb.textContent=ok?'정답!':'아쉽다';
+  if(!ok) msess.wrong.push({v:q.v,ko:q.ko,p:q.p,pp:q.pp,mine:i1.value.trim()+' – '+i2.value.trim(),src:q});
+  document.getElementById('f_next').textContent=(msess.idx<msess.items.length-1)?'다음':'결과 보기';
+  document.getElementById('f_next').focus();
+}
+function formsAction(){
+  if(!msess.answered){ gradeForms(); return; }
+  if(msess.idx<msess.items.length-1){ msess.idx++; loadForms(); } else showVTResult();
+}
+document.getElementById('f_i1').addEventListener('keydown',e=>{
+  if(e.key!=='Enter') return; e.preventDefault();
+  if(e.isComposing) return;
+  if(document.getElementById('f_i1').value.trim()) document.getElementById('f_i2').focus(); else gradeForms();
+});
+document.getElementById('f_i2').addEventListener('keydown',e=>{
+  if(e.key!=='Enter'||e.isComposing) return; e.preventDefault(); gradeForms();
+});
+['f_i1','f_i2'].forEach(id=>document.getElementById(id).addEventListener('input',e=>{
+  fitInput(e.target);
+  const fb=document.getElementById('f_feedback'); if(!msess.answered&&fb.textContent){ fb.textContent=''; fb.className='feedback'; }
+}));
+/* 채점 뒤엔 '다음' 버튼에 포커스가 가 있어서 엔터 = 다음 */
 
 /* 전체 풀 선택 힌트 */
 document.getElementById('v_pick_global_hint').textContent='전체 1~'+flatVocab().length+'번 중에서 고르기';
