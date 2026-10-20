@@ -242,7 +242,11 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
 .ctxbox{border-left:4px solid var(--line-strong);padding:8px 12px;margin-bottom:10px;background:#fafaf8;display:none}
 .ctxbox.on{display:block}
 .ctxbox .cen{font-family:var(--font-en);font-size:15px;color:#8b8d92}
-.ctxbox .cko{font-size:11.5px;color:#a0a2a7;margin-top:2px}
+.ctxbox .cko{font-size:11.5px;color:#a0a2a7;margin-top:2px;transition:opacity .4s}
+.ctxbox.pend .cen{visibility:hidden} .ctxbox.pend .cko{opacity:0}
+.chunk.ctxchunk{margin-right:30px}
+.ctxfly{position:fixed;z-index:60;font-family:var(--font-en);font-style:italic;color:#8f9298;white-space:nowrap;pointer-events:none;
+  transition:left .65s cubic-bezier(.4,0,.2,1),top .65s cubic-bezier(.4,0,.2,1),font-size .65s cubic-bezier(.4,0,.2,1),color .65s}
 /* 링크 도움 3단 */
 .helpseg{display:flex;border:2px solid var(--line-strong);width:max-content;max-width:100%;margin-bottom:16px;flex-wrap:wrap}
 .helpseg button{border:none;background:var(--card);padding:7px 13px;font-weight:700;font-size:12.5px;
@@ -1193,10 +1197,19 @@ function loadSentence(){
   $('next_btn').textContent=(session.idx<session.items.length-1)?'다음 문장':'결과 보기';
   $('playbtn').textContent='시작';
   /* ★ C안 : 절이 문장 끝에서 닫히면 닫기 판정 없음. 중간에서 닫힐 때만 */
+  document.querySelectorAll('.ctxfly').forEach(n=>n.remove());
+  const USECTX = !!(it.ctx && it.ctx.en && study.mode!=='page');   // 맥락문 = 판정 없는 skip 블록 (지면 모드는 기존처럼 상자에만)
+  const OFF = USECTX ? 1 : 0;
   const N=it.chunks.length, closers=it.chunks.map(()=>[]);
   it.chunks.forEach((d,j)=>{ if(!d.link)return;
-    const end=Math.min(j+(d.span||1)-1, N-1); d._end=end;
-    if(end < N-1) closers[end].push({at:j, role:d.outer||d.t}); });
+    const end=Math.min(j+(d.span||1)-1, N-1); d._end=end+OFF;
+    if(end < N-1) closers[end].push({at:j+OFF, role:d.outer||d.t}); });
+  if(USECTX){
+    const el=document.createElement('div'); el.className='chunk skip ctxchunk';
+    el.innerHTML='<span></span>'; el.firstChild.textContent=it.ctx.en;
+    track.appendChild(el);
+    study.ch.push({el, d:{t:'skip', en:it.ctx.en, ctx:true}, steps:[{kind:'skip'}], si:0, done:false});
+  }
   closers.forEach(a=>a.sort((x,y)=>y.at-x.at));                 // 안쪽부터 닫기
 
   it.chunks.forEach((d,j)=>{ const el=document.createElement('div'); el.className='chunk';
@@ -1218,6 +1231,7 @@ function loadSentence(){
   const cb=$('ctxbox');
   if(it.ctx && it.ctx.en){ cb.classList.add('on'); $('ctx_en').textContent=it.ctx.en; $('ctx_ko').textContent=it.ctx.ko||''; }
   else cb.classList.remove('on');
+  cb.classList.toggle('pend', USECTX);                // 블록이 지나가 올라오기 전까지 자리만 잡아 둠
 
   const stage=$('stage'); stage.className='stage mode-'+study.mode;
   $('judgeline').style.display = study.mode==='bar' ? 'block':'none';
@@ -1321,6 +1335,7 @@ function toggleSlowVerb(on){ SLOWV=on; window.__rmPrefs=window.__rmPrefs||{}; wi
   document.querySelectorAll('.slowv-chk').forEach(el=>{ el.checked=on; }); }
 function setDwell(){ const c=study.ch[study.idx]; if(!c)return;
   let d=(1600+c.d.en.length*95)/study.lvl;
+  if(c.d.ctx){ const w=c.d.en.trim().split(/\s+/).length; study.dwellMax=(900+w*320)/study.lvl; study.dwell=0; $('gfill').style.transform='scaleX(1)'; return; }
   if(SLOWV && c.d.t==='verb') d*=SLOW_CUR;
   if(isSlowLink(c)) d*=SLOW_CUR_L;
   study.dwellMax=d; study.dwell=0; $('gfill').style.transform='scaleX(1)'; }
@@ -1361,16 +1376,17 @@ function tick(t){
     if(c && !c.done){
       const r=c.el.getBoundingClientRect(), s=$('stage').getBoundingClientRect();
       const center=r.left - s.left + r.width/2, rightEdge=r.right - s.left;
-      if(c.d.t==='skip'){ if(center<=CURX()) resolve(true); }        // skip: 판정 없이 자동 통과
+      if(c.d.ctx){ if(rightEdge<=CURX()) resolve(true); }           // 맥락문: 끝까지 판정선을 지나면 통과
+      else if(c.d.t==='skip'){ if(center<=CURX()) resolve(true); }        // skip: 판정 없이 자동 통과
       else if(study.sub==='real'){ if(center<=CURX()) resolve(true); }
       else if(rightEdge < CURX()){ while(c && !c.done) resolve(false); }   // 놓치면 남은 단계 전부 오답
     }
   } else if(study.mode==='cursor' && study.sub==='practice'){
     const cc=study.ch[study.idx];
-    if(cc && !cc.done && cc.d.t==='skip'){ resolve(true); }          // skip: 체류 없이 통과
+    if(cc && !cc.done && cc.d.t==='skip' && !cc.d.ctx){ resolve(true); }          // skip: 체류 없이 통과
     else {
       study.dwell+=dt; $('gfill').style.transform='scaleX('+Math.max(0,1-study.dwell/study.dwellMax).toFixed(3)+')';
-      if(study.dwell>=study.dwellMax) resolve(false);
+      if(study.dwell>=study.dwellMax) resolve(!!(cc&&cc.d.ctx));             // 맥락문: 길이만큼 머문 뒤 자동 통과
     }
   }
   if(!study.run) return;
@@ -1386,12 +1402,25 @@ function addPill(role,ko,ok,extra){
   p.className='pill '+role+(extra?' '+extra:'')+(ok?'':' bad');
   p.textContent=ko; accum.appendChild(p);
 }
+/* 맥락문 블록 → 위쪽 맥락문 상자로 작아지며 올라감 */
+function dockCtx(c){
+  const cb=$('ctxbox'), en=$('ctx_en');
+  const r=c.el.firstChild.getBoundingClientRect(), t=en.getBoundingClientRect();
+  const f=document.createElement('div'); f.className='ctxfly'; f.textContent=c.d.en;
+  f.style.left=r.left+'px'; f.style.top=r.top+'px'; f.style.fontSize=getComputedStyle(c.el).fontSize;
+  document.body.appendChild(f); c.el.style.visibility='hidden';
+  void f.offsetWidth;
+  const cs=getComputedStyle(en);
+  f.style.left=t.left+'px'; f.style.top=t.top+'px'; f.style.fontSize=cs.fontSize; f.style.color=cs.color;
+  setTimeout(()=>{ if(!f.isConnected) return; cb.classList.remove('pend'); f.remove(); }, 680);
+}
 /* 한 단계 확정. 절 시작(open) → 자기 역할(self) → 절 끝(close) 순서 */
 function resolve(ok){
   const c=study.ch[study.idx]; if(!c||c.done) return;
   const st=c.steps[c.si];
   const it=session.items[session.idx];
   if(st.kind!=='skip' && !ok) session.wrong.add(it.n);
+  if(st.kind==='skip' && c.d.ctx) dockCtx(c);
   if(st.kind==='self' || st.kind==='skip'){
     c.el.classList.add('lit','done');
     if(st.kind!=='skip'){
