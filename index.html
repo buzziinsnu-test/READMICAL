@@ -1308,6 +1308,8 @@ function scrollCursor(animate){
   stem.style.top   = (chH + 20)+'px';         // 청크 아래 밑줄
 }
 const SLOW_BAR=2.0, SLOW_CUR=1.8;
+const CTX_SLOW_BAR=2.2;                              // 맥락문 블록이 흐르는 동안 판정바 속도를 이만큼 늦춤
+const CTX_DWELL_BASE=1500, CTX_DWELL_WORD=550;      // 커서 연습: 맥락문 체류 = 기본 + 단어당 (ms)
 const SLOW_BAR_L=2.6, SLOW_CUR_L=2.0;              // 링크 감속
 let HELP = localStorage_get('linkHelp') || 'full'; // full | slow | none
 let __lkid = 0;
@@ -1335,7 +1337,7 @@ function toggleSlowVerb(on){ SLOWV=on; window.__rmPrefs=window.__rmPrefs||{}; wi
   document.querySelectorAll('.slowv-chk').forEach(el=>{ el.checked=on; }); }
 function setDwell(){ const c=study.ch[study.idx]; if(!c)return;
   let d=(1600+c.d.en.length*95)/study.lvl;
-  if(c.d.ctx){ const w=c.d.en.trim().split(/\s+/).length; study.dwellMax=(900+w*320)/study.lvl; study.dwell=0; $('gfill').style.transform='scaleX(1)'; return; }
+  if(c.d.ctx){ const w=c.d.en.trim().split(/\s+/).length; study.dwellMax=(CTX_DWELL_BASE+w*CTX_DWELL_WORD)/study.lvl; study.dwell=0; $('gfill').style.transform='scaleX(1)'; return; }
   if(SLOWV && c.d.t==='verb') d*=SLOW_CUR;
   if(isSlowLink(c)) d*=SLOW_CUR_L;
   study.dwellMax=d; study.dwell=0; $('gfill').style.transform='scaleX(1)'; }
@@ -1360,6 +1362,7 @@ function tick(t){
     let f=1;
     for(const c of study.ch){                          // 판정선 앞 35%부터 경사 감속 (동사 / 링크)
       if(c.done) continue;
+      if(c.d.ctx){ f=Math.min(f, 1/CTX_SLOW_BAR); continue; }   // 맥락문: 지나갈 때까지 통째로 감속
       let mag=0;
       if(SLOWV && c.d.t==='verb') mag=Math.max(mag,SLOW_BAR);
       if(isSlowLink(c))           mag=Math.max(mag,SLOW_BAR_L);
