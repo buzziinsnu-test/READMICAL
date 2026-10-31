@@ -1403,11 +1403,9 @@ function tick(t){
     }
   } else if(study.mode==='cursor' && study.sub==='practice'){
     const cc=study.ch[study.idx];
-    if(cc && !cc.done && cc.steps[cc.si].kind==='skip' && !cc.d.ctx){ resolve(true); }          // skip: 체류 없이 통과
-    else {
-      study.dwell+=dt; $('gfill').style.transform='scaleX('+Math.max(0,1-study.dwell/study.dwellMax).toFixed(3)+')';
-      if(study.dwell>=study.dwellMax) resolve(!!(cc&&cc.d.ctx));             // 맥락문: 길이만큼 머문 뒤 자동 통과
-    }
+    /* 판정 없는 청크(관계사·skip)도 다른 청크처럼 머문 뒤에 넘어감 */
+    study.dwell+=dt; $('gfill').style.transform='scaleX('+Math.max(0,1-study.dwell/study.dwellMax).toFixed(3)+')';
+    if(study.dwell>=study.dwellMax) resolve(!!(cc && (cc.d.ctx || cc.steps[cc.si].kind==='skip')));   // 맥락문·판정 없는 청크는 시간이 다 되면 통과(오답 아님)
   }
   if(!study.run) return;
   requestAnimationFrame(tick);
