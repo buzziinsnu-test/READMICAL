@@ -1198,6 +1198,7 @@ function loadSentence(){
     study.ch.push({el,d,steps,si:0,done:false,lv:d.lv||0}); });
   study.zones=(it.z||[]).map(z=>({r:z.r, h:z.h<0?-1:z.h+OFF, s:z.s+OFF, e:z.e+OFF}));
   study.belt=0;
+  study.maxLv=study.ch.reduce((m,c)=>Math.max(m,c.lv),0);
 
   /* 맥락문 */
   const cb=$('ctxbox');
@@ -1229,7 +1230,7 @@ function loadSentence(){
   requestAnimationFrame(()=>requestAnimationFrame(()=>{ if(study&&study.ch.length) paintZones(); }));
 }
 
-/* ---- 층위 : 벨트가 새 문장으로 한 층 내려갔다가 끝나면 올라옴 ---- */
+/* ---- 층위 : 새 문장이 시작되면 흐름이 한 층 아래로 내려갔다가, 끝나면 다시 올라옴 (화면은 고정) ---- */
 const ROW=58, PROW=12;                       // 판정바·커서 한 층 높이 / 지면 모드 한 층 높이
 /* 판정이 끝난 청크는 제 층에, 아직 안 온 청크는 지금 벨트 높이에 */
 function applyLayers(){
@@ -1238,7 +1239,7 @@ function applyLayers(){
     const L = page ? (c.done?c.lv:0) : (c.done?c.lv:study.belt);
     c.el.style.top = (L*(page?PROW:ROW))+'px';
   });
-  if(!page){ const tr=$('track'); tr.style.top='calc(50% - '+(study.belt*ROW)+'px)'; }
+  if(!page){ const tr=$('track'); tr.style.top='calc(50% - '+(study.maxLv*ROW/2)+'px)'; }   // 판은 고정, 청크가 실제로 내려감
 }
 /* i번 청크를 확정한 뒤의 벨트 높이 : 그 청크와 다음 청크 중 얕은 쪽 (절이 끝나면 바로 올라옴) */
 function beltAfter(i){ const a=study.ch[i]?study.ch[i].lv:0, b=study.ch[i+1]?study.ch[i+1].lv:0; return Math.min(a,b); }
@@ -1320,7 +1321,7 @@ function scrollCursor(animate){
   track.style.left = study.x+'px';
   // 마커: 청크 위 삼각형 + 청크 폭에 맞춘 밑줄
   const sh=$('stage').clientHeight, cw=c.el.offsetWidth, chH=c.el.offsetHeight;
-  const chTop = sh/2 - chH/2;                 // 청크 상단 (세로 중앙 배치)
+  const chTop = sh/2 - chH/2 + (study.belt - (study.maxLv||0)/2)*ROW;   // 청크 상단 (지금 층 높이)
   const cur=$('cursor');
   cur.style.left = CURSX()+'px';
   cur.style.top  = (chTop - 16)+'px';         // 삼각형이 청크 위
