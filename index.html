@@ -227,7 +227,7 @@ textarea.picker{width:100%;border:none;outline:none;resize:none;font-family:var(
 .chunk.rel{font-weight:400;opacity:.55}
 .pill.rel{background:none;border:2px solid #c9cdd4;color:#7c7c84;padding:2px 9px}
 /* 층위 : 새 문장이 시작되면 한 층 아래로 (관계절·명사절) */
-.chunk{transition:background .15s,border-color .15s,top .35s ease}
+.chunk{transition:background .15s,border-color .15s,top .45s cubic-bezier(.4,0,.2,1)}
 .stage.layered:not(.mode-page){height:200px}
 .stage.mode-page.layered{line-height:3.6;padding-bottom:30px}
 .zsvg{position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;pointer-events:none;z-index:0}
@@ -1207,7 +1207,7 @@ function loadSentence(){
   cb.classList.toggle('pend', USECTX);                // 블록이 지나가 올라오기 전까지 자리만 잡아 둠
 
   const stage=$('stage'); stage.className='stage mode-'+study.mode+(study.zones.length?' layered':'');
-  stage.querySelectorAll('.zsvg').forEach(n=>n.remove());
+  stage.querySelectorAll('.zsvg').forEach(n=>n.remove()); study.zUntil=0;
   $('judgeline').style.display = study.mode==='bar' ? 'block':'none';
   $('cursor').style.display    = study.mode==='cursor' ? 'block':'none';
   $('gauge').style.display     = (study.mode==='cursor' && study.sub==='practice') ? 'block':'none';
@@ -1250,22 +1250,27 @@ function setTrackTransition(extra){
 function paintZones(){
   if(!study||!study.zones) return;
   const page=study.mode==='page', host=page?$('stage'):$('track');
-  host.querySelectorAll(':scope > .zsvg').forEach(n=>n.remove());
+  let svg=host.querySelector(':scope > .zsvg');
+  if(!svg){ svg=document.createElementNS(NS,'svg'); svg.setAttribute('class','zsvg'); host.insertBefore(svg, host.firstChild); }
+  svg.innerHTML='';
   study.ch.forEach(c=>{ const sh=c.el.querySelector('.sh'); if(sh) sh.style.visibility=''; });
+  const now=performance.now();
   const zs=study.zones.filter(z=>study.ch[z.s]&&study.ch[z.s].done);
+  zs.forEach(z=>{ if(!z.t0) z.t0=now; });
   if(!zs.length) return;
   const box=i=>{ const e=study.ch[i].el; return {l:e.offsetLeft,t:e.offsetTop,r:e.offsetLeft+e.offsetWidth,b:e.offsetTop+e.offsetHeight}; };
   const uni=bs=>bs.reduce((a,b)=>({l:Math.min(a.l,b.l),t:Math.min(a.t,b.t),r:Math.max(a.r,b.r),b:Math.max(a.b,b.b)}));
   const inside=(b,a)=>b!==a && (b.h<0?b.s:b.h)>=a.s && b.e<=a.e;
   const depth=a=>zs.reduce((m,b)=>inside(b,a)?Math.max(m,1+depth(b)):m,0);
-  const svg=document.createElementNS(NS,'svg'); svg.setAttribute('class','zsvg');
   const mk=(tag,a)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);return e;};
   const sty=r=>({
     subj:{fill:CC.subj,'fill-opacity':.16,stroke:CC.subj,'stroke-width':2},
     obj:{fill:CC.obj,'fill-opacity':.04,stroke:CC.obj,'stroke-width':2.5},
     comp:{fill:CC.comp,'fill-opacity':.12,stroke:CC.comp,'stroke-width':2},
     mod:{fill:'none',stroke:CC.mod,'stroke-width':2}}[r]);
+  let G=svg;
   const draw=(r,H,S,p,open)=>{
+    const svg=G;
     if(r==='mod'){ const U=H?uni([H,S]):S, x1=U.l-p, x2=U.r+p, y1=U.t-p, y2=U.b+p, k=8;
       svg.appendChild(mk('path',{d:`M${x1+k} ${y1} Q${x1} ${(y1+y2)/2} ${x1+k} ${y2}`,...sty(r)}));
       svg.appendChild(mk('path',{d:`M${x2-k} ${y1} Q${x2} ${(y1+y2)/2} ${x2-k} ${y2}`,...sty(r)})); return; }
@@ -1277,6 +1282,8 @@ function paintZones(){
   };
   zs.slice().sort((a,b)=>depth(b)-depth(a)).forEach(z=>{
     const p=(page?3:5)+(page?4:6)*depth(z), idx=[];
+    const fade=Math.min(1,(now-z.t0)/260);
+    G=mk('g',{opacity:fade.toFixed(3)}); svg.appendChild(G);
     for(let i=z.s;i<=z.e;i++) if(!page||study.ch[i].done) idx.push(i);
     if(!idx.length) return;
     const H = z.h>=0 ? box(z.h) : null;
@@ -1288,7 +1295,18 @@ function paintZones(){
     idx.forEach(i=>{ const k=key(i); if(!lines.has(k)) lines.set(k,[]); lines.get(k).push(i); });
     lines.forEach(a=>draw(z.r, null, uni(a.map(box)), p, lines.size>1));
   });
-  host.insertBefore(svg, host.firstChild);
+  if(zs.some(z=>now-z.t0<260)) animateZones(0);
+}
+/* 청크가 움직이는 동안 도형이 매 프레임 따라가게 (확장이 끊기지 않도록) */
+function animateZones(ms){
+  if(!study) return;
+  study.zUntil=Math.max(study.zUntil||0, performance.now()+ms);
+  if(study.zRun) return; study.zRun=true;
+  const st=study;
+  const step=()=>{ if(study!==st){ st.zRun=false; return; }
+    paintZones();
+    if(performance.now()<st.zUntil) requestAnimationFrame(step); else st.zRun=false; };
+  requestAnimationFrame(step);
 }
 /* 지면 연습 : 판정 없는 청크(skip·관계사)는 바로 지나감 */
 function autoSkipPage(){
@@ -1432,8 +1450,7 @@ function resolve(ok){
   c.si++;
   if(c.si>=c.steps.length){ c.done=true; study.idx++; }
   study.belt = beltAfter(study.idx-1);
-  applyLayers(); paintZones();
-  setTimeout(paintZones,200); setTimeout(paintZones,400);
+  applyLayers(); paintZones(); animateZones(520);
   if(study.idx>=study.ch.length){ study.run=false; sentenceDone(); return; }
   if(study.mode==='cursor'){ scrollCursor(true); if(study.sub==='practice'&&study.run) setDwell(); }
   autoSkipPage();
